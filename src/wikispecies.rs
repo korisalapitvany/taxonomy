@@ -41,7 +41,7 @@ struct FileStatus {
     sha1: String,
 }
 
-pub async fn sync() {
+pub async fn sync_all() -> Result<(), &'static str> {
     let (date, urls) = dump_status_latest().await.unwrap();
     println!("date: {:?}, urls: {:?}", date, urls);
 
@@ -65,6 +65,8 @@ pub async fn sync() {
             println!("symlink: {} -> cache/{}", filename, status.sha1);
         }
     }
+
+    Ok(())
 }
 
 /// Finds the latest dump among all mirrors.
