@@ -1,5 +1,6 @@
 use chrono::{Date, TimeZone, Utc};
 use futures::future::join_all;
+use itertools::Itertools;
 use lazy_static::lazy_static;
 use regex::Regex;
 use scraper::{Html, Selector};
@@ -42,8 +43,7 @@ struct FileStatus {
 }
 
 pub async fn sync_all() -> Result<(), &'static str> {
-    let (date, urls) = dump_status_latest().await.unwrap();
-    println!("date: {:?}, urls: {:?}", date, urls);
+    let urls = dump_status_latest().await.unwrap();
 
     let all_results = join_all(urls.iter().map(|url| reqwest::get(url)));
     let all_json = join_all(
@@ -71,31 +71,32 @@ pub async fn sync_all() -> Result<(), &'static str> {
 
 /// Finds the latest dump among all mirrors.
 /// The returned vector contains URLs that all map to the dump status from the same day.
-async fn dump_status_latest() -> Result<(Date<Utc>, Vec<String>), &'static str> {
-    let mut errors = vec![];
+async fn dump_status_latest() -> Result<Vec<String>, &'static str> {
     let all_dumps: Vec<Map<Date<Utc>, String>> =
         join_all(MIRRORS.map(|mirror| dump_status_mirror(mirror)))
             .await
             .into_iter()
-            .filter_map(|ds| ds.map_err(|e| errors.push(e)).ok())
+            .filter_map(|ds| ds.map_err(|e| println!("{}", e)).ok())
             .filter(|ds| !ds.is_empty())
             .collect();
-    let newest_date = all_dumps
+    let all_dates: Vec<&Date<Utc>> = all_dumps
         .iter()
-        .map(|ds| ds.keys())
+        .map(|m| m.keys())
         .flatten()
-        .max()
-        .ok_or("something went wrong!")
-        .unwrap()
-        .to_owned();
-    Ok((
-        newest_date,
-        all_dumps
-            .into_iter()
-            .filter(|ds| ds.contains_key(&newest_date))
-            .map(|ds| ds[&newest_date].to_owned())
-            .collect(),
-    ))
+        .unique()
+        .sorted()
+        .collect();
+    println!("DATES: {:?}", all_dates);
+
+    let newest_date = all_dates.last().unwrap().to_owned().to_owned();
+    let all_urls = all_dumps
+        .into_iter()
+        .filter(|ds| ds.contains_key(&newest_date))
+        .map(|ds| ds[&newest_date].to_owned())
+        .collect();
+    println!("NEWEST: {:?} {:?}", newest_date, all_urls);
+
+    Ok(all_urls)
 }
 
 /// Fetches a vector of URLs containing dump status results, mapped by date.
