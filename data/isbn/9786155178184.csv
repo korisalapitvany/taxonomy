@@ -1,0 +1,169 @@
+!page,scientific_name,common_name.hu
+10,Podura aquatica,vízibolha
+,Campodea,fonálfarkú ősrovarok /ok//
+,Lepisma saccharina,ezüstös pikkelyke
+12,Ephemera danica,dánkérész
+,Ephemera ignita,vörösbarna kérész
+,Perla marginata,nagy álkérész
+14,Aeshna cyanea,sebes acsa
+,Aeshna grandis,nagy acsa
+,Cordulegaster boltonii,kétcsíkos hegyiszitakötő
+16,Libellula quadrimaculata,négyfoltos acsa
+,Libellula depressa,közönséges acsa
+,Sympetrum vulgatum,közönséges szitakötő
+18,Calopteryx splendens,sávos szitakötő
+,Coenagrion puella,szép légivadász
+,Pyrrhosoma nymphula,vörös légivadász
+20,Forficula auricularia,közönséges fülbemászó
+,Blatta orientalis,közönségés csótány
+,Mantis religiosa,imádkozó sáska
+22,Tettigonia viridissima,zöld lombszöcske
+,Decticus verrucivorus,szemölcsevő szöcske
+,Gryllus campestris,mezei tücsök
+24,Gryllotalpa gryllotalpa,lótücsök
+,Gomphocerippus rufus,erdei bunkóscsápú sáska
+,Psophus stridulus,kerepelő sáska
+26,Pediculus capitis = Pediculus humanus capitis,fejtetű
+,Columbicola columbae,tolltetű
+,Parthenothrips dracenae,üvegházi tripsz
+28,Philaenus spumarius,tajtékos kabóca
+,Cercopis vulnerata,vérfoltos kabóca
+,Aphis sambuci,bodza levéltetű
+30,Nepa rubra,víziskorpió
+,Notonecta glauca,hanyattúszó poloska
+,Gerris,molnárpoloskák
+32,Anthocoris nemorum,mezei virágpoloska
+,Rhynocoris [sic] iracundus = Rhinocoris iracundus,gyilkospoloska
+,Pyrrhocoris apterus,verőköltő bodobács
+34,Elasmucha grisea,változó címerespoloska
+,Graphosoma lineatum,csíkos pajzsospoloska
+,Dolycoris baccarum,bogyómászó poloska
+36,Cicindela campestris,mezei homokfutrinka
+,Carabus auratus,aranyos futrinka
+,Carabus coriaceus,bőrfutrinka
+38,Dytiscus marginalis,szegélyes csíkbogár
+,Gyrinus substriatus,közönséges keringőbogár
+,Hydrophilus piceus,közönséges óriáscsibor
+40,Ocypus olens,bűzös holyva
+,Staphylinus fossor,tarka holyva
+,Necrophorus [sic] vespillo = Nicrophorus vespillo,közönséges temetőbogár
+42,Lamprohiza splendidula,kis szentjánosbogár
+,Cantharis fusca,közönséges lágybogár
+,Agrypnus murinus,egérszínű pattanóbogár
+44,Trichodes alvearius,kékfoltos méhészbogár
+,Chalcophora mariana,fenyves díszbogár
+,Coccinella septempunctata,hétpettyes katicabogár
+46,Ptinus fur,közönséges tolvajbogár
+,Dermestes lardarius,szalonnabogár
+,Tenebrio molitor,lisztbogár
+48,Meloe proscarabaeus,közönséges nünüke
+,Pyrochroa serraticornis,közép bíborbogár
+,Oedemera femorata,sárgahátú álcincér
+50,Geotrupes stercorosus,erdei ganéjtúró
+,Melolontha melolontha,májusi cserebogár
+,Polyphylla fullo,csapócserebogár
+52,Oryctes nasicornis,orrszarvúbogár
+,Cetonia aurata,aranyos rózsabogár
+,Lucanus cervus,szarvasbogár
+54,Cerambyx scopolii,kis hőscincér
+,Aromia moschata,pézsmacincér
+,Rosalia alpina,havasi cincér
+56,Hylotrupes bajulus,házi cincér
+,Molorchus minor,kis légycincér
+,Strangalia melanura,feketevégű karcsúcincér
+58,Plagionotus arcuatus,bársonyos darázscincér
+,Agapanthia villosoviridescens,fehérgyűrűs bogáncscincér
+,Saperda populnea,kis nyárfacincér
+60,Leptinotarsa decemlineata,burgonyabogár
+,Melasoma populi,nagy nyárlevelész
+,Ips typographus,betűzőszú
+62,Liparus glabrirostris,acsalapu ormányos
+,Otiorhynchus sulcatus,barázdás gyalogormányos
+,Curculio nucum,mogyoróormányos
+64,Phaeostigma notata,barna tevenyakú
+,Sialis,vízifátyolkák /ák/a/
+,Chrysoperla carnea,közönséges fátyolka
+66,Euroleon nostras,erdei hangyaleső
+,Mantispa styriaca,fogólábú fátyolka
+,Libelloides longicornis,hosszúcsápú rablópille
+68,Allanthus scrophulariae = Tenthredo scrophulariae,görvélyfű levéldarázs
+,Cimbex femorata,fekete buzogányos darázs
+,Urocerus gigas,óriás fenyődarázs
+70,Dolichomitus imperator,óriás fürkészdarázs
+,Biorhiza pallida,gyökér-gubacsdarázs
+,Hedychrum nobile,királyi fémdarázs
+72,Tetramorium caespitum,gyepi hangya
+,Lasius flavus,borostyánsárga hangya
+,Formica rufa,erdei vöröshangya
+74,Vespa crabro,lódarázs
+,Vespula vulgaris,közönséges darázs
+,Polistes bischoffi,redősszárnyú darázs
+76,Anoplius viaticus,közönséges útonállódarázs
+,Ammophila sabulosa,homoki hernyóölő darázs
+,Philanthus triangulum,közönséges méhfarkas
+78,Andrena fulva,sárga bányászméh
+,Dasypoda hirtipes,gyakori gatyásméh
+,Megachile willoughbiella,piroshasú szabóméh
+80,Osmia rufa,szarvas művészméh
+,Nomada lathburiana,vörösszőrű darázsméh
+,Eucera tuberculata,hosszúcsápú méh; nagybajszú méh
+82,Bombus pascuorum,mezei poszméh
+,Bombus lapidarius,kövi poszméh
+,Apis mellifera,háziméh
+84,Limnephilus flavicornis,közönséges tegzes
+,Neureclipsis bimaculata,kétfoltos tegzes
+,Sericostoma personatum,barna tegzes
+86,Cameraria ochridella = Cameraria ohridella,vadgesztenye-sátorosmoly
+,Plodia interpunctella,aszalványmoly
+,Yponomeuta evonymella,kecskerágó-moly
+88,Zygaena filipendulae,acélszínű csüngőlepke
+,Lasiocampa quercus,tölgyfaszövő
+,Malacosoma neustria,gyűrűsszövő
+90,Saturnia pavonia,kis pávaszem
+,Smerinthus ocellata,esti pávaszem
+,Acherontia atropos,halálfejes lepke
+92,Macroglossum stellatarum,kacsafarkú szender
+,Hyles euphorbiae,kutyatejszender
+,Carterocephalus palaemon,kockás busalepke
+94,Papilio machaon,fecskefarkú lepke
+,Gonepteryx rhamni,citromlepke
+,Aporia crataegi,galagonyalepke
+96,Thecla betulae,nyírfa csücsköslepke
+,Polyommatus coridon,ezüstkék boglárka
+,Polyommatus icarus,közönséges boglárka
+98,Argynnis paphia,nagy gyöngyházlepke
+,Vanessa atalanta,admirálislepke
+,Inachis io,nappali pávaszem
+100,Aglais urticae,kis rókalepke
+,Araschnia levana,pókhálóslepke
+,Apatura iris,nagy színjátszólepke
+102,Pararge aegeria,erdei szemeslepke
+,Melanargia galathea,sakktáblalepke
+,Aphantopus hyperanthus,közönséges ökörszemlepke
+104,Erannis defoliaria,nagy téliaraszoló
+,Biston betularis,nyírfaaraszoló
+,Drepana falcataria,fehér sarlósszárnyú
+106,Cerura vinula,nagy púposszövő
+,Catocala sponsa,tölgyfa övesbagoly
+,Acronicta psi,szürkés szigonyosbagoly
+108,Shargacucullia verbasci,ökörfarkkóró csuklyásbagoly
+,Autographa gamma,gamma bagolylepke
+,Lymantria dispar,gyapjaslepke
+110,Calliteara pudibunda,hamvas gyapjaslepke
+,Euplagia quadripunctaria,csíkos medvelepke
+,Arctia caja,közönséges medvelepke
+112,Ceratophyllus,madárbolhák /ák/a/
+,Panorpa communis,közönséges skorpiólégy
+,Boreus westwoodi,ormányos tücsök
+114,Tipula,lószúnyogok /ok//
+,Aedes,valódi szúnyogok /ok//
+,Chironomus,árvaszúnyogok /ok//
+116,Mikiola fagi,bükk-gubacsszúnyog
+,Bombylius major,szegélyes pöszörlégy
+,Machimus,farkaslegyek /egyek/égy/
+118,Meliscaeva cinctella,darázsfarkú zengőlégy
+,Drosophila melanogaster,közönséges muslica
+,Musca domestica,házilégy
+120,Stomoxys calcitrans,szuronyos istállólégy
+,Calliphora vicina,kék dongólégy
+,Sarcophaga carnaria,közönséges húslégy
