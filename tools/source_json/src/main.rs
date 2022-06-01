@@ -21,9 +21,6 @@ struct Args {
 struct Row {
     /// Page number.
     page: Option<i32>,
-    /// Page number, where missing values are treated as repeats.
-    #[serde(rename = "page^")]
-    page_repeat: Option<i32>,
     /// Scientific name.
     /// This could be a synonym or can contain references (&) and pointers (^, *).
     scientific_name: String,
@@ -91,12 +88,59 @@ fn main() -> Result<(), Error> {
         }
     }
 
-    let mut rows: Vec<Row> = vec!();
+    let mut page: Option<i32> = None;
+    let mut ref_scientific_name: Option<String> = None;
+    let mut ref_common_name_hu: Option<String> = None;
+
+    let mut rows: Vec<Row> = vec![];
     for res in r.deserialize() {
-        rows.push(res?);
+        let mut row: Row = res?;
+
+        // Page number.
+        if row.page == None {
+            row.page = Some(page.ok_or(Error::validation_error(
+                "first row must contain a page number".to_string(),
+            ))?);
+        } else {
+            page = row.page;
+        }
+
+        // Scientific name.
+        if row.scientific_name.contains('&') {
+            ref_scientific_name = Some(row.scientific_name.replace('&', ""));
+            row.scientific_name = row.scientific_name.replace('&', "");
+        }
+
+        while row.scientific_name.contains('*') {
+            row.scientific_name = row
+                .scientific_name
+                .replace('*', &ref_scientific_name.to_owned().unwrap());
+        }
+
+        // Common names.
+        if row.common_name_hu.contains('&') {
+            // TODO: Apply singular/plural transformations.
+            ref_common_name_hu = Some(row.common_name_hu.replace('&', ""));
+            row.common_name_hu = row.common_name_hu.replace('&', "");
+        }
+
+        while row.common_name_hu.contains('*') {
+            row.common_name_hu = row
+                .common_name_hu
+                .replace('*', &ref_common_name_hu.to_owned().unwrap());
+        }
+
+        rows.push(row);
     }
 
-    println!("{} rows", rows.len());
+    for row in &rows {
+        println!(
+            "{}: {} -> {}",
+            row.page.unwrap(),
+            row.scientific_name,
+            row.common_name_hu
+        );
+    }
 
     Ok(())
 }
