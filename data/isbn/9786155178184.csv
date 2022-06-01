@@ -1,9 +1,9 @@
 page,scientific_name,common_name.hu
 10,Podura aquatica,vízibolha
-,Campodea,fonálfarkú ősrovarok /ok/
-,Lepisma saccharina,ezüstös pikkelyke
+,Campodea,fonálfarkú ősrovarok
+,Lepisma saccharina = Lepisma saccharinum,ezüstös pikkelyke
 12,Ephemera danica,dánkérész
-,Ephemera ignita,vörösbarna kérész
+,Ephemera ignita = Serratella ignita,vörösbarna kérész
 ,Perla marginata,nagy álkérész
 14,Aeshna cyanea,sebes acsa
 ,Aeshna grandis,nagy acsa
@@ -33,7 +33,7 @@ page,scientific_name,common_name.hu
 ,Notonecta glauca,hanyattúszó poloska
 ,Gerris,molnárpoloskák
 32,Anthocoris nemorum,mezei virágpoloska
-,Rhynocoris [sic] iracundus = Rhinocoris iracundus,gyilkospoloska
+,Rhinocoris iracundus = Rhynocoris iracundus,gyilkospoloska
 ,Pyrrhocoris apterus,verőköltő bodobács
 34,Elasmucha grisea,változó címerespoloska
 ,Graphosoma lineatum,csíkos pajzsospoloska
@@ -45,8 +45,8 @@ page,scientific_name,common_name.hu
 ,Gyrinus substriatus,közönséges keringőbogár
 ,Hydrophilus piceus,közönséges óriáscsibor
 40,Ocypus olens,bűzös holyva
-,Staphylinus fossor,tarka holyva
-,Necrophorus [sic] vespillo = Nicrophorus vespillo,közönséges temetőbogár
+,Staphylinus fossor = Dinothenarus fossor,tarka holyva
+,Necrophorus vespillo = Nicrophorus vespillo,közönséges temetőbogár
 42,Lamprohiza splendidula,kis szentjánosbogár
 ,Cantharis fusca,közönséges lágybogár
 ,Agrypnus murinus,egérszínű pattanóbogár
@@ -59,7 +59,7 @@ page,scientific_name,common_name.hu
 48,Meloe proscarabaeus,közönséges nünüke
 ,Pyrochroa serraticornis,közép bíborbogár
 ,Oedemera femorata,sárgahátú álcincér
-50,Geotrupes stercorosus,erdei ganéjtúró
+50,Geotrupes stercorosus = Anoplotrupes stercorosus,erdei ganéjtúró
 ,Melolontha melolontha,májusi cserebogár
 ,Polyphylla fullo,csapócserebogár
 52,Oryctes nasicornis,orrszarvúbogár
@@ -70,24 +70,24 @@ page,scientific_name,common_name.hu
 ,Rosalia alpina,havasi cincér
 56,Hylotrupes bajulus,házi cincér
 ,Molorchus minor,kis légycincér
-,Strangalia melanura,feketevégű karcsúcincér
+,Strangalia melanura = Stenurella melanura,feketevégű karcsúcincér
 58,Plagionotus arcuatus,bársonyos darázscincér
 ,Agapanthia villosoviridescens,fehérgyűrűs bogáncscincér
-,Saperda populnea,kis nyárfacincér
+,Saperda populnea = Saperda moesta,kis nyárfacincér
 60,Leptinotarsa decemlineata,burgonyabogár
-,Melasoma populi,nagy nyárlevelész
+,Melasoma populi = Chrysomela populi,nagy nyárlevelész
 ,Ips typographus,betűzőszú
 62,Liparus glabrirostris,acsalapu ormányos
 ,Otiorhynchus sulcatus,barázdás gyalogormányos
 ,Curculio nucum,mogyoróormányos
-64,Phaeostigma notata,barna tevenyakú
-,Sialis,vízifátyolkák /ák/a/
+64,Phaeostigma notata = Phaeostigma notatum,barna tevenyakú
+,Sialis,vízifátyolkák
 ,Chrysoperla carnea,közönséges fátyolka
 66,Euroleon nostras,erdei hangyaleső
 ,Mantispa styriaca,fogólábú fátyolka
 ,Libelloides longicornis,hosszúcsápú rablópille
 68,Allanthus scrophulariae = Tenthredo scrophulariae,görvélyfű levéldarázs
-,Cimbex femorata,fekete buzogányos darázs
+,Cimbex femorata = Cimbex femoratus,fekete buzogányos darázs
 ,Urocerus gigas,óriás fenyődarázs
 70,Dolichomitus imperator,óriás fürkészdarázs
 ,Biorhiza pallida,gyökér-gubacsdarázs
@@ -101,14 +101,14 @@ page,scientific_name,common_name.hu
 76,Anoplius viaticus,közönséges útonállódarázs
 ,Ammophila sabulosa,homoki hernyóölő darázs
 ,Philanthus triangulum,közönséges méhfarkas
-78,Andrena fulva,sárga bányászméh
+78,Andrena fulva = Andrena marginata,sárga bányászméh
 ,Dasypoda hirtipes,gyakori gatyásméh
-,Megachile willoughbiella,piroshasú szabóméh
+,Megachile willoughbiella = Megachile willughbiella,piroshasú szabóméh
 80,Osmia rufa,szarvas művészméh
 ,Nomada lathburiana,vörösszőrű darázsméh
 ,Eucera tuberculata,hosszúcsápú méh; nagybajszú méh
-82,Bombus pascuorum,mezei poszméh
-,Bombus lapidarius,kövi poszméh
+82,&Bombus pascuorum,mezei &poszméh
+,* lapidarius,kövi *
 ,Apis mellifera,háziméh
 84,Limnephilus flavicornis,közönséges tegzes
 ,Neureclipsis bimaculata,kétfoltos tegzes
@@ -129,38 +129,38 @@ page,scientific_name,common_name.hu
 ,Gonepteryx rhamni,citromlepke
 ,Aporia crataegi,galagonyalepke
 96,Thecla betulae,nyírfa csücsköslepke
-,Polyommatus coridon,ezüstkék boglárka
-,Polyommatus icarus,közönséges boglárka
+,&Polyommatus coridon,ezüstkék &boglárka
+,* icarus,közönséges *
 98,Argynnis paphia,nagy gyöngyházlepke
 ,Vanessa atalanta,admirálislepke
-,Inachis io,nappali pávaszem
+,Inachis io = Aglais io,nappali pávaszem
 100,Aglais urticae,kis rókalepke
 ,Araschnia levana,pókhálóslepke
 ,Apatura iris,nagy színjátszólepke
 102,Pararge aegeria,erdei szemeslepke
 ,Melanargia galathea,sakktáblalepke
-,Aphantopus hyperanthus,közönséges ökörszemlepke
+,Aphantopus hyperanthus = Aphantopus hyperantus,közönséges ökörszemlepke
 104,Erannis defoliaria,nagy téliaraszoló
-,Biston betularis,nyírfaaraszoló
+,Biston betularis = Biston betularia,nyírfaaraszoló
 ,Drepana falcataria,fehér sarlósszárnyú
 106,Cerura vinula,nagy púposszövő
 ,Catocala sponsa,tölgyfa övesbagoly
 ,Acronicta psi,szürkés szigonyosbagoly
-108,Shargacucullia verbasci,ökörfarkkóró csuklyásbagoly
+108,Shargacucullia verbasci = Cucullia verbasci,ökörfarkkóró csuklyásbagoly
 ,Autographa gamma,gamma bagolylepke
 ,Lymantria dispar,gyapjaslepke
 110,Calliteara pudibunda,hamvas gyapjaslepke
 ,Euplagia quadripunctaria,csíkos medvelepke
 ,Arctia caja,közönséges medvelepke
-112,Ceratophyllus,madárbolhák /ák/a/
+112,Ceratophyllus,madárbolhák
 ,Panorpa communis,közönséges skorpiólégy
 ,Boreus westwoodi,ormányos tücsök
-114,Tipula,lószúnyogok /ok/
-,Aedes,valódi szúnyogok /ok/
-,Chironomus,árvaszúnyogok /ok/
+114,Tipula,lószúnyogok
+,Aedes,valódi szúnyogok
+,Chironomus,árvaszúnyogok
 116,Mikiola fagi,bükk-gubacsszúnyog
 ,Bombylius major,szegélyes pöszörlégy
-,Machimus,farkaslegyek /egyek/égy/
+,Machimus,farkaslegyek
 118,Meliscaeva cinctella,darázsfarkú zengőlégy
 ,Drosophila melanogaster,közönséges muslica
 ,Musca domestica,házilégy

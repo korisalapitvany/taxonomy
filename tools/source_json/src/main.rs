@@ -90,9 +90,10 @@ fn main() -> Result<(), Error> {
 
     let mut page: Option<i32> = None;
     let mut ref_scientific_name: Option<String> = None;
+    let mut ref_scientific_name_used = false;
     let mut ref_common_name_hu: Option<String> = None;
+    let mut ref_common_name_hu_used = false;
 
-    let mut rows: Vec<Row> = vec![];
     for res in r.deserialize() {
         let mut row: Row = res?;
 
@@ -107,7 +108,20 @@ fn main() -> Result<(), Error> {
 
         // Scientific name.
         if row.scientific_name.contains('&') {
-            ref_scientific_name = Some(row.scientific_name.replace('&', ""));
+            if !ref_scientific_name_used {
+                if let Some(unused) = ref_scientific_name {
+                    return Err(Error::validation_error(format!(
+                        "unused reference: {}",
+                        unused
+                    )));
+                }
+            }
+            ref_scientific_name = row
+                .scientific_name
+                .split_whitespace()
+                .find(|w| w.starts_with('&'))
+                .and_then(|w| Some(w.replace('&', "")));
+            ref_scientific_name_used = false;
             row.scientific_name = row.scientific_name.replace('&', "");
         }
 
@@ -115,30 +129,40 @@ fn main() -> Result<(), Error> {
             row.scientific_name = row
                 .scientific_name
                 .replace('*', &ref_scientific_name.to_owned().unwrap());
+            ref_scientific_name_used = true;
         }
 
         // Common names.
         if row.common_name_hu.contains('&') {
-            // TODO: Apply singular/plural transformations.
-            ref_common_name_hu = Some(row.common_name_hu.replace('&', ""));
+            if !ref_common_name_hu_used {
+                if let Some(unused) = ref_common_name_hu {
+                    return Err(Error::validation_error(format!(
+                        "unused reference: {}",
+                        unused
+                    )));
+                }
+            }
+            ref_common_name_hu = row
+                .common_name_hu
+                .split_whitespace()
+                .find(|w| w.starts_with('&'))
+                .and_then(|w| Some(w.replace('&', "")));
             row.common_name_hu = row.common_name_hu.replace('&', "");
+            ref_common_name_hu_used = false;
         }
 
         while row.common_name_hu.contains('*') {
             row.common_name_hu = row
                 .common_name_hu
                 .replace('*', &ref_common_name_hu.to_owned().unwrap());
+            ref_common_name_hu_used = true;
         }
 
-        rows.push(row);
-    }
-
-    for row in &rows {
         println!(
-            "{}: {} -> {}",
+            "{} | {} | {}",
             row.page.unwrap(),
-            row.scientific_name,
-            row.common_name_hu
+            row.scientific_name.replace('|', r"\|"),
+            row.common_name_hu.replace('|', r"\|"),
         );
     }
 

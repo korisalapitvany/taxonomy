@@ -1,23 +1,23 @@
 page,scientific_name,common_name.hu
-28,&Anasimyia,&iszaplegyek /egyek/égy/
-,* lineata,kúparcú *
+28,&Anasimyia,iszaplegyek
+,* lineata,kúparcú &iszaplégy
 ,* interpuncta,korai *
 ,* lunulata,északi *
 ,* contracta,dudoros *
 ,* transfuga,gyakori *
-29,&Arctophila,&hegyilegyek /egyek/égy/
-,* superbiens,őszi *
+29,&Arctophila,hegyilegyek
+,* superbiens,őszi &hegyilégy
 ,* bombiformis,poszméhalakú *
-,&Baccha,&árnyéklegyek /egyek/égy/
-,* elongata,szürkehomlokú *
+,&Baccha,árnyéklegyek
+,* elongata,szürkehomlokú &árnyéklégy
 ,* obscuripennis,fényeshomlokú *
-30,&Blera,&sárgaarcúlegyek /egyek/égy/
-,* fallax,*
-,&Brachymyia,&bundáslegyek /egyek/égy/
-,* berberina,változékogy *
+30,&Blera,sárgaarcúlegyek
+,* fallax,sárgaarcúlégy
+,&Brachymyia,bundáslegyek
+,* berberina,változékogy &bundáslégy
 ,* floccosa,fehérpamacsú *
-31,&Brachyopa,&fanedvlegyek /egyek/égy/
-,* testacea,északi *
+31,&Brachyopa,fanedvlegyek
+,* testacea,északi &fanedvlégy
 ,* vittata,nagy *
 ,* panzeri,Panzeri *
 32,* dorsata,duplacsíkos *
@@ -27,33 +27,33 @@ page,scientific_name,common_name.hu
 ,* scutellaris,nyugati *
 ,* plena,ritka *
 ,* pilosa,gyakori *
-33,&Brachypalpoides,&korhadófalegyek /egyek/égy/
-,* lentus,vöröspotrohú *
-34,&Brachypalpus,&korhadéklegyek /egyek/égy/
-,* valgus,déli *
+33,&Brachypalpoides,korhadófalegyek
+,* lentus,vöröspotrohú korhadófalégy
+34,&Brachypalpus,korhadéklegyek
+,* valgus,déli &korhadéklégy
 ,* laphriformis,barna *
 ,* chrysites,aranysárga *
-,&Caliprobola,&pompáslegyek /egyek/égy/
-35,* speciosa,*
-,&Callicera,&bronzoslegyek /egyek/égy/
-,* spinolae,feketecsíkos *
+,&Caliprobola,pompáslegyek
+35,* speciosa,pompáslégy
+,&Callicera,bronzoslegyek
+,* spinolae,feketecsíkos &bronzoslégy
 ,* aenea,szürkecsíkos *
 ,* rufa,vörösbarna *
 36,* macquartii,őszi *
-,&Ceriana,&hosszúcsápúlegyek /egyek/égy/
-,* conopsoides,nagy *
+,&Ceriana,hosszúcsápúlegyek
+,* conopsoides,nagy &hosszúcsápúlégy
 ,* vespiformis,kis *
-,&Chalcosyrphus,&holtfalegyek /egyek/égy/
-,* eunotus,csíkoshátú *
+,&Chalcosyrphus,holtfalegyek
+,* eunotus,csíkoshátú &holtfalégy
 ,* curvipes,ritka *
 37,* femoratus,nagy *
 ,* nemorum,kis *
 ,* piger,vörös *
 ,* valgus,fekete *
-,&Chamaesyrphus,&ékarcúlegyek /egyek/égy/
-,* scaevoides,sárga *
-38,&Cheilosia,&bronzlegyek /egyek/égy/
-,* insignis,érczöld *
+,&Chamaesyrphus,ékarcúlegyek
+,* scaevoides,sárga ékarcúlégy
+38,&Cheilosia,bronzlegyek
+,* insignis,érczöld &bronzlégy
 ,* antiqua,feketeszőrű *
 ,* nigripes,fekete *
 39,* longula,ritka gomba-*
@@ -92,10 +92,10 @@ page,scientific_name,common_name.hu
 ,* velutina,görvélyfű *
 ,* bergenstammi,aggófű *
 ,* fraterna,bogáncsvirág *
-48,&Chrysogaster,&smaragdlegyek /egyek/égy/
-49,* cemiteriorum,sárgaszárnytövű *
+48,&Chrysogaster,smaragdlegyek
+49,* cemiteriorum,sárgaszárnytövű &smaragdlégy
 ,* basalis,kis *
 ,* solstitialis,gyakori *
 ,* virescens,zöld *
-,&Chrysotoxum,&öveslegyek /egyek/égy/
-,* intermedium,déli *
+,&Chrysotoxum,öveslegyek
+,* intermedium,déli öveslégy
