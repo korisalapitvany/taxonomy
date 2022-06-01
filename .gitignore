@@ -7,3 +7,6 @@
 
 # Temporary (swap) files.
 **/*.sw?
+
+# Bazel workspace symlinks.
+bazel-*
