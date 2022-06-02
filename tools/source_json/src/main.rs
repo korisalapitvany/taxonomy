@@ -214,7 +214,8 @@ fn main() -> Result<(), Error> {
     }
 
     if !written {
-        // Write a single newline to make sure we keep the output's "streamable" property.
+        // Make sure we keep the output's "streamable" property.
+        // Every line must contain one of `[`, `]`, or `,`, followed by an optional record.
         writeln!(out, "");
     }
 
