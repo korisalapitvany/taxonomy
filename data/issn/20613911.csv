@@ -98,4 +98,114 @@ page,scientific_name,common_name.hu
 ,* solstitialis,gyakori *
 ,* virescens,zöld *
 ,&Chrysotoxum,öveslegyek
-,* intermedium,déli öveslégy
+,* intermedium,déli &öveslégy
+50,* cautum,gyakori *
+,* fasciatum,rövidpotrohú *
+,* fasciolatum,nagy *
+,* bicinctum,kétpántos *
+,* lineare,karcsú *
+,* arcuatum,közönséges *
+,* vernale,tavaszi *
+,* verralli,Verrali *
+51,* octomaculatum,nyolcfoltos *
+,* elegans,hegyvidéki *
+,&Criorhina,szőrméslegyek
+52,* asilica,méhalakú &szőrméslégy
+,* pachymera,karcsú *
+,* ranunculi,nagy *
+,&Dasysyrphus,erdeilegyek
+,* albostriatus,csíkoshátú &erdeilégy
+,* tricinctus,szélespántú *
+,* hilaris,sárgaarcú *
+53,* venustus,gyakori *
+,* friuliensis,alpesi *
+,* pinastri,holdfoltú *
+,&Didea,lapospotrohúlegyek
+,* fasciata,sárgafoltos &lapospotrohúlégy
+,* alneti,zöldfoltos *
+54,* intermedia,kis *
+,&Doros,méhfészeklegyek
+,* profuges,ritka méhfészeklægy
+,&Epistrophe,rétizengőlegyek
+,* eligans,változékogy &rétizengőlégy
+,* euchroma,májusi *
+,* grossulariae,nagy *
+55,* diaphana,sárgalábú *
+,* flava,szélessávú *
+,* nitidicollis,ragyogó *
+56,* obscuripes,keskenyarcú *
+,* ochrostoma,kis *
+,* melanostoma,feketeszájú *
+,* cryptica,ritka *
+,&Episyrphus,ékfoltoslegyek
+57,* balteatus,ékfoltos zengőlégy
+,&Eriozona,bundásszőrűlegyek
+,* syrphoides,tarka bundásszőrűlégy
+,&Eristalinus,foltosszeműlegyek
+,* sepulchralis,fekete &foltosszeműlégy
+,* aeneus,bronzos *
+58,&Eristalis,herelegyek
+,* intricaria,bundás &herelégy
+,* tenax,közönséges *
+,* abusiva,alföldi *
+,* arbustorum,fehérarcú *
+,* alpina,alpesi *
+,* jugorum,hosszúarcú *
+,* pertinax,sárgalábfejű *
+,* similis,hosszúszárnyjegyű *
+59,* lineata,foltosszárnyú *
+,* interrupta,rövidszárnyjegyű *
+,* vitripennis,ritka hegyi *
+,&Eumerus,hagymalegyek
+,* tarsalis,sörtéslábfejű &hagymalégy
+,* tauricus,krími *
+,* grandis,levágottcsápú *
+,* ovatus,ezüstszőrű *
+,* tricolor,háromszínű *
+,* sinuatus,bronzfényű *
+61,* longicornis,hosszúcsápú *
+,* hungaricus,magyar *
+,* tuberculatus,dudoroscombú *
+,* sogdianus,ázsiai *
+,* strigatus,közönséges *
+,* flavitarsis,fehérlábfejű *
+,* ornatus,nagycerkuszú *
+62,* ruficornis,vöröscsápú *
+63,&Eupeodes,mezeilegyek
+,* lapponicus,hajlotterű &mezeilégy
+64,* lundbecki,északi *
+,* nielseni,rövidfoltú
+,* corollae,gyakori *
+,* luniger,holdfoltú *
+65,* nitens,változékony *
+,* bucculatus,nyugati *
+,* latifasciatus,szélessávú *
+,&Ferdinandea,sörtéslegyek
+66,* ruficornis,fekete &sörtéslégy
+,* cuprea,rezes *
+,&Helophilus,mocsárilegyek
+,* trivittatus,nagy &mocsárilégy
+,* affinis,északi *
+67,* hybridus,hibrid *
+,* pendulus,közönséges *
+,&Heringia,hegyesszögűlegyek
+,* heringi,feketeszőrű &hegyesszögűlégy
+,* senilis,világosszőrű *
+,&Ischyrosyrphus,sávoslegyek
+68,* glaucius,kékesszürke &sávoslégy
+,* laternarius,fehér *
+,&Lejogaster,fémeslegyek
+,* metallina,fekete &fémeslégy
+,* tarsata,sárgalábfejű *
+,&Lejops,gyékénylegyek
+69,* vittatus,gyakori gyékénylégy
+,&Lejota,ártérilegyek
+,* ruficornis,fekete ártérilégy
+,&Leucozona,fehérpántoslegyek
+70,* lucorum,erdei fehérpántoslégy
+,&Mallota,gyapjaslegyek
+,* megilliformis,sárga &gyapjaslégy
+,* cimbiciformis,méhszerű *
+,* fuciformis,tarka *
+,&Megasyrphus,nyiladéklegyek
+71,* erraticus,nagy nyiladéklégy
