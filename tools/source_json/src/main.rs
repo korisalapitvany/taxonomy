@@ -104,6 +104,7 @@ fn main() -> Result<(), Error> {
 
     let mut page: Option<i32> = None;
     let mut ref_scientific_name: Option<String> = None;
+    let mut ref_scientific_name_impl: Option<String> = None;
     let mut ref_scientific_name_used = false;
     let mut ref_common_name_hu: Option<String> = None;
     let mut ref_common_name_hu_used = false;
@@ -141,11 +142,30 @@ fn main() -> Result<(), Error> {
             ref_scientific_name_used = false;
             row.scientific_name = row.scientific_name.replace('&', "");
         }
+        if row.scientific_name.contains('^') {
+            row.scientific_name = row.scientific_name.replace(
+                '^',
+                &ref_scientific_name_impl
+                    .to_owned()
+                    .ok_or(Error::validation_error(format!(
+                        "bad reference: {}",
+                        row.scientific_name
+                    )))?,
+            );
+        } else {
+            ref_scientific_name_impl = Some(row.scientific_name.to_owned());
+        }
 
         while row.scientific_name.contains('*') {
-            row.scientific_name = row
-                .scientific_name
-                .replace('*', &ref_scientific_name.to_owned().unwrap());
+            row.scientific_name = row.scientific_name.replace(
+                '*',
+                &ref_scientific_name
+                    .to_owned()
+                    .ok_or(Error::validation_error(format!(
+                        "bad reference: {}",
+                        row.scientific_name
+                    )))?,
+            );
             ref_scientific_name_used = true;
         }
 
@@ -169,9 +189,15 @@ fn main() -> Result<(), Error> {
         }
 
         while row.common_name_hu.contains('*') {
-            row.common_name_hu = row
-                .common_name_hu
-                .replace('*', &ref_common_name_hu.to_owned().unwrap());
+            row.common_name_hu = row.common_name_hu.replace(
+                '*',
+                &ref_common_name_hu
+                    .to_owned()
+                    .ok_or(Error::validation_error(format!(
+                        "bad reference: {}",
+                        row.common_name_hu
+                    )))?,
+            );
             ref_common_name_hu_used = true;
         }
 
