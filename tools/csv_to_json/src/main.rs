@@ -103,12 +103,8 @@ fn main() -> Result<(), Error> {
     }
 
     let mut page: Option<i32> = None;
-    let mut ref_scientific_name: Option<String> = None;
-    let mut ref_scientific_name_prefix: Option<String> = None;
-    let mut ref_scientific_name_used = false;
-    let mut ref_common_name_hu: Option<String> = None;
-    let mut ref_common_name_hu_tilde: Option<String> = None;
-    let mut ref_common_name_hu_used = false;
+    let mut scientific_name_caret: Option<String> = None;
+    let mut common_name_hu_tilde: Option<String> = None;
 
     write!(out, "[")?;
 
@@ -126,27 +122,10 @@ fn main() -> Result<(), Error> {
         }
 
         // Scientific name.
-        if row.scientific_name.contains('&') {
-            if !ref_scientific_name_used {
-                if let Some(unused) = ref_scientific_name {
-                    return Err(Error::validation_error(format!(
-                        "unused reference: {}",
-                        unused
-                    )));
-                }
-            }
-            ref_scientific_name = row
-                .scientific_name
-                .split_whitespace()
-                .find(|w| w.starts_with('&'))
-                .and_then(|w| Some(w.replace('&', "")));
-            ref_scientific_name_used = false;
-            row.scientific_name = row.scientific_name.replace('&', "");
-        }
         if row.scientific_name.contains('^') {
             row.scientific_name = row.scientific_name.replace(
                 '^',
-                &ref_scientific_name_prefix
+                &scientific_name_caret
                     .to_owned()
                     .ok_or(Error::validation_error(format!(
                         "bad reference: {}",
@@ -154,58 +133,20 @@ fn main() -> Result<(), Error> {
                     )))?,
             );
         } else {
-            ref_scientific_name_prefix = Some(row.scientific_name.to_owned());
-        }
-
-        while row.scientific_name.contains('*') {
-            row.scientific_name = row.scientific_name.replace(
-                '*',
-                &ref_scientific_name
-                    .to_owned()
-                    .ok_or(Error::validation_error(format!(
-                        "bad reference: {}",
-                        row.scientific_name
-                    )))?,
+            scientific_name_caret = Some(
+                row.scientific_name
+                    .split_whitespace()
+                    .next()
+                    .unwrap_or("")
+                    .to_string(),
             );
-            ref_scientific_name_used = true;
         }
 
         // Common names.
-        if row.common_name_hu.contains('&') {
-            if !ref_common_name_hu_used {
-                if let Some(unused) = ref_common_name_hu {
-                    return Err(Error::validation_error(format!(
-                        "unused reference: {}",
-                        unused
-                    )));
-                }
-            }
-            ref_common_name_hu = row
-                .common_name_hu
-                .split_whitespace()
-                .find(|w| w.starts_with('&'))
-                .and_then(|w| Some(w.replace('&', "")));
-            row.common_name_hu = row.common_name_hu.replace('&', "");
-            ref_common_name_hu_used = false;
-        }
-
-        while row.common_name_hu.contains('*') {
-            row.common_name_hu = row.common_name_hu.replace(
-                '*',
-                &ref_common_name_hu
-                    .to_owned()
-                    .ok_or(Error::validation_error(format!(
-                        "bad reference: {}",
-                        row.common_name_hu
-                    )))?,
-            );
-            ref_common_name_hu_used = true;
-        }
-
         if row.common_name_hu.contains('~') {
             row.common_name_hu = row.common_name_hu.replace(
                 '~',
-                &ref_common_name_hu_tilde
+                &common_name_hu_tilde
                     .to_owned()
                     .ok_or(Error::validation_error(format!(
                         "bad reference: {}",
@@ -213,7 +154,7 @@ fn main() -> Result<(), Error> {
                     )))?,
             );
         } else {
-            ref_common_name_hu_tilde = Some(
+            common_name_hu_tilde = Some(
                 row.common_name_hu
                     .split_whitespace()
                     .last()
