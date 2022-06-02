@@ -108,7 +108,7 @@ fn main() -> Result<(), Error> {
     let mut ref_common_name_hu: Option<String> = None;
     let mut ref_common_name_hu_used = false;
 
-    write!(out, "[");
+    write!(out, "[")?;
 
     let mut written = false;
     for (n, res) in r.deserialize().into_iter().enumerate() {
@@ -184,31 +184,31 @@ fn main() -> Result<(), Error> {
         }
 
         if n > 0 {
-            write!(out, ",");
+            write!(out, ",")?;
         }
 
-        write!(out, "{{");
+        write!(out, "{{")?;
 
         if let Some(page) = row.page {
-            write!(out, r#""page": {}, "#, page);
+            write!(out, r#""page": {}, "#, page)?;
         }
 
-        write!(out, r#""scientific_name": "#);
+        write!(out, r#""scientific_name": "#)?;
         serde_json::to_writer(&mut out, scientific_name)?;
 
         if let Some(synonym) = synonym {
-            write!(out, r#", "synonym": "#);
+            write!(out, r#", "synonym": "#)?;
             serde_json::to_writer(&mut out, synonym)?;
         }
 
-        write!(out, r#", "common_names": {{"hu": ["#);
+        write!(out, r#", "common_names": {{"hu": ["#)?;
         for (i, field) in row.common_name_hu.split(';').enumerate() {
             if i != 0 {
-                write!(out, ", ");
+                write!(out, ", ")?;
             }
             serde_json::to_writer(&mut out, field.trim())?;
         }
-        writeln!(out, "]}}}}");
+        writeln!(out, "]}}}}")?;
 
         written = true;
     }
@@ -216,10 +216,10 @@ fn main() -> Result<(), Error> {
     if !written {
         // Make sure we keep the output's "streamable" property.
         // Every line must contain one of `[`, `]`, or `,`, followed by an optional record.
-        writeln!(out, "");
+        writeln!(out, "")?;
     }
 
-    writeln!(out, "]");
+    writeln!(out, "]")?;
 
     Ok(())
 }
