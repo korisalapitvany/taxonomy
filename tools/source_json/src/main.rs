@@ -39,6 +39,12 @@ enum Error {
     ValidationError(String),
 }
 
+impl Error {
+    fn validation_error(err: String) -> Self {
+        Error::ValidationError(err)
+    }
+}
+
 impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
@@ -65,12 +71,6 @@ impl From<csv::Error> for Error {
 impl From<serde_json::Error> for Error {
     fn from(err: serde_json::Error) -> Self {
         Error::JsonError(err)
-    }
-}
-
-impl Error {
-    fn validation_error(err: String) -> Self {
-        Error::ValidationError(err)
     }
 }
 
