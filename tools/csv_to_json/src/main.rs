@@ -104,9 +104,10 @@ fn main() -> Result<(), Error> {
 
     let mut page: Option<i32> = None;
     let mut ref_scientific_name: Option<String> = None;
-    let mut ref_scientific_name_impl: Option<String> = None;
+    let mut ref_scientific_name_prefix: Option<String> = None;
     let mut ref_scientific_name_used = false;
     let mut ref_common_name_hu: Option<String> = None;
+    let mut ref_common_name_hu_tilde: Option<String> = None;
     let mut ref_common_name_hu_used = false;
 
     write!(out, "[")?;
@@ -145,7 +146,7 @@ fn main() -> Result<(), Error> {
         if row.scientific_name.contains('^') {
             row.scientific_name = row.scientific_name.replace(
                 '^',
-                &ref_scientific_name_impl
+                &ref_scientific_name_prefix
                     .to_owned()
                     .ok_or(Error::validation_error(format!(
                         "bad reference: {}",
@@ -153,7 +154,7 @@ fn main() -> Result<(), Error> {
                     )))?,
             );
         } else {
-            ref_scientific_name_impl = Some(row.scientific_name.to_owned());
+            ref_scientific_name_prefix = Some(row.scientific_name.to_owned());
         }
 
         while row.scientific_name.contains('*') {
@@ -199,6 +200,26 @@ fn main() -> Result<(), Error> {
                     )))?,
             );
             ref_common_name_hu_used = true;
+        }
+
+        if row.common_name_hu.contains('~') {
+            row.common_name_hu = row.common_name_hu.replace(
+                '~',
+                &ref_common_name_hu_tilde
+                    .to_owned()
+                    .ok_or(Error::validation_error(format!(
+                        "bad reference: {}",
+                        row.common_name_hu
+                    )))?,
+            );
+        } else {
+            ref_common_name_hu_tilde = Some(
+                row.common_name_hu
+                    .split_whitespace()
+                    .last()
+                    .unwrap_or("")
+                    .to_string(),
+            );
         }
 
         let mut scientific_name: &str = &row.scientific_name;
