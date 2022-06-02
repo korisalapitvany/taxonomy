@@ -1,5 +1,5 @@
 {
-  "checksum": "ddf4c1d5736aed68cb3e8f6ac0199167bd596fddecaa28b3e45ce8128378b883",
+  "checksum": "42fceef1e9b287b503c583a1d4fc23a7e90c4fe67506dedd926bf2777f25a195",
   "crates": {
     "atty 0.2.14": {
       "name": "atty",
@@ -498,6 +498,55 @@
         "version": "0.1.10"
       },
       "license": "Unlicense/MIT"
+    },
+    "csv_to_json 1.0.0": {
+      "name": "csv_to_json",
+      "version": "1.0.0",
+      "repository": null,
+      "targets": [
+        {
+          "Binary": {
+            "crate_name": "csv_to_json",
+            "crate_root": "src/main.rs",
+            "srcs": {
+              "include": [
+                "**/*.rs"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      ],
+      "library_target_name": null,
+      "common_attrs": {
+        "compile_data_glob": [
+          "**"
+        ],
+        "deps": {
+          "common": [
+            {
+              "id": "clap 3.1.18",
+              "target": "clap"
+            },
+            {
+              "id": "csv 1.1.6",
+              "target": "csv"
+            },
+            {
+              "id": "serde 1.0.137",
+              "target": "serde"
+            },
+            {
+              "id": "serde_json 1.0.81",
+              "target": "serde_json"
+            }
+          ],
+          "selects": {}
+        },
+        "edition": "2021",
+        "version": "1.0.0"
+      },
+      "license": null
     },
     "hashbrown 0.11.2": {
       "name": "hashbrown",
@@ -1637,55 +1686,6 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "taxonomy 0.1.0": {
-      "name": "taxonomy",
-      "version": "0.1.0",
-      "repository": null,
-      "targets": [
-        {
-          "Binary": {
-            "crate_name": "taxonomy",
-            "crate_root": "src/main.rs",
-            "srcs": {
-              "include": [
-                "**/*.rs"
-              ],
-              "exclude": []
-            }
-          }
-        }
-      ],
-      "library_target_name": null,
-      "common_attrs": {
-        "compile_data_glob": [
-          "**"
-        ],
-        "deps": {
-          "common": [
-            {
-              "id": "clap 3.1.18",
-              "target": "clap"
-            },
-            {
-              "id": "csv 1.1.6",
-              "target": "csv"
-            },
-            {
-              "id": "serde 1.0.137",
-              "target": "serde"
-            },
-            {
-              "id": "serde_json 1.0.81",
-              "target": "serde_json"
-            }
-          ],
-          "selects": {}
-        },
-        "edition": "2021",
-        "version": "0.1.0"
-      },
-      "license": null
-    },
     "termcolor 1.1.3": {
       "name": "termcolor",
       "version": "1.1.3",
@@ -2081,7 +2081,7 @@
     "clap 3.1.18"
   ],
   "workspace_members": {
-    "taxonomy 0.1.0": "tools/source_json"
+    "csv_to_json 1.0.0": "tools/csv_to_json"
   },
   "conditions": {
     "cfg(target_os = \"hermit\")": [],

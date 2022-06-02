@@ -1,6 +1,6 @@
 [package]
-name = "taxonomy"
-version = "0.1.0"
+name = "csv_to_json"
+version = "1.0.0"
 edition = "2021"
 
 [dependencies]

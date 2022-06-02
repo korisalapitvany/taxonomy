@@ -23,8 +23,8 @@ load("@rules_rust//crate_universe:defs.bzl", "crates_repository")
 
 crates_repository(
     name = "crate_index",
-    lockfile = "//tools/source_json:Cargo.Bazel.lock",
-    manifests = ["//tools/source_json:Cargo.toml"],
+    lockfile = "//tools/csv_to_json:Cargo.Bazel.lock",
+    manifests = ["//tools/csv_to_json:Cargo.toml"],
 )
 
 load("@crate_index//:defs.bzl", "crate_repositories")

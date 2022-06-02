@@ -3,7 +3,7 @@ load("@rules_rust//rust:defs.bzl", "rust_binary")
 
 
 rust_binary(
-    name = "source_json",
+    name = "csv_to_json",
     aliases = aliases(),
     deps = all_crate_deps(
 	normal = True,
@@ -12,5 +12,4 @@ rust_binary(
         proc_macro = True,
     ),
     srcs = ["src/main.rs"],
-    #deps = ["//hello_lib"],
 )
