@@ -23,10 +23,10 @@ struct Row {
     /// Page number.
     page: Option<i32>,
     /// Scientific name.
-    /// This could be a synonym or can contain references (&) and pointers (^, *).
+    /// Special markers: = (synonym), ^ (first-word reference).
     scientific_name: String,
     /// Common names (translations).
-    /// This could contain references, pointers and plural marks.
+    /// Special markers: ~ (last-word reference).
     #[serde(rename = "common_name.hu")]
     common_name_hu: String,
 }
