@@ -1,5 +1,6 @@
 use std::error;
 use std::fmt;
+use std::fs;
 use std::io;
 
 use clap::Parser;
@@ -9,11 +10,11 @@ use serde::Deserialize;
 #[clap()]
 struct Args {
     /// Input CSV file path.
-    #[clap(short, long, default_value = "-")]
+    #[clap(short, long, default_value = "")]
     input: String,
 
     /// Output JSON file path.
-    #[clap(short, long, default_value = "-")]
+    #[clap(short, long, default_value = "")]
     output: String,
 }
 
@@ -79,6 +80,11 @@ fn main() -> Result<(), Error> {
     let args = Args::parse();
 
     let mut r = csv::Reader::from_path(args.input)?;
+    let mut out: Box<dyn io::Write> = if args.output != "" {
+        Box::new(fs::File::create(&args.output)?)
+    } else {
+        Box::new(io::stdout())
+    };
 
     {
         // Validate the headers.
@@ -102,6 +108,9 @@ fn main() -> Result<(), Error> {
     let mut ref_common_name_hu: Option<String> = None;
     let mut ref_common_name_hu_used = false;
 
+    write!(out, "[");
+
+    let mut written = false;
     for (n, res) in r.deserialize().into_iter().enumerate() {
         let mut row: Row = res?;
 
@@ -174,29 +183,42 @@ fn main() -> Result<(), Error> {
             scientific_name = &parts.last().unwrap_or(&"").trim();
         }
 
-        print!("{}", if n == 0 { "[" } else { "," });
+        if n > 0 {
+            write!(out, ",");
+        }
 
-        print!("{{");
+        write!(out, "{{");
+
         if let Some(page) = row.page {
-            print!(r#""page": {}, "#, page);
+            write!(out, r#""page": {}, "#, page);
         }
-        print!(
-            r#""scientific_name": {}"#,
-            serde_json::to_string(scientific_name)?
-        );
+
+        write!(out, r#""scientific_name": "#);
+        serde_json::to_writer(&mut out, scientific_name)?;
+
         if let Some(synonym) = synonym {
-            print!(r#", "synonym": {}"#, serde_json::to_string(synonym)?);
+            write!(out, r#", "synonym": "#);
+            serde_json::to_writer(&mut out, synonym)?;
         }
-        print!(r#", "common_names": {{"hu": ["#);
+
+        write!(out, r#", "common_names": {{"hu": ["#);
         for (i, field) in row.common_name_hu.split(';').enumerate() {
             if i != 0 {
-                print!(", ");
+                write!(out, ", ");
             }
-            print!("{}", serde_json::to_string(field.trim())?);
+            serde_json::to_writer(&mut out, field.trim())?;
         }
-        println!("]}}}}");
+        writeln!(out, "]}}}}");
+
+        written = true;
     }
-    println!("]");
+
+    if !written {
+        // Write a single newline to make sure we keep the output's "streamable" property.
+        writeln!(out, "");
+    }
+
+    writeln!(out, "]");
 
     Ok(())
 }
