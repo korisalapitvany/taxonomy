@@ -1,0 +1,15 @@
+load("//tools:source_csv.bzl", "source_csv")
+
+source_csv(
+	name = "milyen_rovar_ez",
+	#title = "Milyen rovar ez?",
+	#subtitle = "170 rovar egyszerű meghatározása",
+	#authors = ["Bellmann, Heiko"],
+	#translators = ["Kiefer, Judit"],
+	#isbn = 9786155178184,
+	#published = 2012,
+	srcs = [
+		"milyen_rovar_ez.csv",
+		"milyen_rovar_ez.json",
+	],
+)

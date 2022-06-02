@@ -12,4 +12,5 @@ rust_binary(
         proc_macro = True,
     ),
     srcs = ["src/main.rs"],
+    visibility = ["//data:__pkg__"],
 )
