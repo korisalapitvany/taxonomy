@@ -34,6 +34,7 @@ struct Row {
 enum Error {
     IoError(io::Error),
     CsvError(csv::Error),
+    JsonError(serde_json::Error),
     ValidationError(String),
 }
 
@@ -42,6 +43,7 @@ impl fmt::Display for Error {
         match self {
             Error::IoError(err) => write!(f, "{}", err),
             Error::CsvError(err) => write!(f, "{}", err),
+            Error::JsonError(err) => write!(f, "{}", err),
             Error::ValidationError(err) => write!(f, "validation error: {}", err),
         }
     }
@@ -56,6 +58,12 @@ impl From<io::Error> for Error {
 impl From<csv::Error> for Error {
     fn from(err: csv::Error) -> Self {
         Error::CsvError(err)
+    }
+}
+
+impl From<serde_json::Error> for Error {
+    fn from(err: serde_json::Error) -> Self {
+        Error::JsonError(err)
     }
 }
 
@@ -94,7 +102,7 @@ fn main() -> Result<(), Error> {
     let mut ref_common_name_hu: Option<String> = None;
     let mut ref_common_name_hu_used = false;
 
-    for res in r.deserialize() {
+    for (n, res) in r.deserialize().into_iter().enumerate() {
         let mut row: Row = res?;
 
         // Page number.
@@ -158,13 +166,37 @@ fn main() -> Result<(), Error> {
             ref_common_name_hu_used = true;
         }
 
-        println!(
-            "{} | {} | {}",
-            row.page.unwrap(),
-            row.scientific_name.replace('|', r"\|"),
-            row.common_name_hu.replace('|', r"\|"),
+        let mut scientific_name: &str = &row.scientific_name;
+        let mut synonym: Option<&str> = None;
+        if scientific_name.contains('=') {
+            let mut parts = scientific_name.split('=');
+            synonym = Some(&parts.next().unwrap_or(&"").trim());
+            scientific_name = &parts.last().unwrap_or(&"").trim();
+        }
+
+        print!("{}", if n == 0 { "[" } else { "," });
+
+        print!("{{");
+        if let Some(page) = row.page {
+            print!(r#""page": {}, "#, page);
+        }
+        print!(
+            r#""scientific_name": {}"#,
+            serde_json::to_string(scientific_name)?
         );
+        if let Some(synonym) = synonym {
+            print!(r#", "synonym": {}"#, serde_json::to_string(synonym)?);
+        }
+        print!(r#", "common_names": {{"hu": ["#);
+        for (i, field) in row.common_name_hu.split(';').enumerate() {
+            if i != 0 {
+                print!(", ");
+            }
+            print!("{}", serde_json::to_string(field.trim())?);
+        }
+        println!("]}}}}");
     }
+    println!("]");
 
     Ok(())
 }

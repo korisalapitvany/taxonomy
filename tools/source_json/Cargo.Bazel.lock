@@ -1,5 +1,5 @@
 {
-  "checksum": "d29a60c5608e6b40b74126063965625873ccba77a7ff898d5b03fbd4bef67d41",
+  "checksum": "ddf4c1d5736aed68cb3e8f6ac0199167bd596fddecaa28b3e45ce8128378b883",
   "crates": {
     "atty 0.2.14": {
       "name": "atty",
@@ -728,6 +728,39 @@
       },
       "license": "MIT OR Apache-2.0"
     },
+    "itoa 1.0.2": {
+      "name": "itoa",
+      "version": "1.0.2",
+      "repository": {
+        "Http": {
+          "url": "https://crates.io/api/v1/crates/itoa/1.0.2/download",
+          "sha256": "112c678d4050afce233f4f2852bb2eb519230b3cf12f33585275537d7e41578d"
+        }
+      },
+      "targets": [
+        {
+          "Library": {
+            "crate_name": "itoa",
+            "crate_root": "src/lib.rs",
+            "srcs": {
+              "include": [
+                "**/*.rs"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      ],
+      "library_target_name": "itoa",
+      "common_attrs": {
+        "compile_data_glob": [
+          "**"
+        ],
+        "edition": "2018",
+        "version": "1.0.2"
+      },
+      "license": "MIT OR Apache-2.0"
+    },
     "lazy_static 1.4.0": {
       "name": "lazy_static",
       "version": "1.4.0",
@@ -1415,6 +1448,81 @@
       },
       "license": "MIT OR Apache-2.0"
     },
+    "serde_json 1.0.81": {
+      "name": "serde_json",
+      "version": "1.0.81",
+      "repository": {
+        "Http": {
+          "url": "https://crates.io/api/v1/crates/serde_json/1.0.81/download",
+          "sha256": "9b7ce2b32a1aed03c558dc61a5cd328f15aff2dbc17daad8fb8af04d2100e15c"
+        }
+      },
+      "targets": [
+        {
+          "Library": {
+            "crate_name": "serde_json",
+            "crate_root": "src/lib.rs",
+            "srcs": {
+              "include": [
+                "**/*.rs"
+              ],
+              "exclude": []
+            }
+          }
+        },
+        {
+          "BuildScript": {
+            "crate_name": "build_script_build",
+            "crate_root": "build.rs",
+            "srcs": {
+              "include": [
+                "**/*.rs"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      ],
+      "library_target_name": "serde_json",
+      "common_attrs": {
+        "compile_data_glob": [
+          "**"
+        ],
+        "crate_features": [
+          "default",
+          "std"
+        ],
+        "deps": {
+          "common": [
+            {
+              "id": "itoa 1.0.2",
+              "target": "itoa"
+            },
+            {
+              "id": "ryu 1.0.10",
+              "target": "ryu"
+            },
+            {
+              "id": "serde 1.0.137",
+              "target": "serde"
+            },
+            {
+              "id": "serde_json 1.0.81",
+              "target": "build_script_build"
+            }
+          ],
+          "selects": {}
+        },
+        "edition": "2018",
+        "version": "1.0.81"
+      },
+      "build_script_attrs": {
+        "data_glob": [
+          "**"
+        ]
+      },
+      "license": "MIT OR Apache-2.0"
+    },
     "strsim 0.10.0": {
       "name": "strsim",
       "version": "0.10.0",
@@ -1565,6 +1673,10 @@
             {
               "id": "serde 1.0.137",
               "target": "serde"
+            },
+            {
+              "id": "serde_json 1.0.81",
+              "target": "serde_json"
             }
           ],
           "selects": {}
