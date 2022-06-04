@@ -1,5 +1,25 @@
 load("//tools:source_csv.bzl", "source_csv")
 
+# title = "Alkalmazott növénytan"
+# subtitle = "Növënytan jegyzet — elméleti rész"
+source_csv(
+	name = "alkalmazott_novenytan_jegyzet_1",
+	srcs = [
+		"alkalmazott_novenytan_jegyzet_1.csv",
+		"alkalmazott_novenytan_jegyzet_1.json",
+	],
+)
+
+# title = "Alkalmazott növénytan"
+# subtitle = "Növënytan jegyzet — fajleírások"
+source_csv(
+	name = "alkalmazott_novenytan_jegyzet_2",
+	srcs = [
+		"alkalmazott_novenytan_jegyzet_2.csv",
+		"alkalmazott_novenytan_jegyzet_2.json",
+	],
+)
+
 # title = "Képes zengőlégyhatározó",
 # subtitle = "(Diptera: Syrphidae)",
 # authors = ["Tóth, Sándor"],
