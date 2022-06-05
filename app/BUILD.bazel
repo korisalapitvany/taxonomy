@@ -1,0 +1,53 @@
+load("@npm//http-server:index.bzl", "http_server")
+load("@io_bazel_rules_closure//closure:defs.bzl", "closure_js_binary", "closure_js_library")
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+load(":javascript_target.bzl", "JS_TARGET", "TS_TARGET")
+load(":javascript.bzl", "iife")
+load("//config:compilation_mode.bzl", "COMPILATION_MODES")
+
+closure_js_binary(
+    name = "app",
+    language = JS_TARGET,
+    deps = [":app_lib"],
+)
+
+closure_js_library(
+    name = "app_lib",
+    srcs = [":app_iife"],
+    no_closure_library = True,
+    suppress = [
+        # Closure Compiler currently does not consume TypeScript .d.ts inputs.
+        # Therefore it has no clue about the types, so we disable some optimisations.
+        "JSC_UNKNOWN_EXPR_TYPE",
+    ],
+)
+
+iife(
+    name = "app_iife",
+    srcs = [":app_ts"],
+    replace = {
+        "let importJS;": "",
+        "importJS": "import",
+    },
+)
+
+ts_project(
+    name = "app_ts",
+    # Compilation mode must come first.
+    srcs = [":compilation_mode_ts"] + [
+        "main.ts",
+    ],
+    tsconfig = {"compilerOptions": {
+        "target": TS_TARGET,
+        "esModuleInterop": True,
+        "module": "commonjs",
+    }},
+)
+
+filegroup(
+    name = "compilation_mode_ts",
+    srcs = select({
+        "//config:" + mode: ["compilation_mode_{}.ts".format(mode)]
+        for mode in COMPILATION_MODES
+    }),
+)

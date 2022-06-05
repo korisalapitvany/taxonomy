@@ -14,3 +14,6 @@ bazel-*
 # Bundler dirs.
 .bundle/
 /vendor/
+
+# NodeJS-managed directory.
+/node_modules/

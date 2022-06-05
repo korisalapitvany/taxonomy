@@ -1,3 +1,10 @@
+workspace(
+    name = "taxonomy",
+    # Map the @npm bazel workspace to the node_modules directory.
+    # This lets Bazel use the same node_modules as other local tooling.
+    managed_directories = {"@npm": ["node_modules"]},
+)
+
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("//:workspace.bzl", "dependencies")
 
@@ -10,6 +17,19 @@ load("@io_bazel_rules_closure//closure:repositories.bzl", "rules_closure_depende
 load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
 load("@rules_rust//rust:repositories.bzl", "rules_rust_dependencies", "rust_register_toolchains")
 load("//:versions.bzl", "VERSIONS")
+
+## NodeJS:
+build_bazel_rules_nodejs_dependencies()
+
+load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "npm_install")
+
+node_repositories()
+
+npm_install(
+    name = "npm",
+    package_json = "//:package.json",
+    package_lock_json = "//:package-lock.json",
+)
 
 ## Go:
 go_rules_dependencies()
@@ -34,13 +54,6 @@ ruby_bundle(
     gemfile = "//:Gemfile",
     gemfile_lock = "//:Gemfile.lock",
 )
-
-## NodeJS:
-build_bazel_rules_nodejs_dependencies()
-
-load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "npm_install")
-
-node_repositories()
 
 ## SASS:
 load("@io_bazel_rules_sass//:defs.bzl", "sass_repositories")
