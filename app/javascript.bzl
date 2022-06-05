@@ -13,8 +13,12 @@ def iife(name, srcs, replace = None):
         visibility = ["//:__pkg__"],
     )
 
-_IIFE_WRAP_ALL = """
+_IIFE_WRAP_ALL = """\
 echo "(() => {{" > $@
-sed {replacements} $(SRCS) >> $@
+for input in $(SRCS); do
+  if [[ $$(basename "$${{input}}") != type_hints.* ]]; then
+    sed {replacements} "$${{input}}" >> $@
+  fi
+done
 echo "}})();" >> $@
 """

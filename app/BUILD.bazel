@@ -34,8 +34,11 @@ iife(
 
 ts_project(
     name = "app_ts",
-    # Compilation mode must come first.
-    srcs = [":compilation_mode_ts"] + [
+    # The type hints must come first, then compilation mode.
+    srcs = [
+        "type_hints.ts",
+        ":compilation_mode_ts",
+    ] + [
         "bootstrap.ts",
         "main.ts",
     ],
@@ -44,6 +47,10 @@ ts_project(
         "esModuleInterop": True,
         "module": "commonjs",
     }},
+    deps = [
+        "@npm//@types/node",
+        "@npm//@types/tabulator-tables",
+    ],
 )
 
 filegroup(

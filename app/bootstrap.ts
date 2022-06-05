@@ -23,18 +23,20 @@ const ownerDocument = currentScript.ownerDocument;
 const ownerHead = ownerDocument.head;
 
 async function bootstrap(): Promise<void> {
-  const results = await Promise.all([
-    fetch(relativeURL("layout.html")),
-    loadCSS(relativeURL("themes/mdn-yari.css")),
-    loadCSS(TABULATOR_CSS, TABULATOR_CSS_INTEGRITY),
+  // Start dependency loading in parallel.
+  const deps: Promise<Array<void>> = Promise.all([
     loadJS(TABULATOR_JS, TABULATOR_JS_INTEGRITY),
+    loadCSS(TABULATOR_CSS, TABULATOR_CSS_INTEGRITY),
+    loadCSS(relativeURL("themes/mdn-yari.css")),
   ]);
-  const layout: string = await results[0].text();
+  const layout = fetch(relativeURL("layout.html"));
+  const sources = fetch(relativeURL("data/sources.json"));
+  const cnames = fetch(relativeURL("data/common_names.json"));
 
-  ownerDocument.body.innerHTML = layout;
+  ownerDocument.body.innerHTML = await (await layout).text();
   ownerDocument.title = ownerDocument.body.querySelector("h1").innerText;
 
-  await main();
+  await main(sources, cnames, deps);
 }
 
 function relativeURL(path: string): string {
@@ -62,25 +64,6 @@ function addLink(link: HTMLLinkElement): void {
   ownerHead.appendChild(link);
 }
 
-function loadJS(url: string, integrity: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.integrity = integrity;
-    script.referrerPolicy = "no-referrer";
-    script.crossOrigin = "anonymous";
-    script.src = url;
-
-    script.addEventListener("load", (ev: Event): void => {
-      resolve(null);
-    });
-    script.addEventListener("error", (ev: Event): void => {
-      reject();
-    });
-
-    ownerHead.appendChild(script);
-  });
-}
-
 function loadCSS(url: string, integrity: string = ""): Promise<void> {
   return new Promise((resolve, reject) => {
     const link: HTMLLinkElement = mkLink(url);
@@ -98,6 +81,25 @@ function loadCSS(url: string, integrity: string = ""): Promise<void> {
     });
 
     addLink(link);
+  });
+}
+
+function loadJS(url: string, integrity: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.integrity = integrity;
+    script.referrerPolicy = "no-referrer";
+    script.crossOrigin = "anonymous";
+    script.src = url;
+
+    script.addEventListener("load", (ev: Event): void => {
+      resolve(null);
+    });
+    script.addEventListener("error", (ev: Event): void => {
+      reject();
+    });
+
+    ownerHead.appendChild(script);
   });
 }
 
