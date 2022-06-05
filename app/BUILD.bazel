@@ -36,6 +36,7 @@ ts_project(
     name = "app_ts",
     # Compilation mode must come first.
     srcs = [":compilation_mode_ts"] + [
+        "bootstrap.ts",
         "main.ts",
     ],
     tsconfig = {"compilerOptions": {
