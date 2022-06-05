@@ -8,4 +8,5 @@ source_repository(
         "alkalmazott_novenytan_jegyzet_1",
         "alkalmazott_novenytan_jegyzet_2",
     ],
+    visibility = ["//:__pkg__"],
 )

@@ -1,4 +1,4 @@
-def source_repository(name, sources):
+def source_repository(name, sources, **kwargs):
     native.genrule(
         name = name,
         srcs = [
@@ -13,6 +13,7 @@ def source_repository(name, sources):
             "common_names.json",
         ],
         cmd = _MERGE_DATA,
+        **kwargs
     )
 
     for source in sources:

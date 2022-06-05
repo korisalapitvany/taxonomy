@@ -15,6 +15,7 @@ genrule(
     srcs = [
         ":index",
         "//app:layout",
+        "//data",
         "//themes",
     ] + select({
         "//config:opt": [
@@ -28,17 +29,21 @@ genrule(
         "server_root/index.html",
         "server_root/taxonomy/app.mjs",
         "server_root/taxonomy/layout.html",
+        "server_root/taxonomy/data/common_names.json",
+        "server_root/taxonomy/data/sources.json",
         "server_root/taxonomy/themes/mdn-yari.css",
         "server_root/taxonomy/themes/mdn-yari.css.map",
     ],
     cmd = r"""
 mkdir -p "$(RULEDIR)/server_root"
 mkdir -p "$(RULEDIR)/server_root/taxonomy"
+mkdir -p "$(RULEDIR)/server_root/taxonomy/data"
 mkdir -p "$(RULEDIR)/server_root/taxonomy/themes"
 
 cp $(locations :index) "$(RULEDIR)/server_root"
 cp $(locations //app:layout) "$(RULEDIR)/server_root/taxonomy"
 
+cp $(locations //data) "$(RULEDIR)/server_root/taxonomy/data"
 cp $(locations //themes) "$(RULEDIR)/server_root/taxonomy/themes"
 """ + select({
         "//config:opt": """

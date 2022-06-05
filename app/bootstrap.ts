@@ -1,53 +1,50 @@
-const LAYOUT_HTML: string = "layout.html";
-const THEME_CSS: string = "themes/mdn-yari.css";
-
 const COPT: boolean = COMPILATION_MODE == "opt";
+const MIN: string = COPT ? ".min" : "";
+
+const CDNJS: string = "https://cdnjs.cloudflare.com/ajax/libs";
+
+const TABULATOR: string = `${CDNJS}/tabulator/5.2.7`;
+const TABULATOR_JS: string = `${TABULATOR}/js/tabulator${MIN}.js`;
+const TABULATOR_CSS: string = `${TABULATOR}/css/tabulator_materialize${MIN}.css`;
+
+const TABULATOR_JS_INTEGRITY = COPT ?
+  "sha512-X+/BF5SW/6WTNbMtxDCRauCI+N4bd81XQFTTK+Eo4yveAFuEIGDzLV9zaxJLFYl5gzWmbMZb27c9k4fds22khA==" :
+  "sha512-Q1KM/vQvzzss5Qt0GMLZD5bcM+e471q1P6c1lH3PtBx1WkY0AsVWddqD4AN6rVKtqhoSv5hELg25X8qbMoJW9w==";
+const TABULATOR_CSS_INTEGRITY = COPT ?
+  "sha512-iNQ9peZHckZCzkkHjF4H6BsbP4W/gloaWm3SbnVXe5CY62LDVDRfvFpC7V2H+GpWsVP7IbfY/t7jjMYAy3bBFQ==" :
+  "sha512-+ZuRItu0WRx+t277kyj24bHknqTYYx+PT9OIDaa8sb2OKBohrUojmT80UH/zEjt4WFKdQTmqNENrMb8qSNkEQw==";
 
 const currentScript: HTMLScriptElement =
   (document["currentScript"] || Array.from(
     // In case this script is loaded as a module:
     document.querySelectorAll('script[type=module]'),
   ).pop()) as HTMLScriptElement;
-const currentScriptSrc = currentScript.src;
 const ownerDocument = currentScript.ownerDocument;
 const ownerHead = ownerDocument.head;
 
-const cleanups: Array<() => void> = [
-  (): void => { currentScript.remove(); },
-];
-
 async function bootstrap(): Promise<void> {
-  await mainCSS;
-  const layout = await layoutHTML;
+  const results = await Promise.all([
+    fetch(relativeURL("layout.html")),
+    loadCSS(relativeURL("themes/mdn-yari.css")),
+    loadCSS(TABULATOR_CSS, TABULATOR_CSS_INTEGRITY),
+    loadJS(TABULATOR_JS, TABULATOR_JS_INTEGRITY),
+  ]);
+  const layout: string = await results[0].text();
+
   ownerDocument.body.innerHTML = layout;
   ownerDocument.title = ownerDocument.body.querySelector("h1").innerText;
 
-  main();
-
-  cleanups.forEach((cleanup) => cleanup());
+  await main();
 }
 
-function prepare(): void {
-  const style = ownerDocument.createElement("style");
-  // Blank loading style, unless the script was loaded asynchronously.
-  style.textContent = ":root{display:none!important}";
-
-  ownerHead.append(style);
-  cleanups.push((): void => {
-    style.remove();
-  });
+function relativeURL(path: string): string {
+   return currentScript.src.replace(/[^\/]+$/, path);
 }
-
-const layoutHTML = new Promise<string>(async (resolve) => {
-  const url: string = currentScriptSrc.replace(/[^\/]+$/, LAYOUT_HTML);
-  const res: Response = await fetch(url);
-  resolve(await res.text());
-});
 
 function fontCSS(): void {
   const api: string = "https://fonts.googleapis.com"
-  addLink(mkLink(api, true));
   addLink(mkLink("https://fonts.gstatic.com", true, true));
+  addLink(mkLink(api, true));
   addLink(mkLink(`${api}/css2?family=Inter&display=swap`));
 }
 
@@ -65,20 +62,44 @@ function addLink(link: HTMLLinkElement): void {
   ownerHead.appendChild(link);
 }
 
-const mainCSS = new Promise((resolve, reject) => {
-  const url: string = currentScriptSrc.replace(/[^\/]+$/, THEME_CSS);
-  const link: HTMLLinkElement = mkLink(url);
+function loadJS(url: string, integrity: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.integrity = integrity;
+    script.referrerPolicy = "no-referrer";
+    script.crossOrigin = "anonymous";
+    script.src = url;
 
-  link.addEventListener("load", (ev: Event): void => {
-    resolve(null);
+    script.addEventListener("load", (ev: Event): void => {
+      resolve(null);
+    });
+    script.addEventListener("error", (ev: Event): void => {
+      reject();
+    });
+
+    ownerHead.appendChild(script);
   });
+}
 
-  link.addEventListener("error", (ev: Event): void => {
-    reject();
+function loadCSS(url: string, integrity: string = ""): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const link: HTMLLinkElement = mkLink(url);
+    if (integrity) {
+      link.integrity = integrity;
+      link.referrerPolicy = "no-referrer";
+      link.crossOrigin = "anonymous";
+    }
+
+    link.addEventListener("load", (ev: Event): void => {
+      resolve(null);
+    });
+    link.addEventListener("error", (ev: Event): void => {
+      reject();
+    });
+
+    addLink(link);
   });
-
-  addLink(link);
-});
+}
 
 // Font loading is fire-and-forget.
 // We can start rendering without fonts, and we use font-display: swap anyway.
@@ -88,7 +109,6 @@ if ((ownerDocument.readyState === "complete") || currentScript.async || currentS
   // Assume the DOM is already loaded and ready to be parsed.
   bootstrap();
 } else {
-  prepare();
   // Wait for DOMContentLoaded.
   ownerDocument.addEventListener("DOMContentLoaded", (ev: Event): void => {
     bootstrap();
