@@ -1,8 +1,6 @@
+load(":compilation_mode.bzl", "COMPILATION_MODES")
+
 [config_setting(
     name = mode,
     values = {"compilation_mode": mode},
-) for mode in [
-    "opt",
-    "fastbuild",
-    "dbg",
-]]
+) for mode in COMPILATION_MODES]

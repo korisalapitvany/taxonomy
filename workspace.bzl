@@ -1,4 +1,5 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", _http_archive = "http_archive")
+load("//app:javascript_target.bzl", "JS_TARGET")
 load("//:versions.bzl", "CHECKSUMS", "VERSIONS")
 
 def http_archive(name, **kwargs):
@@ -53,14 +54,23 @@ def dependencies():
     )
 
     http_archive(
-        name = "io_bazel_rules_sass",
-        urls = ["https://github.com/bazelbuild/rules_sass/archive/refs/tags/{version}.tar.gz"],
-        strip_prefix = "rules_sass-{version}",
+        name = "io_bazel_rules_closure",
+        strip_prefix = "rules_closure-{version}",
+        urls = ["https://github.com/bazelbuild/rules_closure/archive/{version}.zip"],
+        patch_cmds = _patch_files({
+            "closure/private/defs.bzl": 's/JS_LANGUAGE_IN = "STABLE"/JS_LANGUAGE_IN = "{}"/'.format(JS_TARGET),
+        }),
     )
 
     http_archive(
         name = "io_bazel_rules_go",
         urls = ["https://github.com/bazelbuild/rules_go/releases/download/v{version}/rules_go-v{version}.zip"],
+    )
+
+    http_archive(
+        name = "io_bazel_rules_sass",
+        urls = ["https://github.com/bazelbuild/rules_sass/archive/refs/tags/{version}.tar.gz"],
+        strip_prefix = "rules_sass-{version}",
     )
 
     http_archive(
@@ -74,3 +84,10 @@ def dependencies():
         name = "rules_rust",
         urls = ["https://github.com/bazelbuild/rules_rust/releases/download/{version}/rules_rust-v{version}.tar.gz"],
     )
+
+def _patch_files(patch_map):
+    """Generates a list of 'sed' commands that patch files in-place."""
+    return [
+        "sed --in-place --regexp-extended '{}' \"{}\"".format(regex, filename)
+        for filename, regex in sorted(patch_map.items())
+    ]
