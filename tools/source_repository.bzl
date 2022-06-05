@@ -1,15 +1,3 @@
-MERGE_JSON = """\
-echo -n '{' >$@
-for input in $(SRCS); do
-  echo >>$@
-  echo '"'$$(basename $${input} .json)'":' >>$@
-  cat $${input} >>$@
-  echo -n , >>$@
-done
-echo '}' >>$@
-sed --regexp-extended --in-place 's/^,}$$/}/' $@
-"""
-
 def source_repository(name, sources):
     native.genrule(
         name = name,
@@ -18,7 +6,7 @@ def source_repository(name, sources):
             for source in sources
         ],
         outs = ["data.json"],
-        cmd = MERGE_JSON,
+        cmd = _MERGE_JSON,
     )
 
     for source in sources:
@@ -75,3 +63,15 @@ _source_csv = rule(
         ),
     },
 )
+
+_MERGE_JSON = """\
+echo -n '{' >$@
+for input in $(SRCS); do
+  echo >>$@
+  echo '"'$$(basename $${input} .json)'":' >>$@
+  cat $${input} >>$@
+  echo -n , >>$@
+done
+echo '}' >>$@
+sed --regexp-extended --in-place 's/^,}$$/}/' $@
+"""
