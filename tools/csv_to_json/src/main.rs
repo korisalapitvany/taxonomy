@@ -178,21 +178,21 @@ fn main() -> Result<(), Error> {
         write!(out, "{{")?;
 
         if let Some(page) = row.page {
-            write!(out, r#""page":{},"#, page)?;
+            write!(out, r#""page": {}, "#, page)?;
         }
 
-        write!(out, r#""scientific_name":"#)?;
+        write!(out, r#""scientific_name": "#)?;
         serde_json::to_writer(&mut out, scientific_name)?;
 
         if let Some(synonym) = synonym {
-            write!(out, r#","synonym":"#)?;
+            write!(out, r#", "synonym": "#)?;
             serde_json::to_writer(&mut out, synonym)?;
         }
 
-        write!(out, r#","common_names":{{"hu":["#)?;
+        write!(out, r#", "common_names": {{"hu": ["#)?;
         for (i, field) in row.common_name_hu.split(';').enumerate() {
             if i != 0 {
-                write!(out, ",")?;
+                write!(out, ", ")?;
             }
             serde_json::to_writer(&mut out, field.trim())?;
         }

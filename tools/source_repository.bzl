@@ -26,10 +26,10 @@ def source_repository(name, sources):
             srcs = ["//tools:source_json_test.sh"],
             data = [
                 ":" + source,
-                source + ".data.json",
+                source + ".rows.json",
             ],
             env = {
-                "INPUT_JSON": "$(rootpath " + source + ".data.json)",
+                "INPUT_JSON": "$(rootpath " + source + ".rows.json)",
                 "EXPECTED_JSON": "$(rootpath :" + source + ")",
             },
         )
@@ -75,13 +75,11 @@ echo -n '{' >$(location sources.json)
 echo -n '{' >$(location common_names.json)
 for input in $(SRCS); do
   if [[ "$${input}" != *.data.json ]]; then
-    echo >>$(location sources.json)
     echo '"'$$(basename $${input} .json)'":' >>$(location sources.json)
     cat $${input} >>$(location sources.json)
     echo -n , >>$(location sources.json)
   else
-    echo >>$(location common_names.json)
-    echo '"'$$(basename $${input} .json)'":' >>$(location common_names.json)
+    echo '"'$$(basename $${input} .data.json)'":' >>$(location common_names.json)
     cat $${input} >>$(location common_names.json)
     echo -n , >>$(location common_names.json)
   fi
