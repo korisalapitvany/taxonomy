@@ -10,3 +10,7 @@
 
 # Bazel workspace symlinks.
 bazel-*
+
+# Bundler dirs.
+.bundle/
+/vendor/

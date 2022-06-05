@@ -1,3 +1,16 @@
 load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
 
 buildifier(name = "buildifier")
+
+genrule(
+    name = "index",
+    srcs = [
+        "index.slim",
+        "@bundle//:bin/slimrb",
+    ],
+    outs = ["index.html"],
+    cmd = " ".join([
+        'export GEM_PATH="external/bundle/lib/ruby/3.1.0"',
+        '$(rootpath @bundle//:bin/slimrb) < "$(rootpath index.slim)" > $@',
+    ]),
+)

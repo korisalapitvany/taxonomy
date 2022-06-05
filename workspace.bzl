@@ -25,6 +25,12 @@ def http_archive(name, **kwargs):
 def dependencies():
     """Workspace dependencies."""
     http_archive(
+        name = "bazelruby_rules_ruby",
+        strip_prefix = "rules_ruby-{version}",
+        urls = ["https://github.com/bazelruby/rules_ruby/archive/{version}.zip"],
+    )
+
+    http_archive(
         name = "com_github_bazelbuild_buildtools",
         strip_prefix = "buildtools-{version}",
         urls = ["https://github.com/bazelbuild/buildtools/archive/refs/tags/{version}.tar.gz"],
