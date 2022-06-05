@@ -27,7 +27,6 @@ def source_csv(name, srcs):
         },
     )
 
-
 def _source_csv_impl(ctx):
     output_json = ctx.actions.declare_file(ctx.attr.name + ".data.json")
 
