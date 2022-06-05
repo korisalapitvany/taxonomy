@@ -25,29 +25,43 @@ def http_archive(name, **kwargs):
 def dependencies():
     """Workspace dependencies."""
     http_archive(
-        name = "mdn_yari",
-        build_file = "//theme:mdn_yari.bazel",
-        strip_prefix = "yari-{version}",
-        urls = ["https://github.com/mdn/yari/archive/{version}.zip"],
-    )
-
-    http_archive(
         name = "com_github_bazelbuild_buildtools",
         strip_prefix = "buildtools-{version}",
         urls = ["https://github.com/bazelbuild/buildtools/archive/refs/tags/{version}.tar.gz"],
     )
 
     http_archive(
-        name = "io_bazel_rules_go",
-        urls = [
-            "https://github.com/bazelbuild/rules_go/releases/download/v{version}/rules_go-v{version}.zip",
-        ],
-    )
-
-    http_archive(
         name = "com_google_protobuf",
         strip_prefix = "protobuf-3.{version}",
         urls = ["https://github.com/protocolbuffers/protobuf/releases/download/v{version}/protobuf-all-{version}.tar.gz"],
+    )
+
+    http_archive(
+        name = "io_bazel_rules_go",
+        urls = ["https://github.com/bazelbuild/rules_go/releases/download/v{version}/rules_go-v{version}.zip"],
+    )
+
+    http_archive(
+        name = "build_bazel_rules_nodejs",
+        urls = ["https://github.com/bazelbuild/rules_nodejs/releases/download/{version}/rules_nodejs-{version}.tar.gz"],
+    )
+
+    http_archive(
+        name = "io_bazel_rules_sass",
+        urls = ["https://github.com/bazelbuild/rules_sass/archive/refs/tags/{version}.tar.gz"],
+        strip_prefix = "rules_sass-{version}",
+    )
+
+    http_archive(
+        name = "io_bazel_rules_go",
+        urls = ["https://github.com/bazelbuild/rules_go/releases/download/v{version}/rules_go-v{version}.zip"],
+    )
+
+    http_archive(
+        name = "mdn_yari",
+        build_file = "//themes:mdn_yari.bazel",
+        strip_prefix = "yari-{version}",
+        urls = ["https://github.com/mdn/yari/archive/{version}.zip"],
     )
 
     http_archive(
