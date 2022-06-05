@@ -1,5 +1,9 @@
 doctype html
 meta charset="utf-8"
+link rel="preconnect" href="https://fonts.googleapis.com"
+link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""
+link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+link rel="stylesheet" href="themes/mdn-yari.css"
 
 .page-wrapper.document-page
   header.top-navigation
@@ -19,7 +23,12 @@ meta charset="utf-8"
 .page-footer
   .page-footer-legal
     p.page-footer-legal-text
-      span.theme-name Theme: —
+      span.theme-name
+        ' Theme:
+      span.placeholder
+        '  —
       | , licensed under
-      span.theme-license< —
+      span.theme-license<
+      span.placeholder
+        '  —
       | .
