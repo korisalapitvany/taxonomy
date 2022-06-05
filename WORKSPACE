@@ -38,16 +38,20 @@ http_archive(
     ],
 )
 
+load("//:workspace.bzl", "dependencies")
+
+dependencies()
+
 load("@com_google_protobuf//:protobuf_deps.bzl", "protobuf_deps")
 load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
 load("@rules_rust//rust:repositories.bzl", "rules_rust_dependencies", "rust_register_toolchains")
-load("//:versions.bzl", "GO_VERSION")
+load("//:versions.bzl", "VERSIONS")
 
 go_rules_dependencies()
 
 protobuf_deps()
 
-go_register_toolchains(version = GO_VERSION)
+go_register_toolchains(version = VERSIONS["go"])
 
 rules_rust_dependencies()
 
