@@ -17,5 +17,5 @@ def slim_lib(name, srcs, **kwargs):
             "//config:opt": " ".join(cmd),
             "//conditions:default": " ".join(cmd + ["--pretty"]),
         }),
-        **kwargs,
+        **kwargs
     )

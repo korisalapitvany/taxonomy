@@ -4,7 +4,6 @@ load("//tools:slim_lib.bzl", "slim_lib")
 
 buildifier(name = "buildifier")
 
-
 http_server(
     name = "server",
     args = ["server_root"],

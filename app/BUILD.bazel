@@ -8,8 +8,8 @@ load("//tools:slim_lib.bzl", "slim_lib")
 closure_js_binary(
     name = "app",
     language = JS_TARGET,
-    deps = [":app_lib"],
     visibility = ["//:__pkg__"],
+    deps = [":app_lib"],
 )
 
 closure_js_library(
