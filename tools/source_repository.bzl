@@ -1,12 +1,13 @@
 MERGE_JSON = """\
-echo -n '[' >$@
+echo -n '{' >$@
 for input in $(SRCS); do
   echo >>$@
+  echo '"'$$(basename $${input} .json)'":' >>$@
   cat $${input} >>$@
   echo -n , >>$@
 done
-echo ']' >>$@
-sed --regexp-extended --in-place 's/^,]$$/]/' $@
+echo '}' >>$@
+sed --regexp-extended --in-place 's/^,}$$/}/' $@
 """
 
 
