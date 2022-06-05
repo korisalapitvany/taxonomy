@@ -1,24 +1,58 @@
 load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
+load("@npm//http-server:index.bzl", "http_server")
+load("//tools:slim_lib.bzl", "slim_lib")
 
 buildifier(name = "buildifier")
 
-CMDS = [
-    "LANG=en_US.UTF-8",
-    'GEM_PATH="external/bundle/lib/ruby/3.1.0"',
-    "$(rootpath @bundle//:bin/slimrb)",
-    '"$(rootpath index.slim)"',
-    ">$@",
-]
+
+http_server(
+    name = "server",
+    args = ["server_root"],
+    data = [":server_root_files"],
+)
 
 genrule(
-    name = "index",
+    name = "server_root_files",
     srcs = [
-        "index.slim",
-        "@bundle//:bin/slimrb",
-    ],
-    outs = ["index.html"],
-    cmd = select({
-        "//config:opt": " ".join(CMDS),
-        "//conditions:default": " ".join(CMDS + ["--pretty"]),
+        ":index",
+        "//app:layout",
+        "//themes",
+    ] + select({
+        "//config:opt": [
+            "//app",
+        ],
+        "//conditions:default": [
+            "//app:app_iife",
+        ],
     }),
+    outs = [
+        "server_root/index.html",
+        "server_root/taxonomy/app.mjs",
+        "server_root/taxonomy/layout.html",
+        "server_root/taxonomy/themes/mdn-yari.css",
+        "server_root/taxonomy/themes/mdn-yari.css.map",
+    ],
+    cmd = r"""
+mkdir -p "$(RULEDIR)/server_root"
+mkdir -p "$(RULEDIR)/server_root/taxonomy"
+mkdir -p "$(RULEDIR)/server_root/taxonomy/themes"
+
+cp $(locations :index) "$(RULEDIR)/server_root"
+cp $(locations //app:layout) "$(RULEDIR)/server_root/taxonomy"
+
+cp $(locations //themes) "$(RULEDIR)/server_root/taxonomy/themes"
+""" + select({
+        "//config:opt": """
+cp "$(RULEDIR)/app/app.js" "$(RULEDIR)/server_root/taxonomy/app.mjs"
+""",
+        "//conditions:default": """
+cp "$(location //app:app_iife)" "$(RULEDIR)/server_root/taxonomy/app.mjs"
+""",
+    }),
+    local = True,
+)
+
+slim_lib(
+    name = "index",
+    srcs = ["index.slim"],
 )

@@ -10,6 +10,7 @@ def iife(name, srcs, replace = None):
                 for src, dst in (replace or {}).items()
             ]),
         ),
+        visibility = ["//:__pkg__"],
     )
 
 _IIFE_WRAP_ALL = """

@@ -1,14 +1,15 @@
-load("@npm//http-server:index.bzl", "http_server")
 load("@io_bazel_rules_closure//closure:defs.bzl", "closure_js_binary", "closure_js_library")
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 load(":javascript_target.bzl", "JS_TARGET", "TS_TARGET")
 load(":javascript.bzl", "iife")
 load("//config:compilation_mode.bzl", "COMPILATION_MODES")
+load("//tools:slim_lib.bzl", "slim_lib")
 
 closure_js_binary(
     name = "app",
     language = JS_TARGET,
     deps = [":app_lib"],
+    visibility = ["//:__pkg__"],
 )
 
 closure_js_library(
@@ -50,4 +51,10 @@ filegroup(
         "//config:" + mode: ["compilation_mode_{}.ts".format(mode)]
         for mode in COMPILATION_MODES
     }),
+)
+
+slim_lib(
+    name = "layout",
+    srcs = ["layout.slim"],
+    visibility = ["//:__pkg__"],
 )
