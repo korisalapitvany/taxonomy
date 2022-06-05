@@ -10,7 +10,6 @@ echo '}' >>$@
 sed --regexp-extended --in-place 's/^,}$$/}/' $@
 """
 
-
 def source_repository(name, sources):
     native.genrule(
         name = name,
