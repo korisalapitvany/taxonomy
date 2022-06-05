@@ -1,50 +1,11 @@
-load("//tools:source_csv.bzl", "source_csv")
+load("//tools:source_repository.bzl", "source_repository")
 
-# title = "Alkalmazott növénytan"
-# subtitle = "Növënytan jegyzet — elméleti rész"
-source_csv(
-    name = "alkalmazott_novenytan_jegyzet_1",
-    srcs = [
-        "alkalmazott_novenytan_jegyzet_1.csv",
-        "alkalmazott_novenytan_jegyzet_1.json",
-    ],
-)
-
-# title = "Alkalmazott növénytan"
-# subtitle = "Növënytan jegyzet — fajleírások"
-source_csv(
-    name = "alkalmazott_novenytan_jegyzet_2",
-    srcs = [
-        "alkalmazott_novenytan_jegyzet_2.csv",
-        "alkalmazott_novenytan_jegyzet_2.json",
-    ],
-)
-
-# title = "Képes zengőlégyhatározó",
-# subtitle = "(Diptera: Syrphidae)",
-# authors = ["Tóth, Sándor"],
-# publish_year = 2017,
-# doi = "10.24369/eANP.2017.15.1",
-# issn = 20613911,
-source_csv(
-    name = "kepes_zengolegyhatarozo",
-    srcs = [
-        "kepes_zengolegyhatarozo.csv",
-        "kepes_zengolegyhatarozo.json",
-    ],
-)
-
-# title = "Milyen rovar ez?",
-# subtitle = "170 rovar egyszerű meghatározása",
-# authors = ["Bellmann, Heiko"],
-# translators = ["Kiefer, Judit"],
-# isbn = 9786155178184,
-# google_books = "C6JZlAEACAAJ",
-# publish_year = 2012,
-source_csv(
-    name = "milyen_rovar_ez",
-    srcs = [
-        "milyen_rovar_ez.csv",
-        "milyen_rovar_ez.json",
+source_repository(
+    name = "data",
+    sources = [
+        "milyen_rovar_ez",
+        "kepes_zengolegyhatarozo",
+        "alkalmazott_novenytan_jegyzet_1",
+        "alkalmazott_novenytan_jegyzet_2",
     ],
 )

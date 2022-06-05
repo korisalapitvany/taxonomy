@@ -1,31 +1,44 @@
-def source_csv(name, srcs):
-    if len(srcs) != 2:
-        fail("expected exactly 2 source files, got: " + str(len(srcs)))
+MERGE_JSON = """\
+echo -n '[' >$@
+for input in $(SRCS); do
+  echo >>$@
+  cat $${input} >>$@
+  echo -n , >>$@
+done
+echo ']' >>$@
+sed --regexp-extended --in-place 's/^,]$$/]/' $@
+"""
 
-    srcs_csv = [src for src in srcs if src.endswith(".csv")]
-    srcs_json = [src for src in srcs if src.endswith(".json")]
 
-    if not srcs_csv:
-        fail("CSV source file missing")
-    if not srcs_json:
-        fail("JSON source file missing")
-
-    _source_csv(
+def source_repository(name, sources):
+    native.genrule(
         name = name,
-        src = srcs_csv[0],
+        srcs = [
+            source + ".json"
+            for source in sources
+        ],
+        outs = ["data.json"],
+        cmd = MERGE_JSON,
     )
 
-    native.sh_test(
-        name = name + "_test",
-        srcs = ["//tools:source_json_test.sh"],
-        data = srcs_json + [
-            ":" + name,
-        ],
-        env = {
-            "INPUT_JSON": "$(rootpath " + srcs_json[0] + ")",
-            "EXPECTED_JSON": "$(rootpath :" + name + ")",
-        },
-    )
+    for source in sources:
+        _source_csv(
+            name = source,
+            src = source + ".csv",
+        )
+
+        native.sh_test(
+            name = source + "_test",
+            srcs = ["//tools:source_json_test.sh"],
+            data = [
+                ":" + source,
+                source + ".data.json",
+            ],
+            env = {
+                "INPUT_JSON": "$(rootpath " + source + ".data.json)",
+                "EXPECTED_JSON": "$(rootpath :" + source + ")",
+            },
+        )
 
 def _source_csv_impl(ctx):
     output_json = ctx.actions.declare_file(ctx.attr.name + ".data.json")
