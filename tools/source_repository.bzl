@@ -2,11 +2,17 @@ def source_repository(name, sources):
     native.genrule(
         name = name,
         srcs = [
+            ":" + source
+            for source in sources
+        ] + [
             source + ".json"
             for source in sources
         ],
-        outs = ["data.json"],
-        cmd = _MERGE_JSON,
+        outs = [
+            "sources.json",
+            "common_names.json",
+        ],
+        cmd = _MERGE_DATA,
     )
 
     for source in sources:
@@ -64,14 +70,26 @@ _source_csv = rule(
     },
 )
 
-_MERGE_JSON = """\
-echo -n '{' >$@
+_MERGE_DATA = """\
+echo -n '{' >$(location sources.json)
+echo -n '{' >$(location common_names.json)
 for input in $(SRCS); do
-  echo >>$@
-  echo '"'$$(basename $${input} .json)'":' >>$@
-  cat $${input} >>$@
-  echo -n , >>$@
+  if [[ "$${input}" != *.data.json ]]; then
+    echo >>$(location sources.json)
+    echo '"'$$(basename $${input} .json)'":' >>$(location sources.json)
+    cat $${input} >>$(location sources.json)
+    echo -n , >>$(location sources.json)
+  else
+    echo >>$(location common_names.json)
+    echo '"'$$(basename $${input} .json)'":' >>$(location common_names.json)
+    cat $${input} >>$(location common_names.json)
+    echo -n , >>$(location common_names.json)
+  fi
 done
-echo '}' >>$@
-sed --regexp-extended --in-place 's/^,}$$/}/' $@
+echo '}' >>$(location sources.json)
+echo '}' >>$(location common_names.json)
+sed --regexp-extended --in-place 's/^,}$$/}/' $(location sources.json)
+sed --regexp-extended --in-place 's/^,}$$/}/' $(location common_names.json)
+
+touch $(location common_names.json)
 """
