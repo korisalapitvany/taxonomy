@@ -15,6 +15,19 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
     location.reload();
   });
 
+  let active: boolean = false;
+  const filter: HTMLInputElement = document.getElementById("filter") as HTMLInputElement;
+  document.body.addEventListener("keydown", (evt: KeyboardEvent): void => {
+    if (evt.key === "/" && !active) {
+      evt.preventDefault();
+      filter.focus();
+      active = true;
+    }
+  });
+  filter.addEventListener("blur", () => {
+    active = false;
+  });
+
   sources.then(async (res) => {
     let num: number = 1;
     for (let pair of Object.entries(await res.json())) {

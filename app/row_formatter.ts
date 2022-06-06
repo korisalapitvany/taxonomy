@@ -18,6 +18,29 @@ class INatResults {
 
 interface INatResult {
   id: number;
+  name: string;
+  preferred_common_name: string;
+  matched_term: string;
+  observations_count: number;
+  taxon_schemes_count: number;
+  ancestry: string;
+  is_active: boolean;
+  flag_counts: {
+    resolved: number;
+    unresolved: number;
+  };
+  wikipedia_url: string;
+  current_synonymous_taxon_ids: any;
+  iconic_taxon_id: number;
+  iconic_taxon_name: string;
+  rank_level: number;
+  taxon_changes_count: number;
+  atlas_id: any;
+  complete_species_count: any;
+  parent_id: number;
+  rank: string;
+  extinct: boolean;
+  ancestor_ids: Array<number>;
   default_photo: {
     attribution: string;
     square_url: string;
@@ -36,7 +59,7 @@ function fmtRow(row: typeof RowComponent): void {
 }
 
 async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
-  const url: string = `${INAT_API}/taxa?q=${encodeURIComponent(key)}&per_page=1`;
+  const url: string = `${INAT_API}/taxa?q=${encodeURIComponent(key)}&locale=${LANG}&per_page=1`;
 
   let res = INAT[key];
   if (!res) {
@@ -67,5 +90,15 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
   }
 
   // TODO: Update the row!
-  photo.style.backgroundImage = `url(${data.default_photo.square_url})`;
+  const def = data.default_photo;
+  if (def) {
+    photo.style.backgroundImage = `url(${def.square_url})`;
+    photo.title = def
+      .attribution
+      .replaceAll(/\(c\)/g, "©")
+      // TODO: Source translations from the layout file!
+      .replaceAll(/\ball rights reserved\b/g, "minden jog fenntartva")
+      .replaceAll(/\bsome rights reserved\b/g, "néhány jog fenntartva")
+      .replaceAll(/\buploaded by\b/g, "feltöltötte:");
+  }
 }
