@@ -10,6 +10,10 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
   document.getElementById("toggle-caps").addEventListener("click", (): void => {
     document.getElementById("common-names").classList.toggle("common-names-lower");
   });
+  document.getElementById("refresh-all").addEventListener("click", (): void => {
+    localStorage.clear();
+    location.reload();
+  });
 
   sources.then(async (res) => {
     let num: number = 1;
