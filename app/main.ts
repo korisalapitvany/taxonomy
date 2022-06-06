@@ -1,38 +1,58 @@
-function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>) {
+const LANG: string = "hu";
+
+function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): Promise<void> {
   sources.then(async (res) => {
-    await deps;
-    displaySources(await res.json());
+    let num: number = 1;
+    for (let pair of Object.entries(await res.json())) {
+      const [key, val] = pair as[string, Source];
+      val.num = num++;
+      val.id = key;
+
+      SOURCES[key] = val;
+      displaySources();
+    };
   });
 
-  cnames.then(async (res) => {
+  return new Promise(async (resolve) => {
+    for (let [key, val] of Object.entries(await (await cnames).json())) {
+      CNAMES[key] = val as Array<CommonName>;
+    }
     await Promise.all([sources, deps]);
-    displayCommonNames(await res.json());
+    displayCommonNames();
   });
 }
 
-function displaySources(data): void {
-  console.log("SOURCES: loaded!");
+const SOURCES: { [key: string]: Source } = {};
+const CNAMES: { [key: string]: Array<CommonName> } = {};
 
-  new Tabulator("#sources", {
-    data: Object.values(data),
-    autoColumns: true,
-  });
-}
+interface Source {
+  title: string;
+  subtitle: string;
+
+  // Dynamically added:
+  num: number;
+  id: string;
+};
 
 interface CommonName {
   page: number;
   scientific_name: string;
+  synonym: string;
   common_names: Translations;
+
+  // Dynamically added fields:
   source_id: string;
 };
 
 type Translations = { [key: string]: Array<string> };
 
+function displaySources(): void {
+}
 
-function displayCommonNames(data: {[key: string]: Array<CommonName>}): void {
+function displayCommonNames(): void {
   const cnames: { [key: string]: Array<CommonName> } = {};
 
-  Object.values(data).reduce((x, y) => x.concat(y)).forEach(row => {
+  Object.values(CNAMES).reduce((x, y) => x.concat(y)).forEach(row => {
     (cnames[row.scientific_name] = cnames[row.scientific_name] || []).push(row);
   });
 
@@ -41,28 +61,33 @@ function displayCommonNames(data: {[key: string]: Array<CommonName>}): void {
       const cname = cnames.shift();
       cnames.forEach(extra => {
         // TODO: Remove duplicates!
-        cname.common_names.hu.concat(extra.common_names.hu);
+        cname.common_names[LANG].concat(extra.common_names[LANG]);
       })
       return cname;
     }),
     pagination: true,
     paginationSize: 10,
     columns: [
-      {title: "Magyar nevek", field: "common_names", cssClass: "common_names", formatter: joinNames},
-      {title: "Tud. név", field: "scientific_name", cssClass: "scientific_name", formatter: fmtScientificName},
+      {title: "Magyar nevek", field: "common_names", cssClass: "common_names", width: "60%", formatter: fmtCommonNames},
+      {title: "Tud. név", field: "scientific_name", cssClass: "scientific_name", width: "40%", formatter: fmtScientificName},
     ],
   });
 }
 
-function fmtScientificName(cell, formatterParams, onRendered): HTMLDivElement {
-  // TODO: Add a note when a synonym was used!
+function fmtScientificName(cell, formatterParams, onRendered): HTMLDivElement | string {
+  const data: CommonName = cell.getData();
+  if (!data.synonym) {
+    return cell.getValue();
+  }
+
   const div: HTMLDivElement = document.createElement("div");
   div.innerText = cell.getValue();
+  div.innerHTML += "<sup>Syn.</sup>";
   return div;
 }
 
-function joinNames(cell, formatterParams, onRendered): string {
-  const cnames: Array<string> = cell.getValue().hu;
+function fmtCommonNames(cell, formatterParams, onRendered): string {
+  const cnames: Array<string> = cell.getValue()[LANG];
   if (cnames.length) {
     cnames[0] = `<em>${cnames[0]}</em>`;
   }
