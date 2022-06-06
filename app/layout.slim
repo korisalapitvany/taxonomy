@@ -1,6 +1,12 @@
 .page-wrapper.document-page
   header.top-navigation
     .container
+      .theme-switcher-menu
+        button.button.action.has-icon.small.light-mode type="button"
+          .material-symbols-outlined.right light_mode
+        button.button.action.has-icon.small.dark-mode type="button"
+          .material-symbols-outlined.right dark_mode
+
   .article-actions-container
     .container
   .article-wrapper
@@ -21,9 +27,12 @@
           | szakirodalomban használt neveket tartalmazza (pl. <em>sárgarigó</em>), bár egyes források a népi
           | megnevezéseket is említik (pl. <em>aranymálinkó</em>).
 
-          h2#elolenyek data-tpl="{common_names.count} élőlény magyar neve"
-            | Élőlények magyar nevei
+          h2#elolenyek
+            ' Táblázat:
+            span data-tpl="{common_names.count} élőlény magyar neve"
+              | élőlények magyar nevei
 
+          input#filter type="text" placeholder="szűrő" spellcheck=false autocomplete=false
           #common-names
             | Adatok betöltése folyamatban…
 

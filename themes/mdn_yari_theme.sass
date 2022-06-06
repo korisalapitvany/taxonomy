@@ -16,37 +16,69 @@
   .placeholder
     display: none
 
-.tabulator-header
-  display: none
+.theme-switcher-menu
+  float: right
+  margin-right: 8px
 
-.tabulator-cell
-  &.content
-    padding: 8px
-    line-height: 24px
+  button
+    width: 48px
+    height: 48px
+    padding: 12px 8px
+    color: var(--text-secondary)
 
-  .photo
-    float: left
-    height: 64px
-    width: 64px
-    background: #eee
-    margin-right: 8px
+    &:hover
+      color: var(--button-secondary-hover)
 
-  .common-names
-    line-height: 28px
+@media (prefers-color-scheme: light)
+  body:not(.dark)
+    .theme-switcher-menu .light-mode
+      display: none
 
-    sup
-      font-weight: normal
+@media (prefers-color-scheme: dark)
+  body:not(.light)
+    .theme-switcher-menu .dark-mode
+      display: none
 
-    span::before
-      content: ", "
+body
+  &.dark .theme-switcher-menu .dark-mode,
+  &.light .theme-switcher-menu .light-mode
+    display: none
 
-  .scientific-name
-    color: #767676
+#common-names
+  .tabulator-header
+    display: none
 
-    em
-      font-family: "Noto Serif", serif
-      font-style: italic
+  .tabulator-row
+    border-bottom: none
+
+  .tabulator-cell
+    &.content
+      padding: 8px
+      line-height: 24px
+
+    .photo
+      float: left
+      height: 64px
+      width: 64px
+      background: #eee
+      margin-right: 8px
+
+    .common-names
+      line-height: 28px
+
+      sup
+        font-weight: normal
+
+      span::before
+        content: ", "
+
+    .scientific-name
+      color: #767676
+
+      em
+        font-family: "Noto Serif", serif
+        font-style: italic
 
 
-#common-names:not(.common-names-lower) .common-names::first-letter
-  text-transform: uppercase
+  &:not(.common-names-lower) .common-names::first-letter
+    text-transform: uppercase

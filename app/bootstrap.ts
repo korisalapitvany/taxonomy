@@ -25,9 +25,9 @@ const ownerHead = ownerDocument.head;
 async function bootstrap(): Promise<void> {
   // Start dependency loading in parallel.
   const deps: Promise<Array<void>> = Promise.all([
-    loadJS(TABULATOR_JS, TABULATOR_JS_INTEGRITY),
-    loadCSS(TABULATOR_CSS, TABULATOR_CSS_INTEGRITY),
     loadCSS(relativeURL("themes/mdn-yari.css")),
+    loadCSS(TABULATOR_CSS, TABULATOR_CSS_INTEGRITY),
+    loadJS(TABULATOR_JS, TABULATOR_JS_INTEGRITY),
   ]);
   const layout = fetch(relativeURL("layout.html"));
   const sources = fetch(relativeURL("data/sources.json"));
@@ -47,7 +47,7 @@ function fontCSS(): void {
   const api: string = "https://fonts.googleapis.com"
   addLink(mkLink("https://fonts.gstatic.com", true, true));
   addLink(mkLink(api, true));
-  addLink(mkLink(`${api}/css2?family=Inter&family=Noto+Serif:ital@1&display=swap`));
+  addLink(mkLink(`${api}/css2?family=Inter&family=Noto+Serif:ital@1&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=swap`));
 }
 
 function mkLink(href: string, preConnect: boolean = false, crossOrigin: boolean = false): HTMLLinkElement {
