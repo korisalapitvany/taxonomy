@@ -7,6 +7,9 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
   document.querySelector(".theme-switcher-menu .dark-mode").addEventListener("click", (): void => {
     document.body.className = "dark";
   });
+  document.getElementById("toggle-caps").addEventListener("click", (): void => {
+    document.getElementById("common-names").classList.toggle("common-names-lower");
+  });
 
   sources.then(async (res) => {
     let num: number = 1;
@@ -146,7 +149,12 @@ function filterTable(data, params): boolean {
   const cnames: Array<CommonName> = CNAMES[data.key];
 
   return cnames
-    .map((cn: CommonName): Array<string> => cn.common_names[LANG].concat(cn.scientific_name))
+    .map((cn: CommonName): Array<string> => {
+      return cn.common_names[LANG]
+        .concat(cn.scientific_name)
+        .concat(cn.synonym ? "syn" : "")
+        .concat(cn.synonym || "");
+    })
     .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
     .join(" ")
     .toLowerCase()
@@ -188,6 +196,24 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
   let em: HTMLElement = document.createElement("em");
   em.innerText = key;
   line2.append(em);
+
+  const synonyms = cnames
+    .map((cn: CommonName): string => cn.synonym)
+    .filter((syn: string): boolean => !!syn)
+    .join(", ");
+  if (synonyms) {
+    line2.append(" ");
+    const span: HTMLElement = document.createElement("spna")
+    span.className = "syn-marker";
+    span.innerText = "Syn.";
+    line2.append(span);
+
+    line2.append(" ");
+    em = document.createElement("em");
+    em.className = "synonym"
+    em.innerText = synonyms
+    line2.append(em);
+  }
 
   let photo: HTMLDivElement = document.createElement("div");
   photo.className = "photo";

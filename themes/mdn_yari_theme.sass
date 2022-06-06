@@ -67,17 +67,22 @@ body
       line-height: 28px
 
       sup
+        color: var(--accent-primary)
         font-weight: normal
 
       span::before
         content: ", "
 
     .scientific-name
-      color: #767676
+      color: var(--text-secondary)
 
       em
         font-family: "Noto Serif", serif
         font-style: italic
+
+      .syn-marker
+        color: var(--text-inactive)
+        border-bottom: thin dashed var(--border-secondary)
 
 
   &:not(.common-names-lower) .common-names::first-letter
