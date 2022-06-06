@@ -18,11 +18,16 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
     for (let pair of Object.entries(await (await cnames).json())) {
       const [src, cnames] = pair as [string, Array<CommonName>];
       cnames.forEach((cname: CommonName): void => {
+        (CNAMES[cname.scientific_name] = CNAMES[cname.scientific_name] || []).push(cname);
         cname.source_id = src;
       });
-
-      CNAMES.push(...cnames);
     }
+
+    ROWS.push(...Object
+      .keys(CNAMES)
+      .map((key: string): Row => new Row(key)));
+
+    // TODO: Wait for above promise to complete!
     await Promise.all([sources, deps]);
     displayCommonNames();
   });
@@ -30,7 +35,22 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
 
 const SOURCES: { [key: string]: Source } = {};
 const SOURCE_IDX: { [key: number]: string } = {};
-const CNAMES: Array<CommonName> = [];
+
+// Map scientific names to references.
+// This is needed since the same scientific name may occur in multiple sources.
+const CNAMES: { [key: string]: Array<CommonName> } = {};
+
+// Rows to feed to Tabulator.
+// The actual rendering is done dynamically, this is just a list of keys.
+const ROWS: Array<Row> = [];
+
+class Row {
+  key: string;
+
+  constructor(key: string) {
+    this.key = key;
+  }
+};
 
 interface Source {
   title: string;
@@ -57,56 +77,87 @@ function displaySources(): void {
 }
 
 function displayCommonNames(): void {
+  const count: number = Object.keys(CNAMES).length;
   document.querySelectorAll("[data-tpl]").forEach((elem: HTMLElement): void => {
     const tpl: string = elem.dataset.tpl;
     const rx: RegExp = /\{common_names.count\}/g;
     if (tpl.match(rx)) {
-      console.log("OK!");
-      elem.innerText = tpl.replaceAll(rx, CNAMES.length.toLocaleString(LANG));
+      elem.innerText = tpl.replaceAll(rx, count.toLocaleString(LANG));
     }
-    console.log(elem);
   });
-  //const cnames: { [key: string]: Array<CommonName> } = {};
-
-  //Object.values(CNAMES).reduce((x, y) => x.concat(y)).forEach(row => {
-  //  (cnames[row.scientific_name] = cnames[row.scientific_name] || []).push(row);
-  //});
-  //data: Object.entries(cnames).map(([key, cnames]) => {
-  //  const cname = cnames.shift();
-  //  cnames.forEach(extra => {
-  //    // TODO: Remove duplicates!
-  //    cname.common_names[LANG].concat(extra.common_names[LANG]);
-  //  })
-  //  return cname;
-  //}),
 
   new Tabulator("#common-names", {
-    data: CNAMES,
+    data: ROWS,
     pagination: true,
-    paginationSize: 10,
-    columns: [
-      {title: "Magyar nevek", field: "common_names", cssClass: "common_names", width: "60%", formatter: fmtCommonNames},
-      {title: "Tud. név", field: "scientific_name", cssClass: "scientific_name", width: "40%", formatter: fmtScientificName},
-    ],
+    paginationSize: 40,
+    layout: "fitDataFill",
+    rowHeight: 80,
+    columns: [{
+      field: "key",
+      cssClass: "content",
+      width: "100%",
+      formatter: fmtCell,
+    }],
   });
 }
 
-function fmtScientificName(cell, formatterParams, onRendered): HTMLDivElement | string {
-  const data: CommonName = cell.getData();
-  if (!data.synonym) {
-    return cell.getValue();
-  }
+function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
+  const key: string = cell.getValue();
+  const cnames: Array<CommonName> = CNAMES[key];
+
+  let line1: HTMLDivElement = document.createElement("div");
+  line1.className = "common-names";
+
+  let first: boolean = true;
+  cnames
+    .map((cname: CommonName): Array<string> => cname.common_names[LANG])
+    .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
+    .forEach((name: string): void => {
+      const el: HTMLElement = document.createElement(first ? "strong" : "span");
+      el.innerText = name;
+
+      cnames
+        .filter((cn: CommonName): boolean => cn.common_names[LANG].indexOf(name) != -1)
+        .forEach((cn: CommonName): void => {
+          const src: Source = SOURCES[cn.source_id];
+          const sup: HTMLElement = document.createElement("sup");
+          sup.innerText = `[${src.num}]`;
+          sup.title = refText(src, cn.page);
+          el.append(sup);
+        });
+
+      line1.append(el);
+      first = false;
+    });
+
+  let line2: HTMLDivElement = document.createElement("div");
+  line2.className = "scientific-name";
+
+  let em: HTMLElement = document.createElement("em");
+  em.innerText = key;
+  line2.append(em);
+
+  let photo: HTMLDivElement = document.createElement("div");
+  photo.className = "photo";
 
   const div: HTMLDivElement = document.createElement("div");
-  div.innerText = cell.getValue();
-  div.innerHTML += "<sup>Syn.</sup>";
+  div.append(photo);
+  div.append(line1);
+  div.append(line2);
+
   return div;
 }
 
-function fmtCommonNames(cell, formatterParams, onRendered): string {
-  const cnames: Array<string> = cell.getValue()[LANG];
-  if (cnames.length) {
-    cnames[0] = `<em>${cnames[0]}</em>`;
+function refText(src: Source, page: number): string {
+  let text = src.title;
+  if (src.subtitle) {
+    text += ` — ${src.subtitle}`
   }
-  return cnames.join(", ");
+  return [
+    text,
+    PAGE_NUM.replace(/\{page\}/, page.toLocaleString(LANG)),
+  ].join("; ");
 }
+
+// TODO: Parse this from the template!
+const PAGE_NUM = "{page}. o."

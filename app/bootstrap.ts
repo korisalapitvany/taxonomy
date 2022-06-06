@@ -47,7 +47,7 @@ function fontCSS(): void {
   const api: string = "https://fonts.googleapis.com"
   addLink(mkLink("https://fonts.gstatic.com", true, true));
   addLink(mkLink(api, true));
-  addLink(mkLink(`${api}/css2?family=Inter&display=swap`));
+  addLink(mkLink(`${api}/css2?family=Inter&family=Noto+Serif:ital@1&display=swap`));
 }
 
 function mkLink(href: string, preConnect: boolean = false, crossOrigin: boolean = false): HTMLLinkElement {

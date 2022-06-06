@@ -16,11 +16,37 @@
   .placeholder
     display: none
 
-.tabulator-cell
-  &.scientific_name
-    font-style: italic
+.tabulator-header
+  display: none
 
-  &.common_names
+.tabulator-cell
+  &.content
+    padding: 8px
+    line-height: 24px
+
+  .photo
+    float: left
+    height: 64px
+    width: 64px
+    background: #eee
+    margin-right: 8px
+
+  .common-names
+    line-height: 28px
+
+    sup
+      font-weight: normal
+
+    span::before
+      content: ", "
+
+  .scientific-name
+    color: #767676
+
     em
-      font-style: inherit
-      border-bottom: thin dashed grey
+      font-family: "Noto Serif", serif
+      font-style: italic
+
+
+#common-names:not(.common-names-lower) .common-names::first-letter
+  text-transform: uppercase
