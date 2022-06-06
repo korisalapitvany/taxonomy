@@ -41,6 +41,7 @@ ts_project(
     ] + [
         "bootstrap.ts",
         "main.ts",
+        "row_formatter.ts",
         "table_filter.ts",
     ],
     tsconfig = {"compilerOptions": {

@@ -105,9 +105,10 @@ function displayCommonNames(): void {
   table = new Tabulator("#common-names", {
     data: ROWS,
     pagination: true,
-    paginationSize: 40,
+    paginationSize: 20,
     layout: "fitDataFill",
     rowHeight: 80,
+    rowFormatter: fmtRow,
     columns: [{
       field: "key",
       cssClass: "content",

@@ -2,4 +2,4 @@
 //
 // This will not be included in the wasm_library() rule; only things that aid
 // type checking should be added here.
-const Tabulator = require("@types/tabulator-tables");
+const {Tabulator, RowComponent} = require("@types/tabulator-tables");

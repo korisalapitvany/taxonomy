@@ -55,6 +55,7 @@ function filterTable(data, params: FilterParams): boolean {
     .includes(fuzzyText(value));
 }
 
+// Prepare text for simple "fuzzy" mtaching.
 function fuzzyText(text: string): string {
   return text
     .normalize("NFKD")
