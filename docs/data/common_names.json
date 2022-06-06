@@ -1,0 +1,1397 @@
+{"milyen_allatnyom_ez":
+[{"page": 12, "scientific_name": "Sciurus vulgaris", "common_names": {"hu": ["mókus"]}}
+]
+,"milyen_eheto_vadnoveny_ez":
+[{"page": 10, "scientific_name": "Nasturtium officinale", "synonyms": ["Rorippa nasturium-aquaticum"], "common_names": {"hu": ["vízitorma"]}}
+]
+,"milyen_pok_ez":
+[{"page": 10, "scientific_name": "Amaurobius ferox", "common_names": {"hu": ["nagy eretnekpók"]}}
+]
+,"milyen_rovar_ez":
+[{"page": 10, "scientific_name": "Podura aquatica", "common_names": {"hu": ["vízibolha"]}}
+,{"page": 10, "scientific_name": "Campodea", "common_names": {"hu": ["fonálfarkú ősrovarok"]}}
+,{"page": 10, "scientific_name": "Lepisma saccharina", "common_names": {"hu": ["ezüstös pikkelyke"]}}
+,{"page": 12, "scientific_name": "Ephemera danica", "common_names": {"hu": ["dánkérész"]}}
+,{"page": 12, "scientific_name": "Ephemera ignita", "common_names": {"hu": ["vörösbarna kérész"]}}
+,{"page": 12, "scientific_name": "Perla marginata", "common_names": {"hu": ["nagy álkérész"]}}
+,{"page": 14, "scientific_name": "Aeshna cyanea", "common_names": {"hu": ["sebes acsa"]}}
+,{"page": 14, "scientific_name": "Aeshna grandis", "common_names": {"hu": ["nagy acsa"]}}
+,{"page": 14, "scientific_name": "Cordulegaster boltonii", "common_names": {"hu": ["kétcsíkos hegyiszitakötő"]}}
+,{"page": 16, "scientific_name": "Libellula quadrimaculata", "common_names": {"hu": ["négyfoltos acsa"]}}
+,{"page": 16, "scientific_name": "Libellula depressa", "common_names": {"hu": ["közönséges acsa"]}}
+,{"page": 16, "scientific_name": "Sympetrum vulgatum", "common_names": {"hu": ["közönséges szitakötő"]}}
+,{"page": 18, "scientific_name": "Calopteryx splendens", "common_names": {"hu": ["sávos szitakötő"]}}
+,{"page": 18, "scientific_name": "Coenagrion puella", "common_names": {"hu": ["szép légivadász"]}}
+,{"page": 18, "scientific_name": "Pyrrhosoma nymphula", "common_names": {"hu": ["vörös légivadász"]}}
+,{"page": 20, "scientific_name": "Forficula auricularia", "common_names": {"hu": ["közönséges fülbemászó"]}}
+,{"page": 20, "scientific_name": "Blatta orientalis", "common_names": {"hu": ["közönségés csótány"]}}
+,{"page": 20, "scientific_name": "Mantis religiosa", "common_names": {"hu": ["imádkozó sáska"]}}
+,{"page": 22, "scientific_name": "Tettigonia viridissima", "common_names": {"hu": ["zöld lombszöcske"]}}
+,{"page": 22, "scientific_name": "Decticus verrucivorus", "common_names": {"hu": ["szemölcsevő szöcske"]}}
+,{"page": 22, "scientific_name": "Gryllus campestris", "common_names": {"hu": ["mezei tücsök"]}}
+,{"page": 24, "scientific_name": "Gryllotalpa gryllotalpa", "common_names": {"hu": ["lótücsök"]}}
+,{"page": 24, "scientific_name": "Gomphocerippus rufus", "common_names": {"hu": ["erdei bunkóscsápú sáska"]}}
+,{"page": 24, "scientific_name": "Psophus stridulus", "common_names": {"hu": ["kerepelő sáska"]}}
+,{"page": 26, "scientific_name": "Pediculus capitis", "common_names": {"hu": ["fejtetű"]}}
+,{"page": 26, "scientific_name": "Columbicola columbae", "common_names": {"hu": ["tolltetű"]}}
+,{"page": 26, "scientific_name": "Parthenothrips dracenae", "common_names": {"hu": ["üvegházi tripsz"]}}
+,{"page": 28, "scientific_name": "Philaenus spumarius", "common_names": {"hu": ["tajtékos kabóca"]}}
+,{"page": 28, "scientific_name": "Cercopis vulnerata", "common_names": {"hu": ["vérfoltos kabóca"]}}
+,{"page": 28, "scientific_name": "Aphis sambuci", "common_names": {"hu": ["bodza levéltetű"]}}
+,{"page": 30, "scientific_name": "Nepa rubra", "common_names": {"hu": ["víziskorpió"]}}
+,{"page": 30, "scientific_name": "Notonecta glauca", "common_names": {"hu": ["hanyattúszó poloska"]}}
+,{"page": 30, "scientific_name": "Gerris", "common_names": {"hu": ["molnárpoloskák"]}}
+,{"page": 32, "scientific_name": "Anthocoris nemorum", "common_names": {"hu": ["mezei virágpoloska"]}}
+,{"page": 32, "scientific_name": "Rhinocoris iracundus", "common_names": {"hu": ["gyilkospoloska"]}}
+,{"page": 32, "scientific_name": "Pyrrhocoris apterus", "common_names": {"hu": ["verőköltő bodobács"]}}
+,{"page": 34, "scientific_name": "Elasmucha grisea", "common_names": {"hu": ["változó címerespoloska"]}}
+,{"page": 34, "scientific_name": "Graphosoma lineatum", "common_names": {"hu": ["csíkos pajzsospoloska"]}}
+,{"page": 34, "scientific_name": "Dolycoris baccarum", "common_names": {"hu": ["bogyómászó poloska"]}}
+,{"page": 36, "scientific_name": "Cicindela campestris", "common_names": {"hu": ["mezei homokfutrinka"]}}
+,{"page": 36, "scientific_name": "Carabus auratus", "common_names": {"hu": ["aranyos futrinka"]}}
+,{"page": 36, "scientific_name": "Carabus coriaceus", "common_names": {"hu": ["bőrfutrinka"]}}
+,{"page": 38, "scientific_name": "Dytiscus marginalis", "common_names": {"hu": ["szegélyes csíkbogár"]}}
+,{"page": 38, "scientific_name": "Gyrinus substriatus", "common_names": {"hu": ["közönséges keringőbogár"]}}
+,{"page": 38, "scientific_name": "Hydrophilus piceus", "common_names": {"hu": ["közönséges óriáscsibor"]}}
+,{"page": 40, "scientific_name": "Ocypus olens", "common_names": {"hu": ["bűzös holyva"]}}
+,{"page": 40, "scientific_name": "Staphylinus fossor", "common_names": {"hu": ["tarka holyva"]}}
+,{"page": 40, "scientific_name": "Necrophorus vespillo", "common_names": {"hu": ["közönséges temetőbogár"]}}
+,{"page": 42, "scientific_name": "Lamprohiza splendidula", "common_names": {"hu": ["kis szentjánosbogár"]}}
+,{"page": 42, "scientific_name": "Cantharis fusca", "common_names": {"hu": ["közönséges lágybogár"]}}
+,{"page": 42, "scientific_name": "Agrypnus murinus", "common_names": {"hu": ["egérszínű pattanóbogár"]}}
+,{"page": 44, "scientific_name": "Trichodes alvearius", "common_names": {"hu": ["kékfoltos méhészbogár"]}}
+,{"page": 44, "scientific_name": "Chalcophora mariana", "common_names": {"hu": ["fenyves díszbogár"]}}
+,{"page": 44, "scientific_name": "Coccinella septempunctata", "common_names": {"hu": ["hétpettyes katicabogár"]}}
+,{"page": 46, "scientific_name": "Ptinus fur", "common_names": {"hu": ["közönséges tolvajbogár"]}}
+,{"page": 46, "scientific_name": "Dermestes lardarius", "common_names": {"hu": ["szalonnabogár"]}}
+,{"page": 46, "scientific_name": "Tenebrio molitor", "common_names": {"hu": ["lisztbogár"]}}
+,{"page": 48, "scientific_name": "Meloe proscarabaeus", "common_names": {"hu": ["közönséges nünüke"]}}
+,{"page": 48, "scientific_name": "Pyrochroa serraticornis", "common_names": {"hu": ["közép bíborbogár"]}}
+,{"page": 48, "scientific_name": "Oedemera femorata", "common_names": {"hu": ["sárgahátú álcincér"]}}
+,{"page": 50, "scientific_name": "Geotrupes stercorosus", "common_names": {"hu": ["erdei ganéjtúró"]}}
+,{"page": 50, "scientific_name": "Melolontha melolontha", "common_names": {"hu": ["májusi cserebogár"]}}
+,{"page": 50, "scientific_name": "Polyphylla fullo", "common_names": {"hu": ["csapócserebogár"]}}
+,{"page": 52, "scientific_name": "Oryctes nasicornis", "common_names": {"hu": ["orrszarvúbogár"]}}
+,{"page": 52, "scientific_name": "Cetonia aurata", "common_names": {"hu": ["aranyos rózsabogár"]}}
+,{"page": 52, "scientific_name": "Lucanus cervus", "common_names": {"hu": ["szarvasbogár"]}}
+,{"page": 54, "scientific_name": "Cerambyx scopolii", "common_names": {"hu": ["kis hőscincér"]}}
+,{"page": 54, "scientific_name": "Aromia moschata", "common_names": {"hu": ["pézsmacincér"]}}
+,{"page": 54, "scientific_name": "Rosalia alpina", "common_names": {"hu": ["havasi cincér"]}}
+,{"page": 56, "scientific_name": "Hylotrupes bajulus", "common_names": {"hu": ["házi cincér"]}}
+,{"page": 56, "scientific_name": "Molorchus minor", "common_names": {"hu": ["kis légycincér"]}}
+,{"page": 56, "scientific_name": "Strangalia melanura", "common_names": {"hu": ["feketevégű karcsúcincér"]}}
+,{"page": 58, "scientific_name": "Plagionotus arcuatus", "common_names": {"hu": ["bársonyos darázscincér"]}}
+,{"page": 58, "scientific_name": "Agapanthia villosoviridescens", "common_names": {"hu": ["fehérgyűrűs bogáncscincér"]}}
+,{"page": 58, "scientific_name": "Saperda populnea", "common_names": {"hu": ["kis nyárfacincér"]}}
+,{"page": 60, "scientific_name": "Leptinotarsa decemlineata", "common_names": {"hu": ["burgonyabogár"]}}
+,{"page": 60, "scientific_name": "Melasoma populi", "common_names": {"hu": ["nagy nyárlevelész"]}}
+,{"page": 60, "scientific_name": "Ips typographus", "common_names": {"hu": ["betűzőszú"]}}
+,{"page": 62, "scientific_name": "Liparus glabrirostris", "common_names": {"hu": ["acsalapu ormányos"]}}
+,{"page": 62, "scientific_name": "Otiorhynchus sulcatus", "common_names": {"hu": ["barázdás gyalogormányos"]}}
+,{"page": 62, "scientific_name": "Curculio nucum", "common_names": {"hu": ["mogyoróormányos"]}}
+,{"page": 64, "scientific_name": "Phaeostigma notata", "common_names": {"hu": ["barna tevenyakú"]}}
+,{"page": 64, "scientific_name": "Sialis", "common_names": {"hu": ["vízifátyolkák"]}}
+,{"page": 64, "scientific_name": "Chrysoperla carnea", "common_names": {"hu": ["közönséges fátyolka"]}}
+,{"page": 66, "scientific_name": "Euroleon nostras", "common_names": {"hu": ["erdei hangyaleső"]}}
+,{"page": 66, "scientific_name": "Mantispa styriaca", "common_names": {"hu": ["fogólábú fátyolka"]}}
+,{"page": 66, "scientific_name": "Libelloides longicornis", "common_names": {"hu": ["hosszúcsápú rablópille"]}}
+,{"page": 68, "scientific_name": "Allanthus scrophulariae", "common_names": {"hu": ["görvélyfű levéldarázs"]}}
+,{"page": 68, "scientific_name": "Cimbex femorata", "common_names": {"hu": ["fekete buzogányos darázs"]}}
+,{"page": 68, "scientific_name": "Urocerus gigas", "common_names": {"hu": ["óriás fenyődarázs"]}}
+,{"page": 70, "scientific_name": "Dolichomitus imperator", "common_names": {"hu": ["óriás fürkészdarázs"]}}
+,{"page": 70, "scientific_name": "Biorhiza pallida", "common_names": {"hu": ["gyökér-gubacsdarázs"]}}
+,{"page": 70, "scientific_name": "Hedychrum nobile", "common_names": {"hu": ["királyi fémdarázs"]}}
+,{"page": 72, "scientific_name": "Tetramorium caespitum", "common_names": {"hu": ["gyepi hangya"]}}
+,{"page": 72, "scientific_name": "Lasius flavus", "common_names": {"hu": ["borostyánsárga hangya"]}}
+,{"page": 72, "scientific_name": "Formica rufa", "common_names": {"hu": ["erdei vöröshangya"]}}
+,{"page": 74, "scientific_name": "Vespa crabro", "common_names": {"hu": ["lódarázs"]}}
+,{"page": 74, "scientific_name": "Vespula vulgaris", "common_names": {"hu": ["közönséges darázs"]}}
+,{"page": 74, "scientific_name": "Polistes bischoffi", "common_names": {"hu": ["redősszárnyú darázs"]}}
+,{"page": 76, "scientific_name": "Anoplius viaticus", "common_names": {"hu": ["közönséges útonállódarázs"]}}
+,{"page": 76, "scientific_name": "Ammophila sabulosa", "common_names": {"hu": ["homoki hernyóölő darázs"]}}
+,{"page": 76, "scientific_name": "Philanthus triangulum", "common_names": {"hu": ["közönséges méhfarkas"]}}
+,{"page": 78, "scientific_name": "Andrena fulva", "common_names": {"hu": ["sárga bányászméh"]}}
+,{"page": 78, "scientific_name": "Dasypoda hirtipes", "common_names": {"hu": ["gyakori gatyásméh"]}}
+,{"page": 78, "scientific_name": "Megachile willoughbiella", "common_names": {"hu": ["piroshasú szabóméh"]}}
+,{"page": 80, "scientific_name": "Osmia rufa", "common_names": {"hu": ["szarvas művészméh"]}}
+,{"page": 80, "scientific_name": "Nomada lathburiana", "common_names": {"hu": ["vörösszőrű darázsméh"]}}
+,{"page": 80, "scientific_name": "Eucera tuberculata", "common_names": {"hu": ["hosszúcsápú méh", "nagybajszú méh"]}}
+,{"page": 82, "scientific_name": "Bombus pascuorum", "common_names": {"hu": ["mezei poszméh"]}}
+,{"page": 82, "scientific_name": "Bombus lapidarius", "common_names": {"hu": ["kövi poszméh"]}}
+,{"page": 82, "scientific_name": "Apis mellifera", "common_names": {"hu": ["háziméh"]}}
+,{"page": 84, "scientific_name": "Limnephilus flavicornis", "common_names": {"hu": ["közönséges tegzes"]}}
+,{"page": 84, "scientific_name": "Neureclipsis bimaculata", "common_names": {"hu": ["kétfoltos tegzes"]}}
+,{"page": 84, "scientific_name": "Sericostoma personatum", "common_names": {"hu": ["barna tegzes"]}}
+,{"page": 86, "scientific_name": "Cameraria ohridella", "synonyms": ["Cameraria ochridella [sic]"], "common_names": {"hu": ["vadgesztenye-sátorosmoly"]}}
+,{"page": 86, "scientific_name": "Plodia interpunctella", "common_names": {"hu": ["aszalványmoly"]}}
+,{"page": 86, "scientific_name": "Yponomeuta evonymella", "common_names": {"hu": ["kecskerágó-moly"]}}
+,{"page": 88, "scientific_name": "Zygaena filipendulae", "common_names": {"hu": ["acélszínű csüngőlepke"]}}
+,{"page": 88, "scientific_name": "Lasiocampa quercus", "common_names": {"hu": ["tölgyfaszövő"]}}
+,{"page": 88, "scientific_name": "Malacosoma neustria", "common_names": {"hu": ["gyűrűsszövő"]}}
+,{"page": 90, "scientific_name": "Saturnia pavonia", "common_names": {"hu": ["kis pávaszem"]}}
+,{"page": 90, "scientific_name": "Smerinthus ocellata", "common_names": {"hu": ["esti pávaszem"]}}
+,{"page": 90, "scientific_name": "Acherontia atropos", "common_names": {"hu": ["halálfejes lepke"]}}
+,{"page": 92, "scientific_name": "Macroglossum stellatarum", "common_names": {"hu": ["kacsafarkú szender"]}}
+,{"page": 92, "scientific_name": "Hyles euphorbiae", "common_names": {"hu": ["kutyatejszender"]}}
+,{"page": 92, "scientific_name": "Carterocephalus palaemon", "common_names": {"hu": ["kockás busalepke"]}}
+,{"page": 94, "scientific_name": "Papilio machaon", "common_names": {"hu": ["fecskefarkú lepke"]}}
+,{"page": 94, "scientific_name": "Gonepteryx rhamni", "common_names": {"hu": ["citromlepke"]}}
+,{"page": 94, "scientific_name": "Aporia crataegi", "common_names": {"hu": ["galagonyalepke"]}}
+,{"page": 96, "scientific_name": "Thecla betulae", "common_names": {"hu": ["nyírfa csücsköslepke"]}}
+,{"page": 96, "scientific_name": "Polyommatus coridon", "common_names": {"hu": ["ezüstkék boglárka"]}}
+,{"page": 96, "scientific_name": "Polyommatus icarus", "common_names": {"hu": ["közönséges boglárka"]}}
+,{"page": 98, "scientific_name": "Argynnis paphia", "common_names": {"hu": ["nagy gyöngyházlepke"]}}
+,{"page": 98, "scientific_name": "Vanessa atalanta", "common_names": {"hu": ["admirálislepke"]}}
+,{"page": 98, "scientific_name": "Inachis io", "common_names": {"hu": ["nappali pávaszem"]}}
+,{"page": 100, "scientific_name": "Aglais urticae", "common_names": {"hu": ["kis rókalepke"]}}
+,{"page": 100, "scientific_name": "Araschnia levana", "common_names": {"hu": ["pókhálóslepke"]}}
+,{"page": 100, "scientific_name": "Apatura iris", "common_names": {"hu": ["nagy színjátszólepke"]}}
+,{"page": 102, "scientific_name": "Pararge aegeria", "common_names": {"hu": ["erdei szemeslepke"]}}
+,{"page": 102, "scientific_name": "Melanargia galathea", "common_names": {"hu": ["sakktáblalepke"]}}
+,{"page": 102, "scientific_name": "Aphantopus hyperanthus", "common_names": {"hu": ["közönséges ökörszemlepke"]}}
+,{"page": 104, "scientific_name": "Erannis defoliaria", "common_names": {"hu": ["nagy téliaraszoló"]}}
+,{"page": 104, "scientific_name": "Biston betularia", "synonyms": ["Biston betularis [sic]"], "common_names": {"hu": ["nyírfaaraszoló"]}}
+,{"page": 104, "scientific_name": "Drepana falcataria", "common_names": {"hu": ["fehér sarlósszárnyú"]}}
+,{"page": 106, "scientific_name": "Cerura vinula", "common_names": {"hu": ["nagy púposszövő"]}}
+,{"page": 106, "scientific_name": "Catocala sponsa", "common_names": {"hu": ["tölgyfa övesbagoly"]}}
+,{"page": 106, "scientific_name": "Acronicta psi", "common_names": {"hu": ["szürkés szigonyosbagoly"]}}
+,{"page": 108, "scientific_name": "Shargacucullia verbasci", "common_names": {"hu": ["ökörfarkkóró csuklyásbagoly"]}}
+,{"page": 108, "scientific_name": "Autographa gamma", "common_names": {"hu": ["gamma bagolylepke"]}}
+,{"page": 108, "scientific_name": "Lymantria dispar", "common_names": {"hu": ["gyapjaslepke"]}}
+,{"page": 110, "scientific_name": "Calliteara pudibunda", "common_names": {"hu": ["hamvas gyapjaslepke"]}}
+,{"page": 110, "scientific_name": "Euplagia quadripunctaria", "common_names": {"hu": ["csíkos medvelepke"]}}
+,{"page": 110, "scientific_name": "Arctia caja", "common_names": {"hu": ["közönséges medvelepke"]}}
+,{"page": 112, "scientific_name": "Ceratophyllus", "common_names": {"hu": ["madárbolhák"]}}
+,{"page": 112, "scientific_name": "Panorpa communis", "common_names": {"hu": ["közönséges skorpiólégy"]}}
+,{"page": 112, "scientific_name": "Boreus westwoodi", "common_names": {"hu": ["ormányos tücsök"]}}
+,{"page": 114, "scientific_name": "Tipula", "common_names": {"hu": ["lószúnyogok"]}}
+,{"page": 114, "scientific_name": "Aedes", "common_names": {"hu": ["valódi szúnyogok"]}}
+,{"page": 114, "scientific_name": "Chironomus", "common_names": {"hu": ["árvaszúnyogok"]}}
+,{"page": 116, "scientific_name": "Mikiola fagi", "common_names": {"hu": ["bükk-gubacsszúnyog"]}}
+,{"page": 116, "scientific_name": "Bombylius major", "common_names": {"hu": ["szegélyes pöszörlégy"]}}
+,{"page": 116, "scientific_name": "Machimus", "common_names": {"hu": ["farkaslegyek"]}}
+,{"page": 118, "scientific_name": "Meliscaeva cinctella", "common_names": {"hu": ["darázsfarkú zengőlégy"]}}
+,{"page": 118, "scientific_name": "Drosophila melanogaster", "common_names": {"hu": ["közönséges muslica"]}}
+,{"page": 118, "scientific_name": "Musca domestica", "common_names": {"hu": ["házilégy"]}}
+,{"page": 120, "scientific_name": "Stomoxys calcitrans", "common_names": {"hu": ["szuronyos istállólégy"]}}
+,{"page": 120, "scientific_name": "Calliphora vicina", "common_names": {"hu": ["kék dongólégy"]}}
+,{"page": 120, "scientific_name": "Sarcophaga carnaria", "common_names": {"hu": ["közönséges húslégy"]}}
+]
+,"kepes_zengolegyhatarozo":
+[{"page": 28, "scientific_name": "Anasimyia", "common_names": {"hu": ["iszaplegyek"]}}
+,{"page": 28, "scientific_name": "Anasimyia lineata", "common_names": {"hu": ["kúparcú iszaplégy"]}}
+,{"page": 28, "scientific_name": "Anasimyia interpuncta", "common_names": {"hu": ["korai iszaplégy"]}}
+,{"page": 28, "scientific_name": "Anasimyia lunulata", "common_names": {"hu": ["északi iszaplégy"]}}
+,{"page": 28, "scientific_name": "Anasimyia contracta", "common_names": {"hu": ["dudoros iszaplégy"]}}
+,{"page": 28, "scientific_name": "Anasimyia transfuga", "common_names": {"hu": ["gyakori iszaplégy"]}}
+,{"page": 29, "scientific_name": "Arctophila", "common_names": {"hu": ["hegyilegyek"]}}
+,{"page": 29, "scientific_name": "Arctophila superbiens", "common_names": {"hu": ["őszi hegyilégy"]}}
+,{"page": 29, "scientific_name": "Arctophila bombiformis", "common_names": {"hu": ["poszméhalakú hegyilégy"]}}
+,{"page": 29, "scientific_name": "Baccha", "common_names": {"hu": ["árnyéklegyek"]}}
+,{"page": 29, "scientific_name": "Baccha elongata", "common_names": {"hu": ["szürkehomlokú árnyéklégy"]}}
+,{"page": 29, "scientific_name": "Baccha obscuripennis", "common_names": {"hu": ["fényeshomlokú árnyéklégy"]}}
+,{"page": 30, "scientific_name": "Blera", "common_names": {"hu": ["sárgaarcúlegyek"]}}
+,{"page": 30, "scientific_name": "Blera fallax", "common_names": {"hu": ["sárgaarcúlégy"]}}
+,{"page": 30, "scientific_name": "Brachymyia", "common_names": {"hu": ["bundáslegyek"]}}
+,{"page": 30, "scientific_name": "Brachymyia berberina", "common_names": {"hu": ["változékogy bundáslégy"]}}
+,{"page": 30, "scientific_name": "Brachymyia floccosa", "common_names": {"hu": ["fehérpamacsú bundáslégy"]}}
+,{"page": 31, "scientific_name": "Brachyopa", "common_names": {"hu": ["fanedvlegyek"]}}
+,{"page": 31, "scientific_name": "Brachyopa testacea", "common_names": {"hu": ["északi fanedvlégy"]}}
+,{"page": 31, "scientific_name": "Brachyopa vittata", "common_names": {"hu": ["nagy fanedvlégy"]}}
+,{"page": 31, "scientific_name": "Brachyopa panzeri", "common_names": {"hu": ["Panzeri fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa dorsata", "common_names": {"hu": ["duplacsíkos fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa maculipennis", "common_names": {"hu": ["foltosszárnyú fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa insensilis", "common_names": {"hu": ["szil fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa bicolor", "common_names": {"hu": ["nyár fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa scutellaris", "common_names": {"hu": ["nyugati fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa plena", "common_names": {"hu": ["ritka fanedvlégy"]}}
+,{"page": 32, "scientific_name": "Brachyopa pilosa", "common_names": {"hu": ["gyakori fanedvlégy"]}}
+,{"page": 33, "scientific_name": "Brachypalpoides", "common_names": {"hu": ["korhadófalegyek"]}}
+,{"page": 33, "scientific_name": "Brachypalpoides lentus", "common_names": {"hu": ["vöröspotrohú korhadófalégy"]}}
+,{"page": 34, "scientific_name": "Brachypalpus", "common_names": {"hu": ["korhadéklegyek"]}}
+,{"page": 34, "scientific_name": "Brachypalpus valgus", "common_names": {"hu": ["déli korhadéklégy"]}}
+,{"page": 34, "scientific_name": "Brachypalpus laphriformis", "common_names": {"hu": ["barna korhadéklégy"]}}
+,{"page": 34, "scientific_name": "Brachypalpus chrysites", "common_names": {"hu": ["aranysárga korhadéklégy"]}}
+,{"page": 34, "scientific_name": "Caliprobola", "common_names": {"hu": ["pompáslegyek"]}}
+,{"page": 35, "scientific_name": "Caliprobola speciosa", "common_names": {"hu": ["pompáslégy"]}}
+,{"page": 35, "scientific_name": "Callicera", "common_names": {"hu": ["bronzoslegyek"]}}
+,{"page": 35, "scientific_name": "Callicera spinolae", "common_names": {"hu": ["feketecsíkos bronzoslégy"]}}
+,{"page": 35, "scientific_name": "Callicera aenea", "common_names": {"hu": ["szürkecsíkos bronzoslégy"]}}
+,{"page": 35, "scientific_name": "Callicera rufa", "common_names": {"hu": ["vörösbarna bronzoslégy"]}}
+,{"page": 36, "scientific_name": "Callicera macquartii", "common_names": {"hu": ["őszi bronzoslégy"]}}
+,{"page": 36, "scientific_name": "Ceriana", "common_names": {"hu": ["hosszúcsápúlegyek"]}}
+,{"page": 36, "scientific_name": "Ceriana conopsoides", "common_names": {"hu": ["nagy hosszúcsápúlégy"]}}
+,{"page": 36, "scientific_name": "Ceriana vespiformis", "common_names": {"hu": ["kis hosszúcsápúlégy"]}}
+,{"page": 36, "scientific_name": "Chalcosyrphus", "common_names": {"hu": ["holtfalegyek"]}}
+,{"page": 36, "scientific_name": "Chalcosyrphus eunotus", "common_names": {"hu": ["csíkoshátú holtfalégy"]}}
+,{"page": 36, "scientific_name": "Chalcosyrphus curvipes", "common_names": {"hu": ["ritka holtfalégy"]}}
+,{"page": 37, "scientific_name": "Chalcosyrphus femoratus", "common_names": {"hu": ["nagy holtfalégy"]}}
+,{"page": 37, "scientific_name": "Chalcosyrphus nemorum", "common_names": {"hu": ["kis holtfalégy"]}}
+,{"page": 37, "scientific_name": "Chalcosyrphus piger", "common_names": {"hu": ["vörös holtfalégy"]}}
+,{"page": 37, "scientific_name": "Chalcosyrphus valgus", "common_names": {"hu": ["fekete holtfalégy"]}}
+,{"page": 37, "scientific_name": "Chamaesyrphus", "common_names": {"hu": ["ékarcúlegyek"]}}
+,{"page": 37, "scientific_name": "Chamaesyrphus scaevoides", "common_names": {"hu": ["sárga ékarcúlégy"]}}
+,{"page": 38, "scientific_name": "Cheilosia", "common_names": {"hu": ["bronzlegyek"]}}
+,{"page": 38, "scientific_name": "Cheilosia insignis", "common_names": {"hu": ["érczöld bronzlégy"]}}
+,{"page": 38, "scientific_name": "Cheilosia antiqua", "common_names": {"hu": ["feketeszőrű bronzlégy"]}}
+,{"page": 38, "scientific_name": "Cheilosia nigripes", "common_names": {"hu": ["fekete bronzlégy"]}}
+,{"page": 39, "scientific_name": "Cheilosia longula", "common_names": {"hu": ["ritka gomba-bronzlégy"]}}
+,{"page": 39, "scientific_name": "Cheilosia soror", "common_names": {"hu": ["vöröscsápú gomba-bronzlégy"]}}
+,{"page": 39, "scientific_name": "Cheilosia scutellata", "common_names": {"hu": ["gyakori gomba-bronzlégy"]}}
+,{"page": 39, "scientific_name": "Cheilosia laticornis", "common_names": {"hu": ["szélesarcú bronzlégy"]}}
+,{"page": 39, "scientific_name": "Cheilosia pagana", "common_names": {"hu": ["turbolya bronzlégy"]}}
+,{"page": 39, "scientific_name": "Cheilosia caerulescens", "common_names": {"hu": ["foltosszárnyú bronzlégy"]}}
+,{"page": 41, "scientific_name": "Cheilosia variabilis", "common_names": {"hu": ["közönséges bronzlégy"]}}
+,{"page": 41, "scientific_name": "Cheilosia hypena", "common_names": {"hu": ["mecseki bronzlégy"]}}
+,{"page": 41, "scientific_name": "Cheilosia vulpina", "common_names": {"hu": ["aszatszár bronzlégy"]}}
+,{"page": 41, "scientific_name": "Cheilosia latifrons", "common_names": {"hu": ["széles-szemszegélyű bronzlégy"]}}
+,{"page": 41, "scientific_name": "Cheilosia illustrata", "common_names": {"hu": ["tarkaszőrű bronzlégy"]}}
+,{"page": 42, "scientific_name": "Cheilosia grossa", "common_names": {"hu": ["kecskefűz bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia pictipennis", "common_names": {"hu": ["hegyvidéki bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia subpictipennis", "common_names": {"hu": ["fűz bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia chrysocoma", "common_names": {"hu": ["vörhenyes bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia flavipes", "common_names": {"hu": ["barnacombú bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia albipila", "common_names": {"hu": ["aszat bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia orthotricha", "common_names": {"hu": ["koratavaszi bronzlégy"]}}
+,{"page": 43, "scientific_name": "Cheilosia nebulosa", "common_names": {"hu": ["barnaszárnyú bronzlégy"]}}
+,{"page": 44, "scientific_name": "Cheilosia chloris", "common_names": {"hu": ["acsalapu-bronzlégy"]}}
+,{"page": 44, "scientific_name": "Cheilosia canicularis", "common_names": {"hu": ["martilapu-bronzlégy"]}}
+,{"page": 45, "scientific_name": "Cheilosia impressa", "common_names": {"hu": ["feketelábú bronzlégy"]}}
+,{"page": 45, "scientific_name": "Cheilosia schnabli", "common_names": {"hu": ["sárgásvörös-csápú bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia albitarsis", "common_names": {"hu": ["fehér-lábfejízű bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia ranunculi", "common_names": {"hu": ["boglárka bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia fasciata", "common_names": {"hu": ["medvehagyma bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia semifasciata", "common_names": {"hu": ["varjúháj bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia lenta", "common_names": {"hu": ["gólyahír bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia cynocephala", "common_names": {"hu": ["bogáncs bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia vernalis", "common_names": {"hu": ["bakszakáll bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia mutabilis", "common_names": {"hu": ["bogáncsgyökér bronzlégy"]}}
+,{"page": 46, "scientific_name": "Cheilosia gigantea", "common_names": {"hu": ["nagy bronzlégy"]}}
+,{"page": 47, "scientific_name": "Cheilosia proxima", "common_names": {"hu": ["mezeiaszat bronzlégy"]}}
+,{"page": 47, "scientific_name": "Cheilosia velutina", "common_names": {"hu": ["görvélyfű bronzlégy"]}}
+,{"page": 47, "scientific_name": "Cheilosia bergenstammi", "common_names": {"hu": ["aggófű bronzlégy"]}}
+,{"page": 47, "scientific_name": "Cheilosia fraterna", "common_names": {"hu": ["bogáncsvirág bronzlégy"]}}
+,{"page": 48, "scientific_name": "Chrysogaster", "common_names": {"hu": ["smaragdlegyek"]}}
+,{"page": 49, "scientific_name": "Chrysogaster cemiteriorum", "common_names": {"hu": ["sárgaszárnytövű smaragdlégy"]}}
+,{"page": 49, "scientific_name": "Chrysogaster basalis", "common_names": {"hu": ["kis smaragdlégy"]}}
+,{"page": 49, "scientific_name": "Chrysogaster solstitialis", "common_names": {"hu": ["gyakori smaragdlégy"]}}
+,{"page": 49, "scientific_name": "Chrysogaster virescens", "common_names": {"hu": ["zöld smaragdlégy"]}}
+,{"page": 49, "scientific_name": "Chrysotoxum", "common_names": {"hu": ["öveslegyek"]}}
+,{"page": 49, "scientific_name": "Chrysotoxum intermedium", "common_names": {"hu": ["déli öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum cautum", "common_names": {"hu": ["gyakori öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum fasciatum", "common_names": {"hu": ["rövidpotrohú öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum fasciolatum", "common_names": {"hu": ["nagy öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum bicinctum", "common_names": {"hu": ["kétpántos öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum lineare", "common_names": {"hu": ["karcsú öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum arcuatum", "common_names": {"hu": ["közönséges öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum vernale", "common_names": {"hu": ["tavaszi öveslégy"]}}
+,{"page": 50, "scientific_name": "Chrysotoxum verralli", "common_names": {"hu": ["Verrali öveslégy"]}}
+,{"page": 51, "scientific_name": "Chrysotoxum octomaculatum", "common_names": {"hu": ["nyolcfoltos öveslégy"]}}
+,{"page": 51, "scientific_name": "Chrysotoxum elegans", "common_names": {"hu": ["hegyvidéki öveslégy"]}}
+,{"page": 51, "scientific_name": "Criorhina", "common_names": {"hu": ["szőrméslegyek"]}}
+,{"page": 52, "scientific_name": "Criorhina asilica", "common_names": {"hu": ["méhalakú szőrméslégy"]}}
+,{"page": 52, "scientific_name": "Criorhina pachymera", "common_names": {"hu": ["karcsú szőrméslégy"]}}
+,{"page": 52, "scientific_name": "Criorhina ranunculi", "common_names": {"hu": ["nagy szőrméslégy"]}}
+,{"page": 52, "scientific_name": "Dasysyrphus", "common_names": {"hu": ["erdeilegyek"]}}
+,{"page": 52, "scientific_name": "Dasysyrphus albostriatus", "common_names": {"hu": ["csíkoshátú erdeilégy"]}}
+,{"page": 52, "scientific_name": "Dasysyrphus tricinctus", "common_names": {"hu": ["szélespántú erdeilégy"]}}
+,{"page": 52, "scientific_name": "Dasysyrphus hilaris", "common_names": {"hu": ["sárgaarcú erdeilégy"]}}
+,{"page": 53, "scientific_name": "Dasysyrphus venustus", "common_names": {"hu": ["gyakori erdeilégy"]}}
+,{"page": 53, "scientific_name": "Dasysyrphus friuliensis", "common_names": {"hu": ["alpesi erdeilégy"]}}
+,{"page": 53, "scientific_name": "Dasysyrphus pinastri", "common_names": {"hu": ["holdfoltú erdeilégy"]}}
+,{"page": 53, "scientific_name": "Didea", "common_names": {"hu": ["lapospotrohúlegyek"]}}
+,{"page": 53, "scientific_name": "Didea fasciata", "common_names": {"hu": ["sárgafoltos lapospotrohúlégy"]}}
+,{"page": 53, "scientific_name": "Didea alneti", "common_names": {"hu": ["zöldfoltos lapospotrohúlégy"]}}
+,{"page": 54, "scientific_name": "Didea intermedia", "common_names": {"hu": ["kis lapospotrohúlégy"]}}
+,{"page": 54, "scientific_name": "Doros", "common_names": {"hu": ["méhfészeklegyek"]}}
+,{"page": 54, "scientific_name": "Doros profuges", "common_names": {"hu": ["ritka méhfészeklægy"]}}
+,{"page": 54, "scientific_name": "Epistrophe", "common_names": {"hu": ["rétizengőlegyek"]}}
+,{"page": 54, "scientific_name": "Epistrophe eligans", "common_names": {"hu": ["változékogy rétizengőlégy"]}}
+,{"page": 54, "scientific_name": "Epistrophe euchroma", "common_names": {"hu": ["májusi rétizengőlégy"]}}
+,{"page": 54, "scientific_name": "Epistrophe grossulariae", "common_names": {"hu": ["nagy rétizengőlégy"]}}
+,{"page": 55, "scientific_name": "Epistrophe diaphana", "common_names": {"hu": ["sárgalábú rétizengőlégy"]}}
+,{"page": 55, "scientific_name": "Epistrophe flava", "common_names": {"hu": ["szélessávú rétizengőlégy"]}}
+,{"page": 55, "scientific_name": "Epistrophe nitidicollis", "common_names": {"hu": ["ragyogó rétizengőlégy"]}}
+,{"page": 56, "scientific_name": "Epistrophe obscuripes", "common_names": {"hu": ["keskenyarcú rétizengőlégy"]}}
+,{"page": 56, "scientific_name": "Epistrophe ochrostoma", "common_names": {"hu": ["kis rétizengőlégy"]}}
+,{"page": 56, "scientific_name": "Epistrophe melanostoma", "common_names": {"hu": ["feketeszájú rétizengőlégy"]}}
+,{"page": 56, "scientific_name": "Epistrophe cryptica", "common_names": {"hu": ["ritka rétizengőlégy"]}}
+,{"page": 56, "scientific_name": "Episyrphus", "common_names": {"hu": ["ékfoltoslegyek"]}}
+,{"page": 57, "scientific_name": "Episyrphus balteatus", "common_names": {"hu": ["ékfoltos zengőlégy"]}}
+,{"page": 57, "scientific_name": "Eriozona", "common_names": {"hu": ["bundásszőrűlegyek"]}}
+,{"page": 57, "scientific_name": "Eriozona syrphoides", "common_names": {"hu": ["tarka bundásszőrűlégy"]}}
+,{"page": 57, "scientific_name": "Eristalinus", "common_names": {"hu": ["foltosszeműlegyek"]}}
+,{"page": 57, "scientific_name": "Eristalinus sepulchralis", "common_names": {"hu": ["fekete foltosszeműlégy"]}}
+,{"page": 57, "scientific_name": "Eristalinus aeneus", "common_names": {"hu": ["bronzos foltosszeműlégy"]}}
+,{"page": 58, "scientific_name": "Eristalis", "common_names": {"hu": ["herelegyek"]}}
+,{"page": 58, "scientific_name": "Eristalis intricaria", "common_names": {"hu": ["bundás herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis tenax", "common_names": {"hu": ["közönséges herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis abusiva", "common_names": {"hu": ["alföldi herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis arbustorum", "common_names": {"hu": ["fehérarcú herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis alpina", "common_names": {"hu": ["alpesi herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis jugorum", "common_names": {"hu": ["hosszúarcú herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis pertinax", "common_names": {"hu": ["sárgalábfejű herelégy"]}}
+,{"page": 58, "scientific_name": "Eristalis similis", "common_names": {"hu": ["hosszúszárnyjegyű herelégy"]}}
+,{"page": 59, "scientific_name": "Eristalis lineata", "common_names": {"hu": ["foltosszárnyú herelégy"]}}
+,{"page": 59, "scientific_name": "Eristalis interrupta", "common_names": {"hu": ["rövidszárnyjegyű herelégy"]}}
+,{"page": 59, "scientific_name": "Eristalis vitripennis", "common_names": {"hu": ["ritka hegyi herelégy"]}}
+,{"page": 59, "scientific_name": "Eumerus", "common_names": {"hu": ["hagymalegyek"]}}
+,{"page": 59, "scientific_name": "Eumerus tarsalis", "common_names": {"hu": ["sörtéslábfejű hagymalégy"]}}
+,{"page": 59, "scientific_name": "Eumerus tauricus", "common_names": {"hu": ["krími hagymalégy"]}}
+,{"page": 59, "scientific_name": "Eumerus grandis", "common_names": {"hu": ["levágottcsápú hagymalégy"]}}
+,{"page": 59, "scientific_name": "Eumerus ovatus", "common_names": {"hu": ["ezüstszőrű hagymalégy"]}}
+,{"page": 59, "scientific_name": "Eumerus tricolor", "common_names": {"hu": ["háromszínű hagymalégy"]}}
+,{"page": 59, "scientific_name": "Eumerus sinuatus", "common_names": {"hu": ["bronzfényű hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus longicornis", "common_names": {"hu": ["hosszúcsápú hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus hungaricus", "common_names": {"hu": ["magyar hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus tuberculatus", "common_names": {"hu": ["dudoroscombú hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus sogdianus", "common_names": {"hu": ["ázsiai hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus strigatus", "common_names": {"hu": ["közönséges hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus flavitarsis", "common_names": {"hu": ["fehérlábfejű hagymalégy"]}}
+,{"page": 61, "scientific_name": "Eumerus ornatus", "common_names": {"hu": ["nagycerkuszú hagymalégy"]}}
+,{"page": 62, "scientific_name": "Eumerus ruficornis", "common_names": {"hu": ["vöröscsápú hagymalégy"]}}
+,{"page": 63, "scientific_name": "Eupeodes", "common_names": {"hu": ["mezeilegyek"]}}
+,{"page": 63, "scientific_name": "Eupeodes lapponicus", "common_names": {"hu": ["hajlotterű mezeilégy"]}}
+,{"page": 64, "scientific_name": "Eupeodes lundbecki", "common_names": {"hu": ["északi mezeilégy"]}}
+,{"page": 64, "scientific_name": "Eupeodes nielseni", "common_names": {"hu": ["rövidfoltú mezeilégy"]}}
+,{"page": 64, "scientific_name": "Eupeodes corollae", "common_names": {"hu": ["gyakori mezeilégy"]}}
+,{"page": 64, "scientific_name": "Eupeodes luniger", "common_names": {"hu": ["holdfoltú mezeilégy"]}}
+,{"page": 65, "scientific_name": "Eupeodes nitens", "common_names": {"hu": ["változékony mezeilégy"]}}
+,{"page": 65, "scientific_name": "Eupeodes bucculatus", "common_names": {"hu": ["nyugati mezeilégy"]}}
+,{"page": 65, "scientific_name": "Eupeodes latifasciatus", "common_names": {"hu": ["szélessávú mezeilégy"]}}
+,{"page": 65, "scientific_name": "Ferdinandea", "common_names": {"hu": ["sörtéslegyek"]}}
+,{"page": 66, "scientific_name": "Ferdinandea ruficornis", "common_names": {"hu": ["fekete sörtéslégy"]}}
+,{"page": 66, "scientific_name": "Ferdinandea cuprea", "common_names": {"hu": ["rezes sörtéslégy"]}}
+,{"page": 66, "scientific_name": "Helophilus", "common_names": {"hu": ["mocsárilegyek"]}}
+,{"page": 66, "scientific_name": "Helophilus trivittatus", "common_names": {"hu": ["nagy mocsárilégy"]}}
+,{"page": 66, "scientific_name": "Helophilus affinis", "common_names": {"hu": ["északi mocsárilégy"]}}
+,{"page": 67, "scientific_name": "Helophilus hybridus", "common_names": {"hu": ["hibrid mocsárilégy"]}}
+,{"page": 67, "scientific_name": "Helophilus pendulus", "common_names": {"hu": ["közönséges mocsárilégy"]}}
+,{"page": 67, "scientific_name": "Heringia", "common_names": {"hu": ["hegyesszögűlegyek"]}}
+,{"page": 67, "scientific_name": "Heringia heringi", "common_names": {"hu": ["feketeszőrű hegyesszögűlégy"]}}
+,{"page": 67, "scientific_name": "Heringia senilis", "common_names": {"hu": ["világosszőrű hegyesszögűlégy"]}}
+,{"page": 67, "scientific_name": "Ischyrosyrphus", "common_names": {"hu": ["sávoslegyek"]}}
+,{"page": 68, "scientific_name": "Ischyrosyrphus glaucius", "common_names": {"hu": ["kékesszürke sávoslégy"]}}
+,{"page": 68, "scientific_name": "Ischyrosyrphus laternarius", "common_names": {"hu": ["fehér sávoslégy"]}}
+,{"page": 68, "scientific_name": "Lejogaster", "common_names": {"hu": ["fémeslegyek"]}}
+,{"page": 68, "scientific_name": "Lejogaster metallina", "common_names": {"hu": ["fekete fémeslégy"]}}
+,{"page": 68, "scientific_name": "Lejogaster tarsata", "common_names": {"hu": ["sárgalábfejű fémeslégy"]}}
+,{"page": 68, "scientific_name": "Lejops", "common_names": {"hu": ["gyékénylegyek"]}}
+,{"page": 69, "scientific_name": "Lejops vittatus", "common_names": {"hu": ["gyakori gyékénylégy"]}}
+,{"page": 69, "scientific_name": "Lejota", "common_names": {"hu": ["ártérilegyek"]}}
+,{"page": 69, "scientific_name": "Lejota ruficornis", "common_names": {"hu": ["fekete ártérilégy"]}}
+,{"page": 69, "scientific_name": "Leucozona", "common_names": {"hu": ["fehérpántoslegyek"]}}
+,{"page": 70, "scientific_name": "Leucozona lucorum", "common_names": {"hu": ["erdei fehérpántoslégy"]}}
+,{"page": 70, "scientific_name": "Mallota", "common_names": {"hu": ["gyapjaslegyek"]}}
+,{"page": 70, "scientific_name": "Mallota megilliformis", "common_names": {"hu": ["sárga gyapjaslégy"]}}
+,{"page": 70, "scientific_name": "Mallota cimbiciformis", "common_names": {"hu": ["méhszerű gyapjaslégy"]}}
+,{"page": 70, "scientific_name": "Mallota fuciformis", "common_names": {"hu": ["tarka gyapjaslégy"]}}
+,{"page": 70, "scientific_name": "Megasyrphus", "common_names": {"hu": ["nyiladéklegyek"]}}
+,{"page": 71, "scientific_name": "Megasyrphus erraticus", "common_names": {"hu": ["nagy nyiladéklégy"]}}
+,{"page": 71, "scientific_name": "Melangyna", "common_names": {"hu": ["tavaszilegyek"]}}
+,{"page": 71, "scientific_name": "Melangyna quadrimaculata", "common_names": {"hu": ["négyfoltos tavaszilégy"]}}
+,{"page": 71, "scientific_name": "Melangyna barbifrons", "common_names": {"hu": ["fűzbarka tavaszilégy"]}}
+,{"page": 71, "scientific_name": "Melangyna lasiophthalma", "common_names": {"hu": ["korai tavaszilégy"]}}
+,{"page": 72, "scientific_name": "Melangyna umbellatarum", "common_names": {"hu": ["késői tavaszilégy"]}}
+,{"page": 72, "scientific_name": "Melangyna labiatarum", "common_names": {"hu": ["déli tavaszilégy"]}}
+,{"page": 72, "scientific_name": "Melangyna compositarum", "common_names": {"hu": ["északi tavaszilégy"]}}
+,{"page": 72, "scientific_name": "Melanogaster", "common_names": {"hu": ["aranyhasúlegyek"]}}
+,{"page": 73, "scientific_name": "Melanogaster curvistylus", "common_names": {"hu": ["ritka aranyhasúlégy"]}}
+,{"page": 73, "scientific_name": "Melanogaster nuda", "common_names": {"hu": ["kis aranyhasúlégy"]}}
+,{"page": 73, "scientific_name": "Melanogaster hirtella", "common_names": {"hu": ["hosszúszőrű aranyhasúlégy"]}}
+,{"page": 73, "scientific_name": "Melanostoma", "common_names": {"hu": ["fűzengőlegyek"]}}
+,{"page": 73, "scientific_name": "Melanostoma dubium", "common_names": {"hu": ["hegyvidéki fűzengőlégy"]}}
+,{"page": 73, "scientific_name": "Melanostoma scalare", "common_names": {"hu": ["hosszúpotrohú fűzengőlégy"]}}
+,{"page": 74, "scientific_name": "Melanostoma mellinum", "common_names": {"hu": ["gyakori fűzengőlégy"]}}
+,{"page": 74, "scientific_name": "Meligramma", "common_names": {"hu": ["karcsúlegyek"]}}
+,{"page": 74, "scientific_name": "Meligramma cincta", "common_names": {"hu": ["változékony karcsúlégy"]}}
+,{"page": 74, "scientific_name": "Meligramma guttata", "common_names": {"hu": ["kisfoltú karcsúlégy"]}}
+,{"page": 74, "scientific_name": "Meligramma triangulifera", "common_names": {"hu": ["háromszögfoltú karcsúlégy"]}}
+,{"page": 74, "scientific_name": "Meliscaeva", "common_names": {"hu": ["vékonybőrűlegyek"]}}
+,{"page": 75, "scientific_name": "Meliscaeva auricollis", "common_names": {"hu": ["változékony vékonybőrűlégy"]}}
+,{"page": 75, "scientific_name": "Meliscaeva cinctella", "common_names": {"hu": ["gyakori vékonybőrűlégy"]}}
+,{"page": 75, "scientific_name": "Merodon", "common_names": {"hu": ["nárciszlegyek"]}}
+,{"page": 75, "scientific_name": "Merodon equestris", "common_names": {"hu": ["változékony nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon constans", "common_names": {"hu": ["kakukkfű nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon clavipes", "common_names": {"hu": ["nagy nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon aberrans", "common_names": {"hu": ["hosszúpotrohú nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon triangulum", "common_names": {"hu": ["hullámtéri nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon armipes", "common_names": {"hu": ["kétfogú nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon loewi", "common_names": {"hu": ["fémeszöld nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon ruficornis", "common_names": {"hu": ["vöröscsápú nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon tricinctus", "common_names": {"hu": ["ritka nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon cinereus", "common_names": {"hu": ["feketesávos nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon aeneus", "common_names": {"hu": ["aranysárga nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon rufus", "common_names": {"hu": ["vörösszőrű nárciszlégy"]}}
+,{"page": 76, "scientific_name": "Merodon albifrons", "common_names": {"hu": ["fehérarcú nárciszlégy"]}}
+,{"page": 77, "scientific_name": "Merodon avidus", "common_names": {"hu": ["sárgalábfejű nárciszlégy"]}}
+,{"page": 77, "scientific_name": "Merodon nigritarsis", "common_names": {"hu": ["feketelábfejű nárciszlégy"]}}
+,{"page": 78, "scientific_name": "Mesembrius", "common_names": {"hu": ["mocsárlegyek"]}}
+,{"page": 79, "scientific_name": "Mesembrius peregrinus", "common_names": {"hu": ["európai mocsárlégy"]}}
+,{"page": 79, "scientific_name": "Microdon", "common_names": {"hu": ["hangyalegyek"]}}
+,{"page": 79, "scientific_name": "Microdon mutabilis", "common_names": {"hu": ["vörösbarna hangyalégy"]}}
+,{"page": 79, "scientific_name": "Microdon devius", "common_names": {"hu": ["barna hangyalégy"]}}
+,{"page": 79, "scientific_name": "Microdon analis", "common_names": {"hu": ["feketegyűrűs hangyalégy"]}}
+,{"page": 79, "scientific_name": "Microdon miki", "common_names": {"hu": ["hosszúcsápú hangyalégy"]}}
+,{"page": 80, "scientific_name": "Milesia", "common_names": {"hu": ["darázszengőlegyek"]}}
+,{"page": 80, "scientific_name": "Milesia crabroniformis", "common_names": {"hu": ["nagy darázszengőlégy"]}}
+,{"page": 80, "scientific_name": "Milesia semiluctifera", "common_names": {"hu": ["kis darázszengőlégy"]}}
+,{"page": 81, "scientific_name": "Myathropa", "common_names": {"hu": ["halálfejeslegyek"]}}
+,{"page": 81, "scientific_name": "Myathropa florea", "common_names": {"hu": ["halálfejes odúlégy"]}}
+,{"page": 81, "scientific_name": "Myolepta", "common_names": {"hu": ["nyárfalegyek"]}}
+,{"page": 81, "scientific_name": "Myolepta obscura", "common_names": {"hu": ["hamvasoldalú nyárfalégy"]}}
+,{"page": 81, "scientific_name": "Myolepta vara", "common_names": {"hu": ["fényesoldalú nyárfalégy"]}}
+,{"page": 82, "scientific_name": "Myolepta nigritarsis", "common_names": {"hu": ["feketelábú nyárfalégy"]}}
+,{"page": 82, "scientific_name": "Myolepta dubia", "common_names": {"hu": ["sárga nyárfalégy"]}}
+,{"page": 82, "scientific_name": "Neoascia", "common_names": {"hu": ["nádaslegyek"]}}
+,{"page": 82, "scientific_name": "Neoascia podagrica", "common_names": {"hu": ["gyakori nádaslégy"]}}
+,{"page": 82, "scientific_name": "Neoascia annexa", "common_names": {"hu": ["nyúlánk nádaslégy"]}}
+,{"page": 83, "scientific_name": "Neoascia tenur", "common_names": {"hu": ["mocsári nádaslégy"]}}
+,{"page": 83, "scientific_name": "Neoascia interrupta", "common_names": {"hu": ["rövidcsápú nádaslégy"]}}
+,{"page": 83, "scientific_name": "Neoascia obliqua", "common_names": {"hu": ["hosszúcsápú nádaslégy"]}}
+,{"page": 83, "scientific_name": "Neoascia unifasciata", "common_names": {"hu": ["ritka nádaslégy"]}}
+,{"page": 83, "scientific_name": "Neoascia geniculata", "common_names": {"hu": ["feketegyűrűs nádaslégy"]}}
+,{"page": 84, "scientific_name": "Neoascia meticulosa", "common_names": {"hu": ["fekete nádaslégy"]}}
+,{"page": 84, "scientific_name": "Neocnemodon", "common_names": {"hu": ["pálcikáslegyek"]}}
+,{"page": 84, "scientific_name": "Neocnemodon latitarsis", "common_names": {"hu": ["széleslábfejű pálcikáslégy"]}}
+,{"page": 84, "scientific_name": "Neocnemodon fulvimanus", "common_names": {"hu": ["északi pálcikáslégy"]}}
+,{"page": 84, "scientific_name": "Neocnemodon verrucula", "common_names": {"hu": ["szemölcsös pálcikáslégy"]}}
+,{"page": 84, "scientific_name": "Neocnemodon brevidens", "common_names": {"hu": ["rövidsörtés pálcikáslégy"]}}
+,{"page": 84, "scientific_name": "Neocnemodon pubescens", "common_names": {"hu": ["sötétszőrű pálcikáslégy"]}}
+,{"page": 84, "scientific_name": "Neocnemodon vitripennis", "common_names": {"hu": ["világosszőrű pálcikáslégy"]}}
+,{"page": 84, "scientific_name": "Orthonevra", "common_names": {"hu": ["patakzengőlegyek"]}}
+,{"page": 85, "scientific_name": "Orthonevra splendens", "common_names": {"hu": ["nagy patakzengőlégy"]}}
+,{"page": 85, "scientific_name": "Orthonevra elegans", "common_names": {"hu": ["sávosszemű patakzengőlégy"]}}
+,{"page": 85, "scientific_name": "Orthonevra intermedia", "common_names": {"hu": ["lápi patakzengőlégy"]}}
+,{"page": 85, "scientific_name": "Orthonevra geniculata", "common_names": {"hu": ["sötétszárnyjegyű patakzengőlégy"]}}
+,{"page": 85, "scientific_name": "Orthonevra brevicornis", "common_names": {"hu": ["rövidcsápú patakzengőlégy"]}}
+,{"page": 85, "scientific_name": "Orthonevra tristis", "common_names": {"hu": ["hegyi patakzengőlégy"]}}
+,{"page": 85, "scientific_name": "Orthonevra incisa", "common_names": {"hu": ["bemetszett patakzengőlégy"]}}
+,{"page": 86, "scientific_name": "Orthonevra frontalis", "common_names": {"hu": ["levágottcsápú patakzengőlégy"]}}
+,{"page": 86, "scientific_name": "Orthonevra plumbago", "common_names": {"hu": ["fekete patakzengőlégy"]}}
+,{"page": 86, "scientific_name": "Orthonevra nobilis", "common_names": {"hu": ["boglárka patakzengőlégy"]}}
+,{"page": 86, "scientific_name": "Paragus", "common_names": {"hu": ["fenyérzengőlegyek"]}}
+,{"page": 86, "scientific_name": "Paragus haemorrhous", "common_names": {"hu": ["gyakori fenyérzengőlégy"]}}
+,{"page": 86, "scientific_name": "Paragus tibialis", "common_names": {"hu": ["fekete fenyérzengőlégy"]}}
+,{"page": 86, "scientific_name": "Paragus cinctus", "common_names": {"hu": ["sárga fenyérzengőlégy"]}}
+,{"page": 86, "scientific_name": "Paragus quadrifasciatus", "common_names": {"hu": ["foltoshátú fenyérzengőlégy"]}}
+,{"page": 88, "scientific_name": "Paragus majoranae", "common_names": {"hu": ["ezüstcsíkos fenyérzengőlégy"]}}
+,{"page": 88, "scientific_name": "Paragus albifrons", "common_names": {"hu": ["pirosfoltos fenyérzengőlégy"]}}
+,{"page": 88, "scientific_name": "Paragus finitimus", "common_names": {"hu": ["hegyestüskéjű fenyérzengőlégy"]}}
+,{"page": 88, "scientific_name": "Paragus bicolor", "common_names": {"hu": ["kétszínű fenyérzengőlégy"]}}
+,{"page": 88, "scientific_name": "Paragus strigatus", "common_names": {"hu": ["feketefoltos fenyérzengőlégy"]}}
+,{"page": 88, "scientific_name": "Paragus medeae", "common_names": {"hu": ["Stanescu fenyérzengőlégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus", "common_names": {"hu": ["cserjelegyek"]}}
+,{"page": 89, "scientific_name": "Parasyrphus punctulatus", "common_names": {"hu": ["félholdfoltos cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus macularis", "common_names": {"hu": ["korai cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus nigritarsis", "common_names": {"hu": ["feketelábfejű cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus malinellus", "common_names": {"hu": ["fényeshátú cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus annulatus", "common_names": {"hu": ["sárgalábfejű cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus lineola", "common_names": {"hu": ["sötétszárnyjegyű cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parasyrphus vittiger", "common_names": {"hu": ["halványszárnyjegyű cserjelégy"]}}
+,{"page": 89, "scientific_name": "Parhelophilus", "common_names": {"hu": ["csíkoslegyek"]}}
+,{"page": 90, "scientific_name": "Parhelophilus frutetorum", "common_names": {"hu": ["dudoros csíkoslégy"]}}
+,{"page": 90, "scientific_name": "Parhelophilus versicolor", "common_names": {"hu": ["dudornélküli csíkoslégy"]}}
+,{"page": 90, "scientific_name": "Pelecocera", "common_names": {"hu": ["szélescsápúlegyek"]}}
+,{"page": 90, "scientific_name": "Pelecocera tricincta", "common_names": {"hu": ["gyakori szélescsápúlégy"]}}
+,{"page": 90, "scientific_name": "Pelecocera latifrons", "common_names": {"hu": ["alpi szélescsápúlégy"]}}
+,{"page": 91, "scientific_name": "Pipiza", "common_names": {"hu": ["holdfoltúlegyek"]}}
+,{"page": 91, "scientific_name": "Pipiza quadrimaculata", "common_names": {"hu": ["négypettyes holdfoltúlégy"]}}
+,{"page": 91, "scientific_name": "Pipiza luteitarsis", "common_names": {"hu": ["vékonycombú holdfoltúlégy"]}}
+,{"page": 91, "scientific_name": "Pipiza festiva", "common_names": {"hu": ["nagypettyes holdfoltúlégy"]}}
+,{"page": 91, "scientific_name": "Pipiza fasciata", "common_names": {"hu": ["kétpántos holdfoltúlégy"]}}
+,{"page": 92, "scientific_name": "Pipiza austriaca", "common_names": {"hu": ["dudoros holdfoltúlégy"]}}
+,{"page": 92, "scientific_name": "Pipiza lugubris", "common_names": {"hu": ["fekete holdfoltúlégy"]}}
+,{"page": 92, "scientific_name": "Pipiza fenestrata", "common_names": {"hu": ["ritka holdfoltúlégy"]}}
+,{"page": 92, "scientific_name": "Pipiza noctiluca", "common_names": {"hu": ["változékony holdfoltúlégy"]}}
+,{"page": 92, "scientific_name": "Pipiza bimaculata", "common_names": {"hu": ["gyakori holdfoltúlégy"]}}
+,{"page": 92, "scientific_name": "Pipizella", "common_names": {"hu": ["törpelegyek"]}}
+,{"page": 93, "scientific_name": "Pipizella maculipennis", "common_names": {"hu": ["foltosszárnyú törpelégy"]}}
+,{"page": 93, "scientific_name": "Pipizella mongolorum", "common_names": {"hu": ["mongol törpelégy"]}}
+,{"page": 93, "scientific_name": "Pipizella annulata", "common_names": {"hu": ["sárgalábú törpelégy"]}}
+,{"page": 93, "scientific_name": "Pipizella divicoi", "common_names": {"hu": ["hegyi törpelégy"]}}
+,{"page": 93, "scientific_name": "Pipizella viduata", "common_names": {"hu": ["közönséges törpelégy"]}}
+,{"page": 93, "scientific_name": "Pipizella virens", "common_names": {"hu": ["nagy törpelégy"]}}
+,{"page": 93, "scientific_name": "Pipizella zeneggenensis", "common_names": {"hu": ["Zeneggen törpelégy"]}}
+,{"page": 94, "scientific_name": "Platycheirus", "common_names": {"hu": ["széleslábúlegyek"]}}
+,{"page": 94, "scientific_name": "Platycheirus subambiguus", "common_names": {"hu": ["zsálya széleslábúlégy"]}}
+,{"page": 94, "scientific_name": "Platycheirus ambiguus", "common_names": {"hu": ["korai széleslábúlégy"]}}
+,{"page": 94, "scientific_name": "Platycheirus sticticus", "common_names": {"hu": ["kis széleslábúlégy"]}}
+,{"page": 94, "scientific_name": "Platycheirus discimanus", "common_names": {"hu": ["szürkefoltos széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus manicatus", "common_names": {"hu": ["ritka széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus melanopsis", "common_names": {"hu": ["hegyi széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus complicatus", "common_names": {"hu": ["alpesi széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus tarsalis", "common_names": {"hu": ["fehérlábú széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus tatricus", "common_names": {"hu": ["tátrai széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus nielseni", "common_names": {"hu": ["nielseni széleslábúlégy"]}}
+,{"page": 95, "scientific_name": "Platycheirus peltatus", "common_names": {"hu": ["nagy széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus scutatus", "common_names": {"hu": ["erdei széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus albimanus", "common_names": {"hu": ["fekete széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus podagratus", "common_names": {"hu": ["hosszú széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus scambus", "common_names": {"hu": ["északi széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus immarginatus", "common_names": {"hu": ["parti széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus fulviventris", "common_names": {"hu": ["vörössárga széleslábúlégy"]}}
+,{"page": 97, "scientific_name": "Platycheirus perpallidus", "common_names": {"hu": ["narancssárga széleslábúlégy"]}}
+,{"page": 98, "scientific_name": "Platycheirus angustatus", "common_names": {"hu": ["karcsú széleslábúlégy"]}}
+,{"page": 98, "scientific_name": "Platycheirus clypeatus", "common_names": {"hu": ["közönséges széleslábúlégy"]}}
+,{"page": 98, "scientific_name": "Platycheirus europaeus", "common_names": {"hu": ["európai széleslábúlégy"]}}
+,{"page": 100, "scientific_name": "Pocota", "common_names": {"hu": ["dongólegyek"]}}
+,{"page": 100, "scientific_name": "Pocota personata", "common_names": {"hu": ["európai dongólégy"]}}
+,{"page": 100, "scientific_name": "Portevinia", "common_names": {"hu": ["medvehagymalegyek"]}}
+,{"page": 100, "scientific_name": "Portevinia maculata", "common_names": {"hu": ["szürkefoltos medvehagymalégy"]}}
+,{"page": 100, "scientific_name": "Psarus", "common_names": {"hu": ["gólyaorrlegyek"]}}
+,{"page": 111, "scientific_name": "Psarus abdominalis", "common_names": {"hu": ["gólyaorrlégy"]}}
+,{"page": 111, "scientific_name": "Psilota", "common_names": {"hu": ["ragyogólegyek"]}}
+,{"page": 111, "scientific_name": "Psilota anthracina", "common_names": {"hu": ["kék ragyogólégy"]}}
+,{"page": 111, "scientific_name": "Psilota innupta", "common_names": {"hu": ["fekete ragyogólégy"]}}
+,{"page": 111, "scientific_name": "Pyrophaena", "common_names": {"hu": ["nádilegyek"]}}
+,{"page": 111, "scientific_name": "Pyrophaena rosarum", "common_names": {"hu": ["kétfoltú nádilégy"]}}
+,{"page": 111, "scientific_name": "Pyrophaena granditarsa", "common_names": {"hu": ["széleslábú nádilégy"]}}
+,{"page": 111, "scientific_name": "Rhingia", "common_names": {"hu": ["csőröslegyek"]}}
+,{"page": 111, "scientific_name": "Rhingia rostrata", "common_names": {"hu": ["vörössárga csőröslégy"]}}
+,{"page": 102, "scientific_name": "Rhingia campestris", "common_names": {"hu": ["közönséges csőröslégy"]}}
+,{"page": 102, "scientific_name": "Rhingia borealis", "common_names": {"hu": ["alip csőröslégy"]}}
+,{"page": 102, "scientific_name": "Scaeva", "common_names": {"hu": ["nagyhomlokúlegyek"]}}
+,{"page": 102, "scientific_name": "Scaeva albomaculata", "common_names": {"hu": ["déli nagyhomlokúlégy"]}}
+,{"page": 103, "scientific_name": "Scaeva pyrastri", "common_names": {"hu": ["gyakori nagyhomlokúlégy"]}}
+,{"page": 103, "scientific_name": "Scaeva selenitica", "common_names": {"hu": ["sárga nagyhomlokúlégy"]}}
+,{"page": 103, "scientific_name": "Scaeva dignota", "common_names": {"hu": ["ritka nagyhomlokúlégy"]}}
+,{"page": 103, "scientific_name": "Sericomyia", "common_names": {"hu": ["tőzegzengőlegyek"]}}
+,{"page": 104, "scientific_name": "Sericomyia silentis", "common_names": {"hu": ["sárgapántos tőzegzengőlégy"]}}
+,{"page": 104, "scientific_name": "Spazigaster", "common_names": {"hu": ["bunkóslegyek"]}}
+,{"page": 104, "scientific_name": "Spazigaster ambulans", "common_names": {"hu": ["alpi bunkóslégy"]}}
+,{"page": 104, "scientific_name": "Sphaerophoria", "common_names": {"hu": ["darázslegyek"]}}
+,{"page": 104, "scientific_name": "Sphaerophoria loewi", "common_names": {"hu": ["feketecsápú darázslégy"]}}
+,{"page": 104, "scientific_name": "Sphaerophoria rueppelli", "common_names": {"hu": ["libatop darázslégy"]}}
+,{"page": 104, "scientific_name": "Sphaerophoria shirchan", "common_names": {"hu": ["szahalini darázslégy"]}}
+,{"page": 105, "scientific_name": "Sphaerophoria scripta", "common_names": {"hu": ["tarka darázslégy"]}}
+,{"page": 105, "scientific_name": "Sphaerophoria interrupta", "common_names": {"hu": ["kis darázslégy"]}}
+,{"page": 105, "scientific_name": "Sphaerophoria fatarum", "common_names": {"hu": ["nyugati darázslégy"]}}
+,{"page": 106, "scientific_name": "Sphaerophoria batava", "common_names": {"hu": ["dunántúli darázslégy"]}}
+,{"page": 106, "scientific_name": "Sphaerophoria taeniata", "common_names": {"hu": ["gyakori darázslégy"]}}
+,{"page": 106, "scientific_name": "Sphegina", "common_names": {"hu": ["karcsúlegyek"]}}
+,{"page": 107, "scientific_name": "Sphegina sibirica", "common_names": {"hu": ["szibériai karcsúlégy"]}}
+,{"page": 107, "scientific_name": "Sphegina montana", "common_names": {"hu": ["hegyi karcsúlégy"]}}
+,{"page": 107, "scientific_name": "Sphegina clavata", "common_names": {"hu": ["ritka karcsúlégy"]}}
+,{"page": 107, "scientific_name": "Sphegina verecunda", "common_names": {"hu": ["északi karcsúlégy"]}}
+,{"page": 107, "scientific_name": "Sphegina latifrons", "common_names": {"hu": ["sárgasörtéjű karcsúlégy"]}}
+,{"page": 107, "scientific_name": "Sphegina elegans", "common_names": {"hu": ["csinos karcsúlégy"]}}
+,{"page": 108, "scientific_name": "Sphegina clunipes", "common_names": {"hu": ["gyakori karcsúlégy"]}}
+,{"page": 108, "scientific_name": "Sphiximorpha", "common_names": {"hu": ["orsócsápúlegyek"]}}
+,{"page": 108, "scientific_name": "Sphiximorpha binominata", "common_names": {"hu": ["ritka orsócsápúlégy"]}}
+,{"page": 108, "scientific_name": "Sphiximorpha subsessilis", "common_names": {"hu": ["galagonya orsócsápúlégy"]}}
+,{"page": 108, "scientific_name": "Spilomyia", "common_names": {"hu": ["odúzengőlegyek"]}}
+,{"page": 108, "scientific_name": "Spilomyia manicata", "synonyms": ["Spilomyia manicatus [sic]"], "common_names": {"hu": ["ékfoltú odúzengőlégy"]}}
+,{"page": 108, "scientific_name": "Spilomyia saltuum", "common_names": {"hu": ["keskenysávú odúzengőlégy"]}}
+,{"page": 109, "scientific_name": "Spilomyia diophthalma", "common_names": {"hu": ["háromfoltú"]}}
+,{"page": 109, "scientific_name": "Syritta", "common_names": {"hu": ["comboslegyek"]}}
+,{"page": 109, "scientific_name": "Syritta pipiens", "common_names": {"hu": ["zizegő comboslégy"]}}
+,{"page": 109, "scientific_name": "Syrphus", "common_names": {"hu": ["kertizengőlegyek"]}}
+,{"page": 109, "scientific_name": "Syrphus torvus", "common_names": {"hu": ["nagy kertizengőlégy"]}}
+,{"page": 110, "scientific_name": "Syrphus nitidifrons", "common_names": {"hu": ["feketehomlokú kertizengőlégy"]}}
+,{"page": 110, "scientific_name": "Syrphus sexmaculatus", "common_names": {"hu": ["ritka kertizengőlégy"]}}
+,{"page": 110, "scientific_name": "Syrphus ribesii", "common_names": {"hu": ["közönséges kertizengőlégy"]}}
+,{"page": 110, "scientific_name": "Syrphus vitripennis", "common_names": {"hu": ["kis kertizengőlégy"]}}
+,{"page": 110, "scientific_name": "Temnostoma", "common_names": {"hu": ["tigrislegyek"]}}
+,{"page": 110, "scientific_name": "Temnostoma vespiforme", "common_names": {"hu": ["sárga tigrislégy"]}}
+,{"page": 111, "scientific_name": "Temnostoma meridionale", "common_names": {"hu": ["déli tigrislégy"]}}
+,{"page": 111, "scientific_name": "Temnostoma apiforme", "common_names": {"hu": ["ritka tigrislégy"]}}
+,{"page": 111, "scientific_name": "Temnostoma bombylans", "common_names": {"hu": ["fekete tigrislégy"]}}
+,{"page": 111, "scientific_name": "Trichopsomyia", "common_names": {"hu": ["erdőszélilegyek"]}}
+,{"page": 111, "scientific_name": "Trichopsomyia joratensis", "common_names": {"hu": ["fekete erdőszélilégy"]}}
+,{"page": 112, "scientific_name": "Trichopsomyia flavitarsis", "common_names": {"hu": ["sárgalábfejű erdőszélilégy"]}}
+,{"page": 112, "scientific_name": "Triglyphus", "common_names": {"hu": ["aprózengőlegyek"]}}
+,{"page": 112, "scientific_name": "Triglyphus primus", "common_names": {"hu": ["fekete aprózengőlégy"]}}
+,{"page": 112, "scientific_name": "Tropidia", "common_names": {"hu": ["fogaslegyek"]}}
+,{"page": 112, "scientific_name": "Tropidia fasciata", "common_names": {"hu": ["ritka fogaslégy"]}}
+,{"page": 113, "scientific_name": "Tropidia scita", "common_names": {"hu": ["gyakori fogaslégy"]}}
+,{"page": 113, "scientific_name": "Volucella", "common_names": {"hu": ["pihelegyek"]}}
+,{"page": 114, "scientific_name": "Volucella bombylans", "common_names": {"hu": ["bundás pihelégy"]}}
+,{"page": 114, "scientific_name": "Volucella zonaria", "common_names": {"hu": ["kétöves pihelégy"]}}
+,{"page": 114, "scientific_name": "Volucella inanis", "common_names": {"hu": ["háromöves pihelégy"]}}
+,{"page": 114, "scientific_name": "Volucella inflata", "common_names": {"hu": ["kis pihelégy"]}}
+,{"page": 114, "scientific_name": "Volucella pellucens", "common_names": {"hu": ["üvegpotrohú pihelégy"]}}
+,{"page": 114, "scientific_name": "Xanthandrus", "common_names": {"hu": ["hernyólegyek"]}}
+,{"page": 114, "scientific_name": "Xanthandrus comtus", "common_names": {"hu": ["szélespotrohú hernyólégy"]}}
+,{"page": 114, "scientific_name": "Xanthogramma", "common_names": {"hu": ["oldalsávoslegyek"]}}
+,{"page": 115, "scientific_name": "Xanthogramma laetum", "common_names": {"hu": ["szőrösszemű oldalsávoslégy"]}}
+,{"page": 115, "scientific_name": "Xanthogramma festivum", "common_names": {"hu": ["korai oldalsávoslégy"]}}
+,{"page": 115, "scientific_name": "Xanthogramma dives", "common_names": {"hu": ["foltosszárnyú oldalsávoslégy"]}}
+,{"page": 116, "scientific_name": "Xanthogramma pedissequum", "common_names": {"hu": ["gyakori oldalsávoslégy"]}}
+,{"page": 116, "scientific_name": "Xylota", "common_names": {"hu": ["fazengőlegyek"]}}
+,{"page": 116, "scientific_name": "Xylota xanthocnema", "common_names": {"hu": ["sárganemezű fazengőlégy"]}}
+,{"page": 116, "scientific_name": "Xylota sylvarum", "common_names": {"hu": ["aranyszőrű fazengőlégy"]}}
+,{"page": 116, "scientific_name": "Xylota segnis", "common_names": {"hu": ["gyakori fazengőlégy"]}}
+,{"page": 116, "scientific_name": "Xylota triangularis", "common_names": {"hu": ["alpesi fazengőlégy"]}}
+,{"page": 116, "scientific_name": "Xylota abiens", "common_names": {"hu": ["kis fazengőlégy"]}}
+,{"page": 116, "scientific_name": "Xylota coeruleiventris", "common_names": {"hu": ["boreomontán fazengőlégy"]}}
+,{"page": 117, "scientific_name": "Xylota meigeniana", "common_names": {"hu": ["ritka fazengőlégy"]}}
+,{"page": 117, "scientific_name": "Xylota florum", "common_names": {"hu": ["virág fazengőlégy"]}}
+,{"page": 117, "scientific_name": "Xylota ignava", "common_names": {"hu": ["vörös fazengőlégy"]}}
+,{"page": 117, "scientific_name": "Xylota tarda", "common_names": {"hu": ["barnasárga fazengőlégy"]}}
+]
+,"the_corncrake":
+[{"page": 176, "scientific_name": "Crex crex", "common_names": {"hu": ["haris"]}}
+]
+,"alkalmazott_novenytan_jegyzet_1":
+[{"page": 6, "scientific_name": "Vira", "common_names": {"hu": ["vírusok"]}}
+,{"page": 6, "scientific_name": "Bacteriophagineae", "common_names": {"hu": ["baktériofágok"]}}
+,{"page": 7, "scientific_name": "Phytophagineae", "common_names": {"hu": ["növényi vírusok"]}}
+,{"page": 7, "scientific_name": "Zoophagineae", "common_names": {"hu": ["állati és emberi vírusok"]}}
+,{"page": 8, "scientific_name": "Bacteria", "common_names": {"hu": ["baktéiumok"]}}
+,{"page": 8, "scientific_name": "Pseudomonadales", "common_names": {"hu": ["pszeudomonaszok"]}}
+,{"page": 9, "scientific_name": "Chlamydobacteriales", "common_names": {"hu": ["hüvelyes baktériumok"]}}
+,{"page": 9, "scientific_name": "Eubacteriales", "common_names": {"hu": ["valódi baktériumok"]}}
+,{"page": 9, "scientific_name": "Actinomycetales", "common_names": {"hu": ["sugárgombák"]}}
+,{"page": 10, "scientific_name": "Algae", "common_names": {"hu": ["moszatok"]}}
+,{"page": 10, "scientific_name": "Cyanobacteria", "common_names": {"hu": ["kékbaktériumok", "kékmoszatok"]}}
+,{"page": 12, "scientific_name": "Euglenophyta", "common_names": {"hu": ["ostorosmoszatok"]}}
+,{"page": 12, "scientific_name": "Chrysophyta", "common_names": {"hu": ["sárgásmoszatok"]}}
+,{"page": 12, "scientific_name": "Xantophyceae", "common_names": {"hu": ["sárgászöld moszatok"]}}
+,{"page": 12, "scientific_name": "Chrysophyceae", "common_names": {"hu": ["sárgamoszatok"]}}
+,{"page": 12, "scientific_name": "Bacillariophyceae", "common_names": {"hu": ["kovamoszatok"]}}
+,{"page": 13, "scientific_name": "Pyrrophyta", "common_names": {"hu": ["barázdásmoszatok"]}}
+,{"page": 13, "scientific_name": "Chlorophyta", "common_names": {"hu": ["zöldmoszatok"]}}
+,{"page": 13, "scientific_name": "Chlorophyceae", "common_names": {"hu": ["zöldmoszatok"]}}
+,{"page": 13, "scientific_name": "Conjugatophyceae", "common_names": {"hu": ["árommoszatok", "ostornélküli moszatok"]}}
+,{"page": 13, "scientific_name": "Charophyceae", "common_names": {"hu": ["csillárkamoszatok"]}}
+,{"page": 15, "scientific_name": "Phaeophyta", "common_names": {"hu": ["barnamoszatok"]}}
+,{"page": 15, "scientific_name": "Rhodophyta", "common_names": {"hu": ["vörösmoszatok"]}}
+,{"page": 16, "scientific_name": "Mycota", "common_names": {"hu": ["gombák"]}}
+,{"page": 16, "scientific_name": "Myxomycota", "common_names": {"hu": ["nyálkagombák"]}}
+,{"page": 18, "scientific_name": "Oomycota", "common_names": {"hu": ["petespórás gombák"]}}
+,{"page": 18, "scientific_name": "Chytridiomycota", "common_names": {"hu": ["rajzóspórás gombák"]}}
+,{"page": 18, "scientific_name": "Zygomycota", "common_names": {"hu": ["járomspórás gombák"]}}
+,{"page": 18, "scientific_name": "Ascomycota", "common_names": {"hu": ["tömlősgombák"]}}
+,{"page": 19, "scientific_name": "Hemiascomycetes", "common_names": {"hu": ["őstömlősök"]}}
+,{"page": 19, "scientific_name": "Plectomycetes", "common_names": {"hu": ["tömlőspenészek"]}}
+,{"page": 19, "scientific_name": "Pyrenomycetes", "common_names": {"hu": ["maggombák"]}}
+,{"page": 19, "scientific_name": "Discomycetes", "common_names": {"hu": ["csészegombák"]}}
+,{"page": 20, "scientific_name": "Loculoascomycetes", "common_names": {"hu": ["sztrómaüreges tömlősgombák"]}}
+,{"page": 20, "scientific_name": "Basidiomycota", "common_names": {"hu": ["bazídiumosgombák"]}}
+,{"page": 20, "scientific_name": "Teliomycetes", "common_names": {"hu": ["rozsdagombák"]}}
+,{"page": 21, "scientific_name": "Ustomycetes", "common_names": {"hu": ["üszöggombák"]}}
+,{"page": 21, "scientific_name": "Basidiomycetes", "common_names": {"hu": ["valódi bazídiumos gombák"]}}
+,{"page": 21, "scientific_name": "Tremellales", "common_names": {"hu": ["kocsonyagomba-alkatúak"]}}
+,{"page": 21, "scientific_name": "Auriculariales", "common_names": {"hu": ["fülgomba-alkatúak"]}}
+,{"page": 21, "scientific_name": "Thelephorales", "common_names": {"hu": ["kéreggomba-alkatúak"]}}
+,{"page": 21, "scientific_name": "Clavariales", "common_names": {"hu": ["palánkagomba-alkatúak"]}}
+,{"page": 21, "scientific_name": "Hydnales", "common_names": {"hu": ["gerebengomba-alkatúak"]}}
+,{"page": 22, "scientific_name": "Poriales", "common_names": {"hu": ["tapló-alkatúak"]}}
+,{"page": 22, "scientific_name": "Cantharellales", "common_names": {"hu": ["rókagomba-alkatúak"]}}
+,{"page": 22, "scientific_name": "Boletales", "common_names": {"hu": ["tinórúgomba-alkatúak"]}}
+,{"page": 22, "scientific_name": "Agaricales", "common_names": {"hu": ["csiperke-alkatúak"]}}
+,{"page": 22, "scientific_name": "Russulales", "common_names": {"hu": ["galambgomba-alkatúak"]}}
+,{"page": 23, "scientific_name": "Deuteromycota", "common_names": {"hu": ["konídiumosgombák"]}}
+,{"page": 24, "scientific_name": "Lichenes", "common_names": {"hu": ["zuzmók"]}}
+,{"page": 26, "scientific_name": "Bryobionta", "common_names": {"hu": ["mohák"]}}
+,{"page": 26, "scientific_name": "Hepatophyta", "common_names": {"hu": ["májmohák"]}}
+,{"page": 26, "scientific_name": "Bryophyta", "common_names": {"hu": ["lombosmohák"]}}
+,{"page": 27, "scientific_name": "Sphagnopsida", "common_names": {"hu": ["tőzegmohák"]}}
+,{"page": 27, "scientific_name": "Bryopsida", "common_names": {"hu": ["valódi lombos mohák"]}}
+,{"page": 29, "scientific_name": "Pteridophyta", "common_names": {"hu": ["harasztok"]}}
+,{"page": 29, "scientific_name": "Lycopodiophyta", "common_names": {"hu": ["korpafüvek"]}}
+,{"page": 29, "scientific_name": "Moniliphyta", "common_names": {"hu": ["zsurlók és páfrányok"]}}
+,{"page": 29, "scientific_name": "Equisetopsida", "common_names": {"hu": ["zsurlók"]}}
+,{"page": 30, "scientific_name": "Ophioglossopsida", "common_names": {"hu": ["kígyónyelvpáfrányok"]}}
+,{"page": 30, "scientific_name": "Polypodiopsida", "common_names": {"hu": ["valódi páfrányok"]}}
+,{"page": 31, "scientific_name": "Gymnospermatophyta", "common_names": {"hu": ["nyitvatermők"]}}
+,{"page": 31, "scientific_name": "Magnoliophyta", "common_names": {"hu": ["zárvatermők"]}}
+,{"page": 31, "scientific_name": "Magnoliopsida", "common_names": {"hu": ["alapi helyzetű zárvatermők"]}}
+,{"page": 31, "scientific_name": "Nymphaeidae", "common_names": {"hu": ["őslágyszárúak"]}}
+,{"page": 31, "scientific_name": "Nymphaeales", "common_names": {"hu": ["tündérrózsa-virágúak"]}}
+,{"page": 31, "scientific_name": "Nymphaeaceae", "common_names": {"hu": ["tündérrózsafélék"]}}
+,{"page": 32, "scientific_name": "Magnoliidae", "common_names": {"hu": ["magnóliaalkatúak"]}}
+,{"page": 32, "scientific_name": "Piperales", "common_names": {"hu": ["borsvirágúak"]}}
+,{"page": 32, "scientific_name": "Aristolochiaceae", "common_names": {"hu": ["farkasalmafélék"]}}
+,{"page": 32, "scientific_name": "Rosopsida", "common_names": {"hu": ["valódi kétszikűek"]}}
+,{"page": 32, "scientific_name": "Ranunculidae", "common_names": {"hu": ["alapi helyzetű valódi kétszikűek"]}}
+,{"page": 32, "scientific_name": "Ranunculales", "common_names": {"hu": ["boglárkavirágúak"]}}
+,{"page": 32, "scientific_name": "Berberidaceae", "common_names": {"hu": ["borbolyafélék"]}}
+,{"page": 32, "scientific_name": "Ranunculaceae", "common_names": {"hu": ["boglárkafélék"]}}
+,{"page": 32, "scientific_name": "Papaveraceae", "common_names": {"hu": ["mákfélék"]}}
+,{"page": 33, "scientific_name": "Fumariaceae", "common_names": {"hu": ["füstikefélék"]}}
+,{"page": 33, "scientific_name": "Proteales", "common_names": {"hu": ["proteavirágúak"]}}
+,{"page": 33, "scientific_name": "Platanaceae", "common_names": {"hu": ["platánfélék"]}}
+,{"page": 33, "scientific_name": "Caryophyllidae", "common_names": {"hu": ["szegfűalkatúak"]}}
+,{"page": 33, "scientific_name": "Caryophyllales", "common_names": {"hu": ["szegfűvirágúak"]}}
+,{"page": 33, "scientific_name": "Phytolaccaceae", "common_names": {"hu": ["karmazsinfélék"]}}
+,{"page": 33, "scientific_name": "Amaranthaceae", "common_names": {"hu": ["disznóparéjfélék"]}}
+,{"page": 33, "scientific_name": "Chenopodiaceae", "common_names": {"hu": ["libatopfélék"]}}
+,{"page": 34, "scientific_name": "Caryophyllaceae", "common_names": {"hu": ["szegfűfélék"]}}
+,{"page": 34, "scientific_name": "Silenoideae", "common_names": {"hu": ["habszegfűfélék"]}}
+,{"page": 34, "scientific_name": "Alsinoideae", "common_names": {"hu": ["lúdhúrfélék"]}}
+,{"page": 34, "scientific_name": "Polygonales", "common_names": {"hu": ["keserűfűvirágúak"]}}
+,{"page": 34, "scientific_name": "Polygonaceae", "common_names": {"hu": ["keserűfűfélék"]}}
+,{"page": 34, "scientific_name": "Plumbaginaceae", "common_names": {"hu": ["istácfélék"]}}
+,{"page": 34, "scientific_name": "Tamaricaceae", "common_names": {"hu": ["tamariskafélék"]}}
+,{"page": 34, "scientific_name": "Santalales", "common_names": {"hu": ["szantálfavirágúak"]}}
+,{"page": 35, "scientific_name": "Loranthaceae", "common_names": {"hu": ["fakínfélék"]}}
+,{"page": 35, "scientific_name": "Viscaceae", "common_names": {"hu": ["fagyöngyfélék"]}}
+,{"page": 35, "scientific_name": "Rosidae", "common_names": {"hu": ["rózsaalkatúak"]}}
+,{"page": 35, "scientific_name": "Crossosomatales", "common_names": {"hu": ["krosszoszomavirágúak"]}}
+,{"page": 35, "scientific_name": "Staphyleaceae", "common_names": {"hu": ["hólyagfafélék"]}}
+,{"page": 35, "scientific_name": "Malpighiales", "common_names": {"hu": ["malpigiavirágúak"]}}
+,{"page": 35, "scientific_name": "Hypericaceae", "common_names": {"hu": ["orbáncfűfélék"]}}
+,{"page": 35, "scientific_name": "Violaceae", "common_names": {"hu": ["ibolyafélék"]}}
+,{"page": 35, "scientific_name": "Euphorbiaceae", "common_names": {"hu": ["kutyatejfélék"]}}
+,{"page": 36, "scientific_name": "Salicaceae", "common_names": {"hu": ["fűzfafélék"]}}
+,{"page": 36, "scientific_name": "Cucurbitales", "common_names": {"hu": ["kabakvirágúak"]}}
+,{"page": 36, "scientific_name": "Cucurbitaceae", "common_names": {"hu": ["kabakfélék"]}}
+,{"page": 36, "scientific_name": "Brassicales", "common_names": {"hu": ["repcevirágúak"]}}
+,{"page": 36, "scientific_name": "Brassicaceae", "common_names": {"hu": ["keresztesvirágúak"]}}
+,{"page": 36, "scientific_name": "Ericales", "common_names": {"hu": ["erikavirágúak"]}}
+,{"page": 36, "scientific_name": "Ericaceae", "common_names": {"hu": ["erikafélék"]}}
+,{"page": 36, "scientific_name": "Pyrolaceae", "common_names": {"hu": ["körtikefélék"]}}
+,{"page": 36, "scientific_name": "Primulales", "common_names": {"hu": ["kankalinvirágúak"]}}
+,{"page": 36, "scientific_name": "Primulaceae", "common_names": {"hu": ["kankalinfélék"]}}
+,{"page": 37, "scientific_name": "Malvales", "common_names": {"hu": ["mályvavirágúak"]}}
+,{"page": 37, "scientific_name": "Cistaceae", "common_names": {"hu": ["szuharfélék"]}}
+,{"page": 37, "scientific_name": "Malvaceae", "common_names": {"hu": ["mályvafélék"]}}
+,{"page": 37, "scientific_name": "Tiliaceae", "common_names": {"hu": ["hársfélék"]}}
+,{"page": 37, "scientific_name": "Saxifragales", "common_names": {"hu": ["kőtörőfűvirágúak"]}}
+,{"page": 37, "scientific_name": "Saxifragaceae", "common_names": {"hu": ["kőtörőfűfélék"]}}
+,{"page": 37, "scientific_name": "Crassulaceae", "common_names": {"hu": ["varjúhájfélék"]}}
+,{"page": 38, "scientific_name": "Grossulariaceae", "common_names": {"hu": ["köszmétefélék"]}}
+,{"page": 38, "scientific_name": "Vitales", "common_names": {"hu": ["szőlővirágúak"]}}
+,{"page": 38, "scientific_name": "Vitaceae", "common_names": {"hu": ["szőlőfélék"]}}
+,{"page": 38, "scientific_name": "Rosales", "common_names": {"hu": ["rózsavirágúak"]}}
+,{"page": 38, "scientific_name": "Rosaceae", "common_names": {"hu": ["rózsafélék"]}}
+,{"page": 38, "scientific_name": "Spiraeoideae", "common_names": {"hu": ["gyöngyvesszőfélék"]}}
+,{"page": 38, "scientific_name": "Maloideae", "common_names": {"hu": ["almafélék"]}}
+,{"page": 38, "scientific_name": "Rosoideae", "common_names": {"hu": ["rózsafélék"]}}
+,{"page": 39, "scientific_name": "Prunoideae", "common_names": {"hu": ["szilvafélék"]}}
+,{"page": 39, "scientific_name": "Cannabaceae", "common_names": {"hu": ["kenderfélék"]}}
+,{"page": 39, "scientific_name": "Urticaceae", "common_names": {"hu": ["csalánfélék"]}}
+,{"page": 39, "scientific_name": "Ulmaceae", "common_names": {"hu": ["szilfafélék"]}}
+,{"page": 39, "scientific_name": "Moraceae", "common_names": {"hu": ["eperfafélék"]}}
+,{"page": 39, "scientific_name": "Rhamnaceae", "common_names": {"hu": ["bengefélék"]}}
+,{"page": 39, "scientific_name": "Elaeagnaceae", "common_names": {"hu": ["ezüstfafélék"]}}
+,{"page": 39, "scientific_name": "Fagales", "common_names": {"hu": ["bükkfavirágúak"]}}
+,{"page": 39, "scientific_name": "Betulaceae", "common_names": {"hu": ["nyírfafélék"]}}
+,{"page": 39, "scientific_name": "Corylaceae", "common_names": {"hu": ["mogyorófélék"]}}
+,{"page": 39, "scientific_name": "Fagaceae", "common_names": {"hu": ["bükkfafélék"]}}
+,{"page": 40, "scientific_name": "Juglandaceae", "common_names": {"hu": ["diófafélék"]}}
+,{"page": 40, "scientific_name": "Fabales", "common_names": {"hu": ["hüvelyesek"]}}
+,{"page": 40, "scientific_name": "Caesalpiniaceae", "common_names": {"hu": ["lepényfafélék"]}}
+,{"page": 40, "scientific_name": "Fabaceae", "common_names": {"hu": ["pillangósvirágúak"]}}
+,{"page": 40, "scientific_name": "Myrtales", "common_names": {"hu": ["mirtuszvirágúak"]}}
+,{"page": 40, "scientific_name": "Lythraceae", "common_names": {"hu": ["füzényfélék"]}}
+,{"page": 40, "scientific_name": "Onagraceae", "common_names": {"hu": ["ligetszépefélék"]}}
+,{"page": 41, "scientific_name": "Trapaceae", "common_names": {"hu": ["sulyomfélék"]}}
+,{"page": 41, "scientific_name": "Sapindales", "common_names": {"hu": ["szappanfa-virágúak"]}}
+,{"page": 41, "scientific_name": "Rutaceae", "common_names": {"hu": ["rutafélék"]}}
+,{"page": 41, "scientific_name": "Simaroubaceae", "common_names": {"hu": ["bálványfafélék"]}}
+,{"page": 41, "scientific_name": "Anacardiaceae", "common_names": {"hu": ["szömörcefélék"]}}
+,{"page": 41, "scientific_name": "Sapindaceae", "common_names": {"hu": ["szappanfafélék"]}}
+,{"page": 41, "scientific_name": "Aceraceae", "common_names": {"hu": ["juharfafélék"]}}
+,{"page": 42, "scientific_name": "Hippocastanaceae", "common_names": {"hu": ["bokrétafafélék"]}}
+,{"page": 42, "scientific_name": "Oxalidales", "common_names": {"hu": ["madársóskavirágúak"]}}
+,{"page": 42, "scientific_name": "Oxalidaceae", "common_names": {"hu": ["madársóskafélék"]}}
+,{"page": 42, "scientific_name": "Geraniales", "common_names": {"hu": ["gólyaorrvirágúak"]}}
+,{"page": 42, "scientific_name": "Geraniaceae", "common_names": {"hu": ["gólyaorrfélék"]}}
+,{"page": 42, "scientific_name": "Celastrales", "common_names": {"hu": ["kecskerágó-virágúak"]}}
+,{"page": 42, "scientific_name": "Celastraceae", "common_names": {"hu": ["kecskerágófélék"]}}
+,{"page": 42, "scientific_name": "Asteridae", "common_names": {"hu": ["forrtszirmúak"]}}
+,{"page": 42, "scientific_name": "Marcgraviales", "common_names": {"hu": ["markgraviavirágúak"]}}
+,{"page": 42, "scientific_name": "Balsaminaceae", "common_names": {"hu": ["nebáncsvirágfélék"]}}
+,{"page": 42, "scientific_name": "Cornales", "common_names": {"hu": ["somvirágúak"]}}
+,{"page": 42, "scientific_name": "Cornaceae", "common_names": {"hu": ["somfélék"]}}
+,{"page": 42, "scientific_name": "Apiales", "common_names": {"hu": ["ernyősvirágúak"]}}
+,{"page": 43, "scientific_name": "Araliaceae", "common_names": {"hu": ["borostyánfélék"]}}
+,{"page": 43, "scientific_name": "Apiaceae", "common_names": {"hu": ["ernyősök"]}}
+,{"page": 43, "scientific_name": "Gentianales", "common_names": {"hu": ["tárnicsvirágúak"]}}
+,{"page": 43, "scientific_name": "Rubiaceae", "common_names": {"hu": ["buzérfélék"]}}
+,{"page": 43, "scientific_name": "Apocynaceae", "common_names": {"hu": ["meténgfélék"]}}
+,{"page": 43, "scientific_name": "Asclepiadaceae", "common_names": {"hu": ["selyemkórófélék"]}}
+,{"page": 44, "scientific_name": "Dipsacales", "common_names": {"hu": ["mácsonyavirágúak"]}}
+,{"page": 44, "scientific_name": "Caprifoliaceae", "common_names": {"hu": ["loncfélék"]}}
+,{"page": 44, "scientific_name": "Adoxaceae", "common_names": {"hu": ["pézsmaboglárfélék"]}}
+,{"page": 44, "scientific_name": "Valerianaceae", "common_names": {"hu": ["macskagyökérfélék"]}}
+,{"page": 44, "scientific_name": "Dipsacaceae", "common_names": {"hu": ["mácsonyafélék"]}}
+,{"page": 44, "scientific_name": "Boraginales", "common_names": {"hu": ["borágóvirágúak"]}}
+,{"page": 44, "scientific_name": "Boraginaceae", "common_names": {"hu": ["érdeslevelűek"]}}
+,{"page": 45, "scientific_name": "Lamiales", "common_names": {"hu": ["árvacsalán-virágúak"]}}
+,{"page": 45, "scientific_name": "Lamiaceae", "common_names": {"hu": ["ajakosok"]}}
+,{"page": 45, "scientific_name": "Scrophulariaceae", "common_names": {"hu": ["görvélyfűfélék"]}}
+,{"page": 45, "scientific_name": "Plantaginaceae", "common_names": {"hu": ["útifűfélék"]}}
+,{"page": 46, "scientific_name": "Oleaceae", "common_names": {"hu": ["olajfafélék"]}}
+,{"page": 46, "scientific_name": "Solanales", "common_names": {"hu": ["burgonyavirágúak"]}}
+,{"page": 46, "scientific_name": "Solanaceae", "common_names": {"hu": ["burgonyafélék"]}}
+,{"page": 46, "scientific_name": "Convolvulaceae", "common_names": {"hu": ["szulákfélék"]}}
+,{"page": 46, "scientific_name": "Asterales", "common_names": {"hu": ["fészekvirágzatúak"]}}
+,{"page": 46, "scientific_name": "Campanulaceae", "common_names": {"hu": ["harangvirágfélék"]}}
+,{"page": 46, "scientific_name": "Asteraceae", "common_names": {"hu": ["fészkesek"]}}
+,{"page": 46, "scientific_name": "Cichorioideae", "common_names": {"hu": ["nyelvesvirágúak"]}}
+,{"page": 47, "scientific_name": "Asteroideae", "common_names": {"hu": ["csövesvirágúak"]}}
+,{"page": 47, "scientific_name": "Liliopsida", "common_names": {"hu": ["egyszikűek"]}}
+,{"page": 47, "scientific_name": "Alismatidae", "common_names": {"hu": ["hídőralkatúak"]}}
+,{"page": 47, "scientific_name": "Alismatales", "common_names": {"hu": ["hídőrvirágúak"]}}
+,{"page": 47, "scientific_name": "Alismataceae", "common_names": {"hu": ["hídőrfélék"]}}
+,{"page": 47, "scientific_name": "Potamogetonaceae", "common_names": {"hu": ["békaszőlőfélék"]}}
+,{"page": 47, "scientific_name": "Araceae", "common_names": {"hu": ["kontyvirágfélék"]}}
+,{"page": 48, "scientific_name": "Lemnaceae", "common_names": {"hu": ["békalencsefélék"]}}
+,{"page": 48, "scientific_name": "Liliidae", "common_names": {"hu": ["liliomalkatúak"]}}
+,{"page": 48, "scientific_name": "Liliales", "common_names": {"hu": ["liliomvirágúak"]}}
+,{"page": 48, "scientific_name": "Liliaceae", "common_names": {"hu": ["liliomfélék"]}}
+,{"page": 48, "scientific_name": "Asparagales", "common_names": {"hu": ["aszparáguszvirágúak"]}}
+,{"page": 48, "scientific_name": "Amaryllidaceae", "common_names": {"hu": ["amarilliszfélék"]}}
+,{"page": 48, "scientific_name": "Iridaceae", "common_names": {"hu": ["nősziromfélék"]}}
+,{"page": 49, "scientific_name": "Orchidaceae", "common_names": {"hu": ["orchideafélék", "kosborfélék"]}}
+,{"page": 49, "scientific_name": "Dioscoreales", "common_names": {"hu": ["jamszgyökérvirágúak"]}}
+,{"page": 49, "scientific_name": "Dioscoreaceae", "common_names": {"hu": ["jamszgyökérfélék"]}}
+,{"page": 49, "scientific_name": "Commelinidae", "common_names": {"hu": ["kommelinaalkatúak"]}}
+,{"page": 49, "scientific_name": "Poales", "common_names": {"hu": ["fűvirágúak"]}}
+,{"page": 49, "scientific_name": "Juncaceae", "common_names": {"hu": ["szittyófélék"]}}
+,{"page": 49, "scientific_name": "Cyperaceae", "common_names": {"hu": ["palkafélék"]}}
+,{"page": 50, "scientific_name": "Poaceae", "common_names": {"hu": ["pázsitfűfélék"]}}
+,{"page": 50, "scientific_name": "Typhaceae", "common_names": {"hu": ["gyékényfélék"]}}
+]
+,"alkalmazott_novenytan_jegyzet_2":
+[{"page": 7, "scientific_name": "Bacteria", "common_names": {"hu": ["baktériumok"]}}
+,{"page": 9, "scientific_name": "Algae", "common_names": {"hu": ["algák"]}}
+,{"page": 9, "scientific_name": "Euglena viridis", "common_names": {"hu": ["zöld szemesostoros"]}}
+,{"page": 9, "scientific_name": "Ceratium hirundinella", "common_names": {"hu": ["fecskemoszat"]}}
+,{"page": 9, "scientific_name": "Spirogyra nitida", "common_names": {"hu": ["békanyál"]}}
+,{"page": 9, "scientific_name": "Chara foetida", "common_names": {"hu": ["csillárkamoszat"]}}
+,{"page": 10, "scientific_name": "Mycota", "common_names": {"hu": ["gombák"]}}
+,{"page": 10, "scientific_name": "Myxomycota", "common_names": {"hu": ["nyálkagombák"]}}
+,{"page": 10, "scientific_name": "Mucilago spongiosa", "common_names": {"hu": ["kakukknyál"]}}
+,{"page": 10, "scientific_name": "Oomycota", "common_names": {"hu": ["petespórás gombák"]}}
+,{"page": 10, "scientific_name": "Plasmopara viticola", "common_names": {"hu": ["szőlőperonoszpóra", "szőlőragya"]}}
+,{"page": 10, "scientific_name": "Saprolegnia ferax", "common_names": {"hu": ["halpenész"]}}
+,{"page": 10, "scientific_name": "Zygomycota", "common_names": {"hu": ["járomspórás gombák"]}}
+,{"page": 10, "scientific_name": "Mucor mucedo", "common_names": {"hu": ["fejespenész"]}}
+,{"page": 11, "scientific_name": "Entomophthora muscae", "common_names": {"hu": ["légypenész"]}}
+,{"page": 11, "scientific_name": "ascomycota", "common_names": {"hu": ["tömlősgombák"]}}
+,{"page": 11, "scientific_name": "Taphrina carpini", "common_names": {"hu": ["gyertyán-boszorkányseprű"]}}
+,{"page": 11, "scientific_name": "Microsphaera quercina", "common_names": {"hu": ["tölgylisztharmat"]}}
+,{"page": 11, "scientific_name": "Rhytisma acerinum", "common_names": {"hu": ["juharlevélfoltosító"]}}
+,{"page": 11, "scientific_name": "Lophodermium seditiosum", "common_names": {"hu": ["erdeifenyő tűkarcgomba"]}}
+,{"page": 11, "scientific_name": "Drepanopeziza punctiformis", "common_names": {"hu": ["nyárlevélfoltosító"]}}
+,{"page": 12, "scientific_name": "Penicillium roquefortii", "common_names": {"hu": ["sajtpenész"]}}
+,{"page": 12, "scientific_name": "Nectria cinnabarina", "common_names": {"hu": ["piros héjbibircs", "vörös szemölcsgomba"]}}
+,{"page": 12, "scientific_name": "Basidiomycota", "common_names": {"hu": ["bazídiumos gombák"]}}
+,{"page": 12, "scientific_name": "Puccinia graminis", "common_names": {"hu": ["gabonarozsda"]}}
+,{"page": 12, "scientific_name": "Ustilago maydis", "common_names": {"hu": ["kukoricaüszög"]}}
+,{"page": 13, "scientific_name": "Aleuria aurantia", "common_names": {"hu": ["narancsvörös csészegomba", "narancsszínű csészegomba"]}}
+,{"page": 13, "scientific_name": "Morchella esculenta", "common_names": {"hu": ["ízletes kucsmagomba"]}}
+,{"page": 13, "scientific_name": "Gyromitra esculenta", "common_names": {"hu": ["redős papsapkagomba"]}}
+,{"page": 13, "scientific_name": "Tuber aestivum", "common_names": {"hu": ["nyári szarvasgomba"]}}
+,{"page": 14, "scientific_name": "Heterobasidion annosum", "common_names": {"hu": ["gyökértapló", "gyökérrontó tapló"]}}
+,{"page": 14, "scientific_name": "Inonotus nidus-pici", "common_names": {"hu": ["kétalakú csertapló", "fekete kétalakú csertapló"]}}
+,{"page": 14, "scientific_name": "Hydnum repandum", "common_names": {"hu": ["sárga gerebengomba"]}}
+,{"page": 14, "scientific_name": "Trametes versicolor", "common_names": {"hu": ["lepketapló"]}}
+,{"page": 14, "scientific_name": "Fistulina hepatica", "common_names": {"hu": ["májgomba"]}}
+,{"page": 15, "scientific_name": "Daedalea quercina", "common_names": {"hu": ["labirintus tapló"]}}
+,{"page": 15, "scientific_name": "Lenzites betulina", "common_names": {"hu": ["fakó lemezestapló"]}}
+,{"page": 15, "scientific_name": "Piptoporus betulinus", "common_names": {"hu": ["nyírfa-tapló"]}}
+,{"page": 15, "scientific_name": "Fomes fomentarius", "common_names": {"hu": ["bükkfa-tapló"]}}
+,{"page": 15, "scientific_name": "Polyporus squamosus", "common_names": {"hu": ["pisztricgomba", "bagolygomba"]}}
+,{"page": 16, "scientific_name": "Ramaria flava", "common_names": {"hu": ["sárga korallgomba"]}}
+,{"page": 16, "scientific_name": "Stereum hirsutum", "common_names": {"hu": ["borostás réteggomba"]}}
+,{"page": 16, "scientific_name": "Cantharellus cibarius", "common_names": {"hu": ["sárga rókagomba", "csirkegomba", "nyulica"]}}
+,{"page": 16, "scientific_name": "Macrolepiota procera", "common_names": {"hu": ["nagy őzlábgomba"]}}
+,{"page": 16, "scientific_name": "Lepiota helveola", "common_names": {"hu": ["vöröses őzlábgomba", "vörhenyes őzlábgomba"]}}
+,{"page": 17, "scientific_name": "Amanita phalloides", "common_names": {"hu": ["gyilkos galóca"]}}
+,{"page": 17, "scientific_name": "Amanita caesarea", "common_names": {"hu": ["császárgalóca", "császárgomba"]}}
+,{"page": 17, "scientific_name": "Amanita muscaria", "common_names": {"hu": ["légyölő galóca"]}}
+,{"page": 17, "scientific_name": "Amanita pantherina", "common_names": {"hu": ["párducgalóca"]}}
+,{"page": 17, "scientific_name": "Pleurotus ostreatus", "common_names": {"hu": ["késői laskagomba"]}}
+,{"page": 18, "scientific_name": "Lepista nuda", "synonyms": ["Tricholoma nudum"], "common_names": {"hu": ["lila pereszke"]}}
+,{"page": 18, "scientific_name": "Trichomolopsis rutilans", "common_names": {"hu": ["bársonyos pereszke"]}}
+,{"page": 18, "scientific_name": "Lepista nebularis", "common_names": {"hu": ["szürke tölcsérgomba"]}}
+,{"page": 18, "scientific_name": "Russula cyanoxantha", "common_names": {"hu": ["kékhátú galambgomba"]}}
+,{"page": 18, "scientific_name": "Lactarius piperatus", "common_names": {"hu": ["fehértejű keserűgomba", "borsos tejelőgomba"]}}
+,{"page": 18, "scientific_name": "Lactarius deliciosus", "common_names": {"hu": ["ízletes rizike"]}}
+,{"page": 19, "scientific_name": "Armillariella mellea", "common_names": {"hu": ["gyűrűs tuskógomba", "szentmihálygomba", "törzsökgomba"]}}
+,{"page": 19, "scientific_name": "Marasmius oreades", "common_names": {"hu": ["mezei szegfűgomba", "tyúkgomba"]}}
+,{"page": 19, "scientific_name": "Omphalotus olearius", "common_names": {"hu": ["világító tölcsérgomba"]}}
+,{"page": 19, "scientific_name": "Inocybe fastigiata", "common_names": {"hu": ["kerti susulyka"]}}
+,{"page": 20, "scientific_name": "Agaricus arvensis", "common_names": {"hu": ["erdőszéli csiperke"]}}
+,{"page": 20, "scientific_name": "Coprinus comatus", "common_names": {"hu": ["gyapjas tintagomba"]}}
+,{"page": 20, "scientific_name": "Hypholoma fasciculare", "common_names": {"hu": ["sárga kénvirággomba"]}}
+,{"page": 20, "scientific_name": "Boletus edulis", "common_names": {"hu": ["ízletes vargánya", "úrigomba"]}}
+,{"page": 20, "scientific_name": "Boletus calopus", "synonyms": ["Boletus pachypus"], "common_names": {"hu": ["farkastinóru"]}}
+,{"page": 21, "scientific_name": "Boletus satanas", "common_names": {"hu": ["sátántinóru", "sátántinorú [sic]"]}}
+,{"page": 21, "scientific_name": "Leccinum scabrum", "common_names": {"hu": ["barna érdestinóru"]}}
+,{"page": 21, "scientific_name": "Suillus granulatus", "common_names": {"hu": ["szemcsésnyelű fenyőtinóru", "szemcsésnyelű tinóru"]}}
+,{"page": 21, "scientific_name": "Suillus luteus", "synonyms": ["Suillus grevillei"], "common_names": {"hu": ["barna gyűrűstinóru"]}}
+,{"page": 21, "scientific_name": "Xerocomus subtomentosus", "common_names": {"hu": ["molyhos tinóru"]}}
+,{"page": 22, "scientific_name": "Geastrum fimbriatum", "common_names": {"hu": ["gyakori csillaggomba"]}}
+,{"page": 22, "scientific_name": "Phallus impudicus", "common_names": {"hu": ["erdei szömörcsög", "szemérmetlen szömörcsög"]}}
+,{"page": 22, "scientific_name": "Tremella mesenterica", "common_names": {"hu": ["aranyos rezgőgomba", "kocsonyagomba"]}}
+,{"page": 22, "scientific_name": "Auricularia auricula-judae", "common_names": {"hu": ["Júdásfüle-gomba"]}}
+,{"page": 22, "scientific_name": "Scleroderma citrinum", "synonyms": ["Scleroderma vulgare"], "common_names": {"hu": ["rőt áltrifla"]}}
+,{"page": 22, "scientific_name": "Lycoperdon perlatum", "common_names": {"hu": ["bimbós pöfeteg"]}}
+,{"page": 23, "scientific_name": "Lichenes", "common_names": {"hu": ["zuzmók"]}}
+,{"page": 23, "scientific_name": "Cladonia rangiferina", "common_names": {"hu": ["rénszarvaszuzmó"]}}
+,{"page": 23, "scientific_name": "Cladonia fimbriata", "common_names": {"hu": ["karcsú serlegzuzmó"]}}
+,{"page": 23, "scientific_name": "Peltigera canina", "common_names": {"hu": ["ebzuzmó", "kutyazuzmó"]}}
+,{"page": 23, "scientific_name": "Rhizocarpon geographicum", "common_names": {"hu": ["térképzuzmó"]}}
+,{"page": 23, "scientific_name": "Xanthoria parietina", "common_names": {"hu": ["sárga falizuzmó", "közönséges sárgazuzmó"]}}
+,{"page": 23, "scientific_name": "Evernia prunastri", "common_names": {"hu": ["tölgyfazuzmó"]}}
+,{"page": 23, "scientific_name": "Usnea hirta", "common_names": {"hu": ["szakállzuzmó"]}}
+,{"page": 24, "scientific_name": "Bryophyta", "common_names": {"hu": ["mohák"]}}
+,{"page": 24, "scientific_name": "Marchantia polymorpha", "common_names": {"hu": ["csillagos májmoha"]}}
+,{"page": 24, "scientific_name": "Sphagnum", "common_names": {"hu": ["tőzegmoha"]}}
+,{"page": 24, "scientific_name": "Polytrichum formosum", "synonyms": ["Polytrichum attenuatum", "Polytrichastrum formosum"], "common_names": {"hu": ["erdei szőrmoha"]}}
+,{"page": 24, "scientific_name": "Atrichum undulatum", "synonyms": ["Catharinea undulata"], "common_names": {"hu": ["Katalin-moha"]}}
+,{"page": 24, "scientific_name": "Dicranum scoparium", "common_names": {"hu": ["seprűmoha", "seprőmoha"]}}
+,{"page": 25, "scientific_name": "Plagiomnium undulatum", "synonyms": ["Mnium undulatum"], "common_names": {"hu": ["fodroslevelű ligetmoha"]}}
+,{"page": 25, "scientific_name": "Leucobryum glaucum", "common_names": {"hu": ["fénylő vánkosmoha", "fehérlő vánkosmoha"]}}
+,{"page": 25, "scientific_name": "Tortula ruralis", "synonyms": ["Syntrichia ruralis"], "common_names": {"hu": ["háztetőmoha"]}}
+,{"page": 25, "scientific_name": "Hypnum cupressiforme", "common_names": {"hu": ["ciprusmoha"]}}
+,{"page": 25, "scientific_name": "Thuidium abietinum", "synonyms": ["Abietinella abietina", ""], "common_names": {"hu": ["tujamoha"]}}
+,{"page": 25, "scientific_name": "Pleurozium schreberi", "synonyms": ["Entodon schreberi"], "common_names": {"hu": ["pirosszárú moha"]}}
+,{"page": 25, "scientific_name": "Hylocomium splendens", "synonyms": ["Hylocomium proliferum"], "common_names": {"hu": ["emeletes moha"]}}
+,{"page": 26, "scientific_name": "Pteridophyta", "common_names": {"hu": ["harasztok"]}}
+,{"page": 26, "scientific_name": "Lycopsida", "common_names": {"hu": ["korpafüvek"]}}
+,{"page": 26, "scientific_name": "Lycopodium clavatum", "common_names": {"hu": ["kapcsos korpafű"]}}
+,{"page": 26, "scientific_name": "Sphenopsida", "common_names": {"hu": ["zsurlók"]}}
+,{"page": 26, "scientific_name": "Equisetum arvense", "common_names": {"hu": ["mezei zsurló"]}}
+,{"page": 26, "scientific_name": "Equisetum telmateia", "synonyms": ["Equisetum maximum"], "common_names": {"hu": ["óriás zsurló"]}}
+,{"page": 27, "scientific_name": "Pteropsida", "common_names": {"hu": ["páfrányok"]}}
+,{"page": 27, "scientific_name": "Ophioglossum vulgatum", "common_names": {"hu": ["kígyónyelv"]}}
+,{"page": 27, "scientific_name": "Asplenium trichomanes", "common_names": {"hu": ["aranyos fodorka"]}}
+,{"page": 27, "scientific_name": "Phyllitis scolopendrium", "synonyms": ["Asplenium scolopendrium"], "common_names": {"hu": ["gímpáfrány", "gímnyelv"]}}
+,{"page": 27, "scientific_name": "Polypodium vulgare", "common_names": {"hu": ["édesgyökerű páfrány", "közönséges édesgyökerű páfrány"]}}
+,{"page": 27, "scientific_name": "Pteridium aquilinum", "common_names": {"hu": ["saspáfrány", "sasharaszt"]}}
+,{"page": 28, "scientific_name": "Athyrium filix-femina", "common_names": {"hu": ["hölgypáfrány", "hölgyharaszt"]}}
+,{"page": 28, "scientific_name": "Dryopteris filix-mas", "synonyms": ["Nephrodium filix-mas", "Aspidium filix-mas"], "common_names": {"hu": ["erdei pajzsika"]}}
+,{"page": 28, "scientific_name": "Dryopteris carthusiana", "synonyms": ["Nephrodium spinulosum"], "common_names": {"hu": ["szálkás pajzsika"]}}
+,{"page": 28, "scientific_name": "Thelypteris palustris", "synonyms": ["Lastrea thelypteris"], "common_names": {"hu": ["tőzegpáfrány", "mocsári pajzsika"]}}
+,{"page": 29, "scientific_name": "Angiospermatophyta", "common_names": {"hu": ["zárvatermők"]}}
+,{"page": 29, "scientific_name": "Dicotyledonopsida", "common_names": {"hu": ["kétszikűek"]}}
+,{"page": 29, "scientific_name": "Aristolochiaceae", "common_names": {"hu": ["farkasalmafélék"]}}
+,{"page": 29, "scientific_name": "Aristolochia clematitis", "common_names": {"hu": ["farkasalma"]}}
+,{"page": 29, "scientific_name": "Asarum europaeum", "common_names": {"hu": ["kapotnyak"]}}
+,{"page": 29, "scientific_name": "Nymphaeaceae", "common_names": {"hu": ["tündérrózsafélék"]}}
+,{"page": 29, "scientific_name": "Nuphar lutea", "common_names": {"hu": ["sárga vízitök", "tavirózsa"]}}
+,{"page": 29, "scientific_name": "Ranunculaceae", "common_names": {"hu": ["boglárkafélék"]}}
+,{"page": 29, "scientific_name": "Actaea spicata", "common_names": {"hu": ["békabogyó"]}}
+,{"page": 29, "scientific_name": "Helleborus dumetorum", "common_names": {"hu": ["kisvirágú hunyor"]}}
+,{"page": 30, "scientific_name": "Helleborus odorus", "common_names": {"hu": ["Illatos hunyor"]}}
+,{"page": 30, "scientific_name": "Helleborus purpurascens", "common_names": {"hu": ["pirosló hunyor"]}}
+,{"page": 30, "scientific_name": "Caltha palustris", "common_names": {"hu": ["mocsári gólyahír"]}}
+,{"page": 30, "scientific_name": "Aconitum", "common_names": {"hu": ["sisakvirág"]}}
+,{"page": 30, "scientific_name": "Isopyrum thalictroides", "common_names": {"hu": ["galambvirág"]}}
+,{"page": 31, "scientific_name": "Anemone ranunculoides", "common_names": {"hu": ["bogláros szellőrózsa"]}}
+,{"page": 31, "scientific_name": "Anemone nemorosa", "common_names": {"hu": ["berki szellőrózsa"]}}
+,{"page": 31, "scientific_name": "Anemone sylvestris", "common_names": {"hu": ["erdei szellőrózsa"]}}
+,{"page": 32, "scientific_name": "Hepatica nobilis", "common_names": {"hu": ["májvirág"]}}
+,{"page": 32, "scientific_name": "Pulsatilla grandis", "common_names": {"hu": ["leánykökörcsin"]}}
+,{"page": 32, "scientific_name": "Clematis recta", "common_names": {"hu": ["egyenes iszalag"]}}
+,{"page": 32, "scientific_name": "Batrachium", "common_names": {"hu": ["víziboglárka"]}}
+,{"page": 32, "scientific_name": "Ranunculus repens", "common_names": {"hu": ["kúszó boglárka"]}}
+,{"page": 32, "scientific_name": "Ranunculus auricomus", "common_names": {"hu": ["változó boglárka"]}}
+,{"page": 33, "scientific_name": "Ranunculus lanuginosus", "common_names": {"hu": ["gyapjas boglárka"]}}
+,{"page": 33, "scientific_name": "Ranunculus acris", "synonyms": ["Ranunculus acer"], "common_names": {"hu": ["réti boglárka"]}}
+,{"page": 34, "scientific_name": "Ficaria verna", "synonyms": ["Ranunculus ficaria"], "common_names": {"hu": ["salátaboglárka"]}}
+,{"page": 34, "scientific_name": "Adonis vernalis", "common_names": {"hu": ["tavaszi hérics"]}}
+,{"page": 34, "scientific_name": "Papaveraceae", "common_names": {"hu": ["mákfélék"]}}
+,{"page": 34, "scientific_name": "Chelidonium majus", "common_names": {"hu": ["vérehulló fecskefű"]}}
+,{"page": 34, "scientific_name": "Papaver rhoeas", "common_names": {"hu": ["pipacs"]}}
+,{"page": 35, "scientific_name": "Corydalis cava", "synonyms": ["Corydalis bulbosa"], "common_names": {"hu": ["odvas keltike"]}}
+,{"page": 35, "scientific_name": "Corydalis solida", "common_names": {"hu": ["ujjas keltike"]}}
+,{"page": 35, "scientific_name": "Cannabaceae", "common_names": {"hu": ["kenderfélék"]}}
+,{"page": 35, "scientific_name": "Humulus lupulus", "common_names": {"hu": ["komló"]}}
+,{"page": 35, "scientific_name": "Urticaceae", "common_names": {"hu": ["csalánfélék"]}}
+,{"page": 35, "scientific_name": "Urtica dioica", "common_names": {"hu": ["nagy csalán"]}}
+,{"page": 36, "scientific_name": "Parietaria officinalis", "synonyms": ["Parietaria erecta"], "common_names": {"hu": ["falgyom"]}}
+,{"page": 36, "scientific_name": "Phytolaccaceae", "common_names": {"hu": ["alkörmösfélék"]}}
+,{"page": 36, "scientific_name": "Phytolacca americana", "common_names": {"hu": ["alkörmös", "karmazsinbogyó"]}}
+,{"page": 36, "scientific_name": "Chenopodiaceae", "common_names": {"hu": ["libatopfélék"]}}
+,{"page": 36, "scientific_name": "Chenopodium album", "common_names": {"hu": ["fehér libatop"]}}
+,{"page": 36, "scientific_name": "Camphorosma annua", "common_names": {"hu": ["bárányparéj"]}}
+,{"page": 37, "scientific_name": "Amaranthaceae", "common_names": {"hu": ["disznóparéjfélék"]}}
+,{"page": 37, "scientific_name": "Amaranthus chlorostachys", "synonyms": ["Amaranthus powelii", "Amaranthus hypochondriacus"], "common_names": {"hu": ["karcsú disznóparéj"]}}
+,{"page": 37, "scientific_name": "Caryophyllaceae", "common_names": {"hu": ["szegfűfélék"]}}
+,{"page": 37, "scientific_name": "Viscaria vulgaris", "synonyms": ["Lychnis viscaria"], "common_names": {"hu": ["enyvecske", "szurokszegfű"]}}
+,{"page": 37, "scientific_name": "Lychnis flos-cuculi", "common_names": {"hu": ["réti kakukkszegfű"]}}
+,{"page": 37, "scientific_name": "Dianthus pontederae", "synonyms": ["Dianthus giganteiformis pontederae"], "common_names": {"hu": ["magyar szegfű"]}}
+,{"page": 37, "scientific_name": "Dianthus plumarius", "common_names": {"hu": ["fehér szegfű"]}}
+,{"page": 37, "scientific_name": "Dianthus serotinus", "common_names": {"hu": ["fehér szegfű"]}}
+,{"page": 38, "scientific_name": "Silene vulgaris", "synonyms": ["Silene cucubalus"], "common_names": {"hu": ["hólyagos habszegfű", "közönséges habszegfű"]}}
+,{"page": 38, "scientific_name": "Melandrium album", "synonyms": ["Silene latifolia alba"], "common_names": {"hu": ["fehér mécsvirág"]}}
+,{"page": 38, "scientific_name": "Melandrium sylvestre", "synonyms": ["Melandrium rubrum", "Silene dioica"], "common_names": {"hu": ["piros mécsvirág"]}}
+,{"page": 38, "scientific_name": "Stellaria holostea", "common_names": {"hu": ["olocsán csillaghúr"]}}
+,{"page": 38, "scientific_name": "Myosoton aquaticum", "common_names": {"hu": ["vízicsillaghúr"]}}
+,{"page": 38, "scientific_name": "Stellaria media", "common_names": {"hu": ["tyúkhúr"]}}
+,{"page": 39, "scientific_name": "Moehringia trinervia", "common_names": {"hu": ["erdei csitri"]}}
+,{"page": 39, "scientific_name": "Polygonaceae", "common_names": {"hu": ["keserűfűfélék"]}}
+,{"page": 39, "scientific_name": "Polygonum lapathifolium", "synonyms": ["Persicaria lapathifolia"], "common_names": {"hu": ["széleslevelű keserűfű"]}}
+,{"page": 40, "scientific_name": "Polygonum aviculare", "common_names": {"hu": ["porcsin keserűfű", "madárkeserűfű"]}}
+,{"page": 40, "scientific_name": "Rumex acetosella", "common_names": {"hu": ["juhsóska"]}}
+,{"page": 40, "scientific_name": "Rumex acetosa", "common_names": {"hu": ["mezei sóska"]}}
+,{"page": 40, "scientific_name": "Rumex sanguineus", "common_names": {"hu": ["erdei lórom"]}}
+,{"page": 41, "scientific_name": "Fallopia japonica", "synonyms": ["Polygonum cuspidatum", "Reynoutria japonica"], "common_names": {"hu": ["ártéri japánkeserűfű"]}}
+,{"page": 41, "scientific_name": "Bilderdykia dumetorum", "synonyms": ["Fallopia dumetorum", "Polygonum dumetorum"], "common_names": {"hu": ["sövénykeserűfű"]}}
+,{"page": 41, "scientific_name": "Plumbaginaceae", "common_names": {"hu": ["kékgyökérfélék"]}}
+,{"page": 41, "scientific_name": "Limonium gmelinii", "synonyms": ["Statice gmelinii"], "common_names": {"hu": ["sóvirág", "sziksaláta", "sziki lelleg"]}}
+,{"page": 41, "scientific_name": "Hypericaceae", "synonyms": ["Guttiferae"], "common_names": {"hu": ["Orbáncfűfélék"]}}
+,{"page": 41, "scientific_name": "Hypericum perforatum", "common_names": {"hu": ["közönséges orbáncfű"]}}
+,{"page": 42, "scientific_name": "Violaceae", "common_names": {"hu": ["ibolyafélék"]}}
+,{"page": 42, "scientific_name": "Viola odorata", "common_names": {"hu": ["Illatos ibolya"]}}
+,{"page": 42, "scientific_name": "Viola sylvestris", "synonyms": ["Viola reichenbachiana"], "common_names": {"hu": ["erdei ibolya"]}}
+,{"page": 42, "scientific_name": "Viola mirabilis", "common_names": {"hu": ["csodás ibolya"]}}
+,{"page": 42, "scientific_name": "Viola hirta", "common_names": {"hu": ["borzas ibolya"]}}
+,{"page": 43, "scientific_name": "Cistaceae", "common_names": {"hu": ["szuharfélék"]}}
+,{"page": 43, "scientific_name": "Helianthemum ovatum", "synonyms": ["Helianthemum nummularium obscurum"], "common_names": {"hu": ["közönséges napvirág"]}}
+,{"page": 43, "scientific_name": "Fumana procumbens", "common_names": {"hu": ["naprózsa"]}}
+,{"page": 43, "scientific_name": "Cucurbitaceae", "common_names": {"hu": ["tökfélék"]}}
+,{"page": 43, "scientific_name": "Echinocystis lobata", "common_names": {"hu": ["süntök"]}}
+,{"page": 43, "scientific_name": "Bryonia alba", "common_names": {"hu": ["fekete földitök"]}}
+,{"page": 44, "scientific_name": "Brassicaceae", "synonyms": ["Cruciferae"], "common_names": {"hu": ["keresztesvirágúak"]}}
+,{"page": 44, "scientific_name": "Capsella bursa-pastoris", "common_names": {"hu": ["pásztortáska"]}}
+,{"page": 44, "scientific_name": "Cardamine impatiens", "common_names": {"hu": ["virágrúgó kakukktorma"]}}
+,{"page": 44, "scientific_name": "Cardamine pratensis", "common_names": {"hu": ["réti kakukktorma"]}}
+,{"page": 44, "scientific_name": "Cardaria draba", "synonyms": ["Lepidium draba"], "common_names": {"hu": ["útszéli zsázsa"]}}
+,{"page": 45, "scientific_name": "Dentaria bulbifera", "synonyms": ["Cardamine bulbifera"], "common_names": {"hu": ["hagymás fogasír"]}}
+,{"page": 45, "scientific_name": "Dentaria enneaphyllos", "synonyms": ["Cardamine enneaphyllos"], "common_names": {"hu": ["bókoló fogasír"]}}
+,{"page": 45, "scientific_name": "Lunaria rediviva", "common_names": {"hu": ["évelő holdviola"]}}
+,{"page": 45, "scientific_name": "Sisymbrium strictissimum", "common_names": {"hu": ["magas zsombor"]}}
+,{"page": 45, "scientific_name": "Alliaria petiolata", "synonyms": ["Alliaria officinalis"], "common_names": {"hu": ["kányazsombor"]}}
+,{"page": 46, "scientific_name": "Pyrolaceae", "common_names": {"hu": ["körtikefélék"]}}
+,{"page": 46, "scientific_name": "Pyrola", "common_names": {"hu": ["körtike"]}}
+,{"page": 46, "scientific_name": "Primulaceae", "common_names": {"hu": ["kankalinfélék"]}}
+,{"page": 46, "scientific_name": "Primula veris", "common_names": {"hu": ["tavaszi kankalin"]}}
+,{"page": 46, "scientific_name": "Primula vulgaris", "synonyms": ["Primula acaulis"], "common_names": {"hu": ["szártalan kankalin"]}}
+,{"page": 46, "scientific_name": "Lysimachia nummularia", "common_names": {"hu": ["pénzlevelű lizinka"]}}
+,{"page": 46, "scientific_name": "Lysimachia punctata", "common_names": {"hu": ["pettyegetett lizinka"]}}
+,{"page": 47, "scientific_name": "Cyclamen purpurascens", "common_names": {"hu": ["ciklámen"]}}
+,{"page": 47, "scientific_name": "Malvaceae", "common_names": {"hu": ["mályvafélék"]}}
+,{"page": 47, "scientific_name": "Lavatera thuringiaca", "common_names": {"hu": ["madármályva"]}}
+,{"page": 47, "scientific_name": "Euphorbiaceae", "common_names": {"hu": ["kutyatejfélék"]}}
+,{"page": 47, "scientific_name": "Euphorbia cyparissias", "common_names": {"hu": ["farkaskutyatej"]}}
+,{"page": 48, "scientific_name": "Euphorbia amygdaloides", "common_names": {"hu": ["erdei kutyatej"]}}
+,{"page": 48, "scientific_name": "Euphorbia polychroma", "synonyms": ["Euphorbia epithymoides"], "common_names": {"hu": ["színeváltó kutyatej"]}}
+,{"page": 48, "scientific_name": "Mercurialis annua", "common_names": {"hu": ["egynyári szélfű"]}}
+,{"page": 48, "scientific_name": "Mercurialis perennis", "common_names": {"hu": ["erdei szélfű", "évelő szélfű"]}}
+,{"page": 48, "scientific_name": "Mercurialis ovata", "common_names": {"hu": ["pusztai szélfű"]}}
+,{"page": 49, "scientific_name": "Saxifragaceae", "common_names": {"hu": ["kőtörőfűfélék"]}}
+,{"page": 49, "scientific_name": "Chrysosplenium alternifolium", "common_names": {"hu": ["aranyos veselke"]}}
+,{"page": 49, "scientific_name": "Crassulaceae", "common_names": {"hu": ["varjúhájfélék"]}}
+,{"page": 49, "scientific_name": "Sedum", "common_names": {"hu": ["varjúháj"]}}
+,{"page": 49, "scientific_name": "Sedum sexangulare", "common_names": {"hu": ["hatsoros varjúháj"]}}
+,{"page": 49, "scientific_name": "Sedum maximum", "common_names": {"hu": ["bablevelű varjúháj"]}}
+,{"page": 49, "scientific_name": "Rosaceae", "common_names": {"hu": ["rózsafélék"]}}
+,{"page": 49, "scientific_name": "Aruncus dioicus", "synonyms": ["Aruncus sylvestris"], "common_names": {"hu": ["tündérfürt"]}}
+,{"page": 50, "scientific_name": "Agrimonia eupatoria", "common_names": {"hu": ["közönséges párlófű", "apróbojtorján"]}}
+,{"page": 50, "scientific_name": "Potentilla arenaria", "common_names": {"hu": ["homoki pimpó"]}}
+,{"page": 50, "scientific_name": "Potentilla alba", "common_names": {"hu": ["fehér pimpó"]}}
+,{"page": 50, "scientific_name": "Potentilla anserina", "common_names": {"hu": ["libapimpó"]}}
+,{"page": 50, "scientific_name": "Waldsteinia geoides", "common_names": {"hu": ["Waldstein-pimpó"]}}
+,{"page": 51, "scientific_name": "Geum urbanum", "common_names": {"hu": ["erdei gyömbérgyökér"]}}
+,{"page": 51, "scientific_name": "Sanguisorba officinalis", "common_names": {"hu": ["őszi vérfű"]}}
+,{"page": 51, "scientific_name": "Fabaceae", "synonyms": ["Leguminosae"], "common_names": {"hu": ["pillangósvirágúak"]}}
+,{"page": 51, "scientific_name": "Genista tinctoria", "common_names": {"hu": ["festő rekettye"]}}
+,{"page": 51, "scientific_name": "Genista germanica", "common_names": {"hu": ["sváb rekettye"]}}
+,{"page": 51, "scientific_name": "Genista pilosa", "common_names": {"hu": ["selymes rekettye"]}}
+,{"page": 52, "scientific_name": "Cytisus nigricans", "synonyms": ["Lembotropis nigricans"], "common_names": {"hu": ["fürtös zanót"]}}
+,{"page": 52, "scientific_name": "Cytisus ratisbonensis", "synonyms": ["Chamaecytisus ratisbonensis"], "common_names": {"hu": ["selymes zanót"]}}
+,{"page": 52, "scientific_name": "Melilotus officinalis", "common_names": {"hu": ["orvosi somkóró"]}}
+,{"page": 52, "scientific_name": "Lotus corniculatus", "common_names": {"hu": ["szarvaskerep"]}}
+,{"page": 52, "scientific_name": "Astragalus glycyphyllos", "common_names": {"hu": ["édeslevelű csűdfű"]}}
+,{"page": 53, "scientific_name": "Trifolium repens", "common_names": {"hu": ["fehér here"]}}
+,{"page": 53, "scientific_name": "Trifolium alpestre", "common_names": {"hu": ["bérci here"]}}
+,{"page": 53, "scientific_name": "Trifolium montanum", "common_names": {"hu": ["hegyi here"]}}
+,{"page": 53, "scientific_name": "Trifolium pratense", "common_names": {"hu": ["réti here"]}}
+,{"page": 53, "scientific_name": "Coronilla varia", "synonyms": ["Securigera varia"], "common_names": {"hu": ["tarka koronafürt"]}}
+,{"page": 54, "scientific_name": "Coronilla coronata", "common_names": {"hu": ["sárga koronafürt"]}}
+,{"page": 54, "scientific_name": "Vicia", "common_names": {"hu": ["bükköny"]}}
+,{"page": 54, "scientific_name": "Vicia cracca", "common_names": {"hu": ["kaszanyűgbükköny"]}}
+,{"page": 54, "scientific_name": "Vicia cassubica", "common_names": {"hu": ["vitéz bükköny"]}}
+,{"page": 54, "scientific_name": "Vicia sepium", "common_names": {"hu": ["gyepűbükköny"]}}
+,{"page": 54, "scientific_name": "Vicia oroboides", "common_names": {"hu": ["zalai bükköny"]}}
+,{"page": 55, "scientific_name": "Lathyrus niger", "common_names": {"hu": ["fekete lednek", "feketedő lednek"]}}
+,{"page": 55, "scientific_name": "Lathyrus vernus", "common_names": {"hu": ["tavaszi lednek"]}}
+,{"page": 55, "scientific_name": "Lathyrus tuberosus", "common_names": {"hu": ["mogyorós lednek"]}}
+,{"page": 55, "scientific_name": "Lythraceae", "common_names": {"hu": ["füzényfélék"]}}
+,{"page": 55, "scientific_name": "Lythrum salicaria", "common_names": {"hu": ["réti füzény"]}}
+,{"page": 56, "scientific_name": "Onagraceae", "common_names": {"hu": ["ligetszépefélék"]}}
+,{"page": 56, "scientific_name": "Circaea lutetiana", "common_names": {"hu": ["erdei varázslófű"]}}
+,{"page": 56, "scientific_name": "Chamaenerion angustifolium", "synonyms": ["Epilobium angustifolium"], "common_names": {"hu": ["erdei deréce"]}}
+,{"page": 56, "scientific_name": "Epilobium", "common_names": {"hu": ["füzike"]}}
+,{"page": 56, "scientific_name": "Epilobium hirsutum", "common_names": {"hu": ["borzas füzike"]}}
+,{"page": 56, "scientific_name": "Epilobium montanum", "common_names": {"hu": ["erdei füzike"]}}
+,{"page": 57, "scientific_name": "Trapaceae", "common_names": {"hu": ["sulyomfélék"]}}
+,{"page": 57, "scientific_name": "Trapa natans", "common_names": {"hu": ["sulyom"]}}
+,{"page": 57, "scientific_name": "Rutaceae", "common_names": {"hu": ["rutafélék"]}}
+,{"page": 57, "scientific_name": "Dictamnus albus", "common_names": {"hu": ["nagyezerjófű"]}}
+,{"page": 57, "scientific_name": "Oxalidaceae", "common_names": {"hu": ["madársóskafélék"]}}
+,{"page": 57, "scientific_name": "Oxalis acetosella", "common_names": {"hu": ["erdei madársóska"]}}
+,{"page": 57, "scientific_name": "Geraniaceae", "common_names": {"hu": ["gólyaorrfélék"]}}
+,{"page": 57, "scientific_name": "Geranium robertianum", "common_names": {"hu": ["nehézszagú gólyaorr"]}}
+,{"page": 58, "scientific_name": "Geranium sanguineum", "common_names": {"hu": ["piros gólyaorr"]}}
+,{"page": 58, "scientific_name": "Geranium phaeum", "common_names": {"hu": ["fodros gólyaorr"]}}
+,{"page": 58, "scientific_name": "Balsaminaceae", "common_names": {"hu": ["nebáncsvirágfélék"]}}
+,{"page": 58, "scientific_name": "Impatiens noli-tangere", "common_names": {"hu": ["erdei nebáncsvirág", "erdei nenyúljhozzám"]}}
+,{"page": 58, "scientific_name": "Impatiens parviflora", "common_names": {"hu": ["kisvirágú nebáncsvirág", "kisvirágú nenyúljhozzám"]}}
+,{"page": 58, "scientific_name": "Impatiens glandulifera", "common_names": {"hu": ["bíbor nebáncsvirág"]}}
+,{"page": 59, "scientific_name": "Apiaceae", "synonyms": ["Umbelliferae"], "common_names": {"hu": ["ernyősvirágzatúak"]}}
+,{"page": 59, "scientific_name": "Sanicula europaea", "common_names": {"hu": ["gombernyő"]}}
+,{"page": 59, "scientific_name": "Eryngium campestre", "common_names": {"hu": ["mezei iringó", "ördögszekér"]}}
+,{"page": 59, "scientific_name": "Smyrnium perfoliatum", "common_names": {"hu": ["őzsaláta"]}}
+,{"page": 59, "scientific_name": "Falcaria vulgaris", "common_names": {"hu": ["sarlófű"]}}
+,{"page": 60, "scientific_name": "Anthriscus sylvestris", "common_names": {"hu": ["erdei turbolya"]}}
+,{"page": 60, "scientific_name": "Anthriscus cerefolium", "common_names": {"hu": ["zamatos turbolya"]}}
+,{"page": 60, "scientific_name": "Torilis japonica", "common_names": {"hu": ["bojtorjános tüskemag"]}}
+,{"page": 60, "scientific_name": "Chaerophyllum temulum", "common_names": {"hu": ["bódító baraboly"]}}
+,{"page": 61, "scientific_name": "Conium maculatum", "common_names": {"hu": ["bürök", "foltos bürök"]}}
+,{"page": 61, "scientific_name": "Peucedanum oreoselinum", "common_names": {"hu": ["citromkocsord"]}}
+,{"page": 61, "scientific_name": "Peucedanum cervaria", "common_names": {"hu": ["szarvas kocsord"]}}
+,{"page": 61, "scientific_name": "Aegopodium podagraria", "common_names": {"hu": ["podagrafű"]}}
+,{"page": 62, "scientific_name": "Heracleum sphondylium", "common_names": {"hu": ["medvetalp"]}}
+,{"page": 62, "scientific_name": "Laser trilobum", "common_names": {"hu": ["sujtár"]}}
+,{"page": 62, "scientific_name": "Daucus carota", "common_names": {"hu": ["vadmurok"]}}
+,{"page": 62, "scientific_name": "Apocynaceae", "common_names": {"hu": ["meténgfélék"]}}
+,{"page": 62, "scientific_name": "Vinca minor", "common_names": {"hu": ["kis télizöld", "télizöld meténg"]}}
+,{"page": 63, "scientific_name": "Rubiaceae", "common_names": {"hu": ["buzérfélék"]}}
+,{"page": 63, "scientific_name": "Galium aparine", "common_names": {"hu": ["ragadós galaj"]}}
+,{"page": 63, "scientific_name": "Galium odoratum", "synonyms": ["Asperula odorata"], "common_names": {"hu": ["szagos müge", "illatos galaj"]}}
+,{"page": 63, "scientific_name": "Galium mollugo", "common_names": {"hu": ["közönséges galaj"]}}
+,{"page": 63, "scientific_name": "Galium sylvaticum", "common_names": {"hu": ["erdei galaj"]}}
+,{"page": 64, "scientific_name": "Asclepiadaceae", "common_names": {"hu": ["selyemkórófélék"]}}
+,{"page": 64, "scientific_name": "Asclepias syriaca", "common_names": {"hu": ["selyemkóró"]}}
+,{"page": 64, "scientific_name": "Vincetoxicum hirundinaria", "synonyms": ["Cynanchum vincetoxicum"], "common_names": {"hu": ["méreggyilok", "vadpaprika"]}}
+,{"page": 64, "scientific_name": "Caprifoliaceae", "common_names": {"hu": ["bodzafélék"]}}
+,{"page": 64, "scientific_name": "Sambucus ebulus", "common_names": {"hu": ["gyalogbodza", "földi bodza"]}}
+,{"page": 64, "scientific_name": "Adoxaceae", "common_names": {"hu": ["pézsmaboglárfélék"]}}
+,{"page": 64, "scientific_name": "Adoxa moschatellina", "common_names": {"hu": ["pézsmaboglár"]}}
+,{"page": 65, "scientific_name": "Valerianaceae", "common_names": {"hu": ["macskagyökérfélék"]}}
+,{"page": 65, "scientific_name": "Valeriana officinalis", "common_names": {"hu": ["orvosi macskagyökér"]}}
+,{"page": 65, "scientific_name": "Dipsacaceae", "common_names": {"hu": ["mácsonyafélék"]}}
+,{"page": 65, "scientific_name": "Dipsacus laciniatus", "common_names": {"hu": ["héjakút mácsonya"]}}
+,{"page": 65, "scientific_name": "Scabiosa ochroleuca", "common_names": {"hu": ["vajszínű ördögszem"]}}
+,{"page": 65, "scientific_name": "Knautia drymeia", "common_names": {"hu": ["erdei varfű"]}}
+,{"page": 66, "scientific_name": "Convolvulaceae", "common_names": {"hu": ["szulákfélék"]}}
+,{"page": 66, "scientific_name": "Calystegia sepium", "common_names": {"hu": ["sövényszulák"]}}
+,{"page": 66, "scientific_name": "Convolvulus arvensis", "common_names": {"hu": ["apró szulák", "folyondárszulák"]}}
+,{"page": 66, "scientific_name": "Boraginaceae", "common_names": {"hu": ["érdeslevelűek"]}}
+,{"page": 66, "scientific_name": "Symphytum officinale", "common_names": {"hu": ["orvosi nadálytő"]}}
+,{"page": 66, "scientific_name": "Symphytum tuberosum", "common_names": {"hu": ["gumós nadálytő"]}}
+,{"page": 67, "scientific_name": "Alkanna tinctoria", "common_names": {"hu": ["báránypirosító"]}}
+,{"page": 67, "scientific_name": "Pulmonaria officinalis", "common_names": {"hu": ["orvosi tüdőfű"]}}
+,{"page": 67, "scientific_name": "Pulmonaria mollis", "synonyms": ["Pulmonaria mollissima"], "common_names": {"hu": ["bársonyos tüdőfű"]}}
+,{"page": 67, "scientific_name": "Myosotis palustris", "synonyms": ["Myosotis scorpioides"], "common_names": {"hu": ["mocsári nefelejcs"]}}
+,{"page": 68, "scientific_name": "Lithospermum purpureo-coeruleum", "synonyms": ["Buglossoides purpureo-coerulea"], "common_names": {"hu": ["erdei gyöngyköles"]}}
+,{"page": 68, "scientific_name": "Echium vulgare", "common_names": {"hu": ["közönséges kígyószisz"]}}
+,{"page": 68, "scientific_name": "Lamiaceae", "synonyms": ["Labiatae"], "common_names": {"hu": ["ajakosok"]}}
+,{"page": 68, "scientific_name": "Ajuga reptans", "common_names": {"hu": ["indás ínfű"]}}
+,{"page": 68, "scientific_name": "Glechoma hederacea", "common_names": {"hu": ["kerek repkény"]}}
+,{"page": 69, "scientific_name": "Melittis carpatica", "synonyms": ["Melittis grandiflora", "Melittis melissophyllum"], "common_names": {"hu": ["méhfű", "nagyvirágú méhfű", "mecseki tea"]}}
+,{"page": 69, "scientific_name": "Galeopsis pubescens", "common_names": {"hu": ["pelyhes kenderkefű"]}}
+,{"page": 69, "scientific_name": "Lamium maculatum", "common_names": {"hu": ["foltos árvacsalán"]}}
+,{"page": 69, "scientific_name": "Lamium purpureum", "common_names": {"hu": ["piros árvacsalán"]}}
+,{"page": 69, "scientific_name": "Galeobdolon luteum", "synonyms": ["Lamium galeobdolon", "Lamiastrum galeobdolon"], "common_names": {"hu": ["sárgaárvacsalán"]}}
+,{"page": 70, "scientific_name": "Ballota nigra", "common_names": {"hu": ["fekete peszterce"]}}
+,{"page": 70, "scientific_name": "Betonica officinalis", "common_names": {"hu": ["bakfű"]}}
+,{"page": 70, "scientific_name": "Stachys sylvatica", "common_names": {"hu": ["erdei tisztesfű"]}}
+,{"page": 70, "scientific_name": "Stachys recta", "common_names": {"hu": ["hasznos tisztesfű"]}}
+,{"page": 70, "scientific_name": "Salvia glutinosa", "common_names": {"hu": ["enyves zsálya"]}}
+,{"page": 70, "scientific_name": "Salvia pratensis", "common_names": {"hu": ["mezei zsálya"]}}
+,{"page": 71, "scientific_name": "Clinopodium vulgare", "synonyms": ["Calamintha clinopodium"], "common_names": {"hu": ["borsfű", "borsfű pereszlény"]}}
+,{"page": 71, "scientific_name": "Origanum vulgare", "common_names": {"hu": ["szurokfű"]}}
+,{"page": 71, "scientific_name": "Thymus", "common_names": {"hu": ["kakukkfű"]}}
+,{"page": 71, "scientific_name": "Mentha longifolia", "synonyms": ["Mentha sylvestris"], "common_names": {"hu": ["lómenta"]}}
+,{"page": 71, "scientific_name": "Teucrium chamaedrys", "common_names": {"hu": ["sarlós gamandor"]}}
+,{"page": 72, "scientific_name": "Solanaceae", "common_names": {"hu": ["burgonyafélék"]}}
+,{"page": 72, "scientific_name": "Atropa bella-donna", "common_names": {"hu": ["nadragulya"]}}
+,{"page": 72, "scientific_name": "Solanum nigrum", "common_names": {"hu": ["fekete csucsor"]}}
+,{"page": 72, "scientific_name": "Solanum dulcamara", "common_names": {"hu": ["ebszőlő csucsor"]}}
+,{"page": 72, "scientific_name": "Scrophulariaceae", "common_names": {"hu": ["tátogatófélék"]}}
+,{"page": 72, "scientific_name": "Scrophularia nodosa", "common_names": {"hu": ["göcsös görvélyfű"]}}
+,{"page": 72, "scientific_name": "Verbascum phlomoides", "common_names": {"hu": ["szöszös ökörfarkkóró"]}}
+,{"page": 73, "scientific_name": "Verbascum austriacum", "common_names": {"hu": ["osztrák ökörfarkkóró"]}}
+,{"page": 73, "scientific_name": "Linaria vulgaris", "common_names": {"hu": ["közönséges gyujtoványfű"]}}
+,{"page": 73, "scientific_name": "Digitalis grandiflora", "common_names": {"hu": ["sárga gyűszűvirág"]}}
+,{"page": 73, "scientific_name": "Lathraea squamaria", "common_names": {"hu": ["vicsorgó"]}}
+,{"page": 73, "scientific_name": "Veronica hederifolia", "common_names": {"hu": ["borostyánlevelű veronika", "repkény veronika"]}}
+,{"page": 74, "scientific_name": "Veronica officinalis", "common_names": {"hu": ["orvosi veronika"]}}
+,{"page": 74, "scientific_name": "Veronica chamaedrys", "common_names": {"hu": ["ösztörűs veronika"]}}
+,{"page": 74, "scientific_name": "Melampyrum nemorosum", "common_names": {"hu": ["kéküstökű csormolya"]}}
+,{"page": 74, "scientific_name": "Melampyrum pratense", "common_names": {"hu": ["réti csormolya"]}}
+,{"page": 74, "scientific_name": "Plantaginaceae", "common_names": {"hu": ["útifűfélék"]}}
+,{"page": 74, "scientific_name": "Plantago major", "common_names": {"hu": ["nagy útifű"]}}
+,{"page": 75, "scientific_name": "Campanulaceae", "common_names": {"hu": ["harangvirágfélék"]}}
+,{"page": 75, "scientific_name": "Campanula persicifolia", "common_names": {"hu": ["baracklevelű harangvirág"]}}
+,{"page": 75, "scientific_name": "Campanula trachelium", "common_names": {"hu": ["csalánlevelű harangvirág"]}}
+,{"page": 75, "scientific_name": "Campanula rotundifolia", "common_names": {"hu": ["kereklevelű harangvirág"]}}
+,{"page": 75, "scientific_name": "Asteraceae", "synonyms": ["Compositae"], "common_names": {"hu": ["fészekesvirágzatúak"]}}
+,{"page": 75, "scientific_name": "Eupatorium cannabinum", "common_names": {"hu": ["sédkender"]}}
+,{"page": 76, "scientific_name": "Solidago gigantea", "synonyms": ["Solidago serotina"], "common_names": {"hu": ["magas aranyvessző"]}}
+,{"page": 76, "scientific_name": "Solidago virgaurea", "common_names": {"hu": ["erdei aranyvessző"]}}
+,{"page": 76, "scientific_name": "Erigeron annuus", "synonyms": ["Stenactis annua"], "common_names": {"hu": ["seprence", "egynyári seprence"]}}
+,{"page": 77, "scientific_name": "Conyza canadensis", "synonyms": ["Erigeron canadensis"], "common_names": {"hu": ["betyárkóró"]}}
+,{"page": 77, "scientific_name": "Ambrosia artemisiifolia", "synonyms": ["Ambrosia elatior"], "common_names": {"hu": ["parlagfű"]}}
+,{"page": 77, "scientific_name": "Aster", "common_names": {"hu": ["őszirózsa"]}}
+,{"page": 77, "scientific_name": "Achillea millefolium", "common_names": {"hu": ["közönséges cickafark"]}}
+,{"page": 78, "scientific_name": "Matricaria recutita", "synonyms": ["Matricaria chamomilla"], "common_names": {"hu": ["orvosi székfű"]}}
+,{"page": 78, "scientific_name": "Chrysanthemum corymbosum", "synonyms": ["Tanacetum corymbosum"], "common_names": {"hu": ["sátorozó margitvirág"]}}
+,{"page": 78, "scientific_name": "Chrysanthemum leucanthemum", "synonyms": ["Leucanthemum vulgare"], "common_names": {"hu": ["réti margitvirág"]}}
+,{"page": 78, "scientific_name": "Artemisia vulgaris", "common_names": {"hu": ["fekete üröm"]}}
+,{"page": 78, "scientific_name": "Tussilago farfara", "common_names": {"hu": ["martilapu"]}}
+,{"page": 78, "scientific_name": "Petasites hybridus", "common_names": {"hu": ["vörös acsalapu"]}}
+,{"page": 79, "scientific_name": "Petasites albus", "common_names": {"hu": ["fehér acsalapu"]}}
+,{"page": 79, "scientific_name": "Senecio vulgaris", "common_names": {"hu": ["közönséges aggófű"]}}
+,{"page": 79, "scientific_name": "Senecio ovatus", "synonyms": ["Senecio fuchsii"], "common_names": {"hu": ["lilásszárú aggófű", "kárpáti aggófű"]}}
+,{"page": 79, "scientific_name": "Cirsium arvense", "common_names": {"hu": ["mezei aszat", "mezei acat"]}}
+,{"page": 79, "scientific_name": "Cirsium oleraceum", "common_names": {"hu": ["halovány aszat"]}}
+,{"page": 80, "scientific_name": "Centaurea jacea", "common_names": {"hu": ["réti imola"]}}
+,{"page": 80, "scientific_name": "Taraxacum officinale", "common_names": {"hu": ["pongyola pitypang", "gyermekláncfű"]}}
+,{"page": 80, "scientific_name": "Lapsana communis", "common_names": {"hu": ["bojtorjánsaláta"]}}
+,{"page": 80, "scientific_name": "Mycelis muralis", "common_names": {"hu": ["kákicsvirág"]}}
+,{"page": 80, "scientific_name": "Prenanthes purpurea", "common_names": {"hu": ["nyúlsaláta"]}}
+,{"page": 81, "scientific_name": "Hieracium sylvaticum", "synonyms": ["Hieracium murorum"], "common_names": {"hu": ["erdei hölgymál"]}}
+,{"page": 81, "scientific_name": "Hieracium sabaudum", "common_names": {"hu": ["olasz hölgymál"]}}
+,{"page": 82, "scientific_name": "Monocotyledonopsida", "common_names": {"hu": ["egyszikűek"]}}
+,{"page": 82, "scientific_name": "Alismataceae", "common_names": {"hu": ["hídőrfélék"]}}
+,{"page": 82, "scientific_name": "Alisma plantago-aquatica", "common_names": {"hu": ["vízi hídőr"]}}
+,{"page": 82, "scientific_name": "Potamogetonaceae", "common_names": {"hu": ["békaszőlőfélék"]}}
+,{"page": 82, "scientific_name": "Potamogeton natans", "common_names": {"hu": ["úszó békaszőlő"]}}
+,{"page": 82, "scientific_name": "Liliaceae", "common_names": {"hu": ["liliomfélék"]}}
+,{"page": 82, "scientific_name": "Veratrum album", "common_names": {"hu": ["fehér zászpa"]}}
+,{"page": 82, "scientific_name": "Veratrum nigrum", "common_names": {"hu": ["fekete zászpa"]}}
+,{"page": 83, "scientific_name": "Gagea lutea", "common_names": {"hu": ["sárga tyúktaréj"]}}
+,{"page": 83, "scientific_name": "Colchicum autumnale", "common_names": {"hu": ["őszi kikerics"]}}
+,{"page": 83, "scientific_name": "Ornithogalum umbellatum", "common_names": {"hu": ["ernyős sárma", "ernyős madártej"]}}
+,{"page": 83, "scientific_name": "Allium scorodoprasum", "common_names": {"hu": ["kígyóhagyma"]}}
+,{"page": 83, "scientific_name": "Allium ursinum", "common_names": {"hu": ["medvehagyma"]}}
+,{"page": 84, "scientific_name": "Scilla bifolia", "common_names": {"hu": ["tavaszi csillagvirág"]}}
+,{"page": 84, "scientific_name": "Muscari comosum", "common_names": {"hu": ["üstökös gyöngyike"]}}
+,{"page": 84, "scientific_name": "Maianthemum bifolium", "common_names": {"hu": ["árnyékvirág"]}}
+,{"page": 84, "scientific_name": "Paris quadrifolia", "common_names": {"hu": ["farkasszőlő"]}}
+,{"page": 84, "scientific_name": "Polygonatum latifolium", "common_names": {"hu": ["széleslevelű salamonpecsét"]}}
+,{"page": 85, "scientific_name": "Polygonatum odoratum", "synonyms": ["Polygonatum officinale"], "common_names": {"hu": ["orvosi salamonpecsét", "soktérdű salamonpecsét"]}}
+,{"page": 85, "scientific_name": "Polygonatum multiflorum", "common_names": {"hu": ["fürtös salamonpecsét"]}}
+,{"page": 85, "scientific_name": "Convallaria majalis", "common_names": {"hu": ["gyöngyvirág"]}}
+,{"page": 86, "scientific_name": "Amaryllidaceae", "common_names": {"hu": ["amarilliszfélék"]}}
+,{"page": 86, "scientific_name": "Galanthus nivalis", "common_names": {"hu": ["hóvirág"]}}
+,{"page": 86, "scientific_name": "Leucojum vernum", "common_names": {"hu": ["tavaszi tőzike"]}}
+,{"page": 86, "scientific_name": "Leucojum aestivum", "common_names": {"hu": ["nyári tőzike"]}}
+,{"page": 86, "scientific_name": "Dioscoreaceae", "common_names": {"hu": ["jamszgyökérfélék"]}}
+,{"page": 86, "scientific_name": "Tamus communis", "common_names": {"hu": ["pirítógyökér"]}}
+,{"page": 87, "scientific_name": "Iridaceae", "common_names": {"hu": ["nősziromfélék"]}}
+,{"page": 87, "scientific_name": "Iris pseudacorus", "common_names": {"hu": ["sárga nőszirom", "sásnőszirom", "mocsári nőszirom"]}}
+,{"page": 87, "scientific_name": "Iris variegata", "common_names": {"hu": ["tarka nőszirom"]}}
+,{"page": 87, "scientific_name": "Orchidaceae", "common_names": {"hu": ["kosborfélék"]}}
+,{"page": 87, "scientific_name": "Orchis purpurea", "common_names": {"hu": ["bíboros kosbor"]}}
+,{"page": 87, "scientific_name": "Neottia nidus-avis", "common_names": {"hu": ["madárfészek"]}}
+,{"page": 88, "scientific_name": "Juncaceae", "common_names": {"hu": ["szittyófélék"]}}
+,{"page": 88, "scientific_name": "Juncus effusus", "common_names": {"hu": ["békaszittyó"]}}
+,{"page": 88, "scientific_name": "Luzula luzuloides", "synonyms": ["Luzula albida"], "common_names": {"hu": ["fehér perjeszittyó"]}}
+,{"page": 88, "scientific_name": "Luzula campestris", "common_names": {"hu": ["mezei perjeszittyó"]}}
+,{"page": 88, "scientific_name": "Cyperaceae", "common_names": {"hu": ["sásfélék"]}}
+,{"page": 88, "scientific_name": "Eleocharis palustris", "common_names": {"hu": ["mocsári csetkáka"]}}
+,{"page": 89, "scientific_name": "Bolboschoenus maritimus", "common_names": {"hu": ["zsióka", "sziki káka"]}}
+,{"page": 89, "scientific_name": "Carex muricata", "common_names": {"hu": ["zöldes sás"]}}
+,{"page": 89, "scientific_name": "Carex paniculata", "common_names": {"hu": ["bugás sás"]}}
+,{"page": 89, "scientific_name": "Carex brizoides", "common_names": {"hu": ["rezgő sás", "selyemsás"]}}
+,{"page": 89, "scientific_name": "Carex remota", "common_names": {"hu": ["ritkás sás"]}}
+,{"page": 90, "scientific_name": "Carex pendula", "common_names": {"hu": ["lecsüngő sás"]}}
+,{"page": 90, "scientific_name": "Carex acutiformis", "common_names": {"hu": ["posvány sás", "mocsári sás"]}}
+,{"page": 90, "scientific_name": "Carex hirta", "common_names": {"hu": ["borzas sás"]}}
+,{"page": 90, "scientific_name": "Carex elata", "common_names": {"hu": ["zsombéksás"]}}
+,{"page": 90, "scientific_name": "Carex michelii", "common_names": {"hu": ["sárgás sás"]}}
+,{"page": 91, "scientific_name": "Carex alba", "common_names": {"hu": ["fehér sás"]}}
+,{"page": 91, "scientific_name": "Carex pilosa", "common_names": {"hu": ["bükksás", "pillás sás", "bükkös sás"]}}
+,{"page": 91, "scientific_name": "Carex sylvatica", "common_names": {"hu": ["erdei sás"]}}
+,{"page": 91, "scientific_name": "Carex montana", "common_names": {"hu": ["hegyi sás"]}}
+,{"page": 91, "scientific_name": "Carex digitata", "common_names": {"hu": ["ujjas sás"]}}
+,{"page": 92, "scientific_name": "Carex humilis", "common_names": {"hu": ["lappangó sás", "törpe sás"]}}
+,{"page": 92, "scientific_name": "Poaceae", "synonyms": ["Gramineae"], "common_names": {"hu": ["pázsitfűfélék"]}}
+,{"page": 92, "scientific_name": "Dactylis glomerata", "common_names": {"hu": ["csomós ebír"]}}
+,{"page": 92, "scientific_name": "Bromus sterilis", "common_names": {"hu": ["meddő rozsnok"]}}
+,{"page": 92, "scientific_name": "Bromus erectus", "common_names": {"hu": ["sudár rozsnok"]}}
+,{"page": 92, "scientific_name": "Brachypodium pinnatum", "common_names": {"hu": ["tollas szálkaperje"]}}
+,{"page": 93, "scientific_name": "Brachypodium sylvaticum", "common_names": {"hu": ["erdei szálkaperje"]}}
+,{"page": 93, "scientific_name": "Molinia coerulea", "common_names": {"hu": ["kékperje"]}}
+,{"page": 93, "scientific_name": "Festuca pratensis", "common_names": {"hu": ["réti csenkesz"]}}
+,{"page": 93, "scientific_name": "Festuca drymeia", "common_names": {"hu": ["hegyi csenkesz"]}}
+,{"page": 94, "scientific_name": "Festuca gigantea", "common_names": {"hu": ["óriás csenkesz"]}}
+,{"page": 94, "scientific_name": "Festuca rupicola", "synonyms": ["Festuca sulcata"], "common_names": {"hu": ["pusztai csenkesz"]}}
+,{"page": 94, "scientific_name": "Festuca vaginata", "common_names": {"hu": ["homoki csenkesz"]}}
+,{"page": 94, "scientific_name": "Festuca pseudovina", "common_names": {"hu": ["sziki csenkesz"]}}
+,{"page": 94, "scientific_name": "Festuca heterophylla", "common_names": {"hu": ["felemáslevelű csenkesz"]}}
+,{"page": 95, "scientific_name": "Poa angustifolia", "synonyms": ["Poa pratensis angustifolia"], "common_names": {"hu": ["keskenylevelű perje"]}}
+,{"page": 95, "scientific_name": "Poa nemoralis", "common_names": {"hu": ["ligeti perje"]}}
+,{"page": 95, "scientific_name": "Melica uniflora", "common_names": {"hu": ["egyvirágú gyöngyperje"]}}
+,{"page": 95, "scientific_name": "Phragmites australis", "synonyms": ["Phragmites communis"], "common_names": {"hu": ["nád"]}}
+,{"page": 95, "scientific_name": "Agropyron repens", "synonyms": ["Elymus repens"], "common_names": {"hu": ["tarackbúza"]}}
+,{"page": 96, "scientific_name": "Lolium perenne", "common_names": {"hu": ["angolperje"]}}
+,{"page": 96, "scientific_name": "Deschampsia flexuosa", "synonyms": ["Avenella flexuosa"], "common_names": {"hu": ["erdei sédbúza"]}}
+,{"page": 96, "scientific_name": "Deschampsia caespitosa", "common_names": {"hu": ["gyepes sédbúza"]}}
+,{"page": 96, "scientific_name": "Milium effusum", "common_names": {"hu": ["kásafű"]}}
+,{"page": 96, "scientific_name": "Agrostis stolonifera", "common_names": {"hu": ["fehér tippan"]}}
+,{"page": 97, "scientific_name": "Agrostis tenuis", "synonyms": ["Agrostis capillaris"], "common_names": {"hu": ["cérnatippan"]}}
+,{"page": 97, "scientific_name": "Calamagrostis epigeios", "common_names": {"hu": ["siskanád", "siskanádtippan"]}}
+,{"page": 97, "scientific_name": "Calamagrostis arundinacea", "common_names": {"hu": ["erdei nádtippan"]}}
+,{"page": 98, "scientific_name": "Arrhenatherum elatius", "common_names": {"hu": ["franciaperje"]}}
+,{"page": 98, "scientific_name": "Glyceria maxima", "common_names": {"hu": ["vízi harmatkása"]}}
+,{"page": 98, "scientific_name": "Alopecurus pratensis", "common_names": {"hu": ["réti ecsetpázsit"]}}
+,{"page": 98, "scientific_name": "Stipa", "common_names": {"hu": ["tollas árvalányhaj"]}}
+,{"page": 98, "scientific_name": "Echinochloa crus-galli", "common_names": {"hu": ["kakaslábfű"]}}
+,{"page": 98, "scientific_name": "Cynodon dactylon", "common_names": {"hu": ["csillagpázsit"]}}
+,{"page": 99, "scientific_name": "Botriochloa ischaemum", "synonyms": ["Andropogon ischaemum"], "common_names": {"hu": ["fenyérfű"]}}
+,{"page": 99, "scientific_name": "Typhaceae", "common_names": {"hu": ["gyékényfélék"]}}
+,{"page": 99, "scientific_name": "Typha", "common_names": {"hu": ["gyékény"]}}
+,{"page": 100, "scientific_name": "Lemnaceae", "common_names": {"hu": ["békalencsefélék"]}}
+,{"page": 100, "scientific_name": "Lemna minor", "common_names": {"hu": ["apró békalencse"]}}
+,{"page": 100, "scientific_name": "Araceae", "common_names": {"hu": ["kontyvirágfélék"]}}
+,{"page": 100, "scientific_name": "Arum maculatum", "common_names": {"hu": ["foltos kontyvirág"]}}
+]
+,"alkalmazott_novenytan_eloadas_01":
+[{"page": 9, "scientific_name": "Valeriana officinalis officinalis", "common_names": {"hu": ["orvosi macskagyökér"]}}
+,{"page": 9, "scientific_name": "Valeriana officinalis collina", "common_names": {"hu": ["dombi macskagyökér"]}}
+,{"page": 10, "scientific_name": "Rosa canina", "common_names": {"hu": ["gyepűrózsa"]}}
+,{"page": 13, "scientific_name": "Fallopia sachalinensis", "common_names": {"hu": ["szahalini óriáskeserűfű"]}}
+,{"page": 17, "scientific_name": "Helianthus tuberosus", "common_names": {"hu": ["vadcsicsóka"]}}
+,{"page": 18, "scientific_name": "Helianthus × laetiflorus", "common_names": {"hu": ["kései napraforgó"]}}
+,{"page": 18, "scientific_name": "Helianthus pauciflorus", "common_names": {"hu": ["merevlevelű napraforgó"]}}
+,{"page": 23, "scientific_name": "Veronica hederifolia", "common_names": {"hu": ["borostyánlevelű veronika"]}}
+,{"page": 24, "scientific_name": "Daphne cneorum", "common_names": {"hu": ["henye boroszlán"]}}
+]
+,"alkalmazott_novenytan_gyakorlat_01":
+[{"page": 2, "scientific_name": "Ascomycotina", "common_names": {"hu": ["tömlősgombák"]}}
+,{"page": 11, "scientific_name": "Microsphaera quercina", "common_names": {"hu": ["tölgy lisztharmat"]}}
+,{"page": 11, "scientific_name": "Peziza aurantia", "common_names": {"hu": ["narancssárga csészegomba"]}}
+,{"page": 11, "scientific_name": "Morchella esculenta", "common_names": {"hu": ["ízletes kucsmagomba"]}}
+,{"page": 11, "scientific_name": "Helvella esculenta", "common_names": {"hu": ["redős papsapkagomba"]}}
+,{"page": 11, "scientific_name": "Tuber aestivum", "common_names": {"hu": ["nyári szarvasgomba"]}}
+,{"page": 29, "scientific_name": "Tuberales", "common_names": {"hu": ["szarvasgombák", "szarvasgomba-félék"]}}
+,{"page": 32, "scientific_name": "Tuber brumale", "common_names": {"hu": ["téli szarvasgomba"]}}
+,{"page": 52, "scientific_name": "Basidiomycota", "common_names": {"hu": ["bazídiumos gombák"]}}
+,{"page": 52, "scientific_name": "Basidiomycetes", "common_names": {"hu": ["valódi bazídiumos gombák"]}}
+,{"page": 52, "scientific_name": "Poriales", "common_names": {"hu": ["tapló-alkatúak"]}}
+,{"page": 52, "scientific_name": "Cantharellales", "common_names": {"hu": ["rókagomba-alkatúak"]}}
+,{"page": 52, "scientific_name": "Boletales", "common_names": {"hu": ["tinórugomba-alkatúak"]}}
+,{"page": 52, "scientific_name": "Agaricales", "common_names": {"hu": ["csiperke-alkatúak"]}}
+,{"page": 52, "scientific_name": "Russulales", "common_names": {"hu": ["galambgomba-alkatúak"]}}
+,{"page": 52, "scientific_name": "Phallales", "common_names": {"hu": ["szömörcsög-alkatúak"]}}
+,{"page": 52, "scientific_name": "Sclerodermatales", "common_names": {"hu": ["áltrifla-alkatúak"]}}
+,{"page": 52, "scientific_name": "Lycoperdales", "common_names": {"hu": ["pöfeteg-alkatúak"]}}
+,{"page": 53, "scientific_name": "Teliomycetes", "common_names": {"hu": ["rozsdagombák"]}}
+,{"page": 53, "scientific_name": "Ustomycetes", "common_names": {"hu": ["üszöggombák"]}}
+,{"page": 53, "scientific_name": "Phragmobazidiomycetidae", "common_names": {"hu": ["tagolt bazídiumú gombák"]}}
+,{"page": 53, "scientific_name": "Holobazidiomycetidae", "common_names": {"hu": ["tagolatlan bazídiumú gombák"]}}
+,{"page": 54, "scientific_name": "Polyporales", "common_names": {"hu": ["tapló-alkatúak"]}}
+,{"page": 54, "scientific_name": "Trametes versicolor", "common_names": {"hu": ["lepketapló"]}}
+,{"page": 59, "scientific_name": "Poriaceae", "common_names": {"hu": ["taplógombák"]}}
+,{"page": 59, "scientific_name": "Piptoporus betulinus", "common_names": {"hu": ["nyírtapló"]}}
+,{"page": 60, "scientific_name": "Fomes fomentarius", "common_names": {"hu": ["bükkfatapló"]}}
+,{"page": 67, "scientific_name": "Heterobasidion annosum", "common_names": {"hu": ["gyökérrontó tapló"]}}
+,{"page": 73, "scientific_name": "Cantharellaceae", "common_names": {"hu": ["rókagombafélék"]}}
+,{"page": 73, "scientific_name": "Cantharellus cibarius", "common_names": {"hu": ["sárga rókagomba"]}}
+,{"page": 81, "scientific_name": "Boletus edulis", "common_names": {"hu": ["ízletes vargánya"]}}
+,{"page": 88, "scientific_name": "Amanita", "common_names": {"hu": ["galóca"]}}
+,{"page": 90, "scientific_name": "Amanita phalloides", "common_names": {"hu": ["gyilkos galóca"]}}
+,{"page": 100, "scientific_name": "Amanita pantherina", "common_names": {"hu": ["párducgalóca"]}}
+,{"page": 106, "scientific_name": "Amanita muscaria", "common_names": {"hu": ["légyölő galóca"]}}
+,{"page": 114, "scientific_name": "Amanita caesarea", "common_names": {"hu": ["császárgalóca", "császárgomba"]}}
+,{"page": 119, "scientific_name": "Amanita verna", "common_names": {"hu": ["fehér galóca"]}}
+,{"page": 120, "scientific_name": "Amanita citrina", "common_names": {"hu": ["citromgalóca"]}}
+,{"page": 121, "scientific_name": "Amanita rubescens", "common_names": {"hu": ["piruló galóca"]}}
+,{"page": 121, "scientific_name": "Amanita strobiliformis", "common_names": {"hu": ["cafrangos galóca"]}}
+]
+}
