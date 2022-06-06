@@ -4,18 +4,24 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
   sources.then(async (res) => {
     let num: number = 1;
     for (let pair of Object.entries(await res.json())) {
-      const [key, val] = pair as[string, Source];
-      val.num = num++;
-      val.id = key;
+      const [id, source] = pair as [string, Source];
+      source.num = num++;
+      source.id = id;
 
-      SOURCES[key] = val;
+      SOURCE_IDX[num] = id;
+      SOURCES[id] = source;
       displaySources();
     };
   });
 
   return new Promise(async (resolve) => {
-    for (let [key, val] of Object.entries(await (await cnames).json())) {
-      CNAMES[key] = val as Array<CommonName>;
+    for (let pair of Object.entries(await (await cnames).json())) {
+      const [src, cnames] = pair as [string, Array<CommonName>];
+      cnames.forEach((cname: CommonName): void => {
+        cname.source_id = src;
+      });
+
+      CNAMES[src] = cnames;
     }
     await Promise.all([sources, deps]);
     displayCommonNames();
@@ -23,6 +29,7 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
 }
 
 const SOURCES: { [key: string]: Source } = {};
+const SOURCE_IDX: { [key: number]: string } = {};
 const CNAMES: { [key: string]: Array<CommonName> } = {};
 
 interface Source {
