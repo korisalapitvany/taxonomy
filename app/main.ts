@@ -21,7 +21,7 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
         cname.source_id = src;
       });
 
-      CNAMES[src] = cnames;
+      CNAMES.push(...cnames);
     }
     await Promise.all([sources, deps]);
     displayCommonNames();
@@ -30,7 +30,7 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
 
 const SOURCES: { [key: string]: Source } = {};
 const SOURCE_IDX: { [key: number]: string } = {};
-const CNAMES: { [key: string]: Array<CommonName> } = {};
+const CNAMES: Array<CommonName> = [];
 
 interface Source {
   title: string;
@@ -57,21 +57,31 @@ function displaySources(): void {
 }
 
 function displayCommonNames(): void {
-  const cnames: { [key: string]: Array<CommonName> } = {};
-
-  Object.values(CNAMES).reduce((x, y) => x.concat(y)).forEach(row => {
-    (cnames[row.scientific_name] = cnames[row.scientific_name] || []).push(row);
+  document.querySelectorAll("[data-tpl]").forEach((elem: HTMLElement): void => {
+    const tpl: string = elem.dataset.tpl;
+    const rx: RegExp = /\{common_names.count\}/g;
+    if (tpl.match(rx)) {
+      console.log("OK!");
+      elem.innerText = tpl.replaceAll(rx, CNAMES.length.toLocaleString(LANG));
+    }
+    console.log(elem);
   });
+  //const cnames: { [key: string]: Array<CommonName> } = {};
+
+  //Object.values(CNAMES).reduce((x, y) => x.concat(y)).forEach(row => {
+  //  (cnames[row.scientific_name] = cnames[row.scientific_name] || []).push(row);
+  //});
+  //data: Object.entries(cnames).map(([key, cnames]) => {
+  //  const cname = cnames.shift();
+  //  cnames.forEach(extra => {
+  //    // TODO: Remove duplicates!
+  //    cname.common_names[LANG].concat(extra.common_names[LANG]);
+  //  })
+  //  return cname;
+  //}),
 
   new Tabulator("#common-names", {
-    data: Object.entries(cnames).map(([key, cnames]) => {
-      const cname = cnames.shift();
-      cnames.forEach(extra => {
-        // TODO: Remove duplicates!
-        cname.common_names[LANG].concat(extra.common_names[LANG]);
-      })
-      return cname;
-    }),
+    data: CNAMES,
     pagination: true,
     paginationSize: 10,
     columns: [
