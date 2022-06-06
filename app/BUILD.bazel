@@ -41,6 +41,7 @@ ts_project(
     ] + [
         "bootstrap.ts",
         "main.ts",
+        "table_filter.ts",
     ],
     tsconfig = {"compilerOptions": {
         "target": TS_TARGET,

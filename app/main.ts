@@ -99,7 +99,7 @@ function displayCommonNames(): void {
   });
 
   ["change", "keyup"].forEach((evt: string): void => {
-    document.getElementById("filter").addEventListener(evt, filterCommonNames);
+    document.getElementById("filter").addEventListener(evt, handleFilterInput);
   });
 
   table = new Tabulator("#common-names", {
@@ -115,50 +115,6 @@ function displayCommonNames(): void {
       formatter: fmtCell,
     }],
   });
-}
-
-let filterVal: string = "";
-let filterApplied: string = "";
-let filterTimeout: number = 0;
-function filterCommonNames(evt: InputEvent): void {
-  const filter: HTMLInputElement = evt.target as HTMLInputElement;
-
-  filterVal = filter.value;
-  if (filterTimeout) {
-    clearTimeout(filterTimeout);
-  }
-  setTimeout((): void => {
-    filterTimeout = 0;
-    if (filterApplied === filterVal || !table) {
-      return;
-    }
-
-    filterApplied = filterVal;
-    table.setFilter(filterTable, {val: filterVal});
-    console.log(`Filter: ${filterVal}`);
-  }, 200);
-}
-
-function filterTable(data, params): boolean {
-  const value: string = params.val;
-  if (!value) {
-    // Clear the filter.
-    return true;
-  }
-
-  const cnames: Array<CommonName> = CNAMES[data.key];
-
-  return cnames
-    .map((cn: CommonName): Array<string> => {
-      return cn.common_names[LANG]
-        .concat(cn.scientific_name)
-        .concat(cn.synonym ? "syn" : "")
-        .concat(cn.synonym || "");
-    })
-    .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
-    .join(" ")
-    .toLowerCase()
-    .includes(value);
 }
 
 function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {

@@ -20,7 +20,7 @@
       article.main-page-content
         #content
 
-          h1 Élőlények magyarul
+          h1 Élőlények, magyarul.
           ' A
           a> href="https://jasen.org.rs/hu" Kőris Környezetvédelmi Alapítvány
           | által összegyűjtött, hivatkozásokkal ellátott lista az élőlények magyar neveiről. A lista elsősorban a
@@ -32,19 +32,14 @@
             span data-tpl="{common_names.count} élőlény magyar neve"
               | élőlények magyar nevei
 
-          input#filter type="text" placeholder="szűrő" spellcheck=false autocomplete=false
+          .button-row
+            button.button.has-icon.small type="button"
+              span#toggle-caps.material-symbols-outlined text_fields
 
-          button.button.has-icon.small type="button"
-            span#toggle-caps.material-symbols-outlined text_fields
+          input#filter type="text" placeholder="szűrő" spellcheck=false autocomplete=false
 
           #common-names
             | Adatok betöltése folyamatban…
-
-
-          h2#forrasok Források
-
-          #sources
-            | Források betöltése folyamatban…
 
 .page-footer
   .page-footer-legal
