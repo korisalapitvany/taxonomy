@@ -30,16 +30,16 @@
 
   &::before
     position: absolute
+    color: var(--text-invert)
+    background-color: var(--text-primary)
     font-size: var(--font-size)
     content: attr(data-tooltip)
     white-space: nowrap
     top: 50%
     left: 100%
-    margin-left: 16px
+    margin-left: 13px
     transform: translateY(-50%)
     padding: 8px
-    background: #000
-    color: #fff
 
     display: none
 
@@ -64,36 +64,56 @@ body
     &:hover
       color: var(--button-secondary-hover)
 
-/* Toolbar. */
-.toolbar
-  display: flex
-  flex-direction: row-reverse
-  margin-bottom: 8px
 
-  button
-    width: 64px
-    height: 48px
-    margin-right: 8px
-    font-size: 36px
-    border: thin solid var(--border-primary)
-    border-radius: 0
-    color: var(--icon-primary)
-    background: var(--background-secondary)
+#common-names
+  .toolbar
+    display: flex
+    flex-direction: row-reverse
+    margin-bottom: 8px
 
-  input[type=text]
-    width: 100%
-    height: 48px
-    padding: 12px
-    color: var(--text-primary)
-    background: var(--background-secondary)
-    border: thin solid var(--border-primary)
-    border-radius: 0
+    button,
+    input[type=text]
+      height: 52px
+      background: var(--background-secondary)
+      border: thin solid var(--border-primary)
 
-    &:focus
-      outline: none
+    button
+      width: 64px
+      margin-right: 12px
+      font-size: 36px
+      border-radius: 0
+      color: var(--icon-primary)
 
-#common-names.tabulator
-  background-color: var(--background-primary)
+      &:hover, &:active, &:focus
+        border-color: var(--field-focus-border)
+        background-color: var(--code-background-inline)
+
+    input[type=text]
+      width: 100%
+      padding: 12px
+      color: var(--text-primary)
+      border-radius: 0
+
+      &:focus
+        outline: none
+        border-color: var(--field-focus-border)
+
+      &::after
+        content: "refresh"
+
+  &.toggle-caps #toggle-caps,
+  &.toggle-articles #toggle-articles
+    color: var(--icon-information)
+    background: var(--background-information)
+
+  &.toggle-caps .common-names::first-letter
+    text-transform: uppercase
+
+  &:not(.toggle-articles) .article
+    display: none
+
+  .tabulator
+    background-color: var(--background-primary)
 
   .tabulator-header
     display: none
@@ -101,17 +121,24 @@ body
   .tabulator-row
     border-bottom: none
 
+    &.tabulator-selectable:hover
+      cursor: initial
+      background-color: inherit
+
   .tabulator-cell
     &.content
-      padding: 8px
+      padding: 8px 0
       line-height: 24px
 
     .photo
       float: left
       height: 64px
       width: 64px
-      background: var(--background-information)
       margin-right: 8px
+      background: var(--background-information)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
 
     .common-names
       line-height: 28px
@@ -133,12 +160,6 @@ body
       .syn-marker
         color: var(--text-inactive)
         border-bottom: thin dashed var(--border-secondary)
-
-  &:not(.common-names-lower) .common-names::first-letter
-    text-transform: uppercase
-
-  &:not(.articles-show) .article
-    display: none
 
 .page-footer-legal-text
   .theme-name::after

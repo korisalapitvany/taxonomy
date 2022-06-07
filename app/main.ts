@@ -8,10 +8,10 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
     document.body.className = "dark";
   });
   document.getElementById("toggle-caps").addEventListener("click", (): void => {
-    document.getElementById("common-names").classList.toggle("common-names-lower");
+    document.getElementById("common-names").classList.toggle("toggle-caps");
   });
   document.getElementById("toggle-articles").addEventListener("click", (): void => {
-    document.getElementById("common-names").classList.toggle("articles-show");
+    document.getElementById("common-names").classList.toggle("toggle-articles");
   });
   document.getElementById("refresh-all").addEventListener("click", (): void => {
     localStorage.clear();
@@ -122,7 +122,7 @@ function displayCommonNames(): void {
     document.getElementById("filter").addEventListener(evt, handleFilterInput);
   });
 
-  table = new Tabulator("#common-names", {
+  table = new Tabulator("#common-names .table", {
     data: ROWS,
     pagination: true,
     paginationSize: 20,
@@ -134,6 +134,7 @@ function displayCommonNames(): void {
       cssClass: "content",
       width: "100%",
       formatter: fmtCell,
+      selectable: false,
     }],
   });
 }

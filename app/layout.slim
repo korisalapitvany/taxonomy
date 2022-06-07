@@ -21,28 +21,29 @@
         #content
 
           h1 Élőlények, magyarul.
-          ' A
-          a> href="https://jasen.org.rs/hu" Kőris Környezetvédelmi Alapítvány
-          | által összegyűjtött, hivatkozásokkal ellátott lista az élőlények magyar neveiről. A lista elsősorban a
-          | szakirodalomban használt neveket tartalmazza (pl. <em>sárgarigó</em>), bár egyes források a népi
-          | megnevezéseket is említik (pl. <em>aranymálinkó</em>).
+          p
+            ' A
+            a> href="https://jasen.org.rs/hu" Kőris Környezetvédelmi Alapítvány
+            ' által összegyűjtött, hivatkozásokkal ellátott lista az élőlények magyar neveiről. A lista elsősorban a
+            ' szakirodalomban használt neveket tartalmazza.
 
           h2#elolenyek
             ' Táblázat:
             span data-tpl="{common_names.count} élőlény magyar neve"
               | élőlények magyar nevei
 
-          .toolbar
-            input#filter type="text" placeholder="[ / ] szűrő" spellcheck=false autocomplete=false
-            button#refresh-all.button.has-icon.small.tooltip type="button" data-tooltip="Adatok frissítése"
-              span.material-symbols-outlined refresh
-            button#toggle-articles.button.has-icon.small.tooltip type="button" data-tooltip="Névelő mutatása/elrejtése"
-              span.material-symbols-outlined font_download
-            button#toggle-caps.button.has-icon.small.tooltip type="button" data-tooltip="Nagy/kis kezdőbetű"
-              span.material-symbols-outlined text_fields
+          #common-names.toggle-caps
+            .toolbar
+              input#filter type="text" placeholder="[ / ] szűrő" tabindex=4 spellcheck=false autocomplete=false
+              button#refresh-all.button.has-icon.small.tooltip type="button" tabindex=3 data-tooltip="Adatok frissítése"
+                span.material-symbols-outlined refresh
+              button#toggle-articles.button.has-icon.small.tooltip type="button" tabindex=2 data-tooltip="Névelő mutatása/elrejtése"
+                span.material-symbols-outlined font_download
+              button#toggle-caps.button.has-icon.small.tooltip type="button" tabindex=1 data-tooltip="Nagy/kis kezdőbetű"
+                span.material-symbols-outlined text_fields
 
-          #common-names
-            | Adatok betöltése folyamatban…
+            .table
+              | Adatok betöltése folyamatban…
 
 .page-footer
   .page-footer-legal
