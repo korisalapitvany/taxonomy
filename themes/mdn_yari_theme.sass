@@ -3,6 +3,18 @@
 @import "external/mdn_yari/client/src/document/organisms/toc"
 @import "external/mdn_yari/client/src/ui/organisms/footer"
 
+/* Page layout. */
+@media screen and (min-width: 769px)
+  .article-wrapper
+    grid-template-areas: "main"
+    grid-template-columns: minmax(0, 1fr)
+
+@media screen and (min-width: 1200px)
+  .article-wrapper
+    grid-template-areas: "main toc"
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 15rem)
+
+/* Theme switcher. */
 @media (prefers-color-scheme: light)
   body:not(.dark)
     .theme-switcher-menu .light-mode
@@ -52,9 +64,11 @@ body
     &:hover
       color: var(--button-secondary-hover)
 
+/* Toolbar. */
 .toolbar
   display: flex
   flex-direction: row-reverse
+  margin-bottom: 8px
 
   button
     width: 64px
