@@ -50,7 +50,7 @@ interface INatResult {
 // Format a single row.
 // This should finish as soon as possible, and update the row asynchronously.
 function fmtRow(row: typeof RowComponent): void {
-  const el: HTMLElement = row.getElement();
+  const el: HTMLElement = row["getElement"]();
   const key: string = row.getData().key;
 
   setTimeout((): void => {
@@ -63,7 +63,7 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
 
   let res = INAT[key];
   if (!res) {
-    const cache = localStorage.getItem(url);
+    const cache = window.localStorage.getItem(url);
     INAT[key] = res = cache
       ? new INatResults(JSON.parse(cache))
       : fetch(url);
@@ -71,11 +71,11 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
   if (!(res instanceof INatResults)) {
     // We have a promise, await and decode it.
     const raw = await (await res).json();
-    localStorage.setItem(url, JSON.stringify(raw));
+    window.localStorage.setItem(url, JSON.stringify(raw));
     INAT[key] = res = new INatResults(raw);
   }
 
-  if (!res.total_results) {
+  if (!res["total_results"]) {
     // TODO: mismatch, mark it as so!
     console.log(`NOT FOUND: iNaturalist: ${key}`);
     return;
@@ -90,12 +90,12 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
   }
 
   // TODO: Update the row!
-  const def = data.default_photo;
+  const def = data["default_photo"];
   if (def) {
-    photo.style.backgroundImage = `url(${def.square_url})`;
+    photo.style.backgroundImage = `url(${def["square_url"]})`;
     photo.title = def
       .attribution
-      .replaceAll(/\(c\)/g, "©")
+      .replace(/\(c\)/, "©")
       // TODO: Source translations from the layout file!
       .replaceAll(/\ball rights reserved\b/g, "minden jog fenntartva")
       .replaceAll(/\bsome rights reserved\b/g, "néhány jog fenntartva")

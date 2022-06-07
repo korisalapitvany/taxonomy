@@ -20,6 +20,11 @@ closure_js_library(
         # Closure Compiler currently does not consume TypeScript .d.ts inputs.
         # Therefore it has no clue about the types, so we disable some optimisations.
         "JSC_UNKNOWN_EXPR_TYPE",
+        # Closure won't let us access "struct" members, but do it anyway.
+        "JSC_ILLEGAL_PROPERTY_ACCESS",
+        # Also disable the "inexistent property" warning, which is generated for
+        # TypeScript classes that set their properties using Object.assign() in the ctor.
+        "JSC_INEXISTENT_PROPERTY",
     ],
 )
 

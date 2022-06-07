@@ -14,7 +14,7 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
     document.getElementById("common-names").classList.toggle("toggle-articles");
   });
   document.getElementById("refresh-all").addEventListener("click", (): void => {
-    localStorage.clear();
+    window.localStorage.clear();
     location.reload();
   });
 
@@ -48,7 +48,7 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
     for (let pair of Object.entries(await (await cnames).json())) {
       const [src, cnames] = pair as [string, Array<CommonName>];
       cnames.forEach((cname: CommonName): void => {
-        (CNAMES[cname.scientific_name] = CNAMES[cname.scientific_name] || []).push(cname);
+        (CNAMES[cname["scientific_name"]] = CNAMES[cname["scientific_name"]] || []).push(cname);
         cname.source_id = src;
       });
     }
@@ -111,7 +111,7 @@ let table: typeof Tabulator = null;
 function displayCommonNames(): void {
   const count: number = Object.keys(CNAMES).length;
   document.querySelectorAll("[data-tpl]").forEach((elem: HTMLElement): void => {
-    const tpl: string = elem.dataset.tpl;
+    const tpl: string = elem.dataset["tpl"];
     const rx: RegExp = /\{common_names.count\}/g;
     if (tpl.match(rx)) {
       elem.innerText = tpl.replaceAll(rx, count.toLocaleString(LANG));
@@ -122,25 +122,25 @@ function displayCommonNames(): void {
     document.getElementById("filter").addEventListener(evt, handleFilterInput);
   });
 
-  table = new Tabulator("#common-names .table", {
-    data: ROWS,
-    pagination: true,
-    paginationSize: 20,
-    layout: "fitDataFill",
-    rowHeight: 80,
-    rowFormatter: fmtRow,
-    columns: [{
-      field: "key",
-      cssClass: "content",
-      width: "100%",
-      formatter: fmtCell,
-      selectable: false,
+  const _Tabulator = window["Tabulator"] as typeof Tabulator;
+  table = new _Tabulator("#common-names .table", {
+    "data": ROWS,
+    "pagination": true,
+    "paginationSize": 20,
+    "layout": "fitDataFill",
+    "rowHeight": 80,
+    "rowFormatter": fmtRow,
+    "columns": [{
+      "field": "key",
+      "cssClass": "content",
+      "width": "100%",
+      "formatter": fmtCell,
     }],
   });
 }
 
 function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
-  const key: string = cell.getValue();
+  const key: string = cell["getValue"]();
   const cnames: Array<CommonName> = CNAMES[key];
 
   let line1: HTMLDivElement = document.createElement("div");
@@ -153,7 +153,7 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
 
   let first: boolean = true;
   cnames
-    .map((cname: CommonName): Array<string> => cname.common_names[LANG])
+    .map((cname: CommonName): Array<string> => cname["common_names"][LANG])
     .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
     .forEach((name: string): void => {
       if (first) {
@@ -163,7 +163,7 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
       el.innerText = name;
 
       cnames
-        .filter((cn: CommonName): boolean => cn.common_names[LANG].indexOf(name) != -1)
+        .filter((cn: CommonName): boolean => cn["common_names"][LANG].indexOf(name) != -1)
         .forEach((cn: CommonName): void => {
           const src: Source = SOURCES[cn.source_id];
           const sup: HTMLElement = document.createElement("sup");
