@@ -35,21 +35,17 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
     let num: number = 1;
     for (let pair of Object.entries(await res.json())) {
       const [id, source] = pair as [string, Source];
-      source.num = num++;
-      source.id = id;
-
+      SOURCES[id] = new Source(id, num++, source);
       SOURCE_IDX[num] = id;
-      SOURCES[id] = source;
-      displaySources();
     };
   });
 
   return new Promise(async (resolve) => {
     for (let pair of Object.entries(await (await cnames).json())) {
-      const [src, cnames] = pair as [string, Array<CommonName>];
-      cnames.forEach((cname: CommonName): void => {
-        (CNAMES[cname["scientific_name"]] = CNAMES[cname["scientific_name"]] || []).push(cname);
-        cname.source_id = src;
+      const [src, cnames] = pair as [string, Array<any>];
+      cnames.forEach((data: any): void => {
+        const cname = new CommonName(src, data);
+        (CNAMES[cname.scientificName] = CNAMES[cname.scientificName] || []).push(cname);
       });
     }
 
@@ -82,29 +78,37 @@ class Row {
   }
 };
 
-interface Source {
-  title: string;
-  subtitle: string;
-
-  // Dynamically added:
-  num: number;
+class Source {
   id: string;
+  num: number;
+  mTitle: string; // "title" won't get optimised properly
+  subTitle: string;
+
+  constructor(id: string, num: number, data: any) {
+    this.id = id;
+    this.num = num;
+    this.mTitle = data["title"];
+    this.subTitle = data["subtitle"];
+  }
 };
 
-interface CommonName {
-  page: number;
-  scientific_name: string;
+class CommonName {
+  sourceId: string;
+  pageNum: number;
+  scientificName: string;
   synonym: string;
-  common_names: Translations;
+  commonNames: Translations;
 
-  // Dynamically added fields:
-  source_id: string;
+  constructor(sourceId: string, data: any) {
+    this.sourceId = sourceId;
+    this.pageNum = data["page"];
+    this.scientificName = data["scientific_name"];
+    this.synonym = data["synonym"];
+    this.commonNames = data["common_names"];
+  }
 };
 
 type Translations = { [key: string]: Array<string> };
-
-function displaySources(): void {
-}
 
 let table: typeof Tabulator = null;
 
@@ -153,7 +157,7 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
 
   let first: boolean = true;
   cnames
-    .map((cname: CommonName): Array<string> => cname["common_names"][LANG])
+    .map((cname: CommonName): Array<string> => cname.commonNames[LANG])
     .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
     .forEach((name: string): void => {
       if (first) {
@@ -163,12 +167,12 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
       el.innerText = name;
 
       cnames
-        .filter((cn: CommonName): boolean => cn["common_names"][LANG].indexOf(name) != -1)
+        .filter((cn: CommonName): boolean => cn.commonNames[LANG].indexOf(name) != -1)
         .forEach((cn: CommonName): void => {
-          const src: Source = SOURCES[cn.source_id];
+          const src: Source = SOURCES[cn.sourceId];
           const sup: HTMLElement = document.createElement("sup");
           sup.innerText = `[${src.num}]`;
-          sup.title = refText(src, cn.page);
+          sup.title = refText(src, cn.pageNum);
           el.append(sup);
         });
 
@@ -213,9 +217,9 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
 }
 
 function refText(src: Source, page: number): string {
-  let text = src.title;
-  if (src.subtitle) {
-    text += ` — ${src.subtitle}`
+  let text = src.mTitle;
+  if (src.subTitle) {
+    text += ` — ${src.subTitle}`
   }
   return [
     text,

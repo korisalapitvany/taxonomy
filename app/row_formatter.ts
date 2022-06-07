@@ -4,22 +4,25 @@ const INAT_API = "https://api.inaturalist.org/v1";
 const INAT: { [key: string]: Promise<Response> | INatResults } = {};
 
 class INatResults {
-  total_results: number;
-  page: number;
-  per_page: number;
+  totalResults: number;
+  currentPage: number;
+  perPage: number;
   results: Array<INatResult>;
-  updated_at: Date;
+  updatedAt: Date;
 
-  constructor(json: any) {
-    Object.assign(this, json);
-    this.updated_at = new Date();
+  constructor(data: any) {
+    this.totalResults = data["total_results"];
+    this.currentPage = data["page"];
+    this.perPage = data["per_page"];
+    this.results = data["results"].map((res: any): INatResult => new INatResult(res));
+    this.updatedAt = new Date();
   }
 };
 
-interface INatResult {
+class INatResult {
   id: number;
   name: string;
-  preferred_common_name: string;
+  preferredCommonName: string;
   matched_term: string;
   observations_count: number;
   taxon_schemes_count: number;
@@ -41,10 +44,24 @@ interface INatResult {
   rank: string;
   extinct: boolean;
   ancestor_ids: Array<number>;
-  default_photo: {
-    attribution: string;
-    square_url: string;
-  };
+  defaultPhoto: INatDefaultPhoto;
+
+  constructor(data: any) {
+    this.preferredCommonName = data["preferred_common_name"];
+    if (data["default_photo"]) {
+      this.defaultPhoto = new INatDefaultPhoto(data["default_photo"]);
+    }
+  }
+};
+
+class INatDefaultPhoto {
+  attribution: string;
+  squareUrl: string;
+
+  constructor(data: any) {
+    this.attribution = data["attribution"];
+    this.squareUrl = data["square_url"];
+  }
 };
 
 // Format a single row.
@@ -75,13 +92,13 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
     INAT[key] = res = new INatResults(raw);
   }
 
-  if (!res["total_results"]) {
+  if (!res.totalResults) {
     // TODO: mismatch, mark it as so!
     console.log(`NOT FOUND: iNaturalist: ${key}`);
     return;
   }
 
-  const data = res.results.shift();
+  const data = res.results[0];
 
   const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
   if (!photo) {
@@ -90,10 +107,10 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
   }
 
   // TODO: Update the row!
-  const def = data["default_photo"];
-  if (def) {
-    photo.style.backgroundImage = `url(${def["square_url"]})`;
-    photo.title = def
+  if (data.defaultPhoto) {
+    photo.style.backgroundImage = `url(${data.defaultPhoto.squareUrl})`;
+    photo.title = data
+      .defaultPhoto
       .attribution
       .replace(/\(c\)/, "©")
       // TODO: Source translations from the layout file!

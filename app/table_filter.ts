@@ -45,10 +45,10 @@ function filterTable(data, params: FilterParams): boolean {
   return fuzzyText(
     cnames
       .map((cn: CommonName): Array<string> => {
-        return cn["common_names"][LANG]
-          .concat(cn["scientific_name"])
-          .concat(cn["synonym"] ? "syn" : "")
-          .concat(cn["synonym"] || "");
+        return cn.commonNames[LANG]
+          .concat(cn.scientificName)
+          .concat(cn.synonym ? "syn" : "")
+          .concat(cn.synonym || "");
       })
       .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
       .join(" "))
