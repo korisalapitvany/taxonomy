@@ -34,7 +34,9 @@
 
           #common-names.toggle-caps
             .toolbar
-              input#filter type="text" placeholder="[ / ] szűrő" tabindex=4 spellcheck=false autocomplete=false
+              label for="filter"
+                span.material-symbols-outlined search
+                input#filter type="text" placeholder="[ / ] szűrő" tabindex=4 spellcheck=false autocomplete=false
               button#refresh-all.button.has-icon.small.tooltip type="button" tabindex=3 data-tooltip="Adatok frissítése"
                 span.material-symbols-outlined refresh
               button#toggle-articles.button.has-icon.small.tooltip type="button" tabindex=2 data-tooltip="Névelő mutatása/elrejtése"

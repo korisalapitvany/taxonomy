@@ -88,9 +88,22 @@ body
         border-color: var(--field-focus-border)
         background-color: var(--code-background-inline)
 
+    label[for=filter]
+      width: 100%
+      display: flex
+      color: var(--icon-primary)
+
+      span
+        width: 0
+        z-index: 1
+        padding-left: 16px
+        margin-top: 15px
+
     input[type=text]
       width: 100%
       padding: 12px
+      padding-left: 48px
+      margin-left: -16px
       color: var(--text-primary)
       border-radius: 0
 
