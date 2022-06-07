@@ -32,15 +32,14 @@
             span data-tpl="{common_names.count} élőlény magyar neve"
               | élőlények magyar nevei
 
-          .button-row
-            button#toggle-caps.button.has-icon.small type="button" title="Nagy/kis kezdőbetű"
-              span.material-symbols-outlined text_fields
-            button#toggle-articles.button.has-icon.small type="button" title="Névelő mutatása/elrejtése"
-              span.material-symbols-outlined font_download
-            button#refresh-all.button.has-icon.small type="button" title="Adatok frissítése"
+          .toolbar
+            input#filter type="text" placeholder="[ / ] szűrő" spellcheck=false autocomplete=false
+            button#refresh-all.button.has-icon.small.tooltip type="button" data-tooltip="Adatok frissítése"
               span.material-symbols-outlined refresh
-
-          input#filter type="text" placeholder="[ / ] szűrő" spellcheck=false autocomplete=false
+            button#toggle-articles.button.has-icon.small.tooltip type="button" data-tooltip="Névelő mutatása/elrejtése"
+              span.material-symbols-outlined font_download
+            button#toggle-caps.button.has-icon.small.tooltip type="button" data-tooltip="Nagy/kis kezdőbetű"
+              span.material-symbols-outlined text_fields
 
           #common-names
             | Adatok betöltése folyamatban…

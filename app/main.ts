@@ -10,6 +10,9 @@ function main(sources: Promise<any>, cnames: Promise<any>, deps: Promise<any>): 
   document.getElementById("toggle-caps").addEventListener("click", (): void => {
     document.getElementById("common-names").classList.toggle("common-names-lower");
   });
+  document.getElementById("toggle-articles").addEventListener("click", (): void => {
+    document.getElementById("common-names").classList.toggle("articles-show");
+  });
   document.getElementById("refresh-all").addEventListener("click", (): void => {
     localStorage.clear();
     location.reload();
@@ -142,11 +145,19 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
   let line1: HTMLDivElement = document.createElement("div");
   line1.className = "common-names";
 
+  let article: HTMLElement = document.createElement("span");
+  article.className = "article";
+  line1.append(article);
+  line1.append(" ");
+
   let first: boolean = true;
   cnames
     .map((cname: CommonName): Array<string> => cname.common_names[LANG])
     .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
     .forEach((name: string): void => {
+      if (first) {
+        article.innerText = articleFor(name);
+      }
       const el: HTMLElement = document.createElement(first ? "strong" : "span");
       el.innerText = name;
 
@@ -209,6 +220,14 @@ function refText(src: Source, page: number): string {
     text,
     PAGE_NUM.replace(/\{page\}/, page.toLocaleString(LANG)),
   ].join("; ");
+}
+
+function articleFor(cname: string): string {
+  if (!cname) {
+    return "";
+  }
+  // TODO: Add support for exceptions!
+  return "AÁEÉIÍOÓÖŐUÚÜŰ".includes(cname[0].toUpperCase()) ? "az" : "a";
 }
 
 // TODO: Parse this from the template!
