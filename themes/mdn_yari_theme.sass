@@ -192,18 +192,26 @@ body
   .ext
     .chip
       font-size: 12px
-      line-height: 36px
+      line-height: 32px
+      border-radius: 16px
+      margin-left: 12px
+      padding-right: 12px
       text-transform: uppercase
+      color: var(--text-secondary)
+      background-color: var(--background-secondary)
 
       &.match
         color: var(--icon-success)
+        background-color: var(--background-success)
 
-      &.mismatch
-        color: var(--icon-information)
+      &.near-match
+        color: var(--icon-warning)
+        background-color: var(--background-warning)
 
       &.missing,
       &.mismatch
-        color: var(--icon-warning)
+        color: var(--icon-critical)
+        background-color: var(--background-critical)
 
     .inaturalist::before
       content: ""

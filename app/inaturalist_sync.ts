@@ -120,6 +120,7 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
       cnames.replaceAll(/\W/g, "").toUpperCase()) {
     chip.classList.add("near-match");
     chip.innerText = "név hasonló";
+    chip.title = `"${data.preferredCommonName}"`;
     return;
   }
 
