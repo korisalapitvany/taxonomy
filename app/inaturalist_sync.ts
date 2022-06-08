@@ -70,20 +70,21 @@ class INatDefaultPhoto {
 };
 
 async function iNatRow(row: HTMLElement, key: string): Promise<void> {
-  const data: INatResult = await iNatFetch(key, 1);
-  if (!data) {
-    // Taxon not found on iNaturalist.
-    return;
-  }
-
   const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
   const ext: HTMLDivElement = row.querySelector(".ext") as HTMLDivElement;
-  if (!photo || !ext) {
-    // Maybe the row has disappeared since.
+
+  const chip: HTMLDivElement = document.createElement("div");
+  chip.className = "chip flex-row inaturalist";
+  ext.append(chip);
+
+  const data: INatResult = await iNatFetch(key, 1);
+
+  if (!data) {
+    chip.classList.add("missing");
+    chip.innerText = "hiányzik";
     return;
   }
 
-  // TODO: Update the row!
   if (data.defaultPhoto) {
     photo.style.backgroundImage = `url(${data.defaultPhoto.squareUrl})`;
     photo.title = data
@@ -96,13 +97,37 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
       .replaceAll(/\buploaded by\b/g, "feltöltötte:");
   }
 
-  const chip: HTMLDivElement = document.createElement("div");
-  chip.className = "inaturalist";
+  if (!data.preferredCommonName) {
+    chip.classList.add("missing");
+    chip.innerText = "név hiányzik";
+    return;
+  }
+
+  // Not great, but will do for now.
+  const cnames: string = CNAMES[key]
+    // TODO: Extract this to some function!
+    .map((cname: CommonName): Array<string> => cname.commonNames[LANG])
+    .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
+    .join(", ");
+
+  if (data.preferredCommonName === cnames) {
+    chip.classList.add("match");
+    chip.innerText = "név megegyezik";
+    return;
+  }
+
+  if (data.preferredCommonName.replaceAll(/\W/g, "").toUpperCase() ===
+      cnames.replaceAll(/\W/g, "").toUpperCase()) {
+    chip.classList.add("near-match");
+    chip.innerText = "név hasonló";
+    return;
+  }
+
+  chip.classList.add("mismatch");
+  chip.innerText = "név különbözik";
 
   // TODO: Go through common names for this cell,
   // mark each one that appears in iNat with a chip.
-
-  ext.append(chip);
 }
 
 async function iNatFetch(sname: string, perPage: number): Promise<INatResult | null> {
