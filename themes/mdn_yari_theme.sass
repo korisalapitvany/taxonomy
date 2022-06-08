@@ -64,6 +64,18 @@ body
     &:hover
       color: var(--button-secondary-hover)
 
+.tabulator
+  .flex-col,
+  .tabulator-row .tabulator-cell.flex-col,
+  .tabulator-tableholder .tabulator-table
+    display: flex
+    flex-direction: column
+
+  .flex-row,
+  .tabulator-row,
+  .tabulator-row .tabulator-cell.flex-row
+    display: flex
+    flex-direction: row
 
 #common-names
   .toolbar
@@ -160,12 +172,14 @@ body
         color: var(--accent-primary)
         cursor: pointer
         font-weight: normal
+        font-size: 12px
 
       span:not(.article)::before
         content: ", "
 
     .scientific-name
       color: var(--text-secondary)
+      font-size: 14px
 
       em
         font-family: "Noto Serif", serif
@@ -174,6 +188,15 @@ body
       .syn-marker
         color: var(--text-inactive)
         border-bottom: thin dashed var(--border-secondary)
+
+  .ext .inaturalist::before
+    content: ""
+    display: block
+    height: 24px
+    width: 24px
+    margin: 4px 8px
+    background-size: contain
+    background-image: url(https://duckduckgo.com/ip3/inaturalist.org.ico)
 
 .page-footer-legal-text
   .theme-name::after

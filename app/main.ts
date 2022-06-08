@@ -136,7 +136,7 @@ function displayCommonNames(): void {
     "rowFormatter": fmtRow,
     "columns": [{
       "field": "key",
-      "cssClass": "content",
+      "cssClass": "content flex-row",
       "width": "100%",
       "formatter": fmtCell,
     }],
@@ -154,7 +154,7 @@ function fmtRow(row: typeof RowComponent): void {
   }, 50);
 }
 
-function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
+function fmtCell(cell, formatterParams, onRendered): string {
   const key: string = cell["getValue"]();
   const cnames: Array<CommonName> = CNAMES[key];
 
@@ -191,10 +191,10 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
       first = false;
     });
 
-  let line2: HTMLDivElement = document.createElement("div");
+  const line2: HTMLDivElement = document.createElement("div");
   line2.className = "scientific-name";
 
-  let em: HTMLElement = document.createElement("em");
+  const em: HTMLElement = document.createElement("em");
   em.innerText = key;
   line2.append(em);
 
@@ -210,21 +210,26 @@ function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
     line2.append(span);
 
     line2.append(" ");
-    em = document.createElement("em");
-    em.className = "synonym"
-    em.innerText = synonyms
-    line2.append(em);
+    const syn: HTMLElement = document.createElement("em");
+    syn.className = "synonym"
+    syn.innerText = synonyms
+    line2.append(syn);
   }
 
-  let photo: HTMLDivElement = document.createElement("div");
+  const photo: HTMLDivElement = document.createElement("div");
   photo.className = "photo";
 
-  const div: HTMLDivElement = document.createElement("div");
-  div.append(photo);
-  div.append(line1);
-  div.append(line2);
+  const names: HTMLDivElement = document.createElement("div");
+  names.className = "flex-col";
+  names.append(line1);
+  names.append(line2);
 
-  return div;
+  const ext: HTMLDivElement = document.createElement("div");
+  ext.className = "ext";
+
+  return [photo, names, ext]
+    .map((el: HTMLElement): string => el.outerHTML)
+    .join("");
 }
 
 function refText(src: Source, page: number): string {

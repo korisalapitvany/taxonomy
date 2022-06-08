@@ -77,8 +77,9 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   }
 
   const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
-  if (!photo) {
-    // Maybe the element has disappeared.
+  const ext: HTMLDivElement = row.querySelector(".ext") as HTMLDivElement;
+  if (!photo || !ext) {
+    // Maybe the row has disappeared since.
     return;
   }
 
@@ -94,6 +95,14 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
       .replaceAll(/\bsome rights reserved\b/g, "néhány jog fenntartva")
       .replaceAll(/\buploaded by\b/g, "feltöltötte:");
   }
+
+  const chip: HTMLDivElement = document.createElement("div");
+  chip.className = "inaturalist";
+
+  // TODO: Go through common names for this cell,
+  // mark each one that appears in iNat with a chip.
+
+  ext.append(chip);
 }
 
 async function iNatFetch(sname: string, perPage: number): Promise<INatResult | null> {
