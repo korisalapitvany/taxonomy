@@ -199,6 +199,7 @@ body
       text-transform: uppercase
       color: var(--text-secondary)
       background-color: var(--background-secondary)
+      border: thin solid var(--border-secondary)
 
       &.match
         color: var(--icon-success)
@@ -216,11 +217,14 @@ body
     .inaturalist::before
       content: ""
       display: block
-      height: 24px
-      width: 24px
-      margin: 4px 8px
+      height: 32px
+      width: 32px
+      margin-right: 8px
+      border: 4px solid white
+      border-radius: 24px
       background-size: contain
       background-image: url(https://duckduckgo.com/ip3/inaturalist.org.ico)
+      background-color: white
 
 .page-footer-legal-text
   .theme-name::after
