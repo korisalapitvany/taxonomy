@@ -1,7 +1,11 @@
+// iNaturalist API.
 const INAT_API = "https://api.inaturalist.org/v1";
-// https://api.inaturalist.org/v1/taxa?q=Philanthus%20triangulum&per_page=1
 
-const INAT: { [key: string]: Promise<Response> | INatResults } = {};
+// Cache of response objects / promises.
+// Used more or less like a queue. Promises are never cancelled.
+const INAT: {
+  [key: string]: INatResults | Promise<Response> | null
+} = {};
 
 class INatResults {
   totalResults: number;
@@ -47,6 +51,7 @@ class INatResult {
   defaultPhoto: INatDefaultPhoto;
 
   constructor(data: any) {
+    this.name = data["name"];
     this.preferredCommonName = data["preferred_common_name"];
     if (data["default_photo"]) {
       this.defaultPhoto = new INatDefaultPhoto(data["default_photo"]);
@@ -64,41 +69,12 @@ class INatDefaultPhoto {
   }
 };
 
-// Format a single row.
-// This should finish as soon as possible, and update the row asynchronously.
-function fmtRow(row: typeof RowComponent): void {
-  const el: HTMLElement = row["getElement"]();
-  const key: string = row.getData().key;
-
-  setTimeout((): void => {
-    iNatFetch(el, key);
-  }, 50);
-}
-
-async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
-  const url: string = `${INAT_API}/taxa?q=${encodeURIComponent(key)}&locale=${LANG}&per_page=1`;
-
-  let res = INAT[key];
-  if (!res) {
-    const cache = window.localStorage.getItem(url);
-    INAT[key] = res = cache
-      ? new INatResults(JSON.parse(cache))
-      : fetch(url);
-  }
-  if (!(res instanceof INatResults)) {
-    // We have a promise, await and decode it.
-    const raw = await (await res).json();
-    window.localStorage.setItem(url, JSON.stringify(raw));
-    INAT[key] = res = new INatResults(raw);
-  }
-
-  if (!res.totalResults) {
-    // TODO: mismatch, mark it as so!
-    console.log(`NOT FOUND: iNaturalist: ${key}`);
+async function iNatRow(row: HTMLElement, key: string): Promise<void> {
+  const data: INatResult = await iNatFetch(key, 1);
+  if (!data) {
+    // Taxon not found on iNaturalist.
     return;
   }
-
-  const data = res.results[0];
 
   const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
   if (!photo) {
@@ -118,4 +94,45 @@ async function iNatFetch(row: HTMLElement, key: string): Promise<void> {
       .replaceAll(/\bsome rights reserved\b/g, "néhány jog fenntartva")
       .replaceAll(/\buploaded by\b/g, "feltöltötte:");
   }
+}
+
+async function iNatFetch(sname: string, perPage: number): Promise<INatResult | null> {
+  const url: string = `${INAT_API}/taxa?q=${encodeURIComponent(sname)}&locale=${LANG}&per_page=${perPage}`;
+
+  // Try to look up the result in the cache/queue.
+  let res: INatResults | Promise<Response> | null = INAT[url];
+
+  if (res === null) {
+    return null; // Not found.
+  }
+
+  if (res === undefined) {
+    // Not found, try local storage.
+    const cache = window.localStorage.getItem(url);
+    INAT[url] = res = cache
+      ? new INatResults(JSON.parse(cache))
+      : fetch(url);
+  }
+
+  if (!(res instanceof INatResults)) {
+    // We have a promise, await and decode it.
+    const raw = await (await res).json();
+    window.localStorage.setItem(url, JSON.stringify(raw));
+    INAT[url] = res = new INatResults(raw);
+  }
+
+  const data = res.results.find((result: INatResult): boolean => result.name === sname);
+  if (data) {
+    return data;
+  }
+
+  if (!res.totalResults || res.totalResults <= perPage || perPage >= 200) {
+    // Giving up at 200 results.
+    INAT[url] = null;
+    return null;
+  }
+
+  return (await iNatFetch(
+    sname,  perPage > 1 ?  perPage * 2 : 25
+  ));
 }

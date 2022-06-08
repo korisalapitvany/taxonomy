@@ -143,6 +143,17 @@ function displayCommonNames(): void {
   });
 }
 
+// Format a single row.
+// This should finish as soon as possible, and update the row asynchronously.
+function fmtRow(row: typeof RowComponent): void {
+  const el: HTMLElement = row["getElement"]();
+  const key: string = row.getData().key;
+
+  setTimeout((): void => {
+    iNatRow(el, key);
+  }, 50);
+}
+
 function fmtCell(cell, formatterParams, onRendered): HTMLDivElement | string {
   const key: string = cell["getValue"]();
   const cnames: Array<CommonName> = CNAMES[key];
