@@ -27,27 +27,27 @@ class INatResult {
   id: number;
   name: string;
   preferredCommonName: string;
-  matched_term: string;
-  observations_count: number;
-  taxon_schemes_count: number;
+  matchedTerm: string;
+  observationsCount: number;
+  taxonSchemesCount: number;
   ancestry: string;
-  is_active: boolean;
-  flag_counts: {
+  isActive: boolean;
+  flagCounts: {
     resolved: number;
     unresolved: number;
   };
-  wikipedia_url: string;
-  current_synonymous_taxon_ids: any;
-  iconic_taxon_id: number;
-  iconic_taxon_name: string;
-  rank_level: number;
-  taxon_changes_count: number;
-  atlas_id: any;
-  complete_species_count: any;
-  parent_id: number;
+  wikipediaUrl: string;
+  currentSynonymousTaxonIds: any;
+  iconicTaxonId: number;
+  iconicTaxonName: string;
+  rankLevel: number;
+  taxonChangesCount: number;
+  atlasId: any;
+  completeSpeciesCount: any;
+  parentId: number;
   rank: string;
   extinct: boolean;
-  ancestor_ids: Array<number>;
+  ancestorIds: Array<number>;
   defaultPhoto: INatDefaultPhoto;
 
   constructor(data: any) {
