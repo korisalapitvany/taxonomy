@@ -51,6 +51,7 @@ class INatResult {
   defaultPhoto: INatDefaultPhoto;
 
   constructor(data: any) {
+    this.id = data["id"];
     this.name = data["name"];
     this.preferredCommonName = data["preferred_common_name"];
     if (data["default_photo"]) {
@@ -73,7 +74,7 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
   const ext: HTMLDivElement = row.querySelector(".ext") as HTMLDivElement;
 
-  const chip: HTMLDivElement = document.createElement("div");
+  const chip: HTMLAnchorElement = document.createElement("a");
   chip.className = "chip flex-row inaturalist";
   ext.append(chip);
 
@@ -84,6 +85,8 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
     chip.innerText = "hiányzik";
     return;
   }
+
+  chip.href = `https://www.inaturalist.org/taxa/${data.id}`;
 
   if (data.defaultPhoto) {
     photo.style.backgroundImage = `url(${data.defaultPhoto.squareUrl})`;
