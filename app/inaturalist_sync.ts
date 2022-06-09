@@ -81,6 +81,9 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   const data: INatResult = await iNatFetch(key, 1);
 
   if (!data) {
+    chip.href = `https://www.inaturalist.org/search?source[]=taxa&q=${
+      encodeURIComponent(key)
+    }`;
     chip.classList.add("missing");
     chip.innerText = "hiányzik";
     return;
