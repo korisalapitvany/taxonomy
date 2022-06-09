@@ -218,7 +218,8 @@ function fmtCell(cell, formatterParams, onRendered): string {
   }
 
   const photo: HTMLDivElement = document.createElement("div");
-  photo.className = "photo";
+  photo.className = "photo material-symbols-outlined";
+  photo.innerText = "downloading";
 
   const names: HTMLDivElement = document.createElement("div");
   names.className = "flex-col";

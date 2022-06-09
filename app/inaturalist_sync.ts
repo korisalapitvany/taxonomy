@@ -74,24 +74,40 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
   const ext: HTMLDivElement = row.querySelector(".ext") as HTMLDivElement;
 
-  const chip: HTMLAnchorElement = document.createElement("a");
+  const chip: HTMLDivElement = document.createElement("div");
   chip.className = "chip flex-row inaturalist";
   ext.append(chip);
+
+  const a: HTMLAnchorElement = document.createElement("a");
+  a.className = "id";
+  chip.append(a);
+
+  // TODO: rename: icon; add a label too.
+  const label: HTMLElement = document.createElement("span");
+  label.className = "label";
+  chip.append(label);
 
   const data: INatResult = await iNatFetch(key, 1);
 
   if (!data) {
-    chip.href = `https://www.inaturalist.org/search?source[]=taxa&q=${
+    photo.classList.add("missing");
+    photo.innerText = "broken_image";
+    a.innerText = "keresés";
+    a.href = `https://www.inaturalist.org/search?source[]=taxa&q=${
       encodeURIComponent(key)
     }`;
     chip.classList.add("missing");
-    chip.innerText = "hiányzik";
+
+    label.className = "material-symbols-outlined";
+    label.innerText = "search";
     return;
   }
 
-  chip.href = `https://www.inaturalist.org/taxa/${data.id}`;
+  a.innerText = data.id.toString();
+  a.href = `https://www.inaturalist.org/taxa/${data.id}`;
 
   if (data.defaultPhoto) {
+    photo.innerText = "";
     photo.style.backgroundImage = `url(${data.defaultPhoto.squareUrl})`;
     photo.title = data
       .defaultPhoto
@@ -105,7 +121,14 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
 
   if (!data.preferredCommonName) {
     chip.classList.add("missing");
-    chip.innerText = "név hiányzik";
+
+    const span: HTMLElement = document.createElement("span");
+    span.className = "label";
+    span.innerText = "név hiányzik";
+    chip.append(span);
+
+    label.className = "material-symbols-outlined";
+    label.innerText = "error";
     return;
   }
 
@@ -118,16 +141,27 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
 
   if (data.preferredCommonName === cnames) {
     chip.classList.add("match");
-    chip.innerText = "név megegyezik";
+
+    label.className = "material-symbols-outlined";
+    label.innerText = "done_all";
+
+    const span: HTMLElement = document.createElement("span");
+    span.className = "label tooltip";
+    span.dataset["tooltip"] = `"${data.preferredCommonName}"`;
+    span.innerText = "név megegyezik";
+    chip.append(span);
+
     return;
   }
 
-  if (data.preferredCommonName.replaceAll(/\W/g, "").toUpperCase() ===
-      cnames.replaceAll(/\W/g, "").toUpperCase()) {
+  if (data.preferredCommonName.toUpperCase() === cnames.toUpperCase()) {
     chip.classList.add("near-match");
 
+    label.className = "material-symbols-outlined";
+    label.innerText = "done";
+
     const span: HTMLElement = document.createElement("span");
-    span.className = "tooltip";
+    span.className = "label tooltip";
     span.dataset["tooltip"] = `"${data.preferredCommonName}"`;
     span.innerText = "név hasonló";
     chip.append(span);
@@ -136,7 +170,7 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   }
 
   chip.classList.add("mismatch");
-  chip.innerText = "név különbözik";
+  label.innerText = "név különbözik";
 
   // TODO: Go through common names for this cell,
   // mark each one that appears in iNat with a chip.

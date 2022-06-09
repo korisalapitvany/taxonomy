@@ -177,8 +177,12 @@ body
       float: left
       height: 64px
       width: 64px
+      line-height: 64px
+      font-size: 32px
       margin-right: 8px
-      background: var(--background-information)
+      text-align: center
+      color: var(--icon-secondary)
+      background: var(--background-secondary)
       background-position: center
       background-repeat: no-repeat
       background-size: cover
@@ -232,8 +236,25 @@ body
         color: var(--icon-critical)
         background-color: var(--background-critical)
 
+      a.id
+        margin-right: 4px
+
+      .material-symbols-outlined
+        line-height: 32px
+        margin-right: -6px
+
+        + *
+          margin-left: 6px
+
+      .label
+        display: none
+        padding-left: 4px
+
+      &:hover .label
+        display: initial
+
       .tooltip::after
-        font-size: 14px
+          font-size: 14px
 
     .inaturalist::before
       content: ""
