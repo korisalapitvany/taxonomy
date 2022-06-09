@@ -28,21 +28,36 @@
 .tooltip
   position: relative
 
+  &::after,
   &::before
-    position: absolute
-    color: var(--text-invert)
-    background-color: var(--text-primary)
-    font-size: var(--font-size)
-    content: attr(data-tooltip)
-    white-space: nowrap
     top: 50%
     left: 100%
+    position: absolute
+    background-color: var(--text-primary)
+    text-transform: initial
+    display: none
+    z-index: 2
+
+  &::after
+    color: var(--text-invert)
+    font-size: var(--font-size)
+    line-height: 18px
+    content: attr(data-tooltip)
+    white-space: nowrap
     margin-left: 13px
     transform: translateY(-50%)
     padding: 8px
     display: none
-    z-index: 2
 
+  &::before
+    content: ""
+    width: 12px
+    height: 12px
+    transform: rotate(45deg)
+    margin-left: 9px
+    margin-top: -6px
+
+  &:hover::after,
   &:hover::before
     display: block
 
@@ -155,6 +170,9 @@ body
       padding: 8px 0
       line-height: 24px
 
+      /* Prevent long tooltips from being cut off. */
+      overflow: visible
+
     .photo
       float: left
       height: 64px
@@ -213,6 +231,9 @@ body
       &.mismatch
         color: var(--icon-critical)
         background-color: var(--background-critical)
+
+      .tooltip::after
+        font-size: 14px
 
     .inaturalist::before
       content: ""

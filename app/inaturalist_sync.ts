@@ -119,8 +119,13 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   if (data.preferredCommonName.replaceAll(/\W/g, "").toUpperCase() ===
       cnames.replaceAll(/\W/g, "").toUpperCase()) {
     chip.classList.add("near-match");
-    chip.innerText = "név hasonló";
-    chip.title = `"${data.preferredCommonName}"`;
+
+    const span: HTMLElement = document.createElement("span");
+    span.className = "tooltip";
+    span.dataset["tooltip"] = `"${data.preferredCommonName}"`;
+    span.innerText = "név hasonló";
+    chip.append(span);
+
     return;
   }
 

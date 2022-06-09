@@ -182,8 +182,9 @@ function fmtCell(cell, formatterParams, onRendered): string {
         .forEach((cn: CommonName): void => {
           const src: Source = SOURCES[cn.sourceId];
           const sup: HTMLElement = document.createElement("sup");
+          sup.className = "tooltip";
+          sup.dataset["tooltip"] = refText(src, cn.pageNum);
           sup.innerText = `[${src.num}]`;
-          sup.title = refText(src, cn.pageNum);
           el.append(sup);
         });
 
