@@ -41,6 +41,7 @@ ts_project(
     ] + [
         "bootstrap.ts",
         "main.ts",
+        "dom_utils.ts",
         "table_filter.ts",
         "inaturalist_sync.ts",
     ],

@@ -71,40 +71,42 @@ class INatDefaultPhoto {
 };
 
 async function iNatRow(row: HTMLElement, key: string): Promise<void> {
-  const photo: HTMLDivElement = row.querySelector(".photo") as HTMLDivElement;
-  const ext: HTMLDivElement = row.querySelector(".ext") as HTMLDivElement;
+  const photo: HTMLDivElement = querySelector(row, ".photo") as HTMLDivElement;
+  const ext: HTMLDivElement = querySelector(row, ".ext") as HTMLDivElement;
 
-  const chip: HTMLDivElement = document.createElement("div");
-  chip.className = "chip flex-row inaturalist";
-  ext.append(chip);
+  const chip: HTMLDivElement = createChild(ext, "div", [
+    "chip",
+    "flex-row",
+    "inaturalist",
+  ]) as HTMLDivElement;
 
-  const a: HTMLAnchorElement = document.createElement("a");
-  a.className = "id";
-  chip.append(a);
+  const link: HTMLAnchorElement = createChild(chip, "a", ["id"]) as HTMLAnchorElement;
+  const icon: HTMLElement = createChild(chip, "span", ["material-symbols-outlined"]);
+  const label: HTMLElement = createElement("span", ["label"]);
 
-  // TODO: rename: icon; add a label too.
-  const label: HTMLElement = document.createElement("span");
-  label.className = "label";
-  chip.append(label);
+  function tooltip(text: string): void {
+    addClass(label, "tooltip");
+    setData(label, "tooltip", text);
+  }
 
   const data: INatResult = await iNatFetch(key, 1);
 
   if (!data) {
     photo.classList.add("missing");
     photo.innerText = "broken_image";
-    a.innerText = "keresés";
-    a.href = `https://www.inaturalist.org/search?source[]=taxa&q=${
+    link.innerText = "keresés";
+    link.href = `https://www.inaturalist.org/search?source[]=taxa&q=${
       encodeURIComponent(key)
     }`;
     chip.classList.add("missing");
 
-    label.className = "material-symbols-outlined";
-    label.innerText = "search";
+    icon.innerText = "search";
     return;
   }
 
-  a.innerText = data.id.toString();
-  a.href = `https://www.inaturalist.org/taxa/${data.id}`;
+  link.innerText = data.id.toString();
+  link.href = `https://www.inaturalist.org/taxa/${data.id}`;
+  append(chip, [label]);
 
   if (data.defaultPhoto) {
     photo.innerText = "";
@@ -121,14 +123,8 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
 
   if (!data.preferredCommonName) {
     chip.classList.add("missing");
-
-    const span: HTMLElement = document.createElement("span");
-    span.className = "label";
-    span.innerText = "név hiányzik";
-    chip.append(span);
-
-    label.className = "material-symbols-outlined";
-    label.innerText = "error";
+    label.innerText = "név hiányzik";
+    icon.innerText = "error";
     return;
   }
 
@@ -141,39 +137,24 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
 
   if (data.preferredCommonName === cnames) {
     chip.classList.add("match");
-
-    label.className = "material-symbols-outlined";
-    label.innerText = "done_all";
-
-    const span: HTMLElement = document.createElement("span");
-    span.className = "label tooltip";
-    span.dataset["tooltip"] = `"${data.preferredCommonName}"`;
-    span.innerText = "név megegyezik";
-    chip.append(span);
-
+    icon.innerText = "done_all";
+    tooltip(`"${data.preferredCommonName}"`);
+    label.innerText = "név megegyezik";
     return;
   }
 
   if (data.preferredCommonName.toUpperCase() === cnames.toUpperCase()) {
     chip.classList.add("near-match");
-
-    label.className = "material-symbols-outlined";
-    label.innerText = "done";
-
-    const span: HTMLElement = document.createElement("span");
-    span.className = "label tooltip";
-    span.dataset["tooltip"] = `"${data.preferredCommonName}"`;
-    span.innerText = "név hasonló";
-    chip.append(span);
-
+    icon.innerText = "done";
+    tooltip(`"${data.preferredCommonName}"`);
+    label.innerText = "név hasonló";
     return;
   }
 
   chip.classList.add("mismatch");
+  icon.innerText = "emergency_home";
+  tooltip(`"${data.preferredCommonName}"`);
   label.innerText = "név különbözik";
-
-  // TODO: Go through common names for this cell,
-  // mark each one that appears in iNat with a chip.
 }
 
 async function iNatFetch(sname: string, perPage: number): Promise<INatResult | null> {
