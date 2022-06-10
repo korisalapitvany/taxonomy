@@ -1,5 +1,8 @@
+// iNaturalist.
+const INAT_URL: string = "https://www.inaturalist.org";
+
 // iNaturalist API.
-const INAT_API = "https://api.inaturalist.org/v1";
+const INAT_API: string = `${INAT_URL.replace(/www/, "api")}/v1`;
 
 // Cache of response objects / promises.
 // Used more or less like a queue. Promises are never cancelled.
@@ -80,33 +83,32 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
     "inaturalist",
   ]) as HTMLDivElement;
 
-  const link: HTMLAnchorElement = createChild(chip, "a", ["id"]) as HTMLAnchorElement;
-  const icon: HTMLElement = createChild(chip, "span", ["material-symbols-outlined"]);
-  const label: HTMLElement = createElement("span", ["label"]);
+  const idIcon: HTMLElement = createChild(chip, "span", [ICON_CLASS]);
+  const idLink: HTMLAnchorElement = createChild(chip, "a", ["id", "label"]) as HTMLAnchorElement;
+
+  const statusIcon: HTMLElement = createElement("span", [ICON_CLASS, "last"]);
+  const statusLabel: HTMLElement = createElement("span", ["label", "extra"]);
 
   function tooltip(text: string): void {
-    addClass(label, "tooltip");
-    setData(label, "tooltip", text);
+    addClass(statusLabel, "tooltip");
+    setData(statusLabel, "tooltip", text);
   }
 
   const data: INatResult = await iNatFetch(key, 1);
 
+  setText(idIcon, data ? "pin" : "search");
+
   if (!data) {
-    photo.classList.add("missing");
+    addClass(photo, "missing");
     photo.innerText = "broken_image";
-    link.innerText = "keresés";
-    link.href = `https://www.inaturalist.org/search?source[]=taxa&q=${
+    idLink.innerText = "keresés";
+    idLink.href = `${INAT_URL}/search?source[]=taxa&q=${
       encodeURIComponent(key)
     }`;
-    chip.classList.add("missing");
+    addClass(chip, "missing");
 
-    icon.innerText = "search";
     return;
   }
-
-  link.innerText = data.id.toString();
-  link.href = `https://www.inaturalist.org/taxa/${data.id}`;
-  append(chip, [label]);
 
   if (data.defaultPhoto) {
     photo.innerText = "";
@@ -121,13 +123,6 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
       .replaceAll(/\buploaded by\b/g, "feltöltötte:");
   }
 
-  if (!data.preferredCommonName) {
-    chip.classList.add("missing");
-    label.innerText = "név hiányzik";
-    icon.innerText = "error";
-    return;
-  }
-
   // Not great, but will do for now.
   const cnames: string = CNAMES[key]
     // TODO: Extract this to some function!
@@ -135,26 +130,62 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
     .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
     .join(", ");
 
+  idLink.innerText = data.id.toString();
+  idLink.href = `${INAT_URL}/taxa/${data.id}`;
+
+  if (!data.preferredCommonName) {
+    addClass(chip, "missing");
+    statusLabel.innerText = "név hiányzik";
+    statusIcon.innerText = "error";
+
+    // TODO: Add icon for individual names!
+    const cn: CommonName = CNAMES[key][0];
+    const src: Source = SOURCES[cn.sourceId];
+    const actionIcon: HTMLElement = createChild(chip, "span", [ICON_CLASS, "extra"]);
+    actionIcon.innerText = "add_circle";
+    const actionLink: HTMLAnchorElement = createChild(chip, "a", ["extra"]) as HTMLAnchorElement;
+    actionLink.target = "_blank";
+    actionLink.innerText = "név hozzáadása";
+
+    // TODO: Set the lexicon name!
+    actionLink.href = `${idLink.href}/taxon_names/new?taxon_name_name=${
+      encodeURIComponent(cnames)
+    }&taxon_name_audit_comment=${
+      encodeURIComponent(refText(src, cn.pageNum))
+    }`;
+
+    append(chip, [
+      statusIcon,
+      statusLabel,
+    ]);
+    return;
+  }
+
+  append(chip, [
+    statusIcon,
+    statusLabel,
+  ]);
+
   if (data.preferredCommonName === cnames) {
-    chip.classList.add("match");
-    icon.innerText = "done_all";
+    addClass(chip, "match");
+    statusIcon.innerText = "done_all";
     tooltip(`"${data.preferredCommonName}"`);
-    label.innerText = "név megegyezik";
+    statusLabel.innerText = "név megegyezik";
     return;
   }
 
   if (data.preferredCommonName.toUpperCase() === cnames.toUpperCase()) {
-    chip.classList.add("near-match");
-    icon.innerText = "done";
+    addClass(chip, "near-match");
+    statusIcon.innerText = "done";
     tooltip(`"${data.preferredCommonName}"`);
-    label.innerText = "név hasonló";
+    statusLabel.innerText = "név hasonló";
     return;
   }
 
-  chip.classList.add("mismatch");
-  icon.innerText = "emergency_home";
+  addClass(chip, "mismatch");
+  statusIcon.innerText = "emergency_home";
   tooltip(`"${data.preferredCommonName}"`);
-  label.innerText = "név különbözik";
+  statusLabel.innerText = "név különbözik";
 }
 
 async function iNatFetch(sname: string, perPage: number): Promise<INatResult | null> {

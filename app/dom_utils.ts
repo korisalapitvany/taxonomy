@@ -1,6 +1,8 @@
 // DOM helpers.
 // These are mostly to facilitate better minification.
 
+const ICON_CLASS = "material-symbols-outlined";
+
 // Wrapper for element.querySelector.
 function querySelector(el: HTMLElement, selector: string): HTMLElement {
   return el.querySelector(selector);
@@ -33,6 +35,11 @@ function addClass(el: HTMLElement, className: string): void {
 // Wrapper for mapping [] to element.classList.add.
 function addClasses(el: HTMLElement, classNames: Array<string>): void {
   classNames.forEach((c: string): void => el.classList.add(c));
+}
+
+// Wrapper for setting element.innerText.
+function setText(el: HTMLElement, text: string): void {
+  el.innerText = text;
 }
 
 // Wrapper for setting dataset properties.
