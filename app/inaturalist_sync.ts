@@ -7,26 +7,26 @@ const INAT_API: string = `${INAT_URL.replace(/www/, "api")}/v1`;
 // Cache of response objects / promises.
 // Used more or less like a queue. Promises are never cancelled.
 const INAT: {
-  [key: string]: INatResults | Promise<Response> | null
+  [key: string]: INatTaxonSearchResults | Promise<Response> | null
 } = {};
 
-class INatResults {
+class INatTaxonSearchResults {
   totalResults: number;
   currentPage: number;
   perPage: number;
-  results: Array<INatResult>;
+  results: Array<INatTaxonSearchResult>;
   updatedAt: Date;
 
   constructor(data: any) {
     this.totalResults = data["total_results"];
     this.currentPage = data["page"];
     this.perPage = data["per_page"];
-    this.results = data["results"].map((res: any): INatResult => new INatResult(res));
+    this.results = data["results"].map((res: any): INatTaxonSearchResult => new INatTaxonSearchResult(res));
     this.updatedAt = new Date();
   }
 };
 
-class INatResult {
+class INatTaxonSearchResult {
   id: number;
   name: string;
   preferredCommonName: string;
@@ -94,7 +94,7 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
     setData(statusLabel, "tooltip", text);
   }
 
-  const data: INatResult = await iNatFetch(key, 1);
+  const data: INatTaxonSearchResult = await iNatFetch(key, 1);
 
   setText(idIcon, data ? "pin" : "search");
 
@@ -188,11 +188,11 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
   statusLabel.innerText = "név különbözik";
 }
 
-async function iNatFetch(sname: string, perPage: number): Promise<INatResult | null> {
+async function iNatFetch(sname: string, perPage: number): Promise<INatTaxonSearchResult | null> {
   const url: string = `${INAT_API}/taxa?q=${encodeURIComponent(sname)}&locale=${LANG}&per_page=${perPage}`;
 
   // Try to look up the result in the cache/queue.
-  let res: INatResults | Promise<Response> | null = INAT[url];
+  let res: INatTaxonSearchResults | Promise<Response> | null = INAT[url];
 
   if (res === null) {
     return null; // Not found.
@@ -202,18 +202,18 @@ async function iNatFetch(sname: string, perPage: number): Promise<INatResult | n
     // Not found, try local storage.
     const cache = window.localStorage.getItem(url);
     INAT[url] = res = cache
-      ? new INatResults(JSON.parse(cache))
+      ? new INatTaxonSearchResults(JSON.parse(cache))
       : fetch(url);
   }
 
-  if (!(res instanceof INatResults)) {
+  if (!(res instanceof INatTaxonSearchResults)) {
     // We have a promise, await and decode it.
     const raw = await (await res).json();
     window.localStorage.setItem(url, JSON.stringify(raw));
-    INAT[url] = res = new INatResults(raw);
+    INAT[url] = res = new INatTaxonSearchResults(raw);
   }
 
-  const data = res.results.find((result: INatResult): boolean => result.name === sname);
+  const data = res.results.find((result: INatTaxonSearchResult): boolean => result.name === sname);
   if (data) {
     return data;
   }
