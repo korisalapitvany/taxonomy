@@ -5,6 +5,7 @@ source_repository(
     sources = [
         "milyen_rovar_ez",
         "kepes_zengolegyhatarozo",
+        "the_corncrake",
         "alkalmazott_novenytan_jegyzet_1",
         "alkalmazott_novenytan_jegyzet_2",
     ],
