@@ -43,7 +43,8 @@ ts_project(
         "main.ts",
         "dom_utils.ts",
         "table_filter.ts",
-        "inaturalist_sync.ts",
+        "inaturalist_api.ts",
+        "inaturalist_row_formatter.ts",
     ],
     tsconfig = {"compilerOptions": {
         "target": TS_TARGET,
