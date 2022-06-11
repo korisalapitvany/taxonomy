@@ -6,7 +6,7 @@ async function iNatRow(row: HTMLElement, key: string): Promise<void> {
 
 function iNatPhoto(data: INatTaxonSearchResult, row: HTMLElement): void {
   const photo: HTMLElement = querySelector(row, ".photo");
-  if (!data.defaultPhoto) {
+  if (!(data && data.defaultPhoto)) {
     addClass(photo, "missing");
     photo.innerText = "broken_image";
     return;
