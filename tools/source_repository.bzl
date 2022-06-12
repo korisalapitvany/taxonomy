@@ -22,19 +22,6 @@ def source_repository(name, sources, **kwargs):
             src = source + ".csv",
         )
 
-        native.sh_test(
-            name = source + "_test",
-            srcs = ["//tools:source_json_test.sh"],
-            data = [
-                ":" + source,
-                source + ".rows.json",
-            ],
-            env = {
-                "INPUT_JSON": "$(rootpath " + source + ".rows.json)",
-                "EXPECTED_JSON": "$(rootpath :" + source + ")",
-            },
-        )
-
 def _source_csv_impl(ctx):
     output_json = ctx.actions.declare_file(ctx.attr.name + ".data.json")
 
