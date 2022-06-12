@@ -5,7 +5,7 @@ page,scientific_name,common_name.hu
 ,Ceratium hirundinella,fecskemoszat
 ,Spirogyra nitida,békanyál
 ,Chara foetida,csillárkamoszat
-11,Mycota,gombák
+10,Mycota,gombák
 ,Myxomycota,nyálka~
 ,Mucilago spongiosa,kakukknyál
 ,Oomycota,petespórás gombák
@@ -13,15 +13,80 @@ page,scientific_name,common_name.hu
 ,Saprolegnia ferax,halpenész
 ,Zygomycota,járomspórás gombák
 ,Mucor mucedo,fejespenész
-12,Entomophthora muscae,légypenész
+11,Entomophthora muscae,légypenész
 ,ascomycota,tömlősgombák
 ,Taphrina carpini,gyertyán-boszorkányseprű
 ,Microsphaera quercina,tölgylisztharmat
 ,Rhytisma acerinum,juharlevélfoltosító
 ,Lophodermium seditiosum,erdeifenyő tűkarcgomba
-13,Drepanopeziza punctiformis,nyárlevélfoltosító
-,Penicillium roquefortii,sajtpenész
+,Drepanopeziza punctiformis,nyárlevélfoltosító
+12,Penicillium roquefortii,sajtpenész
 ,Nectria cinnabarina,piros héjbibircs; vörös szemölcsgomba
 ,Basidiomycota,bazídiumos gombák
 ,Puccinia graminis,gabonarozsda
 ,Ustilago maydis,kukoricaüszög
+13,Aleuria aurantia,narancsvörös csészegomba; narancsszínű csészegomba
+,Morchella esculenta,ízletes kucsmagomba
+,Gyromitra esculenta,redős papsapkagomba
+,Tuber aestivum,nyári szarvasgomba
+14,Heterobasidion annosum,gyökértapló; gyökérrontó tapló
+,Inonotus nidus-pici,kétalakú cser~; fekete kétalakú cser~
+,Hydnum repandum,sárga gerebengomba
+,Trametes versicolor,lepketapló
+,Fistulina hepatica,májgomba
+15,Daedalea quercina,labirintus tapló
+,Lenzites betulina,fakó lemezes~
+,Piptoporus betulinus,nyírfa-~
+,Fomes fomentarius,bükkfa-~
+,Polyporus squamosus,pisztricgomba; bagolygomba
+16,Ramaria flava,sárga korallgomba
+,Stereum hirsutum,borostás réteggomba
+,Cantharellus cibarius,sárga rókagomba; csirkegomba; nyulica
+,Macrolepiota procera,nagy őzlábgomba
+,Lepiota helveola,vöröses őzlábgomba; vörhenyes őzlábgomba
+17,Amanita phalloides,gyilkos galóca
+,^ caesarea,császárgalóca; császárgomba
+,^ muscaria,légyölő galóca
+,^ pantherina,párducgalóca
+,Pleurotus ostreatus,késői laskagomba
+18,Tricholoma nudum = Lepista nuda,lila pereszke
+,Trichomolopsis rutilans,bársonyos pereszke
+,Lepista nebularis,szürke tölcsérgomba
+,Russula cyanoxantha,kékhátú galambgomba
+,Lactarius piperatus,fehértejű keserűgomba; borsos tejelőgomba
+,^ deliciosus,ízletes rizike
+19,Armillariella mellea,gyűrűs tuskógomba; szentmihálygomba; törzsökgomba
+,Marasmius oreades,mezei szegfűgomba; tyúkgomba
+,Omphalotus olearius,világító tölcsérgomba
+,Inocybe fastigiata,kerti susulyka
+20,Agaricus arvensis,erdőszéli csiperke
+,Coprinus comatus,gyapjas tintagomba
+,Hypholoma fasciculare,sárga kénvirággomba
+,Boletus edulis,ízletes vargánya; úrigomba
+,^ pachypus = ^ calopus,farkastinóru
+21,Boletus satanas,sátántinorú [sic] = sátántinóru
+,Leccinum scabrum,barna érdestinóru
+,Suillus granulatus,szemcsésnyelű fenyőtinóru; szemcsésnyelű tinóru
+,^ grevillei = ^ luteus,barna gyűrűstinóru
+,Xerocomus subtomentosus,molyhos tinóru
+22,Geastrum fimbriatum,gyakori csillaggomba
+,Phallus impudicus,erdei szömörcsög; szemérmetlen szömörcsög
+,Tremella mesenterica,aranyos rezgőgomba; kocsonyagomba
+,Auricularia auricula-judae,Júdásfüle-gomba
+,Scleroderma vulgare = Scleroderma citrinum,rőt áltrifla
+,Lycoperdon perlatum,bimbós pöfeteg
+23,Lichenes,zuzmók
+,Cladonia rangiferina,rénszarvaszuzmó
+,^ fimbriata,karcsú serlegzuzmó
+,Peltigera canina,ebzuzmó; kutyazuzmó
+,Rhizocarpon geographicum,térképzuzmó
+,Xanthoria parietina,sárga falizuzmó; közönséges sárgazuzmó
+,Evernia prunastri,tölgyfazuzmó
+,Usnea hirta,szakállzuzmó
+24,Bryophyta,mohák
+,Marchantia polymorpha,csillagos májmoha
+,Sphagnum,tőzegmoha
+,Polytrichum attenuatum = Polytrichastrum formosum = Polytrichum formosum,erdei szőrmoha
+,Catharinea undulata = Atrichum undulatum,Katalin-moha
+,Dicranum scoparium,seprűmoha; seprőmoha
+25,Mnium undulatum = Plagiomnium undulatum,fodroslevelű ligetmoha
