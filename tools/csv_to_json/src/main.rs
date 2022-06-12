@@ -181,7 +181,7 @@ fn main() -> Result<(), Error> {
                 write!(out, r#", "synonyms": ["#)?;
                 close = "]";
             } else {
-                write!(out, r#", ", "#)?;
+                write!(out, r#", "#)?;
             }
             serde_json::to_writer(&mut out, sn.trim())?;
         }

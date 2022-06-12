@@ -96,14 +96,14 @@ class CommonName {
   sourceId: string;
   pageNum: number;
   scientificName: string;
-  synonym: string;
+  synonyms: Array<string>;
   commonNames: Translations;
 
   constructor(sourceId: string, data: any) {
     this.sourceId = sourceId;
     this.pageNum = data["page"];
     this.scientificName = data["scientific_name"];
-    this.synonym = data["synonym"];
+    this.synonyms = data["synonyms"] || [];
     this.commonNames = data["common_names"];
   }
 };
@@ -169,7 +169,7 @@ function fmtCell(cell, formatterParams, onRendered): string {
   let first: boolean = true;
   cnames
     .map((cname: CommonName): Array<string> => cname.commonNames[LANG])
-    .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
+    .reduce(flatten)
     .forEach((name: string): void => {
       if (first) {
         article.innerText = articleFor(name);
@@ -199,13 +199,14 @@ function fmtCell(cell, formatterParams, onRendered): string {
   em.innerText = key;
   line2.append(em);
 
-  const synonyms = cnames
-    .map((cn: CommonName): string => cn.synonym)
-    .filter((syn: string): boolean => !!syn)
-    .join(", ");
-  if (synonyms) {
-    line2.append(" ");
-    const span: HTMLElement = document.createElement("spna")
+  const synonyms: Array<string> = cnames
+    .map((cn: CommonName): Array<string> => cn.synonyms)
+    .reduce(flatten)
+    .filter(uniq);
+
+  if (synonyms.length) {
+    line2.append(" (");
+    const span: HTMLElement = document.createElement("span")
     span.className = "syn-marker";
     span.innerText = "Syn.";
     line2.append(span);
@@ -213,8 +214,10 @@ function fmtCell(cell, formatterParams, onRendered): string {
     line2.append(" ");
     const syn: HTMLElement = document.createElement("em");
     syn.className = "synonym"
-    syn.innerText = synonyms
+    // TODO: A separate <em> per synonym!
+    syn.innerText = synonyms.join();
     line2.append(syn);
+    line2.append(")");
   }
 
   const photo: HTMLDivElement = document.createElement("div");
@@ -251,6 +254,14 @@ function articleFor(cname: string): string {
   }
   // TODO: Add support for exceptions!
   return "AÁEÉIÍOÓÖŐUÚÜŰ".includes(cname[0].toUpperCase()) ? "az" : "a";
+}
+
+function flatten<T>(x: Array<T>, y: Array<T>): Array<T> {
+  return x.concat(y);
+}
+
+function uniq(value, index: number, self): boolean {
+  return self.indexOf(value) === index;
 }
 
 // TODO: Parse this from the template!

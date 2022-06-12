@@ -47,10 +47,9 @@ function filterTable(data, params: FilterParams): boolean {
       .map((cn: CommonName): Array<string> => {
         return cn.commonNames[LANG]
           .concat(cn.scientificName)
-          .concat(cn.synonym ? "syn" : "")
-          .concat(cn.synonym || "");
+          .concat(cn.synonyms);
       })
-      .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
+      .reduce(flatten)
       .join(" "))
     .includes(fuzzyText(value));
 }

@@ -58,7 +58,7 @@ function iNatChip(data: INatTaxonSearchResult, row: HTMLElement, key: string): v
   const cnames: string = CNAMES[key]
     // TODO: Extract this to some function!
     .map((cname: CommonName): Array<string> => cname.commonNames[LANG])
-    .reduce((x: Array<string>, y: Array<string>): Array<string> => x.concat(y))
+    .reduce(flatten)
     .join(", ");
 
   idLink.innerText = data.id.toString();
