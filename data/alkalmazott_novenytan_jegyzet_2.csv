@@ -49,7 +49,7 @@ page,scientific_name,common_name.hu
 ,^ muscaria,légyölő galóca
 ,^ pantherina,párducgalóca
 ,Pleurotus ostreatus,késői laskagomba
-18,Tricholoma nudum = Lepista nuda,lila pereszke
+18,Lepista nuda; Tricholoma nudum,lila pereszke
 ,Trichomolopsis rutilans,bársonyos pereszke
 ,Lepista nebularis,szürke tölcsérgomba
 ,Russula cyanoxantha,kékhátú galambgomba
@@ -63,17 +63,17 @@ page,scientific_name,common_name.hu
 ,Coprinus comatus,gyapjas tintagomba
 ,Hypholoma fasciculare,sárga kénvirággomba
 ,Boletus edulis,ízletes vargánya; úrigomba
-,^ pachypus = ^ calopus,farkastinóru
-21,Boletus satanas,sátántinorú [sic] = sátántinóru
+,^ calopus; ^ pachypus,farkastinóru
+21,Boletus satanas,sátántinóru; sátántinorú [sic]
 ,Leccinum scabrum,barna érdestinóru
 ,Suillus granulatus,szemcsésnyelű fenyőtinóru; szemcsésnyelű tinóru
-,^ grevillei = ^ luteus,barna gyűrűstinóru
+,^ luteus; ^ grevillei,barna gyűrűstinóru
 ,Xerocomus subtomentosus,molyhos tinóru
 22,Geastrum fimbriatum,gyakori csillaggomba
 ,Phallus impudicus,erdei szömörcsög; szemérmetlen szömörcsög
 ,Tremella mesenterica,aranyos rezgőgomba; kocsonyagomba
 ,Auricularia auricula-judae,Júdásfüle-gomba
-,Scleroderma vulgare = Scleroderma citrinum,rőt áltrifla
+,Scleroderma citrinum; Scleroderma vulgare,rőt áltrifla
 ,Lycoperdon perlatum,bimbós pöfeteg
 23,Lichenes,zuzmók
 ,Cladonia rangiferina,rénszarvaszuzmó
@@ -86,7 +86,7 @@ page,scientific_name,common_name.hu
 24,Bryophyta,mohák
 ,Marchantia polymorpha,csillagos májmoha
 ,Sphagnum,tőzegmoha
-,Polytrichum attenuatum = Polytrichastrum formosum = Polytrichum formosum,erdei szőrmoha
-,Catharinea undulata = Atrichum undulatum,Katalin-moha
+,Polytrichum formosum; Polytrichum attenuatum; Polytrichastrum formosum,erdei szőrmoha
+,Atrichum undulatum; Catharinea undulata,Katalin-moha
 ,Dicranum scoparium,seprűmoha; seprőmoha
-25,Mnium undulatum = Plagiomnium undulatum,fodroslevelű ligetmoha
+25,Plagiomnium undulatum; Mnium undulatum,fodroslevelű ligetmoha

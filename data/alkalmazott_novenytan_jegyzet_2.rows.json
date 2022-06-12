@@ -48,7 +48,7 @@
 ,{"page": 17, "scientific_name": "Amanita muscaria", "common_names": {"hu": ["légyölő galóca"]}}
 ,{"page": 17, "scientific_name": "Amanita pantherina", "common_names": {"hu": ["párducgalóca"]}}
 ,{"page": 17, "scientific_name": "Pleurotus ostreatus", "common_names": {"hu": ["késői laskagomba"]}}
-,{"page": 18, "scientific_name": "Lepista nuda", "synonym": "Tricholoma nudum", "common_names": {"hu": ["lila pereszke"]}}
+,{"page": 18, "scientific_name": "Lepista nuda", "synonyms": ["Tricholoma nudum"], "common_names": {"hu": ["lila pereszke"]}}
 ,{"page": 18, "scientific_name": "Trichomolopsis rutilans", "common_names": {"hu": ["bársonyos pereszke"]}}
 ,{"page": 18, "scientific_name": "Lepista nebularis", "common_names": {"hu": ["szürke tölcsérgomba"]}}
 ,{"page": 18, "scientific_name": "Russula cyanoxantha", "common_names": {"hu": ["kékhátú galambgomba"]}}
@@ -62,17 +62,17 @@
 ,{"page": 20, "scientific_name": "Coprinus comatus", "common_names": {"hu": ["gyapjas tintagomba"]}}
 ,{"page": 20, "scientific_name": "Hypholoma fasciculare", "common_names": {"hu": ["sárga kénvirággomba"]}}
 ,{"page": 20, "scientific_name": "Boletus edulis", "common_names": {"hu": ["ízletes vargánya", "úrigomba"]}}
-,{"page": 20, "scientific_name": "Boletus calopus", "synonym": "Boletus pachypus", "common_names": {"hu": ["farkastinóru"]}}
-,{"page": 21, "scientific_name": "Boletus satanas", "common_names": {"hu": ["sátántinorú [sic] = sátántinóru"]}}
+,{"page": 20, "scientific_name": "Boletus calopus", "synonyms": ["Boletus pachypus"], "common_names": {"hu": ["farkastinóru"]}}
+,{"page": 21, "scientific_name": "Boletus satanas", "common_names": {"hu": ["sátántinóru", "sátántinorú [sic]"]}}
 ,{"page": 21, "scientific_name": "Leccinum scabrum", "common_names": {"hu": ["barna érdestinóru"]}}
 ,{"page": 21, "scientific_name": "Suillus granulatus", "common_names": {"hu": ["szemcsésnyelű fenyőtinóru", "szemcsésnyelű tinóru"]}}
-,{"page": 21, "scientific_name": "Suillus luteus", "synonym": "Suillus grevillei", "common_names": {"hu": ["barna gyűrűstinóru"]}}
+,{"page": 21, "scientific_name": "Suillus luteus", "synonyms": ["Suillus grevillei"], "common_names": {"hu": ["barna gyűrűstinóru"]}}
 ,{"page": 21, "scientific_name": "Xerocomus subtomentosus", "common_names": {"hu": ["molyhos tinóru"]}}
 ,{"page": 22, "scientific_name": "Geastrum fimbriatum", "common_names": {"hu": ["gyakori csillaggomba"]}}
 ,{"page": 22, "scientific_name": "Phallus impudicus", "common_names": {"hu": ["erdei szömörcsög", "szemérmetlen szömörcsög"]}}
 ,{"page": 22, "scientific_name": "Tremella mesenterica", "common_names": {"hu": ["aranyos rezgőgomba", "kocsonyagomba"]}}
 ,{"page": 22, "scientific_name": "Auricularia auricula-judae", "common_names": {"hu": ["Júdásfüle-gomba"]}}
-,{"page": 22, "scientific_name": "Scleroderma citrinum", "synonym": "Scleroderma vulgare", "common_names": {"hu": ["rőt áltrifla"]}}
+,{"page": 22, "scientific_name": "Scleroderma citrinum", "synonyms": ["Scleroderma vulgare"], "common_names": {"hu": ["rőt áltrifla"]}}
 ,{"page": 22, "scientific_name": "Lycoperdon perlatum", "common_names": {"hu": ["bimbós pöfeteg"]}}
 ,{"page": 23, "scientific_name": "Lichenes", "common_names": {"hu": ["zuzmók"]}}
 ,{"page": 23, "scientific_name": "Cladonia rangiferina", "common_names": {"hu": ["rénszarvaszuzmó"]}}
@@ -85,8 +85,8 @@
 ,{"page": 24, "scientific_name": "Bryophyta", "common_names": {"hu": ["mohák"]}}
 ,{"page": 24, "scientific_name": "Marchantia polymorpha", "common_names": {"hu": ["csillagos májmoha"]}}
 ,{"page": 24, "scientific_name": "Sphagnum", "common_names": {"hu": ["tőzegmoha"]}}
-,{"page": 24, "scientific_name": "Polytrichum formosum", "synonym": "Polytrichum attenuatum", "common_names": {"hu": ["erdei szőrmoha"]}}
-,{"page": 24, "scientific_name": "Atrichum undulatum", "synonym": "Catharinea undulata", "common_names": {"hu": ["Katalin-moha"]}}
+,{"page": 24, "scientific_name": "Polytrichum formosum", "synonyms": ["Polytrichum attenuatum", ", "Polytrichastrum formosum"], "common_names": {"hu": ["erdei szőrmoha"]}}
+,{"page": 24, "scientific_name": "Atrichum undulatum", "synonyms": ["Catharinea undulata"], "common_names": {"hu": ["Katalin-moha"]}}
 ,{"page": 24, "scientific_name": "Dicranum scoparium", "common_names": {"hu": ["seprűmoha", "seprőmoha"]}}
-,{"page": 25, "scientific_name": "Plagiomnium undulatum", "synonym": "Mnium undulatum", "common_names": {"hu": ["fodroslevelű ligetmoha"]}}
+,{"page": 25, "scientific_name": "Plagiomnium undulatum", "synonyms": ["Mnium undulatum"], "common_names": {"hu": ["fodroslevelű ligetmoha"]}}
 ]

@@ -22,8 +22,8 @@ struct Args {
 struct Row {
     /// Page number.
     page: Option<i32>,
-    /// Scientific name.
-    /// Special markers: = (synonym), ^ (first-word reference).
+    /// Scientific name (and synonyms).
+    /// Special markers: ^ (first-word reference).
     scientific_name: String,
     /// Common names (translations).
     /// Special markers: ~ (last-word reference).
@@ -163,14 +163,6 @@ fn main() -> Result<(), Error> {
             );
         }
 
-        let mut scientific_name: &str = &row.scientific_name;
-        let mut synonym: Option<&str> = None;
-        if scientific_name.contains('=') {
-            let mut parts = scientific_name.split('=');
-            synonym = Some(&parts.next().unwrap_or(&"").trim());
-            scientific_name = &parts.last().unwrap_or(&"").trim();
-        }
-
         if n > 0 {
             write!(out, ",")?;
         }
@@ -181,13 +173,19 @@ fn main() -> Result<(), Error> {
             write!(out, r#""page": {}, "#, page)?;
         }
 
-        write!(out, r#""scientific_name": "#)?;
-        serde_json::to_writer(&mut out, scientific_name)?;
-
-        if let Some(synonym) = synonym {
-            write!(out, r#", "synonym": "#)?;
-            serde_json::to_writer(&mut out, synonym)?;
+        let mut close = "";
+        for (i, sn) in row.scientific_name.split(';').enumerate() {
+            if i == 0 {
+                write!(out, r#""scientific_name": "#)?;
+            } else if i == 1 {
+                write!(out, r#", "synonyms": ["#)?;
+                close = "]";
+            } else {
+                write!(out, r#", ", "#)?;
+            }
+            serde_json::to_writer(&mut out, sn.trim())?;
         }
+        write!(out, "{}", close)?;
 
         write!(out, r#", "common_names": {{"hu": ["#)?;
         for (i, field) in row.common_name_hu.split(';').enumerate() {

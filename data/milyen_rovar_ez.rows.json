@@ -112,7 +112,7 @@
 ,{"page": 84, "scientific_name": "Limnephilus flavicornis", "common_names": {"hu": ["közönséges tegzes"]}}
 ,{"page": 84, "scientific_name": "Neureclipsis bimaculata", "common_names": {"hu": ["kétfoltos tegzes"]}}
 ,{"page": 84, "scientific_name": "Sericostoma personatum", "common_names": {"hu": ["barna tegzes"]}}
-,{"page": 86, "scientific_name": "Cameraria ohridella", "synonym": "Cameraria ochridella [sic]", "common_names": {"hu": ["vadgesztenye-sátorosmoly"]}}
+,{"page": 86, "scientific_name": "Cameraria ohridella", "synonyms": ["Cameraria ochridella [sic]"], "common_names": {"hu": ["vadgesztenye-sátorosmoly"]}}
 ,{"page": 86, "scientific_name": "Plodia interpunctella", "common_names": {"hu": ["aszalványmoly"]}}
 ,{"page": 86, "scientific_name": "Yponomeuta evonymella", "common_names": {"hu": ["kecskerágó-moly"]}}
 ,{"page": 88, "scientific_name": "Zygaena filipendulae", "common_names": {"hu": ["acélszínű csüngőlepke"]}}
@@ -140,7 +140,7 @@
 ,{"page": 102, "scientific_name": "Melanargia galathea", "common_names": {"hu": ["sakktáblalepke"]}}
 ,{"page": 102, "scientific_name": "Aphantopus hyperanthus", "common_names": {"hu": ["közönséges ökörszemlepke"]}}
 ,{"page": 104, "scientific_name": "Erannis defoliaria", "common_names": {"hu": ["nagy téliaraszoló"]}}
-,{"page": 104, "scientific_name": "Biston betularia", "synonym": "Biston betularis [sic]", "common_names": {"hu": ["nyírfaaraszoló"]}}
+,{"page": 104, "scientific_name": "Biston betularia", "synonyms": ["Biston betularis [sic]"], "common_names": {"hu": ["nyírfaaraszoló"]}}
 ,{"page": 104, "scientific_name": "Drepana falcataria", "common_names": {"hu": ["fehér sarlósszárnyú"]}}
 ,{"page": 106, "scientific_name": "Cerura vinula", "common_names": {"hu": ["nagy púposszövő"]}}
 ,{"page": 106, "scientific_name": "Catocala sponsa", "common_names": {"hu": ["tölgyfa övesbagoly"]}}

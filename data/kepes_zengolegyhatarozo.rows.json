@@ -401,7 +401,7 @@
 ,{"page": 108, "scientific_name": "Sphiximorpha binominata", "common_names": {"hu": ["ritka orsócsápúlégy"]}}
 ,{"page": 108, "scientific_name": "Sphiximorpha subsessilis", "common_names": {"hu": ["galagonya orsócsápúlégy"]}}
 ,{"page": 108, "scientific_name": "Spilomyia", "common_names": {"hu": ["odúzengőlegyek"]}}
-,{"page": 108, "scientific_name": "Spilomyia manicata", "synonym": "Spilomyia manicatus [sic]", "common_names": {"hu": ["ékfoltú odúzengőlégy"]}}
+,{"page": 108, "scientific_name": "Spilomyia manicata", "synonyms": ["Spilomyia manicatus [sic]"], "common_names": {"hu": ["ékfoltú odúzengőlégy"]}}
 ,{"page": 108, "scientific_name": "Spilomyia saltuum", "common_names": {"hu": ["keskenysávú odúzengőlégy"]}}
 ,{"page": 109, "scientific_name": "Spilomyia diophthalma", "common_names": {"hu": ["háromfoltú"]}}
 ,{"page": 109, "scientific_name": "Syritta", "common_names": {"hu": ["comboslegyek"]}}
