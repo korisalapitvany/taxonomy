@@ -90,3 +90,68 @@ page,scientific_name,common_name.hu
 ,Atrichum undulatum; Catharinea undulata,Katalin-moha
 ,Dicranum scoparium,seprűmoha; seprőmoha
 25,Plagiomnium undulatum; Mnium undulatum,fodroslevelű ligetmoha
+,Leucobryum glaucum,fénylő vánkosmoha; fehérlő vánkosmoha
+,Tortula ruralis; Syntrichia ruralis,háztetőmoha
+,Hypnum cupressiforme,ciprusmoha
+,Thuidium abietinum; Abietinella abietina;,tujamoha
+,Pleurozium schreberi; Entodon schreberi,pirosszárú moha
+,Hylocomium splendens; Hylocomium proliferum,emeletes moha
+26,Pteridophyta,harasztok
+,Lycopsida,korpafüvek
+,Lycopodium clavatum,kapcsos korpafű
+,Sphenopsida,zsurlók
+,Equisetum arvense,mezei zsurló
+,^ telmateia; ^ maximum,óriás ~
+27,Pteropsida,páfrányok
+,Ophioglossum vulgatum,kígyónyelv
+,Asplenium trichomanes,kranyos fodorka
+,Phyllitis scolopendrium; Asplenium scolopendrium,gímpáfrány; gímnyelv
+,Polypodium vulgare,édesgyökerű páfrány; közönséges édesgyökerű páfrány
+,Pteridium aquilinum,sas~; sasharaszt
+28,Athyrium filix-femina,hölgy~; hölgyharaszt
+,Dryopteris filix-mas; Nephrodium filix-mas; Aspidium filix-mas,erdei pajzsika
+,Dryopteris carthusiana; Nephrodium spinulosum,szálkás ~
+,Thelypteris palustris; Lastrea thelypteris,tőzegpáfrány; mocsári ~
+29,Angiospermatophyta,zárvatermők
+,Dicotyledonopsida,kétszikűek
+,Aristolochiaceae,farkasalmafélék
+,Aristolochia clematitis,farkasalm
+,Asarum europaeum,kapotnyak
+,Nymphaeaceae,tündérrózsafélék
+,Nuphar lutea,sárga vízitök; tavirózsa
+,Ranunculaceae,boglárkafélék
+,Actaea spicata,békabogyó
+,Helleborus dumetorum,kisvirágú hunyor
+30,^ odorus,Illatos ~
+,^ purpurascens,pirosló ~
+,Caltha palustris,mocsári gólyahír
+,Aconitum,sisakvirág
+,Isopyrum thalictroides,galambvirág
+31,Anemone ranunculoides,bogláros szellőrózsa
+,^ nemorosa,berki ~
+,^ sylvestris,erdei ~
+32,Hepatica nobilis,májvirág
+,Pulsatilla grandis,leánykökörcsin
+,Clematis recta,egyenes iszalag
+,Batrachium,víziboglárka
+,Ranunculus repens,kúszó boglárka
+,^ auricomus,változó ~
+33,^ lanuginosus,gyapjas ~
+,^ acris; ^ acer,réti ~
+34,Ficaria verna; ^ ficaria,salátaboglárka
+,Adonis vernalis,tavaszi hérics
+,Papaveraceae,mákfélék
+,Chelidonium majus,vérehulló fecskefű
+,Papaver rhoeas,pipacs
+35,Corydalis cava; Corydalis bulbosa,odvas keltike
+,^ solida,ujjas ~
+,Cannabaceae,kenderfélék
+,Humulus lupulus,komló
+,Urticaceae,csalánfélék
+,Urtica dioica,nagy csalán
+36,Parietaria officinalis; Parietaria erecta,falgyom
+,Phytolaccaceae,alkörmösfélék
+,Phytolacca americana,alkörmös; karmazsinbogyó
+,Chenopodiaceae,libatopfélék
+,Chenopodium album,fehér libatop
+,Camphorosma annua,bárányparéj
