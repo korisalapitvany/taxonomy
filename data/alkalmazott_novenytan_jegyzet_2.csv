@@ -190,3 +190,304 @@ page,scientific_name,common_name.hu
 43,Cistaceae,szuharfélék
 ,Helianthemum ovatum; Helianthemum nummularium obscurum,közönséges napvirág
 ,Fumana procumbens,naprózsa
+,Cucurbitaceae,tökfélék
+,Echinocystis lobata,süntök
+,Bryonia alba,fekete földitök
+44,Brassicaceae; Cruciferae,keresztesvirágúak
+,Capsella bursa-pastoris,pásztortáska
+,Cardamine impatiens,virágrúgó kakukktorma
+,^ pratensis,réti kakukktorma
+,Cardaria draba; Lepidium draba,útszéli zsázsa
+45,Dentaria bulbifera; Cardamine bulbifera,hagymás fogasír
+,^ enneaphyllos; Cardamine enneaphyllos,bókoló ~
+,Lunaria rediviva,évelő holdviola
+,Sisymbrium strictissimum,magas zsombor
+,Alliaria petiolata; Alliaria officinalis,kánya~
+46,Pyrolaceae,körtikefélék
+,Pyrola,körtike
+,Primulaceae,kankalinfélék
+,Primula veris,tavaszi kankalin
+,^ vulgaris; ^ acaulis,szártalan ~
+,Lysimachia nummularia,pénzlevelű lizinka
+,^ punctata,pettyegetett ~
+47,Cyclamen purpurascens,ciklámen
+,Malvaceae,mályvafélék
+,Lavatera thuringiaca,madármályva
+,Euphorbiaceae,kutyatejfélék
+,Euphorbia cyparissias,farkaskutyatej
+48,^ amygdaloides,erdei kutyatej
+,^ polychroma; ^ epithymoides,színeváltó ~
+,Mercurialis annua,egynyári szélfű
+,^ perennis,erdei ~; évelő ~
+,^ ovata,pusztai ~
+49,Saxifragaceae,kőtörőfűfélék
+,Chrysosplenium alternifolium,aranyos veselke
+,Crassulaceae,varjúhájfélék
+,Sedum,varjúháj
+,^ sexangulare,hatsoros ~
+,^ maximum,bablevelű ~
+,Rosaceae,rózsafélék
+,Aruncus dioicus; Aruncus sylvestris,tündérfürt
+50,Agrimonia eupatoria,közönséges párlófű; apróbojtorján
+,Potentilla arenaria,homoki pimpó
+,^ alba,fehér ~
+,^ anserina,liba~
+,Waldsteinia geoides,Waldstein-~
+51,Geum urbanum,erdei gyömbérgyökér
+,Sanguisorba officinalis,őszi vérfű
+,Fabaceae; Leguminosae,pillangósvirágúak
+,Genista tinctoria,festő rekettye
+,^ germanica,sváb ~
+,^ pilosa,selymes ~
+52,Cytisus nigricans; Lembotropis nigricans,fürtös zanót
+,^ ratisbonensis; Chamaecytisus ratisbonensis,selymes ~
+,Melilotus officinalis,orvosi somkóró
+,Lotus corniculatus,szarvaskerep
+,Astragalus glycyphyllos,édeslevelű csűdfű
+53,Trifolium repens,fehér here
+,^ alpestre,bérci ~
+,^ montanum,hegyi ~
+,^ pratense,réti ~
+,Coronilla varia; Securigera varia,tarka koronafürt
+54,^ coronata,sárga ~
+,Vicia,bükköny
+,^ cracca,kaszanyűg~
+,^ cassubica,vitéz ~
+,^ sepium,gyepű~
+,^ oroboides,zalai ~
+55,Lathyrus niger,fekete lednek; feketedő lednek
+,^ vernus,tavaszi ~
+,^ tuberosus,mogyorós ~
+,Lythraceae,füzényfélék
+,Lythrum salicaria,réti füzény
+56,Onagraceae,ligetszépefélék
+,Circaea lutetiana,erdei varázslófű
+,Chamaenerion angustifolium; Epilobium angustifolium,erdei deréce
+,Epilobium,füzike
+,^ hirsutum,borzas ~
+,^ montanum,erdei ~
+57,Trapaceae,sulyomfélék
+,Trapa natans,sulyom
+,Rutaceae,rutafélék
+,Dictamnus albus,nagyezerjófű
+,Oxalidaceae,madársóskafélék
+,Oxalis acetosella,erdei madársóska
+,Geraniaceae,gólyaorrfélék
+,Geranium robertianum,nehézszagú gólyaorr
+58,^ sanguineum,piros ~
+,^ phaeum,fodros ~
+,Balsaminaceae,nebáncsvirágfélék
+,Impatiens noli-tangere,erdei nebáncsvirág; erdei nenyúljhozzám
+,^ parviflora,kisvirágú nebáncsvirág; kisvirágú nenyúljhozzám
+,^ glandulifera,bíbor nebáncsvirág
+59,Apiaceae; Umbelliferae,ernyősvirágzatúak
+,Sanicula europaea,gombernyő
+,Eryngium campestre,mezei iringó; ördögszekér
+,Smyrnium perfoliatum,őzsaláta
+,Falcaria vulgaris,sarlófű
+60,Anthriscus sylvestris,erdei turbolya
+,^ cerefolium,zamatos ~
+,Torilis japonica,bojtorjános tüskemag
+,Chaerophyllum temulum,bódító baraboly
+61,Conium maculatum,bürök; foltos bürök
+,Peucedanum oreoselinum,citromkocsord
+,^ cervaria,szarvas kocsord
+,Aegopodium podagraria,podagrafű
+62,Heracleum sphondylium,medvetalp
+,Laser trilobum,sujtár
+,Daucus carota,vadmurok
+,Apocynaceae,meténgfélék
+,Vinca minor,kis télizöld; télizöld meténg
+63,Rubiaceae,buzérfélék
+,Galium aparine,ragadós galaj
+,^ odoratum; Asperula odorata,szagos müge; illatos ~
+,^ mollugo,közönséges ~
+,^ sylvaticum,erdei ~
+64,Asclepiadaceae,selyemkórófélék
+,Asclepias syriaca,selyemkóró
+,Vincetoxicum hirundinaria; Cynanchum vincetoxicum,méreggyilok; vadpaprika
+,Caprifoliaceae,bodzafélék
+,Sambucus ebulus,gyalogbodza; földi bodza
+,Adoxaceae,pézsmaboglárfélék
+,Adoxa moschatellina,pézsmaboglár
+65,Valerianaceae,macskagyökérfélék
+,Valeriana officinalis,orvosi macskagyökér
+,Dipsacaceae,mácsonyafélék
+,Dipsacus laciniatus,héjakút mácsonya
+,Scabiosa ochroleuca,vajszínű ördögszem
+,Knautia drymeia,erdei varfű
+66,Convolvulaceae,szulákfélék
+,Calystegia sepium,sövényszulák
+,Convolvulus arvensis,apró szulák; folyondárszulák
+,Boraginaceae,érdeslevelűek
+,Symphytum officinale,orvosi nadálytő
+,^ tuberosum,gumós ~
+67,Alkanna tinctoria,báránypirosító
+,Pulmonaria officinalis,orvosi tüdőfű
+,^ mollis; ^ mollissima,bársonyos ~
+,Myosotis palustris; Myosotis scorpioides,mocsári nefelejcs
+68,Lithospermum purpureo-coeruleum; Buglossoides purpureo-coerulea,erdei gyöngyköles
+,Echium vulgare,közönséges kígyószisz
+,Lamiaceae; Labiatae,ajakosok
+,Ajuga reptans,indás ínfű
+,Glechoma hederacea,kerek repkény
+69,Melittis carpatica; Melittis grandiflora; Melittis melissophyllum,méhfű; nagyvirágú méhfű; mecseki tea
+,Galeopsis pubescens,pelyhes kenderkefű
+,Lamium maculatum,foltos árvacsalán
+,^ purpureum,piros ~
+,Galeobdolon luteum; ^ galeobdolon; Lamiastrum galeobdolon,sárga~
+70,Ballota nigra,fekete peszterce
+,Betonica officinalis,bakfű
+,Stachys sylvatica,erdei tisztesfű
+,^ recta,hasznos ~
+,Salvia glutinosa,enyves zsálya
+,^ pratensis,mezei ~
+71,Clinopodium vulgare; Calamintha clinopodium,borsfű; borsfű pereszlény
+,Origanum vulgare,szurokfű
+,Thymus,kakukkfű
+,Mentha longifolia; Mentha sylvestris,lómenta
+,Teucrium chamaedrys,sarlós gamandor
+72,Solanaceae,burgonyafélék
+,Atropa bella-donna,nadragulya
+,Solanum nigrum,fekete csucsor
+,^ dulcamara,ebszőlő ~
+,Scrophulariaceae,tátogatófélék
+,Scrophularia nodosa,göcsös görvélyfű
+,Verbascum phlomoides,szöszös ökörfarkkóró
+73,Verbascum austriacum,osztrák ~
+,Linaria vulgaris,közönséges gyujtoványfű
+,Digitalis grandiflora,sárga gyűszűvirág
+,Lathraea squamaria,vicsorgó
+,Veronica hederifolia,borostyánlevelű veronika; repkény veronika
+74,^ officinalis,orvosi ~
+,^ chamaedrys,ösztörűs ~
+,Melampyrum nemorosum,kéküstökű csormolya
+,^ pratense,réti ~
+,Plantaginaceae,útifűfélék
+,Plantago major,nagy útifű
+75,Campanulaceae,harangvirágfélék
+,Campanula persicifolia,baracklevelű harangvirág
+,^ trachelium,csalánlevelű ~
+,^ rotundifolia,kereklevelű ~
+,Asteraceae; Compositae,fészekesvirágzatúak
+,Eupatorium cannabinum,sédkender
+76,Solidago gigantea; Solidago serotina,magas aranyvessző
+,^ virgaurea,erdei ~
+,Erigeron annuus; Stenactis annua,seprence; egynyári seprence
+77,Conyza canadensis; Erigeron canadensis,betyárkóró
+,Ambrosia artemisiifolia; Ambrosia elatior,parlagfű
+,Aster,őszirózsa
+,Achillea millefolium,közönséges cickafark
+78,Matricaria recutita; Matricaria chamomilla,orvosi székfű
+,Chrysanthemum corymbosum; Tanacetum corymbosum,sátorozó margitvirág
+,^ leucanthemum; Leucanthemum vulgare,réti ~
+,Artemisia vulgaris,fekete üröm
+,Tussilago farfara,martilapu
+,Petasites hybridus,vörös acsalapu
+79,^ albus,fehér ~
+,Senecio vulgaris,közönséges aggófű
+,^ ovatus; ^ fuchsii,lilásszárú ~; kárpáti ~
+,Cirsium arvense,mezei aszat; mezei acat
+,^ oleraceum,halovány aszat
+80,Centaurea jacea,réti imola
+,Taraxacum officinale,pongyola pitypang; gyermekláncfű
+,Lapsana communis,bojtorjánsaláta
+,Mycelis muralis,kákicsvirág
+,Prenanthes purpurea,nyúlsaláta
+81,Hieracium sylvaticum; Hieracium murorum,erdei hölgymál
+,^ sabaudum,olasz ~
+82,Monocotyledonopsida,egyszikűek
+,Alismataceae,hídőrfélék
+,Alisma plantago-aquatica,vízi hídőr
+,Potamogetonaceae,békaszőlőfélék
+,Potamogeton natans,úszó békaszőlő
+,Liliaceae,liliomfélék
+,Veratrum album,fehér zászpa
+,^ nigrum,fekete ~
+83,Gagea lutea,sárga tyúktaréj
+,Colchicum autumnale,őszi kikerics
+,Ornithogalum umbellatum,ernyős sárma; ernyős madártej
+,Allium scorodoprasum,kígyóhagyma
+,^ ursinum,medvehagyma
+84,Scilla bifolia,tavaszi csillagvirág
+,Muscari comosum,üstökös gyöngyike
+,Maianthemum bifolium,árnyékvirág
+,Paris quadrifolia,farkasszőlő
+,Polygonatum latifolium,széleslevelű salamonpecsét
+85,^ odoratum; ^ officinale,orvosi ~; soktérdű ~
+,^ multiflorum,fürtös ~
+,Convallaria majalis,gyöngyvirág
+86,Amaryllidaceae,amarilliszfélék
+,Galanthus nivalis,hóvirág
+,Leucojum vernum,tavaszi tőzike
+,^ aestivum,nyári ~
+,Dioscoreaceae,jamszgyökérfélék
+,Tamus communis,pirítógyökér
+87,Iridaceae,nősziromfélék
+,Iris pseudacorus,sárga nőszirom; sásnőszirom; mocsári nőszirom
+,^ variegata,tarka ~
+,Orchidaceae,kosborfélék
+,Orchis purpurea,bíboros kosbor
+,Neottia nidus-avis,madárfészek
+88,Juncaceae,szittyófélék
+,Juncus effusus,békaszittyó
+,Luzula luzuloides; Luzula albida,fehér perjeszittyó
+,^ campestris,mezei ~
+,Cyperaceae,sásfélék
+,Eleocharis palustris,mocsári csetkáka
+89,Bolboschoenus maritimus,zsióka; sziki káka
+,Carex muricata,zöldes sás
+,^ paniculata,bugás ~
+,^ brizoides,rezgő ~; selyem~
+,^ remota,ritkás ~
+90,^ pendula,lecsüngő ~
+,^ acutiformis,posvány ~; mocsári ~
+,^ hirta,borzas ~
+,^ elata,zsombék~
+,^ michelii,sárgás ~
+91,^ alba,fehér ~
+,^ pilosa,bükk~; pillás ~; bükkös ~
+,^ sylvatica,erdei ~
+,^ montana,hegyi ~
+,^ digitata,ujjas ~
+92,^ humilis,lappangó ~; törpe ~
+,Poaceae; Gramineae,pázsitfűfélék
+,Dactylis glomerata,csomós ebír
+,Bromus sterilis,meddő rozsnok
+,^ erectus,sudár ~
+,Brachypodium pinnatum,tollas szálkaperje
+93,^ sylvaticum,erdei ~
+,Molinia coerulea,kékperje
+,Festuca pratensis,réti csenkesz
+,^ drymeia,hegyi ~
+94,^ gigantea,óriás ~
+,^ rupicola; ^ sulcata,pusztai ~
+,^ vaginata,homoki ~
+,^ pseudovina,sziki ~
+,^ heterophylla,felemáslevelű ~
+95,Poa angustifolia; Poa pratensis angustifolia,keskenylevelű perje
+,^ nemoralis,ligeti ~
+,Melica uniflora,egyvirágú gyöngy~
+,Phragmites australis; Phragmites communis,nád
+,Agropyron repens; Elymus repens,tarackbúza
+96,Lolium perenne,angolperje
+,Deschampsia flexuosa; Avenella flexuosa,erdei sédbúza
+,^ caespitosa,gyepes ~
+,Milium effusum,kásafű
+,Agrostis stolonifera,fehér tippan
+97,^ tenuis; ^ capillaris,cérna~
+,Calamagrostis epigeios,siskanád; siskanád~
+,^ arundinacea,erdei nád~
+98,Arrhenatherum elatius,franciaperje
+,Glyceria maxima,vízi harmatkása
+,Alopecurus pratensis,réti ecsetpázsit
+,Stipa,tollas árvalányhaj
+,Echinochloa crus-galli,kakaslábfű
+,Cynodon dactylon,csillagpázsit
+99,Botriochloa ischaemum; Andropogon ischaemum,fenyérfű
+,Typhaceae,gyékényfélék
+,Typha,gyékény
+100,Lemnaceae,békalencsefélék
+,Lemna minor,apró békalencse
+,Araceae,kontyvirágfélék
+,Arum maculatum,foltos kontyvirág
