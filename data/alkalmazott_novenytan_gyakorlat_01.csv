@@ -1,0 +1,41 @@
+page,scientific_name,common_name.hu
+2,Ascomycotina,tömlősgombák
+11,Microsphaera quercina,tölgy lisztharmat
+,Peziza aurantia,narancssárga csészegomba
+,Morchella esculenta,ízletes kucsmagomba
+,Helvella esculenta,redős papsapkagomba
+,Tuber aestivum,nyári szarvasgomba
+29,Tuberales,szarvasgombák; ~-félék
+32,Tuber brumale,téli ~
+52,Basidiomycota,bazídiumos gombák
+,Basidiomycetes,valódi bazídiumos ~
+,Poriales,tapló-alkatúak
+,Cantharellales,rókagomba-alkatúak
+,Boletales,tinórugomba-alkatúak
+,Agaricales,csiperke-alkatúak
+,Russulales,galambgomba-alkatúak
+,Phallales,szömörcsög-alkatúak
+,Sclerodermatales,áltrifla-alkatúak
+,Lycoperdales,pöfeteg-alkatúak
+53,Teliomycetes,rozsdagombák
+,Ustomycetes,üszöggombák
+,Phragmobazidiomycetidae,tagolt bazídiumú gombák
+,Holobazidiomycetidae,tagolatlan bazídiumú ~
+54,Polyporales,tapló-alkatúak
+,Trametes versicolor,lepketapló
+59,Poriaceae,taplógombák
+,Piptoporus betulinus,nyírtapló
+60,Fomes fomentarius,bükkfatapló
+67,Heterobasidion annosum,gyökérrontó tapló
+73,Cantharellaceae,rókagombafélék
+,Cantharellus cibarius,sárga rókagomba
+81,Boletus edulis,ízletes vargánya
+88,Amanita,galóca
+90,^ phalloides,gyilkos ~
+100,^ pantherina,párduc~
+106,^ muscaria,légyölő ~
+114,^ caesarea,császár~; császárgomba
+119,^ verna,fehér ~
+120,^ citrina,citrom~
+121,^ rubescens,piruló ~
+,^ strobiliformis,cafrangos ~

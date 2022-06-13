@@ -11,6 +11,8 @@ source_repository(
         "the_corncrake",
         "alkalmazott_novenytan_jegyzet_1",
         "alkalmazott_novenytan_jegyzet_2",
+        "alkalmazott_novenytan_eloadas_01",
+        "alkalmazott_novenytan_gyakorlat_01",
     ],
     visibility = ["//:__pkg__"],
 )
