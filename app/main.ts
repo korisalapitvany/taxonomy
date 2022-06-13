@@ -208,14 +208,14 @@ function fmtCell(cell, formatterParams, onRendered): string {
     line2.append(" (");
     const span: HTMLElement = document.createElement("span")
     span.className = "syn-marker";
-    span.innerText = "Syn.";
+    span.innerText = "syn.";
     line2.append(span);
 
     line2.append(" ");
     const syn: HTMLElement = document.createElement("em");
     syn.className = "synonym"
     // TODO: A separate <em> per synonym!
-    syn.innerText = synonyms.join();
+    syn.innerText = synonyms.join(", ");
     line2.append(syn);
     line2.append(")");
   }
