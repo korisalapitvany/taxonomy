@@ -3,6 +3,7 @@ load("//tools:source_repository.bzl", "source_repository")
 source_repository(
     name = "data",
     sources = [
+        "magyarorszag_viragos_novenyei",
         "milyen_allatnyom_ez",
         "milyen_eheto_vadnoveny_ez",
         "milyen_pok_ez",
