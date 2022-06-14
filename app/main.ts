@@ -170,6 +170,7 @@ function fmtCell(cell, formatterParams, onRendered): string {
   cnames
     .map((cname: CommonName): Array<string> => cname.commonNames[LANG])
     .reduce(flatten)
+    .filter(uniq)
     .forEach((name: string): void => {
       if (first) {
         article.innerText = articleFor(name);
