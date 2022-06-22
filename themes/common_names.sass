@@ -145,7 +145,8 @@
     .tabulator-page:not(:last-of-type)
       border-right: none
 
-      /* TODO: Change borger-left-color of next-button w/ page number! */
+      &:not([disabled]):hover + button
+        border-left-color: var(--field-focus-border)
 
   .tabulator-row
     border-bottom: none
