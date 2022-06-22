@@ -1,0 +1,53 @@
+/* Main page layout. */
+@media screen and (min-width: 769px)
+  .article-wrapper
+    grid-template-areas: "main"
+    grid-template-columns: minmax(0, 1fr)
+
+@media screen and (min-width: 1200px)
+  .article-wrapper
+    grid-template-areas: "main toc"
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 15rem)
+
+/* Theme switcher. */
+@media (prefers-color-scheme: light)
+  body:not(.dark)
+    .theme-switcher-menu .light-mode
+      display: none
+
+@media (prefers-color-scheme: dark)
+  body:not(.light)
+    .theme-switcher-menu .dark-mode
+      display: none
+
+body
+  &.dark .theme-switcher-menu .dark-mode,
+  &.light .theme-switcher-menu .light-mode
+    display: none
+
+.theme-switcher-menu
+  float: right
+  margin-right: 8px
+
+  button
+    width: 48px
+    height: 48px
+    padding: 12px 8px
+    color: var(--text-secondary)
+
+    &:hover
+      color: var(--button-secondary-hover)
+
+/* Page footer & copyright info. */
+.page-footer-legal-text
+  .theme-name::after
+    content: "MDN Yari"
+    cursor: text
+  .theme-license
+    &::before
+      content: "MPL-2.0"
+    &::after
+      display: none
+      content: "https://github.com/mdn/yari/blob/main/LICENSE"
+  .placeholder
+    display: none

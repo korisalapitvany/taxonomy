@@ -1,0 +1,35 @@
+.tooltip
+  position: relative
+
+  &::after,
+  &::before
+    top: 50%
+    left: 100%
+    position: absolute
+    background-color: var(--text-primary)
+    text-transform: initial
+    display: none
+    z-index: 2
+
+  &::after
+    color: var(--text-invert)
+    font-size: var(--font-size)
+    line-height: 18px
+    content: attr(data-tooltip)
+    white-space: nowrap
+    margin-left: 13px
+    transform: translateY(-50%)
+    padding: 8px
+    display: none
+
+  &::before
+    content: ""
+    width: 12px
+    height: 12px
+    transform: rotate(45deg)
+    margin-left: 9px
+    margin-top: -6px
+
+  &:hover::after,
+  &:hover::before
+    display: block
