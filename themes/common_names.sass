@@ -1,25 +1,12 @@
+$gap: 8px
+
 #common-names
+  display: flex
+  flex-direction: column
+  gap: $gap
+
   .toolbar
-    display: flex
     flex-direction: row-reverse
-    margin-bottom: 12px
-
-    button,
-    input[type=text]
-      height: 52px
-      background: var(--background-secondary)
-      border: thin solid var(--border-primary)
-
-    button
-      width: 64px
-      margin-right: 12px
-      font-size: 36px
-      border-radius: 0
-      color: var(--icon-primary)
-
-      &:hover, &:active, &:focus
-        border-color: var(--field-focus-border)
-        background-color: var(--code-background-inline)
 
     label[for=filter]
       width: 100%
@@ -58,6 +45,31 @@
   &:not(.toggle-articles) .article
     display: none
 
+  .toolbar,
+  .pagination
+    display: flex
+    gap: $gap
+
+    button,
+    input[type=text]
+      height: 48px
+      background: var(--background-secondary)
+      border: thin solid var(--border-primary)
+
+    button
+      width: 48px
+      min-width: 48px
+      border-radius: 0
+      color: var(--icon-primary)
+
+      &:not(.tabulator-page)
+        font-size: 36px
+
+      &:not([disabled])
+        &:hover, &:active, &:focus
+          border-color: var(--field-focus-border)
+          background-color: var(--code-background-inline)
+
   .tabulator
     background-color: var(--background-primary)
 
@@ -83,19 +95,9 @@
     padding: 0
 
   .pagination
-    gap: 12px
     padding: 0
 
     button
-      width: 52px
-      height: 52px
-      border: thin solid var(--border-primary)
-      border-radius: 0
-      cursor: pointer
-
-      color: var(--icon-primary)
-      background: var(--background-secondary)
-
       &:not([disabled]):hover
         border-color: var(--field-focus-border)
         background-color: var(--code-background-inline)
