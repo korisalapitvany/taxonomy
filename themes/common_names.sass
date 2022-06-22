@@ -59,8 +59,6 @@
     display: none
 
   .tabulator
-    display: flex
-    flex-direction: column-reverse
     background-color: var(--background-primary)
 
     .flex-col,
@@ -84,15 +82,16 @@
   .tabulator-footer-contents
     padding: 0
 
-  .tabulator-paginator
-    display: flex
-    justify-content: center
+  .pagination
+    gap: 12px
+    padding: 0
 
     button
       width: 52px
       height: 52px
       border: thin solid var(--border-primary)
       border-radius: 0
+      cursor: pointer
 
       color: var(--icon-primary)
       background: var(--background-secondary)
@@ -113,10 +112,7 @@
       padding: 0
       text-indent: 100%
       overflow: hidden
-
-      &[data-page="prev"],
-      &[data-page="next"]
-        margin: 0 12px
+      white-space: nowrap
 
       &::before
         position: absolute
@@ -127,7 +123,7 @@
         top: 50%
         line-height: 0
 
-        font-size: 24px
+        font-size: 32px
         font-family: 'Material Symbols Outlined'
 
       &[data-page="first"]::before
@@ -140,6 +136,7 @@
           content: "last_page"
 
   .tabulator-pages
+    display: flex
     margin: 0 auto
 
     .tabulator-page:not(:last-of-type)

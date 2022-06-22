@@ -126,11 +126,14 @@ function displayCommonNames(): void {
     document.getElementById("filter").addEventListener(evt, handleFilterInput);
   });
 
+  const containerID: string = "common-names";
+
   const _Tabulator = window["Tabulator"] as typeof Tabulator;
-  table = new _Tabulator("#common-names .table", {
+  table = new _Tabulator(`#${containerID} .table`, {
     "data": ROWS,
     "pagination": true,
     "paginationSize": 20,
+    "paginationElement": document.getElementById(containerID).querySelector(".pagination"),
     "layout": "fitDataFill",
     "rowHeight": 80,
     "rowFormatter": fmtRow,
