@@ -16,14 +16,14 @@ $gap: 8px
       span
         width: 0
         z-index: 1
-        padding-left: 16px
-        margin-top: 15px
+        padding-left: $gap + 6px
+        margin-top: 13px
 
     input[type=text]
       width: 100%
       padding: 12px
-      padding-left: 48px
-      margin-left: -16px
+      padding-left: 48px - 4px
+      margin-left: -$gap - 6px
       color: var(--text-primary)
       border-radius: 0
 
@@ -65,7 +65,14 @@ $gap: 8px
       &:not(.tabulator-page)
         font-size: 36px
 
+      &[disabled]
+        color: var(--icon-secondary)
+        border-color: var(--border-secondary)
+        background-color: transparent
+
       &:not([disabled])
+        cursor: pointer
+
         &:hover, &:active, &:focus
           border-color: var(--field-focus-border)
           background-color: var(--code-background-inline)
