@@ -2,7 +2,7 @@
   .toolbar
     display: flex
     flex-direction: row-reverse
-    margin-bottom: 8px
+    margin-bottom: 12px
 
     button,
     input[type=text]
@@ -59,6 +59,8 @@
     display: none
 
   .tabulator
+    display: flex
+    flex-direction: column-reverse
     background-color: var(--background-primary)
 
     .flex-col,
@@ -75,6 +77,75 @@
 
   .tabulator-header
     display: none
+
+  .tabulator-footer
+    border: none
+
+  .tabulator-footer-contents
+    padding: 0
+
+  .tabulator-paginator
+    display: flex
+    justify-content: center
+
+    button
+      width: 52px
+      height: 52px
+      border: thin solid var(--border-primary)
+      border-radius: 0
+
+      color: var(--icon-primary)
+      background: var(--background-secondary)
+
+      &:not([disabled]):hover
+        border-color: var(--field-focus-border)
+        background-color: var(--code-background-inline)
+
+      &.active
+        color: var(--icon-information)
+        background: var(--background-information)
+
+    > button
+      position: relative
+      margin: 0
+
+      /* Hide original text: */
+      padding: 0
+      text-indent: 100%
+      overflow: hidden
+
+      &[data-page="prev"],
+      &[data-page="next"]
+        margin: 0 12px
+
+      &::before
+        position: absolute
+        text-indent: 0
+        width: 100%
+        left: 0
+
+        top: 50%
+        line-height: 0
+
+        font-size: 24px
+        font-family: 'Material Symbols Outlined'
+
+      &[data-page="first"]::before
+          content: "first_page"
+      &[data-page="prev"]::before
+          content: "navigate_before"
+      &[data-page="next"]::before
+          content: "navigate_next"
+      &[data-page="last"]::before
+          content: "last_page"
+
+  .tabulator-pages
+    margin: 0 auto
+
+    .tabulator-page:not(:last-of-type)
+      border-right: none
+
+      /* TODO: Change borger-left-color of next-button w/ page number! */
 
   .tabulator-row
     border-bottom: none
