@@ -192,7 +192,8 @@ fn main() -> Result<(), Error> {
             if i != 0 {
                 write!(out, ", ")?;
             }
-            serde_json::to_writer(&mut out, field.trim())?;
+            // TODO: emit an object in case of alternate spelling.
+            serde_json::to_writer(&mut out, field.split('=').last().unwrap_or("").trim())?;
         }
         writeln!(out, "]}}}}")?;
 

@@ -95,6 +95,10 @@ $gap: 8px
   .tabulator-header
     display: none
 
+  .tabulator-table,
+  .tabulator-row .tabulator-cell.flex-row
+    gap: $gap
+
   .tabulator-footer
     border: none
 
@@ -163,7 +167,7 @@ $gap: 8px
 
   .tabulator-cell
     &.content
-      padding: 8px 0
+      padding: 0
       line-height: 24px
 
       /* Prevent long tooltips from being cut off. */
@@ -171,9 +175,9 @@ $gap: 8px
 
     .photo
       float: left
-      height: 64px
-      width: 64px
-      line-height: 64px
+      height: 48px
+      width: 48px
+      line-height: 48px
       font-size: 32px
       margin-right: 8px
       text-align: center
@@ -186,14 +190,26 @@ $gap: 8px
     .common-names
       line-height: 28px
 
+      strong.common-name::after
+        content: attr(data-more)
+        color: var(--text-secondary)
+        font-weight: normal
+
+      /* TODO: Add expanded form! */
+      span.common-name
+        display: none
+
+        &::before
+          content: ", "
+
       sup
         color: var(--accent-primary)
         cursor: pointer
         font-weight: normal
         font-size: 12px
 
-      span:not(.article)::before
-        content: ", "
+      &::before
+        content: " "
 
     .scientific-name
       color: var(--text-secondary)

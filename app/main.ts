@@ -132,10 +132,10 @@ function displayCommonNames(): void {
   table = new _Tabulator(`#${containerID} .table`, {
     "data": ROWS,
     "pagination": true,
-    "paginationSize": 20,
+    "paginationSize": 50,
     "paginationElement": document.getElementById(containerID).querySelector(".pagination"),
     "layout": "fitDataFill",
-    "rowHeight": 80,
+    "rowHeight": 48,
     "rowFormatter": fmtRow,
     "columns": [{
       "field": "key",
@@ -161,47 +161,47 @@ function fmtCell(cell, formatterParams, onRendered): string {
   const key: string = cell["getValue"]();
   const cnames: Array<CommonName> = CNAMES[key];
 
-  let line1: HTMLDivElement = document.createElement("div");
-  line1.className = "common-names";
+  const names: HTMLElement = createElement("div", ["common-names"]);
 
-  let article: HTMLElement = document.createElement("span");
-  article.className = "article";
-  line1.append(article);
-  line1.append(" ");
+  const article: HTMLElement = createChild(names, "span", ["article"]);
+  names.append(" ");
 
-  let first: boolean = true;
-  cnames
+  const cnameSet: Array<string> = cnames
     .map((cname: CommonName): Array<string> => cname.commonNames[LANG])
     .reduce(flatten)
-    .filter(uniq)
-    .forEach((name: string): void => {
-      if (first) {
-        article.innerText = articleFor(name);
+    .filter(uniq);
+  const cnameCount: number = cnameSet.length;
+
+  let first: boolean = true;
+  append(names, cnameSet.map((name: string): HTMLElement => {
+    const el: HTMLElement = createElement(first ? "strong" : "span", ["common-name"]);
+    setText(el, name);
+
+    if (first) {
+      setText(article, articleFor(name));
+      if (cnameCount > 1) {
+        setData(el, "more", `+${cnameCount - 1}`);
       }
-      const el: HTMLElement = document.createElement(first ? "strong" : "span");
-      el.innerText = name;
+    }
 
-      cnames
-        .filter((cn: CommonName): boolean => cn.commonNames[LANG].indexOf(name) != -1)
-        .forEach((cn: CommonName): void => {
-          const src: Source = SOURCES[cn.sourceId];
-          const sup: HTMLElement = document.createElement("sup");
-          sup.className = "tooltip";
-          sup.dataset["tooltip"] = refText(src, cn.pageNum);
-          sup.innerText = `[${src.num}]`;
-          el.append(sup);
-        });
+    cnames
+      .filter((cn: CommonName): boolean => cn.commonNames[LANG].indexOf(name) != -1)
+      .forEach((cn: CommonName): void => {
+        const src: Source = SOURCES[cn.sourceId];
+        const sup: HTMLElement = createChild(el, "sup", ["tooltip"]);
+        sup.dataset["tooltip"] = refText(src, cn.pageNum);
+        setText(sup, `[${src.num}]`);
+      });
 
-      line1.append(el);
-      first = false;
-    });
+    first = false;
+    return el;
+  }));
 
-  const line2: HTMLDivElement = document.createElement("div");
-  line2.className = "scientific-name";
+  const snames: HTMLElement = createElement("div", ["scientific-name"]);
 
   const em: HTMLElement = document.createElement("em");
   em.innerText = key;
-  line2.append(em);
+  snames.append(em);
 
   const synonyms: Array<string> = cnames
     .map((cn: CommonName): Array<string> => cn.synonyms)
@@ -209,34 +209,24 @@ function fmtCell(cell, formatterParams, onRendered): string {
     .filter(uniq);
 
   if (synonyms.length) {
-    line2.append(" (");
-    const span: HTMLElement = document.createElement("span")
-    span.className = "syn-marker";
-    span.innerText = "syn.";
-    line2.append(span);
+    snames.append(" (");
+    const span: HTMLElement = createChild(snames, "span", ["syn-marker"]);
+    setText(span, "syn.");
 
-    line2.append(" ");
-    const syn: HTMLElement = document.createElement("em");
-    syn.className = "synonym"
+    snames.append(" ");
+    const syn: HTMLElement = createChild(snames, "em", ["synonym"]);
     // TODO: A separate <em> per synonym!
-    syn.innerText = synonyms.join(", ");
-    line2.append(syn);
-    line2.append(")");
+    setText(syn, synonyms.join(", "));
+    snames.append(")");
   }
 
-  const photo: HTMLDivElement = document.createElement("div");
-  photo.className = "photo material-symbols-outlined";
-  photo.innerText = "downloading";
+  const photo: HTMLElement = createElement("div", [ICON_CLASS, "photo"]);
+  setText(photo, "downloading");
 
-  const names: HTMLDivElement = document.createElement("div");
-  names.className = "flex-col";
-  names.append(line1);
-  names.append(line2);
+  const ext: HTMLElement = createElement("div", ["ext"]);
 
-  const ext: HTMLDivElement = document.createElement("div");
-  ext.className = "ext";
-
-  return [photo, names, ext]
+  // TODO: Just return a node!
+  return [photo, names, snames, ext]
     .map((el: HTMLElement): string => el.outerHTML)
     .join("");
 }
